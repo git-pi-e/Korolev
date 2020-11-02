@@ -19,15 +19,15 @@
 		width: 100%;
 		height: 100%;
 		z-index: 1;
-		background: #0008;
+		background: #0006;
 		display: flex;
 		align-items: center;
 		justify-content: center;
 		color: #fff;
-		backdrop-filter: blur(20px);
-		-moz-backdrop-filter: blur(20px);
-		-ms-backdrop-filter: blur(20px);
-		-webkit-backdrop-filter: blur(20px);
+		backdrop-filter: blur(15px);
+		-moz-backdrop-filter: blur(15px);
+		-ms-backdrop-filter: blur(15px);
+		-webkit-backdrop-filter: blur(15px);
 	}
 	ul {
 		list-style: none;
@@ -36,6 +36,10 @@
 			padding: 10px;
 			cursor: pointer;
 			font-size: 2rem;
+			.active {
+				font-weight: bold;
+				background: #60f;
+			}
 		}
 	}
 </style>
@@ -55,7 +59,11 @@
 	<nav transition:fade>
 		<ul>
 			{#each pages as pj}
-				<li on:click={() => (currentPage = pj)}>{pj}</li>
+				<li
+					class={currentPage == pj ? 'active' : ''}
+					on:click={() => (currentPage = pj)}>
+					{pj}
+				</li>
 			{/each}
 		</ul>
 	</nav>

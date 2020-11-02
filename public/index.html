@@ -7,15 +7,23 @@
 
 	<title>SEDS Celestia</title>
 
-	<link rel='icon' type='image/png' href='./favicon.png'>
+	<link rel='icon' type='image/svg+xml' href='./assets/logo.svg'>
+	<link rel='apple-touch-startup-image' type='image/svg+xml' href='./assets/logo.svg'>
+	<link rel='apple-touch-icon' type='image/svg+xml' href='./assets/logo.svg'>
+
+	<link rel='apple-touch-icon' type='image/png' href='./assets/logo.png'>
+	<link rel='apple-touch-startup-image' type='image/png' href='./assets/logo.png'>
+	<link rel='icon' type='image/png' href='./assets/logo.png'>
+
 	<link rel='stylesheet' href='./global.css'>
 	<link rel='stylesheet' href='./build/bundle.css'>
-
 	<script defer src='./build/bundle.js'></script>
 </head>
 
 <body xmlns:svg="http://www.w3.org/2000/svg">
-	<div id="star-field"></div>
+	<div id="star-space" style="z-index: -3;"></div>
+	<div id="star-lens" style="z-index: -2;"></div>
+	<div id="star-field" style="z-index: -1;"></div>
 	<main style="z-index: 1;height: 100%;width: 100%;"></main>
 </body>
 
