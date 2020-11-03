@@ -1,12 +1,20 @@
 <script>
+    export let data;
 </script>
 
 <style type="text/scss">
     section {
-        height: 100%;
-        padding: 5% 30%;
+        .l1 {
+            font-size: 16px;
+            text-transform: uppercase;
+            color: #fff;
+        }
+        padding: 2% 30%;
         article {
             margin: 0 auto;
+            border-radius: 24px;
+            padding: 10px;
+            margin: 20px 0;
         }
     }
     .lecture {
@@ -15,6 +23,7 @@
         img {
             width: 100%;
             object-fit: cover;
+            border-radius: 10px;
         }
         p {
             padding: 10px;
@@ -29,65 +38,74 @@
             top: 0;
             padding: 1%;
             right: 0;
-            background: #444;
-            opacity: 0.5;
+            margin: 1%;
+            color: #f00;
+            border-radius: 20px;
+            border: 1px solid #f00;
         }
         .telesc {
             position: absolute;
             top: 0;
             right: 0;
-            font-size: 5em;
+            font-size: 2em;
             padding: 1%;
             color: #fff;
         }
-        background: #444;
+    }
+    @media (max-width: 1200px) {
+        section {
+            padding: 2% 25%;
+        }
+    }
+    @media (max-width: 991px) {
+        section {
+            padding: 2% 20%;
+        }
+    }
+    @media (max-width: 768px) {
+        section {
+            padding: 2% 10%;
+        }
+    }
+    @media (max-width: 450px) {
+        section {
+            padding: 2%;
+        }
     }
 </style>
 
 <section>
-    <article>
+    <article style="background:linear-gradient(135deg, #900, #ba1e68)">
         <h1 class="l1">Open Lectures</h1>
-        <p>We offer Open Lectures</p>
-        <h2 class="l2">Coming Next</h2>
         <div class="lecture">
-            <div class="watch">WATCH</div>
-            <img
-                src="https://www.biography.com/.image/c_fill%2Ccs_srgb%2Cfl_progressive%2Ch_400%2Cq_auto:good%2Cw_620/MTE5NDg0MDU1MTUzMTE2Njg3/alan-turing-9512017-1-402.jpg"
-                alt="" />
-            <p>
-                SIR ALAN TURING
-                <br />
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Similique voluptatibus recusandae, provident fuga error
-                doloribus.
-            </p>
+            <div class="watch">Coming Next</div>
+            <img src={data.upcoming.img} alt="" />
+            <p>{data.upcoming.title} <br /> {data.upcoming.details}</p>
         </div>
     </article>
-    <article>
+    <article style="background:linear-gradient(135deg, #009, #3469ff)">
         <h1 class="l1">Telescopes</h1>
-        <p>We have Telescopes</p>
-        <h2 class="l2">Dobsonian</h2>
-        <div class="lecture">
-            <div class="telesc">f/5</div>
-            <img
-                src="https://i.ytimg.com/vi/UiW7rRSApBA/maxresdefault.jpg"
-                alt="" />
-            <p>
-                DOBSONIAN BOI
-                <br />
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Similique voluptatibus recusandae, provident fuga error
-                doloribus.
-            </p>
-        </div>
+        {#each data.telescopes as tsc}
+            <div class="lecture">
+                <div class="telesc">{tsc.title}</div>
+                <img src={tsc.img} alt="" />
+            </div>
+        {/each}
     </article>
-    <article>
+    <article style="background:linear-gradient(135deg, #909, #983756)">
         <h1 class="l1">Open Source Projects</h1>
         <p>We have Projects</p>
+        {#each data.opensource as osc}
+            <div style="display:flex;margin: 20px 0;height:150px">
+                <div style="flex:1">
+                    <img
+                        style="width:150px;object-fit:cover;height:100%;border-radius:125px;"
+                        src={osc.img}
+                        alt="" />
+                </div>
+                <div style="flex:3;padding:10px;">{osc.title}</div>
+            </div>
+        {/each}
     </article>
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
+    <div style="height:5em">&nbsp;</div>
 </section>

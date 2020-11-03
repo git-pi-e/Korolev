@@ -4,6 +4,11 @@
 	import { fade } from "svelte/transition";
 
 	let showNav = false;
+
+	const changePage = (e) => {
+		currentPage = e.target.innerText;
+		showNav = !showNav;
+	};
 </script>
 
 <style type="text/scss">
@@ -13,12 +18,12 @@
 		left: 10px;
 		cursor: pointer;
 		color: #fff;
-		z-index: 2;
+		z-index: 5;
 	}
 	nav {
 		width: 100%;
 		height: 100%;
-		z-index: 1;
+		z-index: 4;
 		background: #0006;
 		display: flex;
 		align-items: center;
@@ -60,9 +65,9 @@
 		<ul>
 			{#each pages as pj}
 				<li
-					class={currentPage == pj ? 'active' : ''}
-					on:click={() => (currentPage = pj)}>
-					{pj}
+					class={currentPage == pj.page ? 'active' : ''}
+					on:click={changePage}>
+					{pj.page}
 				</li>
 			{/each}
 		</ul>

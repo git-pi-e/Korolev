@@ -4,9 +4,9 @@ import App from './App.svelte';
 const starFieldWidth = window.innerWidth * 2, starFieldHeight = window.innerHeight * 2,
 	starField = document.getElementById( "star-field" ),
 	starLens = document.getElementById( "star-lens" ),
-	starSpace = document.getElementById( "star-space" );
+	starSpace = document.getElementById( "star-space" ), density = 2 * ( starFieldHeight * starFieldWidth ) ** 0.25;
 
-for ( let i = 0;i < ( 4 * ( starFieldHeight * starFieldWidth ) ** 0.25 );i++ ) {
+for ( let i = 0;i < 2 * density;i++ ) {
 	var star = document.createElement( "div" );
 	star.className = "star near";
 	star.style.top = Math.floor( Math.random() * starFieldHeight + 1 ) + "px";
@@ -14,7 +14,7 @@ for ( let i = 0;i < ( 4 * ( starFieldHeight * starFieldWidth ) ** 0.25 );i++ ) {
 	starField.appendChild( star );
 }
 
-for ( let i = 0;i < ( 6 * ( starFieldHeight * starFieldWidth ) ** 0.25 );i++ ) {
+for ( let i = 0;i < 3 * density;i++ ) {
 	var star = document.createElement( "div" );
 	star.className = "star far";
 	star.style.top = Math.floor( Math.random() * starFieldHeight + 1 ) + "px";
@@ -22,7 +22,7 @@ for ( let i = 0;i < ( 6 * ( starFieldHeight * starFieldWidth ) ** 0.25 );i++ ) {
 	starSpace.appendChild( star );
 }
 
-for ( let i = 0;i < ( 8 * ( starFieldHeight * starFieldWidth ) ** 0.25 );i++ ) {
+for ( let i = 0;i < 4 * density;i++ ) {
 	var star = document.createElement( "div" );
 	star.className = "star semistat";
 	star.style.top = Math.floor( Math.random() * starFieldHeight + 1 ) + "px";

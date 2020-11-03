@@ -1,7 +1,39 @@
 {
+    "team": {
+        "mgmt": [
+            {
+                "img": "https://pbs.twimg.com/profile_images/1162996912531730433/b08m-caG_400x400.jpg",
+                "name": "Hrutwick Sawant",
+                "pos": "Apunich Bhagwan hai",
+                "color": "#ff0"
+            }
+        ],
+        "leads": []
+    },
     "facilities": {
-        "upcoming": {},
-        "telescopes": [],
-        "opensource": []
+        "upcoming": {
+            "img": "https://www.biography.com/.image/c_fill%2Ccs_srgb%2Cfl_progressive%2Ch_400%2Cq_auto:good%2Cw_620/MTE5NDg0MDU1MTUzMTE2Njg3/alan-turing-9512017-1-402.jpg",
+            "title": "SIR ALAN TURING",
+            "details": "orem, ipsum dolor sit amet consectetur adipisicing elit. Similique voluptatibus recusandae, provident fuga error doloribus."
+        },
+        "telescopes": [
+            {
+                "title": "Dobby AB1CD-EF",
+                "img": "https://i.ytimg.com/vi/UiW7rRSApBA/maxresdefault.jpg",
+                "star": "f/5"
+            }
+        ],
+        "opensource": [
+            {
+                "img": "https://images-na.ssl-images-amazon.com/images/I/61re-lA-EiL._AC_SL1500_.jpg",
+                "title": "TRACKER",
+                "details": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum officiis error nobis dolorem quia culpa neque quidem necessitatibus aliquid impedit?"
+            },
+            {
+                "img": "https://images.immediate.co.uk/production/volatile/sites/25/2019/02/Baader-Nano-Tracker-Travelling-Mount-Baader-Nano-Tracker-Travelling-Mount-5d5a2f4.jpg?quality=90&resize=620,413",
+                "title": "TRACKER2",
+                "details": "Lorem ipsum dolor sit amet adipisicing elit. Nostrum officiis error nobis dolorem quia culpa neque quidem necessitatibus aliquid impedit? Nostrum officiis error nobis dolorem quia culpa neque quidem necessitatibus aliquid impedit?"
+            }
+        ]
     }
 }
