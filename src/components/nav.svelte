@@ -1,14 +1,7 @@
 <script>
-	export let pages, currentPage;
+	export let pages, currentPage, changePage, showNav, navTog;
 
 	import { fade } from "svelte/transition";
-
-	let showNav = false;
-
-	const changePage = (e) => {
-		currentPage = e.target.innerText;
-		showNav = !showNav;
-	};
 </script>
 
 <style type="text/scss">
@@ -55,13 +48,13 @@
 		width="32"
 		height="32"
 		stroke-width="2"
-		on:click={() => (showNav = !showNav)}>
+		on:click={navTog}>
 		<path
 			d={showNav ? 'M10 6 L2 16 10 26 M2 16 L30 16' : 'M4 8 L28 8 M4 16 L28 16 M4 24 L28 24'} />
 	</svg>
 </div>
 {#if showNav}
-	<nav transition:fade>
+	<nav transition:fade={{ duration: 300 }}>
 		<ul>
 			{#each pages as pj}
 				<li

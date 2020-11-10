@@ -14,20 +14,20 @@ for ( let i = 0;i < 2 * density;i++ ) {
 	starField.appendChild( star );
 }
 
-for ( let i = 0;i < 3 * density;i++ ) {
-	var star = document.createElement( "div" );
-	star.className = "star far";
-	star.style.top = Math.floor( Math.random() * starFieldHeight + 1 ) + "px";
-	star.style.left = Math.floor( Math.random() * starFieldWidth + 1 ) + "px";
-	starSpace.appendChild( star );
-}
-
 for ( let i = 0;i < 4 * density;i++ ) {
 	var star = document.createElement( "div" );
 	star.className = "star semistat";
 	star.style.top = Math.floor( Math.random() * starFieldHeight + 1 ) + "px";
 	star.style.left = Math.floor( Math.random() * starFieldWidth + 1 ) + "px";
 	starLens.appendChild( star );
+}
+
+for ( let i = 0;i < 6 * density;i++ ) {
+	var star = document.createElement( "div" );
+	star.className = "star far";
+	star.style.top = Math.floor( Math.random() * starFieldHeight + 1 ) + "px";
+	star.style.left = Math.floor( Math.random() * starFieldWidth + 1 ) + "px";
+	starSpace.appendChild( star );
 }
 
 const app = new App( { target: document.getElementsByTagName( 'main' )[ 0 ] } );

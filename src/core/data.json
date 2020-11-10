@@ -4,8 +4,32 @@
             {
                 "img": "https://pbs.twimg.com/profile_images/1162996912531730433/b08m-caG_400x400.jpg",
                 "name": "Hrutwick Sawant",
-                "pos": "Apunich Bhagwan hai",
-                "color": "#ff0"
+                "pos": "President"
+            },
+            {
+                "img": "https://pbs.twimg.com/profile_images/1162996912531730433/b08m-caG_400x400.jpg",
+                "name": "Venu",
+                "pos": "Ex Prez"
+            },
+            {
+                "img": "https://pbs.twimg.com/profile_images/1162996912531730433/b08m-caG_400x400.jpg",
+                "name": "Aditya Majali",
+                "pos": "God"
+            },
+            {
+                "img": "https://pbs.twimg.com/profile_images/1162996912531730433/b08m-caG_400x400.jpg",
+                "name": "Akash Chaudhary",
+                "pos": "I'm too teriffied to put something"
+            },
+            {
+                "img": "https://pbs.twimg.com/profile_images/1162996912531730433/b08m-caG_400x400.jpg",
+                "name": "Nikhil Bisht",
+                "pos": "A"
+            },
+            {
+                "img": "https://pbs.twimg.com/profile_images/1162996912531730433/b08m-caG_400x400.jpg",
+                "name": "Bisht can't be anything",
+                "pos": "Other than A."
             }
         ],
         "leads": []

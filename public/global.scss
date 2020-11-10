@@ -25,7 +25,7 @@ svg {
 }
 
 #star-space{
-background: linear-gradient(to top, #60a, #111);
+background: linear-gradient(#111, #206, #60a);
 }
 #star-field, #star-space,#star-lens{
 	top: 0;
@@ -42,18 +42,17 @@ background: linear-gradient(to top, #60a, #111);
 		background: #fffa;
 		box-shadow: 0 0 15px #eee;
 		border-radius: 50%;
-		
-		&.semistat{
-			animation: nearLoop 40s linear infinite; 
-		}
 
 		&.far {
+			animation: nearLoop 20s linear infinite; 
 			width: $starDimension - 1;
 			height: $starDimension - 1;
 		}
 		
+		&.semistat{animation: nearLoop 30s linear infinite; }
+		
 		&.near {
-			animation: nearLoop 20s linear infinite;
+			animation: nearLoop 40s linear infinite;
 			width: $starDimension + 1;
 			height: $starDimension + 1;
 		}
