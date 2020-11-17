@@ -14,7 +14,9 @@
 		z-index: 5;
 	}
 	nav {
+		position: fixed;
 		width: 100%;
+		overflow: hidden;
 		height: 100%;
 		z-index: 4;
 		background: #0006;
@@ -54,7 +56,7 @@
 	</svg>
 </div>
 {#if showNav}
-	<nav transition:fade={{ duration: 300 }}>
+	<nav>
 		<ul>
 			{#each pages as pj}
 				<li

@@ -5,7 +5,7 @@
 
 <style type="text/scss">
     section {
-        padding: 2% 20%;
+        padding: 4% 20%;
         .l1 {
             display: flex;
             justify-content: space-between;
@@ -45,12 +45,12 @@
 
     @media (max-width: 991px) {
         section {
-            padding: 2% 10%;
+            padding: 4% 10%;
         }
     }
     @media (max-width: 768px) {
         section {
-            padding: 2%;
+            padding: 4%;
         }
     }
 </style>
@@ -85,9 +85,7 @@
                 <div class="imgCont">
                     <img src={p.img} alt="" />
                     <br />
-                    <span style="font-weight:600;color:#f66b57">
-                        {p.name}
-                    </span>
+                    <span style="font-weight:600;color:#18f"> {p.name} </span>
                     <br />{p.pos}
                 </div>
             {/each}

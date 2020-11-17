@@ -131,11 +131,6 @@
         </div>
         <div class="clouds">
             <div class="clouds__group-1" />
-            <div class="clouds__group-2" />
-        </div>
-        <div class="trees">
-            <div class="trees__group-1" />
-            <div class="trees__group-2" />
         </div>
     </div>
     <div class="earth-aura" />

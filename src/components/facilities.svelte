@@ -20,7 +20,7 @@
                 fill: #fff;
             }
         }
-        padding: 2% 30%;
+        padding: 4% 30%;
         article {
             margin: 0 auto;
             border-radius: 24px;
@@ -65,22 +65,22 @@
     }
     @media (max-width: 1200px) {
         section {
-            padding: 2% 25%;
+            padding: 4% 25%;
         }
     }
     @media (max-width: 991px) {
         section {
-            padding: 2% 20%;
+            padding: 4% 20%;
         }
     }
     @media (max-width: 768px) {
         section {
-            padding: 2% 10%;
+            padding: 4% 10%;
         }
     }
     @media (max-width: 450px) {
         section {
-            padding: 2%;
+            padding: 4%;
         }
     }
 </style>

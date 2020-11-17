@@ -1,10 +1,8 @@
 <script>
 	import Nav from "./components/nav.svelte";
-	import Home from "./components/home.svelte";
 	import Team from "./components/team.svelte";
+	import Home from "./components/home.svelte";
 	import Facilities from "./components/facilities.svelte";
-	import Events from "./components/events.svelte";
-	import Observations from "./components/observations.svelte";
 	import Projects from "./components/projects.svelte";
 
 	import data from "./core/data.json";
@@ -17,14 +15,12 @@
 		currentPage = e.target.innerText;
 	};
 
-	$: currentPage = "Team";
+	$: currentPage = "Projects";
 	const pages = [
-		// { page: "Home", component: Home },
+		{ page: "Home", component: Home },
 		{ page: "Team", component: Team },
 		{ page: "Facilities", component: Facilities },
-		// { page: "Observations", component: Events },
-		// { page: "Talks", component: Projects },
-		// { page: "Projects", component: Observations },
+		{ page: "Projects", component: Projects },
 	];
 </script>
 
@@ -34,5 +30,5 @@
 <Nav {pages} {currentPage} {changePage} {navTog} {showNav} />
 
 <svelte:component
-	this={pages[pages.findIndex((el) => el.page === currentPage)].component}
+	this={pages[pages.findIndex((e) => e.page === currentPage)].component}
 	data={data[currentPage.toLowerCase()]} />
