@@ -1,7 +1,4 @@
 <style type="text/scss">
-    $trees: #4d7;
-    $earth-outline-blue: #111133;
-    $earth-aura: #111;
     %centerElement {
         top: 50%;
         left: 50%;
@@ -9,10 +6,10 @@
     }
 
     .wrapper {
-        padding: 100px 0 0 100px;
+        padding: 100px 0 0 200px;
         position: relative;
         margin: 0 auto;
-        width: 100%;
+        width: calc(100% - 200px);
         height: 500px;
         overflow: hidden;
     }

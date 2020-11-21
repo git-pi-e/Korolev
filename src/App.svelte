@@ -2,6 +2,7 @@
 	import Nav from "./components/nav.svelte";
 	import Team from "./components/team.svelte";
 	import Home from "./components/home.svelte";
+	import Education from "./components/edu.svelte";
 	import Facilities from "./components/facilities.svelte";
 	import Projects from "./components/projects.svelte";
 
@@ -15,9 +16,10 @@
 		currentPage = e.target.innerText;
 	};
 
-	$: currentPage = "Projects";
+	$: currentPage = "Home";
 	const pages = [
 		{ page: "Home", component: Home },
+		{ page: "Education", component: Education },
 		{ page: "Team", component: Team },
 		{ page: "Facilities", component: Facilities },
 		{ page: "Projects", component: Projects },
