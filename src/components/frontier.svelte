@@ -38,7 +38,7 @@
                     </div>
                     <p>{el.summary}</p>
                     <div
-                        style="display: flex;width:90%;color:#888;justify-content:space-between;position:absolute;bottom:5px;">
+                        style="display: flex;width:97.5%;color:#888;justify-content:space-between;position:absolute;bottom:5px;">
                         <span>{el.newsSite}</span>
                         <span>{new Date(el.publishedAt).toLocaleDateString(
                                 'en-GB',

@@ -1,38 +1,48 @@
 <script>
-	import Nav from "./components/nav.svelte";
-	import Team from "./components/team.svelte";
+	import Nav from "./core/nav.svelte";
 	import Home from "./components/home.svelte";
-	import Frontier from "./components/frontier.svelte";
-	import Education from "./components/edu.svelte";
-	import Facilities from "./components/facilities.svelte";
-	import Projects from "./components/projects.svelte";
 
 	import data from "./core/data.json";
 
-	$: showNav = false;
+	$: state = { showNav: 0, currentPage: "Home" };
+	let Team, Facc, Proj;
 
-	const navTog = () => (showNav = !showNav);
+	const navTog = () => {
+		state.showNav = !state.showNav;
+		if (!Team) {
+			import("./components/team.svelte").then((r) => (Team = r.default));
+			import("./components/facc.svelte").then((r) => (Facc = r.default));
+			import("./components/proj.svelte").then((r) => (Proj = r.default));
+		}
+	};
 	const changePage = (e) => {
 		navTog();
-		currentPage = e.target.innerText;
+		state.currentPage = e.target.innerText;
 	};
 
-	$: currentPage = "Frontier";
 	const pages = [
 		{ page: "Home", component: Home },
-		{ page: "Frontier", component: Frontier },
-		{ page: "Education", component: Education },
 		{ page: "Team", component: Team },
-		{ page: "Facilities", component: Facilities },
-		{ page: "Projects", component: Projects },
+		{ page: "Facilities", component: Facc },
+		{ page: "Projects", component: Proj },
 	];
 </script>
 
 <style type="text/scss">
 </style>
 
-<Nav {pages} {currentPage} {changePage} {navTog} {showNav} />
+<Nav {pages} {state} {changePage} {navTog} />
 
-<svelte:component
-	this={pages[pages.findIndex((e) => e.page === currentPage)].component}
-	data={data[currentPage.toLowerCase()]} />
+{#if state.currentPage == 'Team'}
+	<svelte:component this={Team} data={data.team} />
+{:else if state.currentPage == 'Facilities'}
+	<svelte:component this={Facc} data={data.facilities} />
+{:else if state.currentPage == 'Projects'}
+	<svelte:component this={Proj} data={data.projects} />
+{:else}
+	<svelte:component this={Home} data={data.home} />
+{/if}
+
+<!-- <svelte:component
+	this={pages[pages.findIndex((e) => e.page === state.currentPage)].component}
+	data={data[state.currentPage.toLowerCase()]} /> -->

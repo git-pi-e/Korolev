@@ -17,14 +17,36 @@
 
 	<link rel='stylesheet' href='./global.css'>
 	<link rel='stylesheet' href='./build/bundle.css'>
-	<script defer src='./build/bundle.js'></script>
+	<script defer type="module" src="./build/main.js"></script>
 </head>
 
 <body xmlns:svg="http://www.w3.org/2000/svg">
 	<div id="star-space" style="z-index: -3;"></div>
-	<div id="star-lens" style="z-index: -2;"></div>
 	<div id="star-field" style="z-index: -1;"></div>
 	<main style="z-index: 1;height: 100%;width: 100%;"></main>
+
+
+	<script>
+		const starFieldWidth = window.innerWidth * 2, starFieldHeight = window.innerHeight * 2,
+			starField = document.getElementById( "star-field" ),
+			starSpace = document.getElementById( "star-space" ), density = 2 * ( starFieldHeight * starFieldWidth ) ** 0.25;
+
+		for ( let i = 0;i < 2 * density;i++ ) {
+			var star = document.createElement( "div" );
+			star.className = "star near";
+			star.style.top = Math.floor( Math.random() * starFieldHeight + 1 ) + "px";
+			star.style.left = Math.floor( Math.random() * starFieldWidth + 1 ) + "px";
+			starField.appendChild( star );
+		}
+
+		for ( let i = 0;i < 6 * density;i++ ) {
+			var star = document.createElement( "div" );
+			star.className = "star far";
+			star.style.top = Math.floor( Math.random() * starFieldHeight + 1 ) + "px";
+			star.style.left = Math.floor( Math.random() * starFieldWidth + 1 ) + "px";
+			starSpace.appendChild( star );
+		}
+	</script>
 </body>
 
 </html>

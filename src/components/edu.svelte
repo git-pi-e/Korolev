@@ -29,11 +29,6 @@
             height: 100px;
         }
     }
-    #lens {
-        width: 100%;
-        margin: 0 auto;
-        height: 500px;
-    }
     @media (max-width: 991px) {
         section {
             padding: 4% 10%;
@@ -70,20 +65,6 @@
         </svg>
         <div style="text-align:center;">Korolev</div>
     </div> -->
-    <br />
-    <article>
-        <div style="font-weight:600">GRAVITATION</div>
-        <hr />
-        <p>
-            A gravitational lens is a distribution of matter (such as a cluster
-            of galaxies) between a distant light source and an observer, that is
-            capable of bending the light from the source as the light travels
-            towards the observer.
-        </p>
-        <iframe src="./lens.html" title="lensing" id="lens" frameborder="0" />
-        {#if window.innerWidth < 768}Please try this on a Desktop{/if}
-    </article>
-    <br />
     <article>
         <div style="font-weight:600">BOOKS WE RECOMMEND</div>
         <hr />
@@ -109,8 +90,6 @@
             {/each}
         </div>
     </article>
-    <br />
-    Add other educational stuff...?
     <br />
     <article>
         <div style="font-weight:600">MISTAKES IN SCI-FI MOVIES</div>

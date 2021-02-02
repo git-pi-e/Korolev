@@ -58,10 +58,8 @@ background: linear-gradient(#111, #206, #60a);
 			height: $starDimension - 1;
 		}
 		
-		&.semistat{animation: nearLoop 30s linear infinite; }
-		
 		&.near {
-			animation: nearLoop 40s linear infinite;
+			animation: nearLoop 30s linear infinite;
 			width: $starDimension + 1;
 			height: $starDimension + 1;
 		}

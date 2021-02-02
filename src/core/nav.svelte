@@ -1,7 +1,7 @@
 <script>
-	export let pages, currentPage, changePage, showNav, navTog;
+	export let pages, changePage, state, navTog;
 
-	import { fade } from "svelte/transition";
+	import { slide } from "svelte/transition";
 </script>
 
 <style type="text/scss">
@@ -52,15 +52,16 @@
 		stroke-width="2"
 		on:click={navTog}>
 		<path
-			d={showNav ? 'M10 6 L2 16 10 26 M2 16 L30 16' : 'M4 8 L28 8 M4 16 L28 16 M4 24 L28 24'} />
+			d={state.showNav ? 'M10 6 L2 16 10 26 M2 16 L30 16' : 'M4 8 L28 8 M4 16 L28 16 M4 24 L28 24'} />
 	</svg>
 </div>
-{#if showNav}
+{#if state.showNav}
 	<nav>
 		<ul>
 			{#each pages as pj}
 				<li
-					class={currentPage == pj.page ? 'active' : ''}
+					transition:slide
+					class={state.currentPage == pj.page ? 'active' : ''}
 					on:click={changePage}>
 					{pj.page}
 				</li>
