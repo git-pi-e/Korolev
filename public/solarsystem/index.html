@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -14,29 +13,31 @@
     <h1>SEDS Celestia</h1>
   </div>
 
+  <style>
+    #planetlist li {
+      margin: 0 5px;
+    }
+  </style>
   <div id="data">
-    <ul id="planetlist" style="display: flex;">
+    <ul id="planetlist" style="display: flex;width: 100vw;margin: 0 13vw;">
       <li><a id="button" class="sun" title="sun" href="#sunspeed">Sun</a></li>
     </ul>
   </div>
 
   <div id="universe" class="scale-stretched">
-    <div id="galaxy">
-      <div id="solar-system" class="earth orbit2" style="float: inherit; position: relative;">
-        <div id="insystem"></div>
-        <div id="sun">
-          <dl class="infos">
-            <dt>Sun</dt>
-            <dd><span></span></dd>
-          </dl>
-        </div>
+    <div id="solar-system" class="earth orbit2" style="float: inherit; position: relative;">
+      <div id="insystem"></div>
+      <div id="sun">
+        <dl class="infos">
+          <dt>Sun</dt>
+          <dd><span></span></dd>
+        </dl>
       </div>
     </div>
   </div>
 
-  <script src="./scripts/jquery.min.js"></script>
-
   <script src="./scripts/planetdata.js" async></script>
+  <script defer async src="./scripts/calculate.js"></script>
 </body>
 
 </html>

@@ -29,14 +29,11 @@ body {
   overflow: hidden;
   width: 100%;
   height: 100%;
+  background-image: url(img/Back.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover; }
 
-#galaxy {
-  position: relative;
-  width: 100%;
-  height: 100%;}
 
 #solar-system {
   position: absolute;
@@ -92,12 +89,6 @@ body {
   border-radius: 50%;
   -moz-transform-style: preserve-3d;
   transform-style: preserve-3d; }
-
-#sun {
-  background-color: #FB7209;
-  background-repeat: no-repeat;
-  background-size: cover;
-  box-shadow: 0 0 60px rgba(255, 160, 60, 0.4);}
 
 .planet {
   background-color: #202020;
@@ -196,11 +187,7 @@ body {
     -moz-transform: rotateX(-90deg) rotateY(0deg) rotateZ(0deg);
     transform: rotateX(-90deg) rotateY(0deg) rotateZ(0deg); } }
 
-.view-3D.zoom-large #sun {
-  -moz-transform-style: preserve-3d;
-  transform-style: preserve-3d; }
-
-.view-3D.zoom-large .orbit {
+.view-3D.zoom-large #sun, .view-3D.zoom-large .orbit  {
   -moz-transform-style: preserve-3d;
   transform-style: preserve-3d; }
 
@@ -287,32 +274,7 @@ body {
 .scale-stretched #sun {
   font-size: 22em; }
 
-.scale-stretched #mercury .planet {
-  font-size: 1.5em; }
-
-.scale-stretched #venus .planet {
-  font-size: 3.72em; }
-
-.scale-stretched #earth .planet {
-  font-size: 3.92em; }
-
-.scale-stretched #earth .moon {
-  font-size: 1.2em; }
-
-.scale-stretched #mars .planet {
-  font-size: 2.9em; }
-
-.scale-stretched #jupiter .planet {
-  font-size: 12em; }
-
-.scale-stretched #saturn .planet {
-  font-size: 10.8em; }
-
-.scale-stretched #uranus .planet {
-  font-size: 4.68em; }
-
-.scale-stretched #neptune .planet {
-  font-size: 4.9em; }
+.scale-stretched #mercury .planet,  .scale-stretched #venus .planet, .scale-stretched #earth .planet, .scale-stretched #earth .moon, .scale-stretched #mars .planet, .scale-stretched #jupiter .planet,.scale-stretched #saturn .planet, .scale-stretched #uranus .planet , .scale-stretched #neptune .planet{font-size: 1em; }
 
 .scale-stretched #mercury.orbit {
   width: 32em;
@@ -743,8 +705,14 @@ dl.infos {
   -moz-transform: rotateX(90deg);
   transform: rotateX(90deg); }
 
+dl.infos dt, dl.infos dd:after, dl.infos dd span:after, dl.infos:before{
+    color: #fff;
+    position: absolute;
+    width: 300px;
+    left: 50px;
+}
+
 dl.infos:before {
-  position: absolute;
   content: '';
   width: 15px;
   height: 30px;
@@ -754,34 +722,23 @@ dl.infos:before {
   border-left: 1px solid white;
   transform-style: preserve-3d;
   transform: skew(-45deg, 0deg);
-  box-shadow: inset 1px 1px black; }
+ }
 
 dl.infos dt {
-  position: absolute;
-  left: 50px;
   margin-bottom: 26px;
   bottom: 30px;
-  color: #FFF;
   font-size: 14px;
-  text-shadow: 1px 1px 2px black; }
+ }
 
 dl.infos dd:after {
-  position: absolute;
-  left: 50px;
   bottom: 30px;
-  width: 300px;
-  color: #FFF;
   font-size: 22px;
-  text-shadow: 1px 1px 2px black; }
+ }
 
 dl.infos dd span:after {
-  position: absolute;
-  left: 50px;
   bottom: 14px;
-  width: 300px;
-  color: #FFF;
   font-size: 11px;
-  text-shadow: 1px 1px 2px black; }
+ }
 
 .sun #sun .infos,
 .mercury #mercury .infos,
@@ -914,10 +871,10 @@ h1 {
   transition-delay: .7s; }
 /* --------------------------------------------------------------------------- images */
 
-#universe {
-  background-image: url(img/Back.jpg); }
-
 #sun {
+    background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 0 0 60px rgba(255, 160, 60, 0.4);
   background-image: url(img/Sun.jpg);}
 
 #mercury .planet {
@@ -970,9 +927,6 @@ h1 {
 
   #sedscelestia, #data {
     background: transparent; }
-
-  #sedscelestia a {
-    display: none; }
 
   h1 {
     font-size: 22px;

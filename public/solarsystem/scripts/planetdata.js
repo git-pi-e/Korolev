@@ -4,14 +4,12 @@
     document.querySelectorAll( '#data a' ).forEach( e => {
       e.addEventListener( "click", ( ev ) => {
         ev.preventDefault();
-        console.log( e.classList.value );
         let ref = e.classList.value;
         solarsys.classList.value = ref;
         e.parentElement.classList.toggle( 'active' );
       } );
     } )
   }
-
 
   const planets = [
     { Planet: "mercury" },
@@ -30,11 +28,7 @@
     return `
       <div id="${ body.Planet }" class="orbit">
         <div class="pos">
-          <div class="orbit">
-            <div class="pos">
-              <div class="${ body.Moon }"></div>
-            </div>
-          </div>
+        ${ body.Moon ? `<div class="orbit"><div class="pos"><div class="${ body.Moon }"></div></div></div>` : '' }
           <div class="planet">
             <dl class="infos">
               <dt>${ body.Planet }</dt>
@@ -45,7 +39,7 @@
       </div>`
   }
 
-  document.getElementById( "insystem" ).innerHTML = `${ planets.map( system ).join( '' ) }`
+  document.getElementById( "insystem" ).innerHTML = `${ planets.map( system ).join( '' ) } `
 
-  document.getElementById( "planetlist" ).innerHTML += `${ planets.map( body => `<li><a id="button" class="${ body.Planet }" title="${ body.Planet }" href="#${ body.Planet }speed">${ body.Planet }</a></li>` ).join( '' ) }`
+  document.getElementById( "planetlist" ).innerHTML += `${ planets.map( body => `<li><a id="button" class="${ body.Planet } blur" title="${ body.Planet }" href="#${ body.Planet }speed">${ body.Planet }</a></li>` ).join( '' ) } `
 } )();
