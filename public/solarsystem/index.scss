@@ -217,118 +217,48 @@ body {
 .zoom-large.view-3D .scale-s #solar-system {
   font-size: 14%; }
 
+// ! DONT DELETE USEFUL FOR BASE CONFIG
 #mercury .pos,
 #mercury .planet,
-#mercury.orbit {
-  -moz-animation-duration: 2.89016s;
-  animation-duration: 2.89016s; }
-
-#venus .pos,
+#mercury.orbit, #venus .pos,
 #venus .planet,
-#venus.orbit {
-  -moz-animation-duration: 7.38237s;
-  animation-duration: 7.38237s; }
-
-#earth .pos,
+#venus.orbit,#earth .pos,
 #earth .planet,
-#earth.orbit {
-  -moz-animation-duration: 12.00021s;
-  animation-duration: 12.00021s; }
+#earth.orbit, #mars .pos,
+#mars .planet,
+#mars.orbit, #jupiter .pos,
+#jupiter .planet,
+#jupiter.orbit,#saturn .pos,
+#saturn .planet,
+#saturn.orbit,
+#saturn .ring ,#uranus .pos,
+#uranus .planet,
+#uranus.orbit,#neptune .pos,
+#neptune .planet,
+#neptune.orbit {
+  animation-duration: 2s; }
 
 #earth .orbit .pos,
 #earth .orbit {
-  -moz-animation-duration: 0.89764s;
   animation-duration: 0.89764s; }
-
-#mars .pos,
-#mars .planet,
-#mars.orbit {
-  -moz-animation-duration: 22.57017s;
-  animation-duration: 22.57017s; }
-
-#jupiter .pos,
-#jupiter .planet,
-#jupiter.orbit {
-  -moz-animation-duration: 142.35138s;
-  animation-duration: 142.35138s; }
-
-#saturn .pos,
-#saturn .planet,
-#saturn.orbit,
-#saturn .ring {
-  -moz-animation-duration: 353.36998s;
-  animation-duration: 353.36998s; }
-
-#uranus .pos,
-#uranus .planet,
-#uranus.orbit {
-  -moz-animation-duration: 1008.20215s;
-  animation-duration: 1008.20215s; }
-
-#neptune .pos,
-#neptune .planet,
-#neptune.orbit {
-  -moz-animation-duration: 1977.49584s;
-  animation-duration: 1977.49584s; }
 
 .scale-stretched #sun {
   font-size: 22em; }
 
 .scale-stretched #mercury .planet,  .scale-stretched #venus .planet, .scale-stretched #earth .planet, .scale-stretched #earth .moon, .scale-stretched #mars .planet, .scale-stretched #jupiter .planet,.scale-stretched #saturn .planet, .scale-stretched #uranus .planet , .scale-stretched #neptune .planet{font-size: 1em; }
 
-.scale-stretched #mercury.orbit {
+// ! DONT DELETE USEFUL FOR BASE CONFIG
+.scale-stretched #mercury.orbit, .scale-stretched #venus.orbit, .scale-stretched #earth.orbit,.scale-stretched #earth .orbit .scale-stretched #mars.orbit , .scale-stretched #jupiter.orbit, .scale-stretched #saturn.orbit , .scale-stretched #uranus.orbit, .scale-stretched #neptune.orbit  {
   width: 32em;
   height: 32em;
   margin-top: -16em;
   margin-left: -16em; }
-
-.scale-stretched #venus.orbit {
-  width: 40em;
-  height: 40em;
-  margin-top: -20em;
-  margin-left: -20em; }
-
-.scale-stretched #earth.orbit {
-  width: 56em;
-  height: 56em;
-  margin-top: -28em;
-  margin-left: -28em; }
 
 .scale-stretched #earth .orbit {
   width: 6em;
   height: 6em;
   margin-top: -3em;
   margin-left: -3em; }
-
-.scale-stretched #mars.orbit {
-  width: 72em;
-  height: 72em;
-  margin-top: -36em;
-  margin-left: -36em; }
-
-.scale-stretched #jupiter.orbit {
-  width: 100em;
-  height: 100em;
-  margin-top: -50em;
-  margin-left: -50em; }
-
-.scale-stretched #saturn.orbit {
-  width: 150em;
-  height: 150em;
-  margin-top: -75em;
-  margin-left: -75em; }
-
-.scale-stretched #uranus.orbit {
-  width: 186em;
-  height: 186em;
-  margin-top: -93em;
-  margin-left: -93em; }
-
-.scale-stretched #neptune.orbit {
-  width: 210em;
-  height: 210em;
-  margin-top: -105em;
-  margin-left: -105em; }
 
   .set-speed dl.infos dd span:after {
   content: 'Orbit Velocity'; }
