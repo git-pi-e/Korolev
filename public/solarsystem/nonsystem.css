@@ -1,0 +1,16 @@
+* {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  font-size: 10px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  background-color: #08090A; 
+  background: url('./bg.jpg');}
+
+.blur{
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
