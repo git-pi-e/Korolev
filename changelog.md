@@ -8,9 +8,8 @@
 - https://testtubegames.com/gravity.html
 - Landing page vertical details with images (Abhigyaan)
 - Landing page timeline, major events
-- Astronomical Events
 - Make Spinoffs
     - Karatos 
     - cansat
     - RT
-- Add blog link
+- Astronomical Events

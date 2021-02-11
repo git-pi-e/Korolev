@@ -1,25 +1,16 @@
 <script>
+    const images = [
+        "1464802686167-b939a6910659?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1033&q=80",
+        "1419242902214-272b3f66ee7a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1087&q=80",
+        "1543722530-d2c3201371e7?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1053&q=80",
+        "1444703686981-a3abbc4d4fe3?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80",
+        "1419242902214-272b3f66ee7a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1087&q=80",
+    ];
 </script>
-
-<style type="text/scss">
-    section {
-        padding: 4% 20%;
-    }
-    @media (max-width: 991px) {
-        section {
-            padding: 4% 10%;
-        }
-    }
-    @media (max-width: 768px) {
-        section {
-            padding: 4%;
-        }
-    }
-</style>
 
 <section>
     <div><img src="./assets/logo.svg" alt="" /></div>
-    <div>
+    <!-- <div>
         <svg viewbox="0 -56 512 600" height="512" width="512">
             <defs>
                 <clipPath id="2009">
@@ -56,5 +47,68 @@
                 </tspan>
             </text>
         </svg>
+    </div> -->
+    <div class="image-container">
+        {#each images as img}
+            <img src="https://images.unsplash.com/photo-{img}" alt="" />
+        {/each}
     </div>
 </section>
+
+<style type="text/scss">
+    section {
+        padding: 0;
+        margin: 0;
+        .image-container {
+            position: relative;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+
+            img {
+                margin: 0;
+                height: 50vh;
+                opacity: 1;
+                width: 100%;
+                transition: opacity 0.1s ease;
+                object-fit: cover;
+
+                position: absolute;
+                animation-name: multiple-image-crossfade;
+                animation-timing-function: ease-in-out;
+                animation-iteration-count: infinite;
+                animation-duration: 8s;
+                &:nth-of-type(1) {
+                    animation-delay: 6s;
+                }
+                &:nth-of-type(2) {
+                    animation-delay: 4s;
+                }
+                &:nth-of-type(3) {
+                    animation-delay: 2s;
+                }
+                &:nth-of-type(4) {
+                    animation-delay: 0;
+                }
+            }
+        }
+
+        @keyframes multiple-image-crossfade {
+            0% {
+                opacity: 1;
+            }
+            17% {
+                opacity: 1;
+            }
+            25% {
+                opacity: 0;
+            }
+            92% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+    }
+</style>

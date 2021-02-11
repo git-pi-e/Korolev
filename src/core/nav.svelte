@@ -26,7 +26,6 @@
 		color: #fff;
 		backdrop-filter: blur(15px);
 		-moz-backdrop-filter: blur(15px);
-		-ms-backdrop-filter: blur(15px);
 		-webkit-backdrop-filter: blur(15px);
 	}
 	ul {
@@ -36,10 +35,10 @@
 			padding: 10px;
 			cursor: pointer;
 			font-size: 2rem;
-			.active {
-				font-weight: bold;
-				background: #60f;
-			}
+		}
+		.active {
+			font-weight: bold;
+			background: #60f;
 		}
 	}
 </style>
@@ -61,11 +60,14 @@
 			{#each pages as pj}
 				<li
 					transition:slide
-					class={state.currentPage == pj.page ? 'active' : ''}
+					class={state.currentPage === pj.page ? 'active' : ''}
 					on:click={changePage}>
 					{pj.page}
 				</li>
 			{/each}
+			<li transition:slide>
+				<a href="http://blog.sedscelestia.org">Blog</a>
+			</li>
 		</ul>
 	</nav>
 {/if}
