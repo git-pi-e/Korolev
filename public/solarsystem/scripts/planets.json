@@ -1,0 +1,58 @@
+[
+    {
+        "name": "mercury",
+        "size": 1.25,
+        "orbit": 0.57,
+        "speed": 0.241,
+        "realSpeed": 47.36
+    },
+    {
+        "name": "venus",
+        "size": 3.1,
+        "orbit": 0.71,
+        "speed": 0.6152,
+        "realSpeed": 35.02
+    },
+    {
+        "name": "earth",
+        "size": 3.267,
+        "orbit": 1,
+        "speed": 1,
+        "realSpeed": 29.78
+    },
+    {
+        "name": "mars",
+        "size": 2.41,
+        "orbit": 1.29,
+        "speed": 1.881,
+        "realSpeed": 24.07
+    },
+    {
+        "name": "jupiter",
+        "size": 10,
+        "orbit": 1.79,
+        "speed": 11.863,
+        "realSpeed": 13.06
+    },
+    {
+        "name": "saturn",
+        "size": 9,
+        "orbit": 2.68,
+        "speed": 29.447,
+        "realSpeed": 9.68
+    },
+    {
+        "name": "uranus",
+        "size": 3.9,
+        "orbit": 3.32,
+        "speed": 84.017,
+        "realSpeed": 6.8
+    },
+    {
+        "name": "neptune",
+        "size": 4.083,
+        "orbit": 3.75,
+        "speed": 164.791,
+        "realSpeed": 5.43
+    }
+]

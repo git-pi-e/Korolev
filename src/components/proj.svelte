@@ -18,6 +18,39 @@
     };
 </script>
 
+<div class="space__comet-container" style="position:fixed;">
+    <div class="space__comet" />
+</div>
+<section>
+    {#each data.going as pj, i}
+        <div class="hero">
+            <img class="hero-profile-img" src={pj.main} alt="main" />
+            <div
+                class="hero-description-bk"
+                style="background:{backgrounder(i)}"
+            />
+            <div class="hero-logo"><img src={pj.icon} alt="icon" /></div>
+            <div class="hero-description">
+                <p>{pj.desc}</p>
+            </div>
+            <div class="hero-date">
+                <p>{pj.name}</p>
+            </div>
+            <div class="hero-btn"><a href={pj.moreLink}>{pj.more}</a></div>
+        </div>
+    {/each}
+</section>
+Past Projects
+<section style="display:flex;flex-wrap:wrap;justify-content:space-around;">
+    {#each data.past as pj, i}
+        <div class="comet">
+            <img src={pj.img} alt="" />
+            <div class="name">{pj.name}</div>
+        </div>
+    {/each}
+</section>
+<BH />
+
 <style type="text/scss">
     section {
         padding: 4% 10%;
@@ -179,35 +212,3 @@
         }
     }
 </style>
-
-<div class="space__comet-container" style="position:fixed;">
-    <div class="space__comet" />
-</div>
-<section>
-    {#each data.going as pj, i}
-        <div class="hero">
-            <img class="hero-profile-img" src={pj.main} alt="main" />
-            <div
-                class="hero-description-bk"
-                style="background:{backgrounder(i)}" />
-            <div class="hero-logo"><img src={pj.icon} alt="icon" /></div>
-            <div class="hero-description">
-                <p>{pj.desc}</p>
-            </div>
-            <div class="hero-date">
-                <p>{pj.name}</p>
-            </div>
-            <div class="hero-btn"><a href={pj.moreLink}>{pj.more}</a></div>
-        </div>
-    {/each}
-</section>
-Past Projects
-<section style="display:flex;flex-wrap:wrap;justify-content:space-around;">
-    {#each data.past as pj, i}
-        <div class="comet">
-            <img src={pj.img} alt="" />
-            <div class="name">{pj.name}</div>
-        </div>
-    {/each}
-</section>
-<BH />

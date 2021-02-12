@@ -36,27 +36,79 @@
     },
     "facilities": {
         "upcoming": {
-            "img": "https://www.biography.com/.image/c_fill%2Ccs_srgb%2Cfl_progressive%2Ch_400%2Cq_auto:good%2Cw_620/MTE5NDg0MDU1MTUzMTE2Njg3/alan-turing-9512017-1-402.jpg",
-            "title": "SIR ALAN TURING",
-            "details": "orem, ipsum dolor sit amet consectetur adipisicing elit. Similique voluptatibus recusandae, provident fuga error doloribus."
+            "playlist": "https://www.youtube.com/playlist?list=PLGzI_TnIg-ep9iPfxMjstY6L9l4xGmqKa",
+            "img": "/assets/images/lectures.png",
+            "title": "OPEN LECTURES",
+            "details": "Various people including professors from reputable universities and even our own club members give lectures. Paper presentation is a new venture we have undertaken. People select a paper and present it to the club members, and a discussion on the paper is followed."
         },
         "telescopes": [
             {
-                "title": "Dobby AB1CD-EF",
-                "img": "https://i.ytimg.com/vi/UiW7rRSApBA/maxresdefault.jpg",
-                "star": "f/5"
+                "title": "Celestron Powerseeker 127EQ",
+                "img": "/assets/images/celestron.jpg",
+                "star": "f/7.87",
+                "range": "18x - 300x"
+            },
+            {
+                "title": "Sky-Watcher Dobsonian 8\" Traditional",
+                "img": "/assets/images/dobbynew.jpeg",
+                "star": "f/5.9",
+                "range": "1x - 409x"
+            },
+            {
+                "title": "Sky-Watcher Dobsonian 6\" Traditional",
+                "img": "/assets/images/dobbyold.jpeg",
+                "star": "f/7.8",
+                "range": "1x - 306x"
             }
         ],
         "opensource": [
             {
-                "img": "https://images-na.ssl-images-amazon.com/images/I/61re-lA-EiL._AC_SL1500_.jpg",
-                "title": "TRACKER",
-                "details": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum officiis error nobis dolorem quia culpa neque quidem necessitatibus aliquid impedit?"
+                "img": "/assets/images/qc.png",
+                "title": "Quantum chess",
+                "repo": "https://github.com/SEDSCelestiaBPGC/quantum-chess"
             },
             {
+                "show": -1,
                 "img": "https://images.immediate.co.uk/production/volatile/sites/25/2019/02/Baader-Nano-Tracker-Travelling-Mount-Baader-Nano-Tracker-Travelling-Mount-5d5a2f4.jpg?quality=90&resize=620,413",
-                "title": "TRACKER2",
-                "details": "Lorem ipsum dolor sit amet adipisicing elit. Nostrum officiis error nobis dolorem quia culpa neque quidem necessitatibus aliquid impedit? Nostrum officiis error nobis dolorem quia culpa neque quidem necessitatibus aliquid impedit?"
+                "title": "3- Sided Coin",
+                "repo": ""
+            },
+            {
+                "img": "/assets/images/bci.png",
+                "title": "Brain Computer Interface",
+                "repo": "https://github.com/SEDSCelestiaBPGC/BCI"
+            },
+            {
+                "show": -1,
+                "img": "/assets/svgs/korolev.svg",
+                "title": "Celestia-Korolev Website (Soon)",
+                "repo": "https://github.com/SEDSCelestiaBPGC/BCI"
+            }
+        ],
+        "podcast": [
+            {
+                "icon": "/assets/svgs/youtube.svg",
+                "link": "https://www.youtube.com/playlist?list=PLGzI_TnIg-eqKRfQTB4wxVFGOnarP3jFJ"
+            },
+            {
+                "icon": "/assets/svgs/spotify.svg",
+                "link": "https://open.spotify.com/show/0NKbVLI7LpY6069IUCF6xi"
+            },
+            {
+                "icon": "/assets/svgs/radiopublic.svg",
+                "link": "https://radiopublic.com/celestia-onair-WeRp1J"
+            },
+            {
+                "icon": "/assets/svgs/google.svg",
+                "link": "https://podcasts.google.com/feed/aHR0cHM6Ly9hbmNob3IuZm0vcy80NWYzZjAwOC9wb2RjYXN0L3Jzcw=="
+            },
+            {
+                "icon": "/assets/svgs/pocketcast.svg",
+                "link": "https://pca.st/b3mqu7bk"
+            },
+            {
+                "icon": "/assets/svgs/breaker.png",
+                "link": "https://www.breaker.audio/celestia-on-air"
             }
         ]
     },

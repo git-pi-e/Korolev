@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" height="96" width="96" viewbox="0 0 512 512" font-family="Helvetica Neue" font-weight="100">
+    <defs>
+        <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#ff0" />
+            <stop offset="100%" stop-color="#f00" />
+        </linearGradient>
+    </defs>
+    <rect rx="64" width="512" height="512" fill="#fff" />
+    <text fill="url(#grad1)" x="25" y="340">
+        <tspan font-size="320">
+            2.0
+        </tspan>
+    </text>
+    <text x="60" y="475" font-size="90">KOROLEV</text>
+</svg>

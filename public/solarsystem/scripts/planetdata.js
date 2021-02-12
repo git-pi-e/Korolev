@@ -24,8 +24,7 @@
     { Planet: "uranus" },
     { Planet: "neptune" } ];
 
-  const system = ( body ) => {
-    return `
+  const system = ( body ) => `
       <div id="${ body.Planet }" class="orbit">
         <div class="pos">
         ${ body.Moon ? `<div class="orbit"><div class="pos"><div class="${ body.Moon }"></div></div></div>` : '' }
@@ -37,8 +36,6 @@
           </div>
         </div>
       </div>`
-  }
-
   document.getElementById( "insystem" ).innerHTML = `${ planets.map( system ).join( '' ) } `
 
   document.getElementById( "planetlist" ).innerHTML += `${ planets.map( body => `<li><a id="button" class="${ body.Planet } blur" title="${ body.Planet }" href="#${ body.Planet }speed">${ body.Planet }</a></li>` ).join( '' ) } `
