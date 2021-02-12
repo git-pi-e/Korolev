@@ -4,6 +4,43 @@
 	import { slide } from "svelte/transition";
 </script>
 
+<div id="nav">
+	<svg
+		viewBox="0 0 32 32"
+		width="32"
+		height="32"
+		stroke-width="2"
+		on:click={navTog}
+	>
+		<path
+			d={state.showNav
+				? "M10 6 L2 16 10 26 M2 16 L30 16"
+				: "M4 8 L28 8 M4 16 L28 16 M4 24 L28 24"}
+		/>
+	</svg>
+</div>
+{#if state.showNav}
+	<nav>
+		<ul>
+			{#each pages as pj}
+				<li
+					transition:slide
+					class={state.currentPage === pj.page ? "active" : ""}
+					on:click={changePage}
+				>
+					{pj.page}
+				</li>
+			{/each}
+			<li transition:slide>
+				<a href="http://edu.sedscelestia.org">Education</a>
+			</li>
+			<li transition:slide>
+				<a href="http://blog.sedscelestia.org">Blog</a>
+			</li>
+		</ul>
+	</nav>
+{/if}
+
 <style type="text/scss">
 	#nav {
 		position: absolute;
@@ -42,32 +79,3 @@
 		}
 	}
 </style>
-
-<div id="nav">
-	<svg
-		viewBox="0 0 32 32"
-		width="32"
-		height="32"
-		stroke-width="2"
-		on:click={navTog}>
-		<path
-			d={state.showNav ? 'M10 6 L2 16 10 26 M2 16 L30 16' : 'M4 8 L28 8 M4 16 L28 16 M4 24 L28 24'} />
-	</svg>
-</div>
-{#if state.showNav}
-	<nav>
-		<ul>
-			{#each pages as pj}
-				<li
-					transition:slide
-					class={state.currentPage === pj.page ? 'active' : ''}
-					on:click={changePage}>
-					{pj.page}
-				</li>
-			{/each}
-			<li transition:slide>
-				<a href="http://blog.sedscelestia.org">Blog</a>
-			</li>
-		</ul>
-	</nav>
-{/if}

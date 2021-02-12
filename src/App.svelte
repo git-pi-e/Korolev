@@ -2,21 +2,21 @@
 	import Nav from "./core/nav.svelte";
 	import Home from "./components/home.svelte";
 
-	// import Facc from "./components/facc.svelte";
+	// import Proj from "./components/proj.svelte";
 
 	import data from "./core/data.json";
+	import { onMount } from "svelte";
 
 	$: state = { showNav: 0, currentPage: "Home" };
 	let Team, Proj, Facc;
 
-	const navTog = () => {
-		state.showNav = !state.showNav;
-		if (!Team) {
-			import("./components/team.svelte").then((r) => (Team = r.default));
-			import("./components/facc.svelte").then((r) => (Facc = r.default));
-			import("./components/proj.svelte").then((r) => (Proj = r.default));
-		}
-	};
+	const navTog = () => (state.showNav = !state.showNav);
+
+	onMount(() => {
+		import("./components/team.svelte").then((r) => (Team = r.default));
+		import("./components/facc.svelte").then((r) => (Facc = r.default));
+		import("./components/proj.svelte").then((r) => (Proj = r.default));
+	});
 	const changePage = (e) => {
 		navTog();
 		state.currentPage = e.target.innerText;
