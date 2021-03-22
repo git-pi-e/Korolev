@@ -1,10 +1,10 @@
 [
     {
         "name": "venus",
-        "size": 3.1,
-        "orbit": 0.71,
+        "size": 5,
+        "orbit": 0.5,
         "speed": 0.6152,
-        "realSpeed": 35.02
+        "realSpeed": 500.02
     },
     {
         "name": "earth",
