@@ -1,8 +1,6 @@
 <script>
     import Earth from "../micro/earth.svelte";
     export let data;
-
-    console.log("loaded");
 </script>
 
 <section>

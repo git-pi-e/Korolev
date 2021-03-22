@@ -2,21 +2,24 @@
 	import Nav from "./core/nav.svelte";
 	import Home from "./components/home.svelte";
 
-	// import Proj from "./components/proj.svelte";
+	import Proj from "./components/proj.svelte";
 
+	import prjs from "./core/projects.json";
 	import data from "./core/data.json";
 	import { onMount } from "svelte";
 
-	$: state = { showNav: 0, currentPage: "Home" };
-	let Team, Proj, Facc;
+	$: state = { showNav: 0, currentPage: "Projects" };
+	let Team,
+		// Proj,
+		Facc;
 
 	const navTog = () => (state.showNav = !state.showNav);
 
-	onMount(() => {
-		import("./components/team.svelte").then((r) => (Team = r.default));
-		import("./components/facc.svelte").then((r) => (Facc = r.default));
-		import("./components/proj.svelte").then((r) => (Proj = r.default));
-	});
+	// onMount(() => {
+	// 	import("./components/team.svelte").then((r) => (Team = r.default));
+	// 	import("./components/facc.svelte").then((r) => (Facc = r.default));
+	// 	import("./components/proj.svelte").then((r) => (Proj = r.default));
+	// });
 	const changePage = (e) => {
 		navTog();
 		state.currentPage = e.target.innerText;
@@ -37,7 +40,7 @@
 {:else if state.currentPage == "Facilities"}
 	<svelte:component this={Facc} data={data.facilities} />
 {:else if state.currentPage == "Projects"}
-	<svelte:component this={Proj} data={data.projects} />
+	<svelte:component this={Proj} data={prjs} />
 {:else}
 	<svelte:component this={Home} data={data.home} />
 {/if}

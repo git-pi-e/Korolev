@@ -1,11 +1,5 @@
-const mercury = document.querySelector( '#mercury' );
 const venus = document.querySelector( '#venus' );
 const earth = document.querySelector( '#earth' );
-const mars = document.querySelector( '#mars' );
-const jupiter = document.querySelector( '#jupiter' );
-const saturn = document.querySelector( '#saturn' );
-const uranus = document.querySelector( '#uranus' );
-const neptune = document.querySelector( '#neptune' );
 
 const mass = document.querySelector( '#mass' );
 const radius = document.querySelector( '#radius' );
