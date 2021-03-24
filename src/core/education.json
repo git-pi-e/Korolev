@@ -1,0 +1,61 @@
+{
+    "books": [
+        {
+            "name": "Brief History of Time",
+            "image": "cdn.waterstones.com/bookjackets/large/9780/8575/9780857501004.jpg",
+            "link": "To AMAZON"
+        },
+        {
+            "name": "Astrophysics for People in a Hurry",
+            "image": "images-na.ssl-images-amazon.com/images/I/91w70Ax2LhL.jpg",
+            "link": "To AMAZON"
+        },
+        {
+            "name": "Einstien for Everyone",
+            "image": "images-na.ssl-images-amazon.com/images/I/915UE-Nq-TL.jpg",
+            "link": "To AMAZON"
+        },
+        {
+            "name": "Accessory to War NDT",
+            "image": "images-na.ssl-images-amazon.com/images/I/81Wed-PV19L.jpg",
+            "link": "To AMAZON"
+        },
+        {
+            "name": "Principia Mathematica",
+            "image": "upload.wikimedia.org/wikipedia/commons/1/17/Prinicipia-title.png",
+            "link": "To AMAZON"
+        },
+        {
+            "name": "Cosmic Connection",
+            "image": "upload.wikimedia.org/wikipedia/en/4/4d/The_Cosmic_Connection_%28book%29.jpg",
+            "link": "To AMAZON"
+        },
+        {
+            "name": "GEB EGB",
+            "image": "images-na.ssl-images-amazon.com/images/I/61x9qySMjzL.jpg",
+            "link": "To AMAZON"
+        },
+        {
+            "name": "6 Easy Pieces",
+            "image": "images-na.ssl-images-amazon.com/images/I/513pj3ro+jL._SX312_BO1,204,203,200_.jpg",
+            "link": "To AMAZON"
+        }
+    ],
+    "yt": [
+        {
+            "name": "StarTalk",
+            "image": "yt3.ggpht.com/ytc/AAUvwnjjP7Q74FjwiybZTMoamnZIq9t_7ZeCURh0xK1I-cY=s88-c-k-c0x00ffffff-no-rj",
+            "channel": "https://www.youtube.com/channel/UCqoAEDirJPjEUFcF2FklnBA"
+        },
+        {
+            "name": "SpaceX",
+            "image": "yt3.ggpht.com/ytc/AAUvwnifgXHHC6YlnrDKnrMWk23FKLfLYJdSb8Odj1KQ6uI=s88-c-k-c0x00ffffff-no-rj",
+            "channel": "https://www.youtube.com/channel/UCtI0Hodo5o5dUb67FeUjDeA"
+        },
+        {
+            "name": "MinutePhysics",
+            "image": "yt3.ggpht.com/ytc/AAUvwnhz4WmHt4YZriL-WHqEGS-5nf2QY0V5vaTTMFpW=s88-c-k-c0x00ffffff-no-rj",
+            "channel": "https://www.youtube.com/channel/UCUHW94eEFW7hkUMVaZz4eDg"
+        }
+    ]
+}

@@ -6,13 +6,12 @@
 	import Proj from "./components/proj.svelte";
 	import Facc from "./components/facc.svelte";
 
-	import prjs from "./core/projects.json";
 	import data from "./core/data.json";
 
-	$: state = { currentPage: "Home" };
+	$: currentPage = "Home";
 
 	const changePage = (e) => {
-		state.currentPage = e.target.innerText;
+		currentPage = e.target.innerText;
 		document.querySelector("#nav").removeAttribute("open");
 	};
 
@@ -24,17 +23,14 @@
 	];
 </script>
 
-<Nav {pages} {state} {changePage} />
+<Nav {pages} {currentPage} {changePage} />
 
-{#if state.currentPage == "Team"}
+{#if currentPage == "Team"}
 	<svelte:component this={Team} data={data.team} />
-{:else if state.currentPage == "Facilities"}
+{:else if currentPage == "Facilities"}
 	<svelte:component this={Facc} data={data.facilities} />
-{:else if state.currentPage == "Projects"}
-	<svelte:component this={Proj} data={prjs} />
+{:else if currentPage == "Projects"}
+	<svelte:component this={Proj} />
 {:else}
 	<svelte:component this={Home} data={data.home} />
 {/if}
-
-<style type="text/scss">
-</style>

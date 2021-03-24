@@ -81,12 +81,6 @@
         ]
     },
     "facilities": {
-        "upcoming": {
-            "playlist": "https://www.youtube.com/playlist?list=PLGzI_TnIg-ep9iPfxMjstY6L9l4xGmqKa",
-            "img": "/assets/images/lectures.png",
-            "title": "OPEN LECTURES",
-            "details": "Various people including professors from reputable universities and even our own club members give lectures. Paper presentation is a new venture we have undertaken. People select a paper and present it to the club members, and a discussion on the paper is followed."
-        },
         "telescopes": [
             {
                 "title": "Celestron Powerseeker 127EQ",
@@ -134,90 +128,28 @@
         "podcast": [
             {
                 "icon": "/assets/svgs/youtube.svg",
-                "link": "https://www.youtube.com/playlist?list=PLGzI_TnIg-eqKRfQTB4wxVFGOnarP3jFJ"
+                "link": "youtube.com/playlist?list=PLGzI_TnIg-eqKRfQTB4wxVFGOnarP3jFJ"
             },
             {
                 "icon": "/assets/svgs/spotify.svg",
-                "link": "https://open.spotify.com/show/0NKbVLI7LpY6069IUCF6xi"
+                "link": "open.spotify.com/show/0NKbVLI7LpY6069IUCF6xi"
             },
             {
                 "icon": "/assets/svgs/radiopublic.svg",
-                "link": "https://radiopublic.com/celestia-onair-WeRp1J"
+                "link": "radiopublic.com/celestia-onair-WeRp1J"
             },
             {
                 "icon": "/assets/svgs/google.svg",
-                "link": "https://podcasts.google.com/feed/aHR0cHM6Ly9hbmNob3IuZm0vcy80NWYzZjAwOC9wb2RjYXN0L3Jzcw=="
+                "link": "podcasts.google.com/feed/aHR0cHM6Ly9hbmNob3IuZm0vcy80NWYzZjAwOC9wb2RjYXN0L3Jzcw=="
             },
             {
                 "icon": "/assets/svgs/pocketcast.svg",
-                "link": "https://pca.st/b3mqu7bk"
+                "link": "pca.st/b3mqu7bk"
             },
             {
                 "icon": "/assets/svgs/breaker.png",
-                "link": "https://www.breaker.audio/celestia-on-air"
+                "link": "breaker.audio/celestia-on-air"
             }
         ]
-    },
-    "education": {
-        "books": [
-            {
-                "name": "Brief History of Time",
-                "image": "cdn.waterstones.com/bookjackets/large/9780/8575/9780857501004.jpg",
-                "link": "To AMAZON"
-            },
-            {
-                "name": "Astrophysics for People in a Hurry",
-                "image": "images-na.ssl-images-amazon.com/images/I/91w70Ax2LhL.jpg",
-                "link": "To AMAZON"
-            },
-            {
-                "name": "Einstien for Everyone",
-                "image": "images-na.ssl-images-amazon.com/images/I/915UE-Nq-TL.jpg",
-                "link": "To AMAZON"
-            },
-            {
-                "name": "Accessory to War NDT",
-                "image": "images-na.ssl-images-amazon.com/images/I/81Wed-PV19L.jpg",
-                "link": "To AMAZON"
-            },
-            {
-                "name": "Principia Mathematica",
-                "image": "upload.wikimedia.org/wikipedia/commons/1/17/Prinicipia-title.png",
-                "link": "To AMAZON"
-            },
-            {
-                "name": "Cosmic Connection",
-                "image": "upload.wikimedia.org/wikipedia/en/4/4d/The_Cosmic_Connection_%28book%29.jpg",
-                "link": "To AMAZON"
-            },
-            {
-                "name": "GEB EGB",
-                "image": "images-na.ssl-images-amazon.com/images/I/61x9qySMjzL.jpg",
-                "link": "To AMAZON"
-            },
-            {
-                "name": "6 Easy Pieces",
-                "image": "images-na.ssl-images-amazon.com/images/I/513pj3ro+jL._SX312_BO1,204,203,200_.jpg",
-                "link": "To AMAZON"
-            }
-        ],
-        "yt": [
-            {
-                "name": "StarTalk",
-                "image": "yt3.ggpht.com/ytc/AAUvwnjjP7Q74FjwiybZTMoamnZIq9t_7ZeCURh0xK1I-cY=s88-c-k-c0x00ffffff-no-rj",
-                "channel": "https://www.youtube.com/channel/UCqoAEDirJPjEUFcF2FklnBA"
-            },
-            {
-                "name": "SpaceX",
-                "image": "yt3.ggpht.com/ytc/AAUvwnifgXHHC6YlnrDKnrMWk23FKLfLYJdSb8Odj1KQ6uI=s88-c-k-c0x00ffffff-no-rj",
-                "channel": "https://www.youtube.com/channel/UCtI0Hodo5o5dUb67FeUjDeA"
-            },
-            {
-                "name": "MinutePhysics",
-                "image": "yt3.ggpht.com/ytc/AAUvwnhz4WmHt4YZriL-WHqEGS-5nf2QY0V5vaTTMFpW=s88-c-k-c0x00ffffff-no-rj",
-                "channel": "https://www.youtube.com/channel/UCUHW94eEFW7hkUMVaZz4eDg"
-            }
-        ]
-    },
-    "frontier": {}
+    }
 }

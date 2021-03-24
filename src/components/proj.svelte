@@ -1,6 +1,6 @@
 <script>
-    export let data;
     import BH from "../micro/bh.svelte";
+    import data from "../core/projects.json";
 
     const backgrounder = (i) => {
         const opts = [
@@ -34,14 +34,18 @@
 </section>
 
 <section style="overflow-x:scroll;text-align:left;">
-    <details open>
-        <summary style="font-size:20px">Past Projects</summary>
+    <details>
+        <summary style="font-size:20px"
+            >Past Projects <i>(Click to Open)</i></summary
+        >
         <p>
             {#each data.past as pj, i}
                 <div class="comet">
                     <img src={pj.img} alt="" />
                     <div class="name">
-                        <div>{pj.name} ({pj.year})</div>
+                        <h3 style="line-height:0;">
+                            {pj.name} ({pj.year || "Unknown"})
+                        </h3>
                         <div>{pj.desc}</div>
                     </div>
                 </div>

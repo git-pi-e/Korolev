@@ -1,14 +1,13 @@
 <script>
-	export let pages, changePage, state;
+	export let pages, changePage, currentPage;
 </script>
 
 <details id="nav">
 	<summary style="z-index:9999">&nbsp;</summary>
-	<ul>
+	<ul on:click={changePage}>
 		{#each pages as pj, i}
 			<li
-				class={state.currentPage === pj.page ? "active" : ""}
-				on:click={changePage}
+				class={currentPage === pj.page ? "active" : ""}
 				style="animation-delay:{i / 20}s"
 			>
 				{pj.page}
@@ -57,6 +56,7 @@
 		z-index: -1;
 		background: #0004;
 		color: #fff;
+		animation: enter forwards 0.5s ease;
 		backdrop-filter: blur(32px);
 		-moz-backdrop-filter: blur(32px);
 		-webkit-backdrop-filter: blur(32px);
@@ -66,8 +66,8 @@
 		li {
 			position: relative;
 			opacity: 0;
-			animation: enter forwards 0.5s ease;
 			padding: 10px;
+			animation: enter forwards 0.5s ease;
 			width: 200px;
 			margin: 0 auto;
 			cursor: pointer;

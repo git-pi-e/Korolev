@@ -14,9 +14,20 @@
             >
         </div>
         <div class="lecture">
-            <a class="watch" href={data.upcoming.playlist}> Watch Here </a>
-            <img src={data.upcoming.img} alt="" />
-            <p>{data.upcoming.title} <br /> {data.upcoming.details}</p>
+            <a
+                class="watch"
+                href="https://youtube.com/channel/UCuZ1RL7Qv5tKaQeWy28qhUw"
+            >
+                Watch Here
+            </a>
+            <img src="/assets/images/lectures.png" alt="" />
+            <p>
+                Various people including professors from reputable universities
+                and even our own club members give lectures. Paper presentation
+                is a new venture we have undertaken. People select a paper and
+                present it to the club members, and a discussion on the paper is
+                followed.
+            </p>
         </div>
     </article>
     <article style="background:linear-gradient(135deg, #66e, #3469ff)">
@@ -74,7 +85,7 @@
             style="display:flex;justify-content:space-around;padding-top:20px;"
         >
             {#each data.podcast as lnk}
-                <a href={lnk.link} class="pcd">
+                <a href="https://{lnk.link}" class="pcd">
                     <img
                         src={lnk.icon}
                         alt=""
@@ -141,9 +152,10 @@
             color: #f00;
             border-radius: 20px;
             border: 1px solid #f00;
-            transition: background 0.2s ease;
+            transition: all 0.2s ease;
             &:hover {
-                background: #fee6;
+                background: #f00;
+                color: #fff;
             }
         }
         .telescD {
