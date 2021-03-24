@@ -26,7 +26,7 @@ function serve () {
 
 export default {
 	input: 'src/main.js',
-	output: { sourcemap: false, format: 'esm', name: 'app', dir: 'public/build/' },
+	output: { sourcemap: false, format: 'iife', name: 'file', file: 'public/build/bundle.js' },
 	plugins: [
 		svelte( { dev: !production, css: css => { css.write( 'bundle.css' ); }, preprocess: preprocess() } ),
 		resolve( { browser: true, dedupe: [ 'svelte' ] } ),

@@ -3,7 +3,7 @@
         {
             "name": "EINSat",
             "icon": "https://pbs.twimg.com/media/ETVfqtTX0AAdrtd.jpg",
-            "desc": "EINSat - The CubeSat project of SEDS-Celestia is the first CubeSat undertaking in BITS Pilani K.K. Birla Goa campus.The current team for the project consists of 13 members spanned across 6 subsystems.",
+            "desc": "The CubeSat project of SEDS-Celestia planned to detect exoplanets.",
             "main": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/4a8b89eb-212e-48ac-b1d8-0554cbe12ff1/d6gmgh6-541b78b7-6f78-4676-a960-187c12f7575d.jpg/v1/fill/w_622,h_350,q_70,strp/ssv_normandy_sr2__chariot_of_the_gods_by_eddy_shinjuku_d6gmgh6-350t.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3siaGVpZ2h0IjoiPD0xNDQwIiwicGF0aCI6IlwvZlwvNGE4Yjg5ZWItMjEyZS00OGFjLWIxZDgtMDU1NGNiZTEyZmYxXC9kNmdtZ2g2LTU0MWI3OGI3LTZmNzgtNDY3Ni1hOTYwLTE4N2MxMmY3NTc1ZC5qcGciLCJ3aWR0aCI6Ijw9MjU2MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.UibCiAXSMF-wv7Hp4GA_N-cjCq0UqQqtz9M6QbDyr4A",
             "more": "Github",
             "moreLink": "https://me.nukes.in"
@@ -11,7 +11,7 @@
         {
             "name": "Rocketry",
             "icon": "https://i.imgur.com/eum16Uw.jpg",
-            "desc": "Rocketry aims to build a thrust-vector controlled rocket (as of now).Thrust vector control allows a rocket to stay pointed towards a pre specified path, allowing better performance and range than a sounding rocket.Future plans include self landing model rockets,",
+            "desc": "Rocketry aims to build a self landing thrust-vector controlled rockets.",
             "main": "https://i.pinimg.com/originals/9b/01/d0/9b01d0fcc29dd6b04e3a9619e6def219.png",
             "more": "500px",
             "moreLink": "https://me.nukes.in"
@@ -19,7 +19,7 @@
         {
             "name": "Quantum Chess",
             "icon": "https://c4.wallpaperflare.com/wallpaper/627/677/142/shiro-no-game-no-life-sora-no-game-no-life-stephanie-dora-blue-hair-wallpaper-thumb.jpg",
-            "desc": "Quantum chess is built on the same rules as classical chess, with a few additional functionalities that make the pieces can be a superposition - in two places at the same time…~quantum~ (cue “ooooooooh”)....or entangled - where measuring one piece determines the position of not just the piece itself, but another one too!",
+            "desc": "Quantum chess is reiteration of classical chess but with quantum rules.",
             "main": "https://images7.alphacoders.com/740/thumb-1920-740377.png",
             "more": "GitHub",
             "moreLink": "https://me.nukes.in"
@@ -27,7 +27,7 @@
         {
             "name": "Brain Computer Interface",
             "icon": "https://c4.wallpaperflare.com/wallpaper/627/677/142/shiro-no-game-no-life-sora-no-game-no-life-stephanie-dora-blue-hair-wallpaper-thumb.jpg",
-            "desc": "We are trying to design an interface that translates electrical signals from brain to digital signals that computer understands. The computer then converts these signals to machine commands that controls an output device. In our case, a simple rover with allowed motion in all 4 direction.",
+            "desc": "Designing an Ominidirection brain controlled rover",
             "main": "https://images7.alphacoders.com/740/thumb-1920-740377.png",
             "more": "GitHub",
             "moreLink": "https://me.nukes.in"
@@ -35,7 +35,7 @@
         {
             "name": "Binary Calculator",
             "icon": "https://c4.wallpaperflare.com/wallpaper/627/677/142/shiro-no-game-no-life-sora-no-game-no-life-stephanie-dora-blue-hair-wallpaper-thumb.jpg",
-            "desc": "The project focuses on highlighting how calculations are done at the most basic level possible. The primary aim will be do develop a 4 bit adder circuit using transistors as the building blocks. Possibly, we may even put in a subtractor circuit as an add-on to the current plan, if time permits.",
+            "desc": "A calculator made by transistor circuits.",
             "main": "https://images7.alphacoders.com/740/thumb-1920-740377.png",
             "more": "GitHub",
             "moreLink": "https://me.nukes.in"
@@ -43,7 +43,7 @@
         {
             "name": "Cloud Chamber",
             "icon": "https://c4.wallpaperflare.com/wallpaper/627/677/142/shiro-no-game-no-life-sora-no-game-no-life-stephanie-dora-blue-hair-wallpaper-thumb.jpg",
-            "desc": "We plan to design a cloud chamber to do old school physics.A cloud chamber, also known as a Wilson cloud chamber, is a particle detector used for visualizing the passage of ionizing radiation. A cloud chamber consists of a sealed environment containing a supersaturated vapor of water or alcohol",
+            "desc": "An old school particle detector",
             "main": "https://images7.alphacoders.com/740/thumb-1920-740377.png",
             "more": "GitHub",
             "moreLink": "https://me.nukes.in"
@@ -51,7 +51,7 @@
         {
             "name": "Comet Dust Trail Simulation",
             "icon": "https://c4.wallpaperflare.com/wallpaper/627/677/142/shiro-no-game-no-life-sora-no-game-no-life-stephanie-dora-blue-hair-wallpaper-thumb.jpg",
-            "desc": "Comet trails are created when the ice from the surface of a comet turns into gas and escapes, dragging along with it dust particles which make it seem like contrails behind an airplanes. We plan to simulate these dust trails.",
+            "desc": "Simulating icy comet dust trails.",
             "main": "https://images7.alphacoders.com/740/thumb-1920-740377.png",
             "more": "GitHub",
             "moreLink": "https://me.nukes.in"
@@ -61,7 +61,7 @@
         {
             "year": "2019",
             "name": "CanSat",
-            "desc": "This project aims to design a small cansat. A CanSat is a type of sounding rocket payload used to teach space technology. It is similar to the technology used in miniaturized satellites. No CanSat has ever left the atmosphere, nor orbited the earth.",
+            "desc": "Designing an atmosphere probining satellite which fits in a can.",
             "img": "https://www.esa.int/var/esa/storage/images/esa_multimedia/images/2016/06/electronics_inside_a_cansat/16054362-1-eng-GB/Electronics_inside_a_CanSat_article.jpg",
             "more": "",
             "moreLink": ""
@@ -69,7 +69,7 @@
         {
             "year": "2019",
             "name": "StarTracker",
-            "desc": "We had planned to build a computerized telescope Sky Tracker.Configured to Stellarium, the software will show the point aimed in sky on computer screen and track them.",
+            "desc": "An computerized and automated telescope",
             "img": "https://www.esa.int/var/esa/storage/images/esa_multimedia/images/2016/06/electronics_inside_a_cansat/16054362-1-eng-GB/Electronics_inside_a_CanSat_article.jpg",
             "more": "",
             "moreLink": ""
@@ -77,7 +77,7 @@
         {
             "year": "2019",
             "name": "Lidar",
-            "desc": "Light Detection and Ranging (LiDAR) is a new concept closely related to RADAR and SONAR used to detect objects at a distance, but with the benefits of having better frequency and precision. It is an optical remote sensing system which can measure the distance and position of a target by illuminating the target with light and measuring the reflected light with a sensor. Due to its accurate results, it has great applications in terrain mapping, vehicle automation and obstacle detection and deflection.",
+            "desc": "An attempt to create our inhouce lidar",
             "img": "https://www.esa.int/var/esa/storage/images/esa_multimedia/images/2016/06/electronics_inside_a_cansat/16054362-1-eng-GB/Electronics_inside_a_CanSat_article.jpg",
             "more": "",
             "moreLink": ""
@@ -85,7 +85,7 @@
         {
             "year": "2019",
             "name": "Tesla Coil",
-            "desc": "The objective of this project was to create a Solid State Tesla Coil: a Tesla Coil powered by Transistors instead of a spark gap. The design and construction of a SSTC is not a trivial task. It’s main challenge lies with the fact that to perfect the circuit, a lot of debugging is required for which a very sound knowledge of electronics is important.",
+            "desc": "The name speaks for itself",
             "img": "https://www.esa.int/var/esa/storage/images/esa_multimedia/images/2016/06/electronics_inside_a_cansat/16054362-1-eng-GB/Electronics_inside_a_CanSat_article.jpg",
             "more": "",
             "moreLink": ""
@@ -93,7 +93,7 @@
         {
             "year": "2019",
             "name": "Microbial Fuel Cell",
-            "desc": "Microbial fuel cells are devices that utilize bacteria in order to catalize reactions and generate current. Microbial fuel cells(MFC) are most commonly used as cells in order to generate current and as a cleaner method of energy generation. The project had proceedeed by selecting the design and structure of the fuel cell and then by the selection of the electrolyte, proton exchange membrane and the anode and cathode material required",
+            "desc": "Utilizing bacteria in order to catalize reactions and generate current.",
             "img": "https://www.esa.int/var/esa/storage/images/esa_multimedia/images/2016/06/electronics_inside_a_cansat/16054362-1-eng-GB/Electronics_inside_a_CanSat_article.jpg",
             "more": "",
             "moreLink": ""
@@ -101,7 +101,7 @@
         {
             "year": "2019",
             "name": "Pyroboard",
-            "desc": "A Rubens’ tube, also known as a standing wave flame tube, or simply flame tube, is an antique physics apparatus for demonstrating acoustic standing waves in a tube. A flammable gas is passed through a drilled tube and the gas is vibrated using a speaker. We can see the standing waves produced by the input sound in the form of flames coming out of the drilled holes. A 2D version of a Ruben’s tube is called a Ruben’s board or simply, Pyro Board.",
+            "desc": "Vibrating a burning gases to tunes from a speaker",
             "img": "https://www.esa.int/var/esa/storage/images/esa_multimedia/images/2016/06/electronics_inside_a_cansat/16054362-1-eng-GB/Electronics_inside_a_CanSat_article.jpg",
             "more": "",
             "moreLink": ""
@@ -109,7 +109,7 @@
         {
             "year": "2019",
             "name": "Spectrometer",
-            "desc": "An optical spectrometer is a scientific instrument used to analyse the electromagnetic spectrum of physical phenomena. It is a powerful way to determine the chemical composition of light sources or illuminated objects.",
+            "desc": "Design a spectrometer to determine the chemical composition of light sources or illuminated objects.",
             "img": "https://www.esa.int/var/esa/storage/images/esa_multimedia/images/2016/06/electronics_inside_a_cansat/16054362-1-eng-GB/Electronics_inside_a_CanSat_article.jpg",
             "more": "",
             "moreLink": ""
@@ -117,7 +117,7 @@
         {
             "year": "2019",
             "name": "Physarum",
-            "desc": "Physarum polycephalum is a slime mold. It has been observed that this mold can solve some basic computational problems like the shortest path problem. It even exhibits a very primitive form of memory. As the mold does not have a nervous system, scientists have been fascinated by its’ behavior.",
+            "desc": "Solve basic computation problems using Physarum slime mold",
             "img": "https://www.esa.int/var/esa/storage/images/esa_multimedia/images/2016/06/electronics_inside_a_cansat/16054362-1-eng-GB/Electronics_inside_a_CanSat_article.jpg",
             "more": "",
             "moreLink": ""
@@ -125,7 +125,7 @@
         {
             "year": "2019",
             "name": "Sonoluminescence",
-            "desc": "t’s one of the long term projects, that aims to create a sonoluminescent bubble and take temperature and spectral measurements of the light emitted. ‘Sono’ means sound and ‘luminescent’ pertains to light. It is an air bubble in a fluid that emits visible light, due to high amplitude ultrasonic waves passing through it. It is an incredibly rare and unexplored phenomenon.",
+            "desc": "Create a sonoluminescent bubble and take temperature and spectral measurements of the light emitted.",
             "img": "https://www.esa.int/var/esa/storage/images/esa_multimedia/images/2016/06/electronics_inside_a_cansat/16054362-1-eng-GB/Electronics_inside_a_CanSat_article.jpg",
             "more": "",
             "moreLink": ""
@@ -133,7 +133,7 @@
         {
             "year": "",
             "name": "Barn Door Tracker",
-            "desc": "The project aimed to build an automated mount on which a DSLR camera can be put up and take a wide scope, long exposure images of night’s sky.",
+            "desc": "Take exposure images of night’s sky using automated DSLR mount",
             "img": "https://www.esa.int/var/esa/storage/images/esa_multimedia/images/2016/06/electronics_inside_a_cansat/16054362-1-eng-GB/Electronics_inside_a_CanSat_article.jpg",
             "more": "",
             "moreLink": ""
@@ -149,7 +149,7 @@
         {
             "year": "",
             "name": "Schlieren Photography",
-            "desc": "It aimed for the visualization of pressure, temperature and composition gradients in fluid flow and observe the complex fractal like structures of turbulence.",
+            "desc": "To Visualize pressure, temperature and composition gradients in fluid flow and observe the complex fractal like structures of turbulence.",
             "img": "https://www.esa.int/var/esa/storage/images/esa_multimedia/images/2016/06/electronics_inside_a_cansat/16054362-1-eng-GB/Electronics_inside_a_CanSat_article.jpg",
             "more": "",
             "moreLink": ""
@@ -173,7 +173,7 @@
         {
             "year": "",
             "name": "Michelson Interferometers",
-            "desc": "It aimed to build a Michelson interferometer without any expensive equipment and to explore the applications of interferometry in seismology and acoustics.",
+            "desc": "Build a Michelson interferometer without any expensive equipment and to explore the applications of interferometry in seismology and acoustics.",
             "img": "https://www.esa.int/var/esa/storage/images/esa_multimedia/images/2016/06/electronics_inside_a_cansat/16054362-1-eng-GB/Electronics_inside_a_CanSat_article.jpg",
             "more": "",
             "moreLink": ""

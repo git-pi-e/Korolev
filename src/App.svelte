@@ -2,24 +2,17 @@
 	import Nav from "./core/nav.svelte";
 	import Home from "./components/home.svelte";
 
+	import Team from "./components/team.svelte";
 	import Proj from "./components/proj.svelte";
+	import Facc from "./components/facc.svelte";
 
 	import prjs from "./core/projects.json";
 	import data from "./core/data.json";
-	import { onMount } from "svelte";
 
 	$: state = { showNav: 0, currentPage: "Projects" };
-	let Team,
-		// Proj,
-		Facc;
 
 	const navTog = () => (state.showNav = !state.showNav);
 
-	// onMount(() => {
-	// 	import("./components/team.svelte").then((r) => (Team = r.default));
-	// 	import("./components/facc.svelte").then((r) => (Facc = r.default));
-	// 	import("./components/proj.svelte").then((r) => (Proj = r.default));
-	// });
 	const changePage = (e) => {
 		navTog();
 		state.currentPage = e.target.innerText;
@@ -45,8 +38,5 @@
 	<svelte:component this={Home} data={data.home} />
 {/if}
 
-<!-- <svelte:component
-	this={pages[pages.findIndex((e) => e.page === state.currentPage)].component}
-	data={data[state.currentPage.toLowerCase()]} /> -->
 <style type="text/scss">
 </style>

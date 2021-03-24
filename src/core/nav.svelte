@@ -1,7 +1,5 @@
 <script>
 	export let pages, changePage, state, navTog;
-
-	import { slide } from "svelte/transition";
 </script>
 
 <div id="nav">
@@ -22,19 +20,19 @@
 {#if state.showNav}
 	<nav>
 		<ul>
-			{#each pages as pj}
+			{#each pages as pj, i}
 				<li
-					transition:slide
 					class={state.currentPage === pj.page ? "active" : ""}
 					on:click={changePage}
+					style="animation-delay:{i / 10}s"
 				>
 					{pj.page}
 				</li>
 			{/each}
-			<li transition:slide>
+			<li style="animation-delay:0.4s">
 				<a href="http://edu.sedscelestia.org">Education</a>
 			</li>
-			<li transition:slide>
+			<li style="animation-delay:0.5s">
 				<a href="http://blog.sedscelestia.org">Blog</a>
 			</li>
 		</ul>
@@ -69,6 +67,10 @@
 		list-style: none;
 		text-align: center;
 		li {
+			position: relative;
+			left: -30px;
+			opacity: 0;
+			animation: enter forwards 0.5s ease;
 			padding: 10px;
 			cursor: pointer;
 			font-size: 2rem;
@@ -76,6 +78,12 @@
 		.active {
 			font-weight: bold;
 			background: #60f;
+		}
+	}
+	@keyframes enter {
+		to {
+			left: 0;
+			opacity: 1;
 		}
 	}
 </style>

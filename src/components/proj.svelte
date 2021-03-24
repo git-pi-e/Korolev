@@ -21,7 +21,7 @@
 <div class="space__comet-container" style="position:fixed;">
     <div class="space__comet" />
 </div>
-<!-- <section>
+<section>
     {#each data.going as pj, i}
         <div class="hero">
             <img class="hero-profile-img" src={pj.main} alt="main" />
@@ -39,7 +39,7 @@
             <div class="hero-btn"><a href={pj.moreLink}>{pj.more}</a></div>
         </div>
     {/each}
-</section> -->
+</section>
 Past Projects
 <section style="overflow-x:scroll;">
     {#each data.past as pj, i}
@@ -51,25 +51,6 @@ Past Projects
 </section>
 <BH />
 
-<!-- <section>
-    {#each data.going as pj, i}
-        <div class="hero">
-            <img class="hero-profile-img" src={pj.main} alt="main" />
-            <div
-                class="hero-description-bk"
-                style="background:{backgrounder(i)}"
-            />
-            <div class="hero-logo"><img src={pj.icon} alt="icon" /></div>
-            <div class="hero-description">
-                <p>{pj.desc}</p>
-            </div>
-            <div class="hero-date">
-                <p>{pj.name}</p>
-            </div>
-            <div class="hero-btn"><a href={pj.moreLink}>{pj.more}</a></div>
-        </div>
-    {/each}
-</section> -->
 <style type="text/scss">
     section {
         padding: 4% 10%;
