@@ -4,17 +4,17 @@
 
     const backgrounder = (i) => {
         const opts = [
-            "-20deg,#b71,#fd6",
-            "-20deg,#1a9,#4f8",
-            "0deg,#028,#07e",
-            "0deg,#444,#000",
-            "0deg,#46f,#f47",
+            "#b71,#fd6",
+            "#1a9,#4f8",
+            "#028,#07e",
+            "#444,#000",
+            "#46f,#f47",
         ];
-        const bg =
-            "linear-gradient(" +
+        return (
+            "background:linear-gradient(-20deg," +
             opts[Math.round(Math.random() * (opts.length - 1))] +
-            ")";
-        return bg;
+            ")"
+        );
     };
 </script>
 
@@ -24,30 +24,30 @@
 <section>
     {#each data.going as pj, i}
         <div class="hero">
-            <img class="hero-profile-img" src={pj.main} alt="main" />
-            <div
-                class="hero-description-bk"
-                style="background:{backgrounder(i)}"
-            />
+            <div class="hero-description-bk" style={backgrounder(i)} />
             <div class="hero-logo"><img src={pj.icon} alt="icon" /></div>
-            <div class="hero-description">
-                <p>{pj.desc}</p>
-            </div>
-            <div class="hero-date">
-                <p>{pj.name}</p>
-            </div>
+            <div class="hero-description">{pj.desc}</div>
+            <div class="hero-date">{pj.name}</div>
             <div class="hero-btn"><a href={pj.moreLink}>{pj.more}</a></div>
         </div>
     {/each}
 </section>
-Past Projects
-<section style="overflow-x:scroll;">
-    {#each data.past as pj, i}
-        <div class="comet">
-            <img src={pj.img} alt="" />
-            <div class="name">{pj.name}</div>
-        </div>
-    {/each}
+
+<section style="overflow-x:scroll;text-align:left;">
+    <details open>
+        <summary style="font-size:20px">Past Projects</summary>
+        <p>
+            {#each data.past as pj, i}
+                <div class="comet">
+                    <img src={pj.img} alt="" />
+                    <div class="name">
+                        <div>{pj.name} ({pj.year})</div>
+                        <div>{pj.desc}</div>
+                    </div>
+                </div>
+            {/each}
+        </p>
+    </details>
 </section>
 <BH />
 
@@ -61,42 +61,35 @@ Past Projects
         position: relative;
         width: 400px;
         min-width: 400px;
-        height: 400px;
-        border-radius: 30px;
+        height: 150px;
+        border-radius: 10px;
         overflow: hidden;
-        box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.3);
-        margin: 30px;
-        &-profile-img {
-            height: 70%;
-        }
-
+        margin: 20px;
         .hero-description {
             position: absolute;
             color: #fff;
             font-weight: 900;
-            left: 150px;
-            bottom: 26%;
+            left: 140px;
+            top: 10px;
+            margin-right: 5px;
 
             &-bk {
-                border-radius: 30px;
                 position: absolute;
-                top: 55%;
-                left: -5px;
-                height: 65%;
-                width: 108%;
-                transform: skew(19deg, -9deg);
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
             }
         }
         .hero-logo {
-            height: 80px;
-            width: 80px;
-            border-radius: 20px;
+            height: 100px;
+            width: 100px;
+            border-radius: 10px;
             background-color: #fff;
             position: absolute;
             bottom: 30%;
             left: 30px;
             overflow: hidden;
-            box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.7);
             img {
                 object-fit: cover;
                 height: 100%;
@@ -104,20 +97,28 @@ Past Projects
         }
         .hero-btn {
             position: absolute;
-            color: #fff;
             right: 30px;
             bottom: 10%;
             padding: 10px 20px;
             border: 1px solid #fff;
+            transition: all 0.2s ease;
             a {
                 color: #fff;
+            }
+            &:hover {
+                background: #fff;
+                a {
+                    color: #000;
+                }
             }
         }
         .hero-date {
             position: absolute;
             color: #fff;
-            left: 30px;
-            bottom: 10%;
+            left: 35px;
+            bottom: 10px;
+            font-style: italic;
+            font-weight: 400;
         }
     }
     .space__comet {
@@ -195,11 +196,17 @@ Past Projects
     }
     .comet {
         margin: 10px;
-        display: inline-block;
+        display: flex;
+        background: #a8f;
+        border-radius: 50px;
+        overflow: hidden;
+        .name {
+            padding: 5px;
+        }
         img {
+            border-radius: 50px;
             width: 100px;
             height: 100px;
-            border-radius: 50px;
         }
     }
     @media (max-width: 991px) {

@@ -391,122 +391,15 @@ var file = (function () {
 
     function get_each_context(ctx, list, i) {
     	const child_ctx = ctx.slice();
-    	child_ctx[4] = list[i];
-    	child_ctx[6] = i;
+    	child_ctx[3] = list[i];
+    	child_ctx[5] = i;
     	return child_ctx;
     }
 
-    // (20:0) {#if state.showNav}
-    function create_if_block(ctx) {
-    	let nav;
-    	let ul;
-    	let t0;
-    	let li0;
-    	let a0;
-    	let t2;
-    	let li1;
-    	let a1;
-    	let each_value = /*pages*/ ctx[0];
-    	validate_each_argument(each_value);
-    	let each_blocks = [];
-
-    	for (let i = 0; i < each_value.length; i += 1) {
-    		each_blocks[i] = create_each_block(get_each_context(ctx, each_value, i));
-    	}
-
-    	const block = {
-    		c: function create() {
-    			nav = element("nav");
-    			ul = element("ul");
-
-    			for (let i = 0; i < each_blocks.length; i += 1) {
-    				each_blocks[i].c();
-    			}
-
-    			t0 = space();
-    			li0 = element("li");
-    			a0 = element("a");
-    			a0.textContent = "Education";
-    			t2 = space();
-    			li1 = element("li");
-    			a1 = element("a");
-    			a1.textContent = "Blog";
-    			attr_dev(a0, "href", "http://edu.sedscelestia.org");
-    			add_location(a0, file, 32, 4, 587);
-    			set_style(li0, "animation-delay", "0.4s");
-    			attr_dev(li0, "class", "svelte-1djvz89");
-    			add_location(li0, file, 31, 3, 549);
-    			attr_dev(a1, "href", "http://blog.sedscelestia.org");
-    			add_location(a1, file, 35, 4, 689);
-    			set_style(li1, "animation-delay", "0.5s");
-    			attr_dev(li1, "class", "svelte-1djvz89");
-    			add_location(li1, file, 34, 3, 651);
-    			attr_dev(ul, "class", "svelte-1djvz89");
-    			add_location(ul, file, 21, 2, 340);
-    			attr_dev(nav, "class", "svelte-1djvz89");
-    			add_location(nav, file, 20, 1, 332);
-    		},
-    		m: function mount(target, anchor) {
-    			insert_dev(target, nav, anchor);
-    			append_dev(nav, ul);
-
-    			for (let i = 0; i < each_blocks.length; i += 1) {
-    				each_blocks[i].m(ul, null);
-    			}
-
-    			append_dev(ul, t0);
-    			append_dev(ul, li0);
-    			append_dev(li0, a0);
-    			append_dev(ul, t2);
-    			append_dev(ul, li1);
-    			append_dev(li1, a1);
-    		},
-    		p: function update(ctx, dirty) {
-    			if (dirty & /*state, pages, changePage*/ 7) {
-    				each_value = /*pages*/ ctx[0];
-    				validate_each_argument(each_value);
-    				let i;
-
-    				for (i = 0; i < each_value.length; i += 1) {
-    					const child_ctx = get_each_context(ctx, each_value, i);
-
-    					if (each_blocks[i]) {
-    						each_blocks[i].p(child_ctx, dirty);
-    					} else {
-    						each_blocks[i] = create_each_block(child_ctx);
-    						each_blocks[i].c();
-    						each_blocks[i].m(ul, t0);
-    					}
-    				}
-
-    				for (; i < each_blocks.length; i += 1) {
-    					each_blocks[i].d(1);
-    				}
-
-    				each_blocks.length = each_value.length;
-    			}
-    		},
-    		d: function destroy(detaching) {
-    			if (detaching) detach_dev(nav);
-    			destroy_each(each_blocks, detaching);
-    		}
-    	};
-
-    	dispatch_dev("SvelteRegisterBlock", {
-    		block,
-    		id: create_if_block.name,
-    		type: "if",
-    		source: "(20:0) {#if state.showNav}",
-    		ctx
-    	});
-
-    	return block;
-    }
-
-    // (23:3) {#each pages as pj, i}
+    // (8:2) {#each pages as pj, i}
     function create_each_block(ctx) {
     	let li;
-    	let t_value = /*pj*/ ctx[4].page + "";
+    	let t_value = /*pj*/ ctx[3].page + "";
     	let t;
     	let li_class_value;
     	let mounted;
@@ -517,12 +410,12 @@ var file = (function () {
     			li = element("li");
     			t = text(t_value);
 
-    			attr_dev(li, "class", li_class_value = "" + (null_to_empty(/*state*/ ctx[2].currentPage === /*pj*/ ctx[4].page
+    			attr_dev(li, "class", li_class_value = "" + (null_to_empty(/*state*/ ctx[2].currentPage === /*pj*/ ctx[3].page
     			? "active"
-    			: "") + " svelte-1djvz89"));
+    			: "") + " svelte-1d7gpys"));
 
-    			set_style(li, "animation-delay", /*i*/ ctx[6] / 10 + "s");
-    			add_location(li, file, 23, 4, 375);
+    			set_style(li, "animation-delay", /*i*/ ctx[5] / 20 + "s");
+    			add_location(li, file, 8, 3, 159);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, li, anchor);
@@ -545,11 +438,11 @@ var file = (function () {
     		},
     		p: function update(new_ctx, dirty) {
     			ctx = new_ctx;
-    			if (dirty & /*pages*/ 1 && t_value !== (t_value = /*pj*/ ctx[4].page + "")) set_data_dev(t, t_value);
+    			if (dirty & /*pages*/ 1 && t_value !== (t_value = /*pj*/ ctx[3].page + "")) set_data_dev(t, t_value);
 
-    			if (dirty & /*state, pages*/ 5 && li_class_value !== (li_class_value = "" + (null_to_empty(/*state*/ ctx[2].currentPage === /*pj*/ ctx[4].page
+    			if (dirty & /*state, pages*/ 5 && li_class_value !== (li_class_value = "" + (null_to_empty(/*state*/ ctx[2].currentPage === /*pj*/ ctx[3].page
     			? "active"
-    			: "") + " svelte-1djvz89"))) {
+    			: "") + " svelte-1d7gpys"))) {
     				attr_dev(li, "class", li_class_value);
     			}
     		},
@@ -564,7 +457,7 @@ var file = (function () {
     		block,
     		id: create_each_block.name,
     		type: "each",
-    		source: "(23:3) {#each pages as pj, i}",
+    		source: "(8:2) {#each pages as pj, i}",
     		ctx
     	});
 
@@ -572,96 +465,113 @@ var file = (function () {
     }
 
     function create_fragment(ctx) {
-    	let div;
-    	let svg;
-    	let path;
-    	let path_d_value;
-    	let t;
-    	let if_block_anchor;
-    	let mounted;
-    	let dispose;
-    	let if_block = /*state*/ ctx[2].showNav && create_if_block(ctx);
+    	let details;
+    	let summary;
+    	let t1;
+    	let ul;
+    	let t2;
+    	let li0;
+    	let a0;
+    	let t4;
+    	let li1;
+    	let a1;
+    	let each_value = /*pages*/ ctx[0];
+    	validate_each_argument(each_value);
+    	let each_blocks = [];
+
+    	for (let i = 0; i < each_value.length; i += 1) {
+    		each_blocks[i] = create_each_block(get_each_context(ctx, each_value, i));
+    	}
 
     	const block = {
     		c: function create() {
-    			div = element("div");
-    			svg = svg_element("svg");
-    			path = svg_element("path");
-    			t = space();
-    			if (if_block) if_block.c();
-    			if_block_anchor = empty();
+    			details = element("details");
+    			summary = element("summary");
+    			summary.textContent = " ";
+    			t1 = space();
+    			ul = element("ul");
 
-    			attr_dev(path, "d", path_d_value = /*state*/ ctx[2].showNav
-    			? "M10 6 L2 16 10 26 M2 16 L30 16"
-    			: "M4 8 L28 8 M4 16 L28 16 M4 24 L28 24");
+    			for (let i = 0; i < each_blocks.length; i += 1) {
+    				each_blocks[i].c();
+    			}
 
-    			add_location(path, file, 12, 2, 180);
-    			attr_dev(svg, "viewBox", "0 0 32 32");
-    			attr_dev(svg, "width", "32");
-    			attr_dev(svg, "height", "32");
-    			attr_dev(svg, "stroke-width", "2");
-    			add_location(svg, file, 5, 1, 82);
-    			attr_dev(div, "id", "nav");
-    			attr_dev(div, "class", "svelte-1djvz89");
-    			add_location(div, file, 4, 0, 66);
+    			t2 = space();
+    			li0 = element("li");
+    			a0 = element("a");
+    			a0.textContent = "Education";
+    			t4 = space();
+    			li1 = element("li");
+    			a1 = element("a");
+    			a1.textContent = "Blog";
+    			set_style(summary, "z-index", "9999");
+    			attr_dev(summary, "class", "svelte-1d7gpys");
+    			add_location(summary, file, 5, 1, 78);
+    			attr_dev(a0, "href", "http://edu.sedscelestia.org");
+    			add_location(a0, file, 17, 3, 362);
+    			set_style(li0, "animation-delay", "0.2s");
+    			attr_dev(li0, "class", "svelte-1d7gpys");
+    			add_location(li0, file, 16, 2, 325);
+    			attr_dev(a1, "href", "http://blog.sedscelestia.org");
+    			add_location(a1, file, 20, 3, 462);
+    			set_style(li1, "animation-delay", "0.25s");
+    			attr_dev(li1, "class", "svelte-1d7gpys");
+    			add_location(li1, file, 19, 2, 424);
+    			attr_dev(ul, "class", "svelte-1d7gpys");
+    			add_location(ul, file, 6, 1, 126);
+    			attr_dev(details, "id", "nav");
+    			attr_dev(details, "class", "svelte-1d7gpys");
+    			add_location(details, file, 4, 0, 58);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
     		},
     		m: function mount(target, anchor) {
-    			insert_dev(target, div, anchor);
-    			append_dev(div, svg);
-    			append_dev(svg, path);
-    			insert_dev(target, t, anchor);
-    			if (if_block) if_block.m(target, anchor);
-    			insert_dev(target, if_block_anchor, anchor);
+    			insert_dev(target, details, anchor);
+    			append_dev(details, summary);
+    			append_dev(details, t1);
+    			append_dev(details, ul);
 
-    			if (!mounted) {
-    				dispose = listen_dev(
-    					svg,
-    					"click",
-    					function () {
-    						if (is_function(/*navTog*/ ctx[3])) /*navTog*/ ctx[3].apply(this, arguments);
-    					},
-    					false,
-    					false,
-    					false
-    				);
-
-    				mounted = true;
+    			for (let i = 0; i < each_blocks.length; i += 1) {
+    				each_blocks[i].m(ul, null);
     			}
+
+    			append_dev(ul, t2);
+    			append_dev(ul, li0);
+    			append_dev(li0, a0);
+    			append_dev(ul, t4);
+    			append_dev(ul, li1);
+    			append_dev(li1, a1);
     		},
-    		p: function update(new_ctx, [dirty]) {
-    			ctx = new_ctx;
+    		p: function update(ctx, [dirty]) {
+    			if (dirty & /*state, pages, changePage*/ 7) {
+    				each_value = /*pages*/ ctx[0];
+    				validate_each_argument(each_value);
+    				let i;
 
-    			if (dirty & /*state*/ 4 && path_d_value !== (path_d_value = /*state*/ ctx[2].showNav
-    			? "M10 6 L2 16 10 26 M2 16 L30 16"
-    			: "M4 8 L28 8 M4 16 L28 16 M4 24 L28 24")) {
-    				attr_dev(path, "d", path_d_value);
-    			}
+    				for (i = 0; i < each_value.length; i += 1) {
+    					const child_ctx = get_each_context(ctx, each_value, i);
 
-    			if (/*state*/ ctx[2].showNav) {
-    				if (if_block) {
-    					if_block.p(ctx, dirty);
-    				} else {
-    					if_block = create_if_block(ctx);
-    					if_block.c();
-    					if_block.m(if_block_anchor.parentNode, if_block_anchor);
+    					if (each_blocks[i]) {
+    						each_blocks[i].p(child_ctx, dirty);
+    					} else {
+    						each_blocks[i] = create_each_block(child_ctx);
+    						each_blocks[i].c();
+    						each_blocks[i].m(ul, t2);
+    					}
     				}
-    			} else if (if_block) {
-    				if_block.d(1);
-    				if_block = null;
+
+    				for (; i < each_blocks.length; i += 1) {
+    					each_blocks[i].d(1);
+    				}
+
+    				each_blocks.length = each_value.length;
     			}
     		},
     		i: noop,
     		o: noop,
     		d: function destroy(detaching) {
-    			if (detaching) detach_dev(div);
-    			if (detaching) detach_dev(t);
-    			if (if_block) if_block.d(detaching);
-    			if (detaching) detach_dev(if_block_anchor);
-    			mounted = false;
-    			dispose();
+    			if (detaching) detach_dev(details);
+    			destroy_each(each_blocks, detaching);
     		}
     	};
 
@@ -679,13 +589,8 @@ var file = (function () {
     function instance($$self, $$props, $$invalidate) {
     	let { $$slots: slots = {}, $$scope } = $$props;
     	validate_slots("Nav", slots, []);
-
-    	let { pages } = $$props,
-    		{ changePage } = $$props,
-    		{ state } = $$props,
-    		{ navTog } = $$props;
-
-    	const writable_props = ["pages", "changePage", "state", "navTog"];
+    	let { pages } = $$props, { changePage } = $$props, { state } = $$props;
+    	const writable_props = ["pages", "changePage", "state"];
 
     	Object.keys($$props).forEach(key => {
     		if (!~writable_props.indexOf(key) && key.slice(0, 2) !== "$$") console.warn(`<Nav> was created with unknown prop '${key}'`);
@@ -695,35 +600,27 @@ var file = (function () {
     		if ("pages" in $$props) $$invalidate(0, pages = $$props.pages);
     		if ("changePage" in $$props) $$invalidate(1, changePage = $$props.changePage);
     		if ("state" in $$props) $$invalidate(2, state = $$props.state);
-    		if ("navTog" in $$props) $$invalidate(3, navTog = $$props.navTog);
     	};
 
-    	$$self.$capture_state = () => ({ pages, changePage, state, navTog });
+    	$$self.$capture_state = () => ({ pages, changePage, state });
 
     	$$self.$inject_state = $$props => {
     		if ("pages" in $$props) $$invalidate(0, pages = $$props.pages);
     		if ("changePage" in $$props) $$invalidate(1, changePage = $$props.changePage);
     		if ("state" in $$props) $$invalidate(2, state = $$props.state);
-    		if ("navTog" in $$props) $$invalidate(3, navTog = $$props.navTog);
     	};
 
     	if ($$props && "$$inject" in $$props) {
     		$$self.$inject_state($$props.$$inject);
     	}
 
-    	return [pages, changePage, state, navTog];
+    	return [pages, changePage, state];
     }
 
     class Nav extends SvelteComponentDev {
     	constructor(options) {
     		super(options);
-
-    		init(this, options, instance, create_fragment, safe_not_equal, {
-    			pages: 0,
-    			changePage: 1,
-    			state: 2,
-    			navTog: 3
-    		});
+    		init(this, options, instance, create_fragment, safe_not_equal, { pages: 0, changePage: 1, state: 2 });
 
     		dispatch_dev("SvelteRegisterComponent", {
     			component: this,
@@ -745,10 +642,6 @@ var file = (function () {
 
     		if (/*state*/ ctx[2] === undefined && !("state" in props)) {
     			console.warn("<Nav> was created without expected prop 'state'");
-    		}
-
-    		if (/*navTog*/ ctx[3] === undefined && !("navTog" in props)) {
-    			console.warn("<Nav> was created without expected prop 'navTog'");
     		}
     	}
 
@@ -773,14 +666,6 @@ var file = (function () {
     	}
 
     	set state(value) {
-    		throw new Error("<Nav>: Props cannot be set directly on the component instance unless compiling with 'accessors: true' or '<svelte:options accessors/>'");
-    	}
-
-    	get navTog() {
-    		throw new Error("<Nav>: Props cannot be read directly from the component instance unless compiling with 'accessors: true' or '<svelte:options accessors/>'");
-    	}
-
-    	set navTog(value) {
     		throw new Error("<Nav>: Props cannot be set directly on the component instance unless compiling with 'accessors: true' or '<svelte:options accessors/>'");
     	}
     }
@@ -1676,115 +1561,93 @@ var file = (function () {
     // (25:4) {#each data.going as pj, i}
     function create_each_block_1$1(ctx) {
     	let div5;
-    	let img0;
-    	let img0_src_value;
-    	let t0;
     	let div0;
-    	let t1;
+    	let div0_style_value;
+    	let t0;
     	let div1;
-    	let img1;
-    	let img1_src_value;
-    	let t2;
+    	let img;
+    	let img_src_value;
+    	let t1;
     	let div2;
-    	let p0;
-    	let t3_value = /*pj*/ ctx[2].desc + "";
+    	let t2_value = /*pj*/ ctx[2].desc + "";
+    	let t2;
     	let t3;
-    	let t4;
     	let div3;
-    	let p1;
-    	let t5_value = /*pj*/ ctx[2].name + "";
+    	let t4_value = /*pj*/ ctx[2].name + "";
+    	let t4;
     	let t5;
-    	let t6;
     	let div4;
     	let a;
-    	let t7_value = /*pj*/ ctx[2].more + "";
-    	let t7;
+    	let t6_value = /*pj*/ ctx[2].more + "";
+    	let t6;
     	let a_href_value;
-    	let t8;
+    	let t7;
 
     	const block = {
     		c: function create() {
     			div5 = element("div");
-    			img0 = element("img");
-    			t0 = space();
     			div0 = element("div");
-    			t1 = space();
+    			t0 = space();
     			div1 = element("div");
-    			img1 = element("img");
-    			t2 = space();
+    			img = element("img");
+    			t1 = space();
     			div2 = element("div");
-    			p0 = element("p");
-    			t3 = text(t3_value);
-    			t4 = space();
+    			t2 = text(t2_value);
+    			t3 = space();
     			div3 = element("div");
-    			p1 = element("p");
-    			t5 = text(t5_value);
-    			t6 = space();
+    			t4 = text(t4_value);
+    			t5 = space();
     			div4 = element("div");
     			a = element("a");
-    			t7 = text(t7_value);
-    			t8 = space();
-    			attr_dev(img0, "class", "hero-profile-img svelte-dusztq");
-    			if (img0.src !== (img0_src_value = /*pj*/ ctx[2].main)) attr_dev(img0, "src", img0_src_value);
-    			attr_dev(img0, "alt", "main");
-    			add_location(img0, file$5, 26, 12, 648);
-    			attr_dev(div0, "class", "hero-description-bk svelte-dusztq");
-    			set_style(div0, "background", /*backgrounder*/ ctx[1](/*i*/ ctx[4]));
-    			add_location(div0, file$5, 27, 12, 718);
-    			if (img1.src !== (img1_src_value = /*pj*/ ctx[2].icon)) attr_dev(img1, "src", img1_src_value);
-    			attr_dev(img1, "alt", "icon");
-    			attr_dev(img1, "class", "svelte-dusztq");
-    			add_location(img1, file$5, 31, 35, 870);
-    			attr_dev(div1, "class", "hero-logo svelte-dusztq");
-    			add_location(div1, file$5, 31, 12, 847);
-    			add_location(p0, file$5, 33, 16, 968);
-    			attr_dev(div2, "class", "hero-description svelte-dusztq");
-    			add_location(div2, file$5, 32, 12, 921);
-    			add_location(p1, file$5, 36, 16, 1056);
-    			attr_dev(div3, "class", "hero-date svelte-dusztq");
-    			add_location(div3, file$5, 35, 12, 1016);
+    			t6 = text(t6_value);
+    			t7 = space();
+    			attr_dev(div0, "class", "hero-description-bk svelte-1cht1mv");
+    			attr_dev(div0, "style", div0_style_value = /*backgrounder*/ ctx[1](/*i*/ ctx[4]));
+    			add_location(div0, file$5, 26, 12, 626);
+    			if (img.src !== (img_src_value = /*pj*/ ctx[2].icon)) attr_dev(img, "src", img_src_value);
+    			attr_dev(img, "alt", "icon");
+    			attr_dev(img, "class", "svelte-1cht1mv");
+    			add_location(img, file$5, 27, 35, 721);
+    			attr_dev(div1, "class", "hero-logo svelte-1cht1mv");
+    			add_location(div1, file$5, 27, 12, 698);
+    			attr_dev(div2, "class", "hero-description svelte-1cht1mv");
+    			add_location(div2, file$5, 28, 12, 772);
+    			attr_dev(div3, "class", "hero-date svelte-1cht1mv");
+    			add_location(div3, file$5, 29, 12, 830);
     			attr_dev(a, "href", a_href_value = /*pj*/ ctx[2].moreLink);
-    			attr_dev(a, "class", "svelte-dusztq");
-    			add_location(a, file$5, 38, 34, 1126);
-    			attr_dev(div4, "class", "hero-btn svelte-dusztq");
-    			add_location(div4, file$5, 38, 12, 1104);
-    			attr_dev(div5, "class", "hero svelte-dusztq");
-    			add_location(div5, file$5, 25, 8, 617);
+    			attr_dev(a, "class", "svelte-1cht1mv");
+    			add_location(a, file$5, 30, 34, 903);
+    			attr_dev(div4, "class", "hero-btn svelte-1cht1mv");
+    			add_location(div4, file$5, 30, 12, 881);
+    			attr_dev(div5, "class", "hero svelte-1cht1mv");
+    			add_location(div5, file$5, 25, 8, 595);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div5, anchor);
-    			append_dev(div5, img0);
-    			append_dev(div5, t0);
     			append_dev(div5, div0);
-    			append_dev(div5, t1);
+    			append_dev(div5, t0);
     			append_dev(div5, div1);
-    			append_dev(div1, img1);
-    			append_dev(div5, t2);
+    			append_dev(div1, img);
+    			append_dev(div5, t1);
     			append_dev(div5, div2);
-    			append_dev(div2, p0);
-    			append_dev(p0, t3);
-    			append_dev(div5, t4);
+    			append_dev(div2, t2);
+    			append_dev(div5, t3);
     			append_dev(div5, div3);
-    			append_dev(div3, p1);
-    			append_dev(p1, t5);
-    			append_dev(div5, t6);
+    			append_dev(div3, t4);
+    			append_dev(div5, t5);
     			append_dev(div5, div4);
     			append_dev(div4, a);
-    			append_dev(a, t7);
-    			append_dev(div5, t8);
+    			append_dev(a, t6);
+    			append_dev(div5, t7);
     		},
     		p: function update(ctx, dirty) {
-    			if (dirty & /*data*/ 1 && img0.src !== (img0_src_value = /*pj*/ ctx[2].main)) {
-    				attr_dev(img0, "src", img0_src_value);
+    			if (dirty & /*data*/ 1 && img.src !== (img_src_value = /*pj*/ ctx[2].icon)) {
+    				attr_dev(img, "src", img_src_value);
     			}
 
-    			if (dirty & /*data*/ 1 && img1.src !== (img1_src_value = /*pj*/ ctx[2].icon)) {
-    				attr_dev(img1, "src", img1_src_value);
-    			}
-
-    			if (dirty & /*data*/ 1 && t3_value !== (t3_value = /*pj*/ ctx[2].desc + "")) set_data_dev(t3, t3_value);
-    			if (dirty & /*data*/ 1 && t5_value !== (t5_value = /*pj*/ ctx[2].name + "")) set_data_dev(t5, t5_value);
-    			if (dirty & /*data*/ 1 && t7_value !== (t7_value = /*pj*/ ctx[2].more + "")) set_data_dev(t7, t7_value);
+    			if (dirty & /*data*/ 1 && t2_value !== (t2_value = /*pj*/ ctx[2].desc + "")) set_data_dev(t2, t2_value);
+    			if (dirty & /*data*/ 1 && t4_value !== (t4_value = /*pj*/ ctx[2].name + "")) set_data_dev(t4, t4_value);
+    			if (dirty & /*data*/ 1 && t6_value !== (t6_value = /*pj*/ ctx[2].more + "")) set_data_dev(t6, t6_value);
 
     			if (dirty & /*data*/ 1 && a_href_value !== (a_href_value = /*pj*/ ctx[2].moreLink)) {
     				attr_dev(a, "href", a_href_value);
@@ -1806,41 +1669,66 @@ var file = (function () {
     	return block;
     }
 
-    // (45:4) {#each data.past as pj, i}
+    // (40:12) {#each data.past as pj, i}
     function create_each_block$3(ctx) {
-    	let div1;
+    	let div3;
     	let img;
     	let img_src_value;
     	let t0;
+    	let div2;
     	let div0;
     	let t1_value = /*pj*/ ctx[2].name + "";
     	let t1;
     	let t2;
+    	let t3_value = /*pj*/ ctx[2].year + "";
+    	let t3;
+    	let t4;
+    	let t5;
+    	let div1;
+    	let t6_value = /*pj*/ ctx[2].desc + "";
+    	let t6;
+    	let t7;
 
     	const block = {
     		c: function create() {
-    			div1 = element("div");
+    			div3 = element("div");
     			img = element("img");
     			t0 = space();
+    			div2 = element("div");
     			div0 = element("div");
     			t1 = text(t1_value);
-    			t2 = space();
+    			t2 = text(" (");
+    			t3 = text(t3_value);
+    			t4 = text(")");
+    			t5 = space();
+    			div1 = element("div");
+    			t6 = text(t6_value);
+    			t7 = space();
     			if (img.src !== (img_src_value = /*pj*/ ctx[2].img)) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "");
-    			attr_dev(img, "class", "svelte-dusztq");
-    			add_location(img, file$5, 46, 12, 1328);
-    			attr_dev(div0, "class", "name");
-    			add_location(div0, file$5, 47, 12, 1368);
-    			attr_dev(div1, "class", "comet svelte-dusztq");
-    			add_location(div1, file$5, 45, 8, 1296);
+    			attr_dev(img, "class", "svelte-1cht1mv");
+    			add_location(img, file$5, 41, 20, 1227);
+    			add_location(div0, file$5, 43, 24, 1318);
+    			add_location(div1, file$5, 44, 24, 1375);
+    			attr_dev(div2, "class", "name svelte-1cht1mv");
+    			add_location(div2, file$5, 42, 20, 1275);
+    			attr_dev(div3, "class", "comet svelte-1cht1mv");
+    			add_location(div3, file$5, 40, 16, 1187);
     		},
     		m: function mount(target, anchor) {
-    			insert_dev(target, div1, anchor);
-    			append_dev(div1, img);
-    			append_dev(div1, t0);
-    			append_dev(div1, div0);
+    			insert_dev(target, div3, anchor);
+    			append_dev(div3, img);
+    			append_dev(div3, t0);
+    			append_dev(div3, div2);
+    			append_dev(div2, div0);
     			append_dev(div0, t1);
-    			append_dev(div1, t2);
+    			append_dev(div0, t2);
+    			append_dev(div0, t3);
+    			append_dev(div0, t4);
+    			append_dev(div2, t5);
+    			append_dev(div2, div1);
+    			append_dev(div1, t6);
+    			append_dev(div3, t7);
     		},
     		p: function update(ctx, dirty) {
     			if (dirty & /*data*/ 1 && img.src !== (img_src_value = /*pj*/ ctx[2].img)) {
@@ -1848,9 +1736,11 @@ var file = (function () {
     			}
 
     			if (dirty & /*data*/ 1 && t1_value !== (t1_value = /*pj*/ ctx[2].name + "")) set_data_dev(t1, t1_value);
+    			if (dirty & /*data*/ 1 && t3_value !== (t3_value = /*pj*/ ctx[2].year + "")) set_data_dev(t3, t3_value);
+    			if (dirty & /*data*/ 1 && t6_value !== (t6_value = /*pj*/ ctx[2].desc + "")) set_data_dev(t6, t6_value);
     		},
     		d: function destroy(detaching) {
-    			if (detaching) detach_dev(div1);
+    			if (detaching) detach_dev(div3);
     		}
     	};
 
@@ -1858,7 +1748,7 @@ var file = (function () {
     		block,
     		id: create_each_block$3.name,
     		type: "each",
-    		source: "(45:4) {#each data.past as pj, i}",
+    		source: "(40:12) {#each data.past as pj, i}",
     		ctx
     	});
 
@@ -1872,7 +1762,11 @@ var file = (function () {
     	let section0;
     	let t1;
     	let section1;
-    	let t2;
+    	let details;
+    	let summary;
+    	let t3;
+    	let p;
+    	let t4;
     	let bh;
     	let current;
     	let each_value_1 = /*data*/ ctx[0].going;
@@ -1904,25 +1798,36 @@ var file = (function () {
     				each_blocks_1[i].c();
     			}
 
-    			t1 = text("\nPast Projects\n");
+    			t1 = space();
     			section1 = element("section");
+    			details = element("details");
+    			summary = element("summary");
+    			summary.textContent = "Past Projects";
+    			t3 = space();
+    			p = element("p");
 
     			for (let i = 0; i < each_blocks.length; i += 1) {
     				each_blocks[i].c();
     			}
 
-    			t2 = space();
+    			t4 = space();
     			create_component(bh.$$.fragment);
-    			attr_dev(div0, "class", "space__comet svelte-dusztq");
-    			add_location(div0, file$5, 21, 4, 531);
+    			attr_dev(div0, "class", "space__comet svelte-1cht1mv");
+    			add_location(div0, file$5, 21, 4, 509);
     			attr_dev(div1, "class", "space__comet-container");
     			set_style(div1, "position", "fixed");
-    			add_location(div1, file$5, 20, 0, 466);
-    			attr_dev(section0, "class", "svelte-dusztq");
-    			add_location(section0, file$5, 23, 0, 567);
+    			add_location(div1, file$5, 20, 0, 444);
+    			attr_dev(section0, "class", "svelte-1cht1mv");
+    			add_location(section0, file$5, 23, 0, 545);
+    			set_style(summary, "font-size", "20px");
+    			add_location(summary, file$5, 37, 8, 1064);
+    			add_location(p, file$5, 38, 8, 1128);
+    			details.open = true;
+    			add_location(details, file$5, 36, 4, 1041);
     			set_style(section1, "overflow-x", "scroll");
-    			attr_dev(section1, "class", "svelte-dusztq");
-    			add_location(section1, file$5, 43, 0, 1220);
+    			set_style(section1, "text-align", "left");
+    			attr_dev(section1, "class", "svelte-1cht1mv");
+    			add_location(section1, file$5, 35, 0, 984);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -1939,12 +1844,16 @@ var file = (function () {
 
     			insert_dev(target, t1, anchor);
     			insert_dev(target, section1, anchor);
+    			append_dev(section1, details);
+    			append_dev(details, summary);
+    			append_dev(details, t3);
+    			append_dev(details, p);
 
     			for (let i = 0; i < each_blocks.length; i += 1) {
-    				each_blocks[i].m(section1, null);
+    				each_blocks[i].m(p, null);
     			}
 
-    			insert_dev(target, t2, anchor);
+    			insert_dev(target, t4, anchor);
     			mount_component(bh, target, anchor);
     			current = true;
     		},
@@ -1986,7 +1895,7 @@ var file = (function () {
     					} else {
     						each_blocks[i] = create_each_block$3(child_ctx);
     						each_blocks[i].c();
-    						each_blocks[i].m(section1, null);
+    						each_blocks[i].m(p, null);
     					}
     				}
 
@@ -2014,7 +1923,7 @@ var file = (function () {
     			if (detaching) detach_dev(t1);
     			if (detaching) detach_dev(section1);
     			destroy_each(each_blocks, detaching);
-    			if (detaching) detach_dev(t2);
+    			if (detaching) detach_dev(t4);
     			destroy_component(bh, detaching);
     		}
     	};
@@ -2036,16 +1945,8 @@ var file = (function () {
     	let { data } = $$props;
 
     	const backgrounder = i => {
-    		const opts = [
-    			"-20deg,#b71,#fd6",
-    			"-20deg,#1a9,#4f8",
-    			"0deg,#028,#07e",
-    			"0deg,#444,#000",
-    			"0deg,#46f,#f47"
-    		];
-
-    		const bg = "linear-gradient(" + opts[Math.round(Math.random() * (opts.length - 1))] + ")";
-    		return bg;
+    		const opts = ["#b71,#fd6", "#1a9,#4f8", "#028,#07e", "#444,#000", "#46f,#f47"];
+    		return "background:linear-gradient(-20deg," + opts[Math.round(Math.random() * (opts.length - 1))] + ")";
     	};
 
     	const writable_props = ["data"];
@@ -2305,7 +2206,7 @@ var file = (function () {
     }
 
     // (50:16) {#if !(osc.show == -1)}
-    function create_if_block$1(ctx) {
+    function create_if_block(ctx) {
     	let a;
     	let div0;
     	let img;
@@ -2366,7 +2267,7 @@ var file = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block$1.name,
+    		id: create_if_block.name,
     		type: "if",
     		source: "(50:16) {#if !(osc.show == -1)}",
     		ctx
@@ -2378,7 +2279,7 @@ var file = (function () {
     // (49:12) {#each data.opensource as osc}
     function create_each_block_1$2(ctx) {
     	let if_block_anchor;
-    	let if_block = !(/*osc*/ ctx[4].show == -1) && create_if_block$1(ctx);
+    	let if_block = !(/*osc*/ ctx[4].show == -1) && create_if_block(ctx);
 
     	const block = {
     		c: function create() {
@@ -2394,7 +2295,7 @@ var file = (function () {
     				if (if_block) {
     					if_block.p(ctx, dirty);
     				} else {
-    					if_block = create_if_block$1(ctx);
+    					if_block = create_if_block(ctx);
     					if_block.c();
     					if_block.m(if_block_anchor.parentNode, if_block_anchor);
     				}
@@ -3366,7 +3267,7 @@ var file = (function () {
 
     /* src/App.svelte generated by Svelte v3.30.0 */
 
-    // (37:0) {:else}
+    // (35:0) {:else}
     function create_else_block(ctx) {
     	let switch_instance;
     	let switch_instance_anchor;
@@ -3439,14 +3340,14 @@ var file = (function () {
     		block,
     		id: create_else_block.name,
     		type: "else",
-    		source: "(37:0) {:else}",
+    		source: "(35:0) {:else}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (35:42) 
+    // (33:42) 
     function create_if_block_2(ctx) {
     	let switch_instance;
     	let switch_instance_anchor;
@@ -3516,14 +3417,14 @@ var file = (function () {
     		block,
     		id: create_if_block_2.name,
     		type: "if",
-    		source: "(35:42) ",
+    		source: "(33:42) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (33:44) 
+    // (31:44) 
     function create_if_block_1(ctx) {
     	let switch_instance;
     	let switch_instance_anchor;
@@ -3596,15 +3497,15 @@ var file = (function () {
     		block,
     		id: create_if_block_1.name,
     		type: "if",
-    		source: "(33:44) ",
+    		source: "(31:44) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (31:0) {#if state.currentPage == "Team"}
-    function create_if_block$2(ctx) {
+    // (29:0) {#if state.currentPage == "Team"}
+    function create_if_block$1(ctx) {
     	let switch_instance;
     	let switch_instance_anchor;
     	let current;
@@ -3674,9 +3575,9 @@ var file = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block$2.name,
+    		id: create_if_block$1.name,
     		type: "if",
-    		source: "(31:0) {#if state.currentPage == \\\"Team\\\"}",
+    		source: "(29:0) {#if state.currentPage == \\\"Team\\\"}",
     		ctx
     	});
 
@@ -3693,15 +3594,14 @@ var file = (function () {
 
     	nav = new Nav({
     			props: {
-    				pages: /*pages*/ ctx[3],
+    				pages: /*pages*/ ctx[2],
     				state: /*state*/ ctx[0],
-    				changePage: /*changePage*/ ctx[2],
-    				navTog: /*navTog*/ ctx[1]
+    				changePage: /*changePage*/ ctx[1]
     			},
     			$$inline: true
     		});
 
-    	const if_block_creators = [create_if_block$2, create_if_block_1, create_if_block_2, create_else_block];
+    	const if_block_creators = [create_if_block$1, create_if_block_1, create_if_block_2, create_else_block];
     	const if_blocks = [];
 
     	function select_block_type(ctx, dirty) {
@@ -3794,11 +3694,10 @@ var file = (function () {
     function instance$8($$self, $$props, $$invalidate) {
     	let { $$slots: slots = {}, $$scope } = $$props;
     	validate_slots("App", slots, []);
-    	const navTog = () => $$invalidate(0, state.showNav = !state.showNav, state);
 
     	const changePage = e => {
-    		navTog();
     		$$invalidate(0, state.currentPage = e.target.innerText, state);
+    		document.querySelector("#nav").removeAttribute("open");
     	};
 
     	const pages = [
@@ -3822,7 +3721,6 @@ var file = (function () {
     		Facc,
     		prjs,
     		data,
-    		navTog,
     		changePage,
     		pages,
     		state
@@ -3838,8 +3736,8 @@ var file = (function () {
     		$$self.$inject_state($$props.$$inject);
     	}
 
-    	 $$invalidate(0, state = { showNav: 0, currentPage: "Projects" });
-    	return [state, navTog, changePage, pages];
+    	 $$invalidate(0, state = { currentPage: "Home" });
+    	return [state, changePage, pages];
     }
 
     class App extends SvelteComponentDev {

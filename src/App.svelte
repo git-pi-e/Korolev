@@ -9,13 +9,11 @@
 	import prjs from "./core/projects.json";
 	import data from "./core/data.json";
 
-	$: state = { showNav: 0, currentPage: "Projects" };
-
-	const navTog = () => (state.showNav = !state.showNav);
+	$: state = { currentPage: "Home" };
 
 	const changePage = (e) => {
-		navTog();
 		state.currentPage = e.target.innerText;
+		document.querySelector("#nav").removeAttribute("open");
 	};
 
 	const pages = [
@@ -26,7 +24,7 @@
 	];
 </script>
 
-<Nav {pages} {state} {changePage} {navTog} />
+<Nav {pages} {state} {changePage} />
 
 {#if state.currentPage == "Team"}
 	<svelte:component this={Team} data={data.team} />
