@@ -10,8 +10,9 @@
 
 	$: currentPage = "Home";
 
-	const changePage = (e) => {
-		currentPage = e.target.innerText;
+	const changePage = () => {
+		currentPage = document.querySelector("input[name=navigator]:checked")
+			.value;
 		document.querySelector("#nav").removeAttribute("open");
 	};
 
@@ -23,7 +24,7 @@
 	];
 </script>
 
-<Nav {pages} {currentPage} {changePage} />
+<Nav {pages} {changePage} />
 
 {#if currentPage == "Team"}
 	<svelte:component this={Team} data={data.team} />

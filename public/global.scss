@@ -53,11 +53,11 @@ background: linear-gradient(#111, #206, #60a);
 		border-radius: 50%;
 
 		&.far {
-			animation: nearLoop 20s linear infinite; 
+			animation: nearLoop 20s linear infinite;
 			width: $starDimension - 1;
 			height: $starDimension - 1;
 		}
-		
+
 		&.near {
 			animation: nearLoop 30s linear infinite;
 			width: $starDimension + 1;
@@ -79,5 +79,26 @@ background: linear-gradient(#111, #206, #60a);
 .blur{
 	backdrop-filter: blur(16px);
 	-webkit-backdrop-filter: blur(16px);
+	-moz-backdrop-filter: blur(16px);
 	background: rgba($color: #000000, $alpha: 0.4);
+}
+
+#nav{
+	input[type="radio"] {
+		width: 100%;
+		opacity: 0;
+		height: 4em;
+	}
+	label {
+		padding: 10px;
+		width: 5em;
+		text-align: center;
+		pointer-events: none;
+		position: absolute;
+		top: calc(0.5em - 10px);
+		left: 1.25em;
+	}
+	input[name=navigator]:checked + label{
+		background: linear-gradient(to right, #60f, #18f);
+	}
 }

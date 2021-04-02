@@ -1,23 +1,37 @@
 <script>
-	export let pages, changePage, currentPage;
+	export let pages, changePage;
 </script>
 
-<details id="nav">
+<link rel="preconnect" href="http://edu.sedscelestia.org" />
+<link rel="preconnect" href="http://blog.sedscelestia.org" />
+
+<details id="nav" open>
 	<summary style="z-index:9999">&nbsp;</summary>
-	<ul on:click={changePage}>
+	<ul class="blur" on:click={changePage}>
 		{#each pages as pj, i}
-			<li
-				class={currentPage === pj.page ? "active" : ""}
-				style="animation-delay:{i / 20}s"
-			>
-				{pj.page}
+			<li style="animation-delay:{i / 20}s">
+				<input
+					type="radio"
+					name="navigator"
+					value={pj.page}
+					checked={pj.page === "Home" ? 1 : 0}
+				/>
+				<label for={pj.page}>{pj.page}</label>
 			</li>
 		{/each}
-		<li style="animation-delay:0.2s">
-			<a href="http://edu.sedscelestia.org">Education</a>
+		<li
+			style="animation-delay:0.2s"
+			onclick="window.location.href='http://edu.sedscelestia.org'"
+		>
+			<input type="radio" name="navigator" value="Education" />
+			<label for="Education">Education</label>
 		</li>
-		<li style="animation-delay:0.25s">
-			<a href="http://blog.sedscelestia.org">Blog</a>
+		<li
+			style="animation-delay:0.25s"
+			onclick="window.location.href='http://blog.sedscelestia.org'"
+		>
+			<input type="radio" name="navigator" value="Blog" />
+			<label for="Blog">Blog</label>
 		</li>
 	</ul>
 </details>
@@ -54,28 +68,19 @@
 		overflow: hidden;
 		height: 100%;
 		z-index: -1;
-		background: #0004;
 		color: #fff;
 		animation: enter forwards 0.5s ease;
-		backdrop-filter: blur(32px);
-		-moz-backdrop-filter: blur(32px);
-		-webkit-backdrop-filter: blur(32px);
 		list-style: none;
 		text-align: center;
 		padding: 10% 0;
 		li {
 			position: relative;
 			opacity: 0;
-			padding: 10px;
 			animation: enter forwards 0.5s ease;
-			width: 200px;
+			width: 7em;
 			margin: 0 auto;
-			cursor: pointer;
+			padding: 10px;
 			font-size: 2rem;
-		}
-		.active {
-			font-weight: bold;
-			background: linear-gradient(to right, #60f, #18f);
 		}
 	}
 	@keyframes enter {
