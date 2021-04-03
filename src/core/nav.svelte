@@ -5,7 +5,7 @@
 <link rel="preconnect" href="http://edu.sedscelestia.org" />
 <link rel="preconnect" href="http://blog.sedscelestia.org" />
 
-<details id="nav" open>
+<details id="nav">
 	<summary style="z-index:9999">&nbsp;</summary>
 	<ul class="blur" on:click={changePage}>
 		{#each pages as pj, i}

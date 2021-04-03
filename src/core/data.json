@@ -2,108 +2,88 @@
     "team": {
         "mgmt": [
             {
-                "img": "https://pbs.twimg.com/profile_images/1162996912531730433/b08m-caG_400x400.jpg",
+                "img": "https://qph.fs.quoracdn.net/main-thumb-1474256113-200-qqzalnbnbjkphucworqwkaudsgdbhvbl.jpeg",
                 "name": "Hrutwick Sawant",
                 "pos": "President"
             },
             {
-                "img": "https://pbs.twimg.com/profile_images/1162996912531730433/b08m-caG_400x400.jpg",
+                "img": "https://qph.fs.quoracdn.net/main-thumb-1474256113-200-qqzalnbnbjkphucworqwkaudsgdbhvbl.jpeg",
                 "name": "Harshvardhan C.",
                 "pos": "Vice President"
             },
             {
-                "img": "https://pbs.twimg.com/profile_images/1162996912531730433/b08m-caG_400x400.jpg",
+                "img": "https://qph.fs.quoracdn.net/main-thumb-1474256113-200-qqzalnbnbjkphucworqwkaudsgdbhvbl.jpeg",
                 "name": "Paurush Punyasheel",
                 "pos": "Secretary"
             },
             {
-                "img": "https://pbs.twimg.com/profile_images/1162996912531730433/b08m-caG_400x400.jpg",
+                "img": "https://qph.fs.quoracdn.net/main-thumb-1474256113-200-qqzalnbnbjkphucworqwkaudsgdbhvbl.jpeg",
                 "name": "Ankit Verma",
                 "pos": "Head of Projects"
             },
             {
-                "img": "https://pbs.twimg.com/profile_images/1162996912531730433/b08m-caG_400x400.jpg",
+                "img": "https://qph.fs.quoracdn.net/main-thumb-1474256113-200-qqzalnbnbjkphucworqwkaudsgdbhvbl.jpeg",
                 "name": "Bhuvan S V",
                 "pos": "Head of Lectures"
             },
             {
-                "img": "https://pbs.twimg.com/profile_images/1162996912531730433/b08m-caG_400x400.jpg",
+                "img": "https://qph.fs.quoracdn.net/main-thumb-1474256113-200-qqzalnbnbjkphucworqwkaudsgdbhvbl.jpeg",
                 "name": "Murudkar Kaustubh",
                 "pos": "Head of Observations"
             }
         ],
         "leads": [
             {
-                "img": "https://pbs.twimg.com/profile_images/1162996912531730433/b08m-caG_400x400.jpg",
+                "img": "https://qph.fs.quoracdn.net/main-thumb-1474256113-200-qqzalnbnbjkphucworqwkaudsgdbhvbl.jpeg",
                 "name": "3 Sided Coin",
                 "pos": "Neil Shah"
             },
             {
-                "img": "https://pbs.twimg.com/profile_images/1162996912531730433/b08m-caG_400x400.jpg",
+                "img": "https://qph.fs.quoracdn.net/main-thumb-1474256113-200-qqzalnbnbjkphucworqwkaudsgdbhvbl.jpeg",
                 "name": "Quantum Chess",
                 "pos": "Ayushi Dubal"
             },
             {
-                "img": "https://pbs.twimg.com/profile_images/1162996912531730433/b08m-caG_400x400.jpg",
+                "img": "https://qph.fs.quoracdn.net/main-thumb-1474256113-200-qqzalnbnbjkphucworqwkaudsgdbhvbl.jpeg",
                 "name": "Einsat",
                 "pos": "Ankit Verma"
             },
             {
-                "img": "https://pbs.twimg.com/profile_images/1162996912531730433/b08m-caG_400x400.jpg",
+                "img": "https://qph.fs.quoracdn.net/main-thumb-1474256113-200-qqzalnbnbjkphucworqwkaudsgdbhvbl.jpeg",
                 "name": "Cloud Chamber",
                 "pos": "Vivek S."
             },
             {
-                "img": "https://pbs.twimg.com/profile_images/1162996912531730433/b08m-caG_400x400.jpg",
+                "img": "https://qph.fs.quoracdn.net/main-thumb-1474256113-200-qqzalnbnbjkphucworqwkaudsgdbhvbl.jpeg",
                 "name": "Binary Calculator",
                 "pos": "Yash Pathak"
             },
             {
-                "img": "https://pbs.twimg.com/profile_images/1162996912531730433/b08m-caG_400x400.jpg",
+                "img": "https://qph.fs.quoracdn.net/main-thumb-1474256113-200-qqzalnbnbjkphucworqwkaudsgdbhvbl.jpeg",
                 "name": "CanSat",
                 "pos": "Dhruv Patidar"
             },
             {
-                "img": "https://pbs.twimg.com/profile_images/1162996912531730433/b08m-caG_400x400.jpg",
+                "img": "https://qph.fs.quoracdn.net/main-thumb-1474256113-200-qqzalnbnbjkphucworqwkaudsgdbhvbl.jpeg",
                 "name": "Star Tracker",
                 "pos": "Koi to Tha"
             },
             {
-                "img": "https://pbs.twimg.com/profile_images/1162996912531730433/b08m-caG_400x400.jpg",
+                "img": "https://qph.fs.quoracdn.net/main-thumb-1474256113-200-qqzalnbnbjkphucworqwkaudsgdbhvbl.jpeg",
                 "name": "Comet Trail Sim",
                 "pos": "Yashee Sinha"
             },
             {
-                "img": "https://pbs.twimg.com/profile_images/1162996912531730433/b08m-caG_400x400.jpg",
+                "img": "https://qph.fs.quoracdn.net/main-thumb-1474256113-200-qqzalnbnbjkphucworqwkaudsgdbhvbl.jpeg",
                 "name": "Rocketry",
                 "pos": "Venugopalan Iyenger"
             }
         ]
     },
     "facilities": {
-        "telescopes": [
-            {
-                "title": "Celestron Powerseeker 127EQ",
-                "img": "/assets/images/celestron.jpg",
-                "star": "f/7.87",
-                "range": "18x - 300x"
-            },
-            {
-                "title": "Sky-Watcher Dobsonian 8\" Traditional",
-                "img": "/assets/images/dobbynew.jpeg",
-                "star": "f/5.9",
-                "range": "1x - 409x"
-            },
-            {
-                "title": "Sky-Watcher Dobsonian 6\" Traditional",
-                "img": "/assets/images/dobbyold.jpeg",
-                "star": "f/7.8",
-                "range": "1x - 306x"
-            }
-        ],
         "opensource": [
             {
-                "img": "/assets/images/qc.png",
+                "img": "./assets/images/qc.png",
                 "title": "Quantum chess",
                 "repo": "https://github.com/SEDSCelestiaBPGC/quantum-chess"
             },
@@ -114,41 +94,63 @@
                 "repo": ""
             },
             {
-                "img": "/assets/images/bci.png",
+                "img": "./assets/images/bci.png",
                 "title": "Brain Computer Interface",
                 "repo": "https://github.com/SEDSCelestiaBPGC/BCI"
             },
             {
                 "show": -1,
-                "img": "/assets/svgs/korolev.svg",
+                "img": "./assets/svgs/korolev.svg",
                 "title": "Celestia-Korolev Website (Soon)",
                 "repo": "https://github.com/SEDSCelestiaBPGC/BCI"
             }
         ],
         "podcast": [
             {
-                "icon": "/assets/svgs/youtube.svg",
+                "icon": "./assets/svgs/youtube.svg",
                 "link": "youtube.com/playlist?list=PLGzI_TnIg-eqKRfQTB4wxVFGOnarP3jFJ"
             },
             {
-                "icon": "/assets/svgs/spotify.svg",
+                "icon": "./assets/svgs/spotify.svg",
                 "link": "open.spotify.com/show/0NKbVLI7LpY6069IUCF6xi"
             },
             {
-                "icon": "/assets/svgs/radiopublic.svg",
+                "icon": "./assets/svgs/radiopublic.svg",
                 "link": "radiopublic.com/celestia-onair-WeRp1J"
             },
             {
-                "icon": "/assets/svgs/google.svg",
+                "icon": "./assets/svgs/google.svg",
                 "link": "podcasts.google.com/feed/aHR0cHM6Ly9hbmNob3IuZm0vcy80NWYzZjAwOC9wb2RjYXN0L3Jzcw=="
             },
             {
-                "icon": "/assets/svgs/pocketcast.svg",
+                "icon": "./assets/svgs/pocketcast.svg",
                 "link": "pca.st/b3mqu7bk"
             },
             {
-                "icon": "/assets/svgs/breaker.png",
+                "icon": "./assets/svgs/breaker.png",
                 "link": "breaker.audio/celestia-on-air"
+            }
+        ]
+    },
+    "lookUp": {
+        "telescopes": [
+            {
+                "title": "Celestron Powerseeker 127EQ",
+                "img": "./assets/images/celestron.jpg",
+                "star": "f/7.87",
+                "range": "18x - 300x"
+            },
+            {
+                "title": "Sky-Watcher Dobsonian 8\" Traditional",
+                "img": "./assets/images/dobbynew.jpeg",
+                "star": "f/5.9",
+                "range": "1x - 409x"
+            },
+            {
+                "title": "Sky-Watcher Dobsonian 6\" Traditional",
+                "img": "./assets/images/dobbyold.jpeg",
+                "star": "f/7.8",
+                "range": "1x - 306x"
             }
         ]
     }

@@ -5,10 +5,11 @@
 	import Team from "./components/team.svelte";
 	import Proj from "./components/proj.svelte";
 	import Facc from "./components/facc.svelte";
+	import Obs from "./components/obs.svelte";
 
 	import data from "./core/data.json";
 
-	$: currentPage = "Home";
+	$: currentPage = "Observations";
 
 	const changePage = () => {
 		currentPage = document.querySelector("input[name=navigator]:checked")
@@ -19,6 +20,7 @@
 	const pages = [
 		{ page: "Home", component: Home },
 		{ page: "Team", component: Team },
+		{ page: "Observations", component: Obs },
 		{ page: "Facilities", component: Facc },
 		{ page: "Projects", component: Proj },
 	];
@@ -30,6 +32,8 @@
 	<svelte:component this={Team} data={data.team} />
 {:else if currentPage == "Facilities"}
 	<svelte:component this={Facc} data={data.facilities} />
+{:else if currentPage == "Observations"}
+	<svelte:component this={Obs} data={data.lookUp} />
 {:else if currentPage == "Projects"}
 	<svelte:component this={Proj} />
 {:else}
