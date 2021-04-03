@@ -1,6 +1,6 @@
 <script>
     import Earth from "../micro/earth.svelte";
-    export let data;
+    import data from "../data/team.json";
 </script>
 
 <section>

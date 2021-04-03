@@ -1,6 +1,6 @@
 <script>
-    export let data;
     import Mars from "../micro/mars.svelte";
+    import data from "../data/facc.json";
 </script>
 
 <section>

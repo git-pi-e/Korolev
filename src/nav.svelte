@@ -46,11 +46,16 @@
 			display: none;
 		}
 		&::before {
-			content: "+";
+			display: block;
+			content: " ";
+			background-image: url("../assets/svgs/bars.svg");
+			background-size: 28px 28px;
+			height: 28px;
+			width: 28px;
 		}
 	}
 	details[open] > summary::before {
-		content: "-";
+		background-image: url("../assets/svgs/times.svg");
 	}
 	ul {
 		position: fixed;

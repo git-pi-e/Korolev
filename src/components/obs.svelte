@@ -1,34 +1,17 @@
 <script>
-    export let data;
-
     const options = {
         weekday: "short",
         year: "numeric",
         month: "short",
         day: "numeric",
     };
-    import Events from "../core/events.json";
+    import Events from "../data/events.json";
+    import data from "../data/lookUp.json";
 </script>
 
 <header style="padding:1% 20%;color:#888">
-    <input type="checkbox" id="vehicle1" checked disabled />
-    <label for="vehicle1">We make a main observations page</label><br />
-
-    <input type="checkbox" id="vehicle1" checked disabled />
-    <label for="vehicle1">Usme ek writeup</label><br />
-
-    <input type="checkbox" id="vehicle1" checked disabled />
-    <label for="vehicle1">Ek section me telescopes</label><br />
-
     <input type="checkbox" id="vehicle1" disabled />
-    <label for="vehicle1">Aur doosre section me timeline</label><br />
-
-    <input type="checkbox" id="vehicle1" disabled />
-    <label for="vehicle1">3rd section me astrophotography Aur beech</label><br
-    />
-
-    <input type="checkbox" id="vehicle1" disabled />
-    <label for="vehicle1">beeche star party ke images daal do</label><br />
+    <label for="vehicle1">3rd section me astrophotography Aur beech</label>
 </header>
 
 <section>
@@ -93,12 +76,18 @@
         {/each}
     </article>
     <article
-        class="p-10px m-h-auto bg-cov"
+        class="p-0 m-h-auto bg-cov"
         style="background:url(./assets/images/stpty.jpg) center center;height:300px;"
     >
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia
-        perferendis fuga voluptatibus nostrum nihil beatae qui voluptatum
-        quibusdam a culpa.
+        <div class="w-100 p-20px m-0 flex f-wt1 stpty">
+            <div style="font-size:3em">Looking Up, All Night</div>
+            <p class="f-wt3">
+                Every Year we organise an all night observation session for our
+                members. Lovingly called as "star party". We gather around the
+                bonfire with maggi and telescopes to observe night sky in all
+                its glory
+            </p>
+        </div>
     </article>
 </section>
 
@@ -129,5 +118,15 @@
             left: 5px;
             font-size: 1.5em;
         }
+    }
+    .stpty {
+        background: radial-gradient(#000b, #0002);
+        width: calc(100% - 50px);
+        height: calc(100% - 50px);
+        border: 5px solid #fff;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        flex-direction: column;
     }
 </style>

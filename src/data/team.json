@@ -1,0 +1,81 @@
+{
+    "mgmt": [
+        {
+            "img": "https://qph.fs.quoracdn.net/main-thumb-1474256113-200-qqzalnbnbjkphucworqwkaudsgdbhvbl.jpeg",
+            "name": "Hrutwick Sawant",
+            "pos": "President"
+        },
+        {
+            "img": "https://qph.fs.quoracdn.net/main-thumb-1474256113-200-qqzalnbnbjkphucworqwkaudsgdbhvbl.jpeg",
+            "name": "Harshvardhan C.",
+            "pos": "Vice President"
+        },
+        {
+            "img": "https://qph.fs.quoracdn.net/main-thumb-1474256113-200-qqzalnbnbjkphucworqwkaudsgdbhvbl.jpeg",
+            "name": "Paurush Punyasheel",
+            "pos": "Secretary"
+        },
+        {
+            "img": "https://qph.fs.quoracdn.net/main-thumb-1474256113-200-qqzalnbnbjkphucworqwkaudsgdbhvbl.jpeg",
+            "name": "Ankit Verma",
+            "pos": "Head of Projects"
+        },
+        {
+            "img": "https://qph.fs.quoracdn.net/main-thumb-1474256113-200-qqzalnbnbjkphucworqwkaudsgdbhvbl.jpeg",
+            "name": "Bhuvan S V",
+            "pos": "Head of Lectures"
+        },
+        {
+            "img": "https://qph.fs.quoracdn.net/main-thumb-1474256113-200-qqzalnbnbjkphucworqwkaudsgdbhvbl.jpeg",
+            "name": "Murudkar Kaustubh",
+            "pos": "Head of Observations"
+        }
+    ],
+    "leads": [
+        {
+            "img": "https://qph.fs.quoracdn.net/main-thumb-1474256113-200-qqzalnbnbjkphucworqwkaudsgdbhvbl.jpeg",
+            "name": "3 Sided Coin",
+            "pos": "Neil Shah"
+        },
+        {
+            "img": "https://qph.fs.quoracdn.net/main-thumb-1474256113-200-qqzalnbnbjkphucworqwkaudsgdbhvbl.jpeg",
+            "name": "Quantum Chess",
+            "pos": "Ayushi Dubal"
+        },
+        {
+            "img": "https://qph.fs.quoracdn.net/main-thumb-1474256113-200-qqzalnbnbjkphucworqwkaudsgdbhvbl.jpeg",
+            "name": "Einsat",
+            "pos": "Ankit Verma"
+        },
+        {
+            "img": "https://qph.fs.quoracdn.net/main-thumb-1474256113-200-qqzalnbnbjkphucworqwkaudsgdbhvbl.jpeg",
+            "name": "Cloud Chamber",
+            "pos": "Vivek S."
+        },
+        {
+            "img": "https://qph.fs.quoracdn.net/main-thumb-1474256113-200-qqzalnbnbjkphucworqwkaudsgdbhvbl.jpeg",
+            "name": "Binary Calculator",
+            "pos": "Yash Pathak"
+        },
+        {
+            "img": "https://qph.fs.quoracdn.net/main-thumb-1474256113-200-qqzalnbnbjkphucworqwkaudsgdbhvbl.jpeg",
+            "name": "CanSat",
+            "pos": "Dhruv Patidar"
+        },
+        {
+            "img": "https://qph.fs.quoracdn.net/main-thumb-1474256113-200-qqzalnbnbjkphucworqwkaudsgdbhvbl.jpeg",
+            "name": "Star Tracker",
+            "pos": "Koi to Tha"
+        },
+        {
+            "img": "https://qph.fs.quoracdn.net/main-thumb-1474256113-200-qqzalnbnbjkphucworqwkaudsgdbhvbl.jpeg",
+            "name": "Comet Trail Sim",
+            "pos": "Yashee Sinha"
+        },
+        {
+            "img": "https://qph.fs.quoracdn.net/main-thumb-1474256113-200-qqzalnbnbjkphucworqwkaudsgdbhvbl.jpeg",
+            "name": "Rocketry",
+            "pos": "Venugopalan Iyenger"
+        }
+    ]
+}

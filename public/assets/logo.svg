@@ -1,16 +1,16 @@
-<svg xmlns:svg="http://www.w3.org/2000/svg" viewbox="0 0 512 1088" height="256" width="544">
+<svg xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewbox="0 0 512 1088" height="256" width="544">
 <defs>
-  <circle id="main" cx="256" cy="256" r="248" stroke="#fff" stroke-width="8" fill="black" /> 
+  <circle id="main" cx="256" cy="256" r="248" stroke="#fff" stroke-width="8" fill="black" />
     <clipPath id="eclipse">
         <use xlink:href="#main"/>
     </clipPath>
 </defs>
-  <circle cx="512" cy="256" r="64" fill="#000"/> 
-  <circle cx="256" cy="256" r="248" stroke="#fff" stroke-width="8" fill="black" /> 
+  <circle cx="512" cy="256" r="64" fill="#000"/>
+  <circle cx="256" cy="256" r="248" stroke="#fff" stroke-width="8" fill="black" />
 <g clip-path="url(#eclipse)">
-  <circle cx="340" cy="256" r="240" fill="#fff" /> 
+  <circle cx="340" cy="256" r="240" fill="#fff" />
   <text y="290" x="160" fill="#000" font-family="Helvetica" font-size="100">SEDS</text>
 </g>
-  <circle cx="512" cy="256" r="64" fill="#fff" style="mix-blend-mode: difference;"/> 
+  <circle cx="512" cy="256" r="64" fill="#fff" style="mix-blend-mode: difference;"/>
     <text y="290" x="595" fill="#fff" font-family="Helvetica" font-size="100">CELESTIA</text>
-</svg> 
+</svg>

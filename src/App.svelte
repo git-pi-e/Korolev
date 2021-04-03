@@ -1,13 +1,11 @@
 <script>
-	import Nav from "./core/nav.svelte";
+	import Nav from "./nav.svelte";
 	import Home from "./components/home.svelte";
 
 	import Team from "./components/team.svelte";
 	import Proj from "./components/proj.svelte";
 	import Facc from "./components/facc.svelte";
 	import Obs from "./components/obs.svelte";
-
-	import data from "./core/data.json";
 
 	$: currentPage = "Home";
 
@@ -29,13 +27,13 @@
 <Nav {pages} {changePage} />
 
 {#if currentPage == "Team"}
-	<svelte:component this={Team} data={data.team} />
+	<svelte:component this={Team} />
 {:else if currentPage == "Facilities"}
-	<svelte:component this={Facc} data={data.facilities} />
+	<svelte:component this={Facc} />
 {:else if currentPage == "Observations"}
-	<svelte:component this={Obs} data={data.lookUp} />
+	<svelte:component this={Obs} />
 {:else if currentPage == "Projects"}
 	<svelte:component this={Proj} />
 {:else}
-	<svelte:component this={Home} data={data.home} />
+	<svelte:component this={Home} />
 {/if}

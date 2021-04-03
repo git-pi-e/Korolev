@@ -1,6 +1,7 @@
 <script>
     import BH from "../micro/bh.svelte";
-    import data from "../core/projects.json";
+
+    import data from "../data/projects.json";;
 
     const backgrounder = (i) => {
         const opts = [
