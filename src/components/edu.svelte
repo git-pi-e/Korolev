@@ -4,11 +4,11 @@
 
 <section>
     <article>
-        <div style="font-weight:600">BOOKS WE RECOMMEND</div>
+        <div class="f-wt6">BOOKS WE RECOMMEND</div>
         <hr />
-        <div style="display:flex;overflow-x: scroll;padding:10px 0;">
+        <div class="flex p-10px" style="overflow-x: scroll;">
             {#each data.books as bk}
-                <div class="books">
+                <div class="books flex">
                     <img src="https://{bk.image}" alt={bk.name} />
                 </div>
             {/each}
@@ -16,13 +16,11 @@
     </article>
     <br />
     <article>
-        <div style="font-weight:600">CHANNELS WE RECOMMEND</div>
+        <div class="f-wt6">CHANNELS WE RECOMMEND</div>
         <hr />
-        <div
-            style="display:flex;overflow-x: scroll;padding:10px 0;text-align:center;"
-        >
+        <div class="flex p-10px" style="overflow-x: scroll;text-align:center;">
             {#each data.yt as y}
-                <div class="channels">
+                <div class="channels flex">
                     <img src="https://{y.image}" alt={y.name} />
                     {y.name}
                 </div>
@@ -31,7 +29,7 @@
     </article>
     <br />
     <article>
-        <div style="font-weight:600">MISTAKES IN SCI-FI MOVIES</div>
+        <div class="f-wt6">MISTAKES IN SCI-FI MOVIES</div>
         <hr />
         <input type="text" />
         <table>Movies</table>
@@ -46,7 +44,6 @@
         }
     }
     .books {
-        display: flex;
         flex-direction: column;
         margin-right: 20px;
         img {
@@ -56,7 +53,6 @@
         }
     }
     .channels {
-        display: flex;
         flex-direction: column;
         margin-right: 10px;
         img {

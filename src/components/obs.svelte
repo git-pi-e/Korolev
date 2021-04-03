@@ -40,8 +40,11 @@
         dolorem beatae repudiandae culpa? Voluptates deleniti, sapiente sit
         temporibus esse mollitia sint! Inventore!
     </article>
-    <article style="background:linear-gradient(135deg, #66e, #3469ff)">
-        <div class="l1">
+    <article
+        class="p-10px m-h-auto"
+        style="background:linear-gradient(135deg, #66e, #3469ff)"
+    >
+        <div class="l1 p-10px flex f-wt5">
             <span> Telescopes </span>
             <svg viewBox="0 0 512 512"
                 ><path
@@ -50,15 +53,18 @@
             >
         </div>
         {#each data.telescopes as tsc}
-            <div class="lecture">
-                <div class="telescD blur">{tsc.star} ({tsc.range})</div>
-                <div class="telesc blur">{tsc.title}</div>
-                <img src={tsc.img} alt="" />
+            <div class="lecture w-100">
+                <div class="telescD p-5px blur">{tsc.star} ({tsc.range})</div>
+                <div class="telesc p-5px blur">{tsc.title}</div>
+                <img class="w-100" src={tsc.img} alt="" />
             </div>
         {/each}
     </article>
-    <article style="background:linear-gradient(135deg, #e6e, #945)">
-        <div class="l1">
+    <article
+        class="p-10px m-h-auto"
+        style="background:linear-gradient(135deg, #e6e, #945)"
+    >
+        <div class="l1 p-10px flex f-wt5">
             <span> Upcoming in Space </span>
             <svg viewBox="0 0 512 512"
                 ><path
@@ -69,10 +75,15 @@
         {#each Events.filter((e) => new Date(e.date) - new Date() > 0) as event, i}
             {#if i < 2}
                 <div>
-                    {event.title} on {new Date(event.date).toLocaleDateString(
-                        "en-UK",
-                        options
-                    )} - {event.time}
+                    <span style="font-size:1.2em;">
+                        <strong>
+                            {new Date(event.date).toLocaleDateString(
+                                "en-UK",
+                                options
+                            )} - {event.time}</strong
+                        >
+                        <i style="color:#eeec">{event.title}</i>
+                    </span>
                     <p>
                         {event.desc} <br />
                         {event.misc}
@@ -81,57 +92,42 @@
             {/if}
         {/each}
     </article>
+    <article
+        class="p-10px m-h-auto bg-cov"
+        style="background:url(./assets/images/stpty.jpg) center center;height:300px;"
+    >
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia
+        perferendis fuga voluptatibus nostrum nihil beatae qui voluptatum
+        quibusdam a culpa.
+    </article>
 </section>
 
 <style type="text/scss">
     section {
-        .l1 {
-            padding: 10px;
-            display: flex;
-            justify-content: space-between;
-            font-size: 16px;
-            font-weight: 500;
-            text-transform: uppercase;
-            color: #fff;
-            svg {
-                width: 25px;
-                height: 25px;
-                fill: #fff;
-            }
-        }
         padding: 4% 30%;
-        article {
-            margin: 0 auto;
-            border-radius: 24px;
-            padding: 10px;
-            margin: 20px 0;
-        }
     }
     .lecture {
-        width: 100%;
         position: relative;
         color: #fff;
         img {
-            width: 100%;
             max-height: 400px;
             object-fit: cover;
-            border-radius: 10px;
+            border-radius: 5px;
+        }
+        .telesc,
+        .telescD {
+            border-radius: 5px;
+            color: #fff;
+            position: absolute;
         }
         .telescD {
-            position: absolute;
             top: 5px;
             right: 5px;
-            border-radius: 10px;
-            padding: 5px;
-            color: #fff;
         }
         .telesc {
-            position: absolute;
             bottom: 5px;
             left: 5px;
             font-size: 1.5em;
-            border-radius: 10px;
-            padding: 5px;
         }
     }
 </style>

@@ -4,8 +4,11 @@
 </script>
 
 <section>
-    <article style="background:linear-gradient(135deg, #e66, #ba1e68)">
-        <div class="l1">
+    <article
+        class="m-h-auto p-10px"
+        style="background:linear-gradient(135deg, #e66, #ba1e68)"
+    >
+        <div class="l1 flex f-wt5">
             <span> Open Lectures </span>
             <svg viewBox="0 0 640 512"
                 ><path
@@ -13,7 +16,7 @@
                 /></svg
             >
         </div>
-        <div class="lecture">
+        <div class="lecture w-100">
             <a
                 class="watch"
                 href="https://youtube.com/channel/UCuZ1RL7Qv5tKaQeWy28qhUw"
@@ -21,7 +24,7 @@
                 Watch Here
             </a>
             <img src="/assets/images/lectures.png" alt="" />
-            <p>
+            <p class="p-10px">
                 Various people including professors from reputable universities
                 and even our own club members give lectures. Paper presentation
                 is a new venture we have undertaken. People select a paper and
@@ -30,8 +33,11 @@
             </p>
         </div>
     </article>
-    <article style="background:linear-gradient(135deg, #e6e, #945)">
-        <div class="l1">
+    <article
+        class="m-h-auto p-10px"
+        style="background:linear-gradient(135deg, #e6e, #945)"
+    >
+        <div class="l1 flex f-wt5">
             <span> Open Source </span>
             <svg viewBox="0 0 384 512"
                 ><path
@@ -41,8 +47,8 @@
         </div>
         <div style="display:flex;flex-wrap:wrap;">
             {#each data.opensource as osc}
-                {#if !(osc.show == -1)}
-                    <a class="pj" href={osc.repo}>
+                {#if !(osc.show === -1)}
+                    <a class="pj w-50 flex" href={osc.repo}>
                         <div style="flex:1">
                             <img src={osc.img} alt="" />
                         </div>
@@ -52,8 +58,11 @@
             {/each}
         </div>
     </article>
-    <article style="background:linear-gradient(135deg, #B5E, #83C)">
-        <div class="l1">
+    <article
+        class="m-h-auto p-10px"
+        style="background:linear-gradient(135deg, #B5E, #83C)"
+    >
+        <div class="l1 flex f-wt5">
             <span> Podcast </span>
             <svg viewBox="0 0 448 512">
                 <path
@@ -61,14 +70,15 @@
                 /></svg
             >
         </div>
-        <div class="lecture">
-            <img src="/assets/images/podcast.png" alt="" />
+        <div class="lecture w-100">
+            <img class="w-100" src="/assets/images/podcast.png" alt="" />
         </div>
         <div
-            style="display:flex;justify-content:space-around;padding-top:20px;"
+            class="flex"
+            style="justify-content:space-around;padding-top:20px;"
         >
             {#each data.podcast as lnk}
-                <a href="https://{lnk.link}" class="pcd">
+                <a href="https://{lnk.link}" class="pcd p-50x">
                     <img
                         src={lnk.icon}
                         alt=""
@@ -84,40 +94,17 @@
 
 <style type="text/scss">
     section {
-        .l1 {
-            padding: 10px;
-            display: flex;
-            justify-content: space-between;
-            font-size: 16px;
-            font-weight: 500;
-            text-transform: uppercase;
-            color: #fff;
-            svg {
-                width: 25px;
-                height: 25px;
-                fill: #fff;
-            }
-        }
         padding: 4% 30%;
-        article {
-            margin: 0 auto;
-            border-radius: 24px;
-            padding: 10px;
-            margin: 20px 0;
-        }
     }
     .lecture {
-        width: 100%;
         position: relative;
         color: #fff;
         img {
-            width: 100%;
             max-height: 400px;
             object-fit: cover;
             border-radius: 10px;
         }
         p {
-            padding: 10px;
             padding-top: 0;
             line-height: 1.5em;
             &::first-line {
@@ -141,30 +128,12 @@
                 color: #fff;
             }
         }
-        .telescD {
-            position: absolute;
-            top: 5px;
-            right: 5px;
-            border-radius: 10px;
-            padding: 5px;
-            color: #fff;
-        }
-        .telesc {
-            position: absolute;
-            bottom: 5px;
-            left: 5px;
-            font-size: 1.5em;
-            border-radius: 10px;
-            padding: 5px;
-        }
     }
     .pj {
-        display: flex;
         margin: 5px 0;
         cursor: pointer;
         height: 225px;
         flex-direction: column;
-        width: 50%;
         align-items: center;
         padding-top: 1%;
         transition: background 0.3s ease;
@@ -180,7 +149,6 @@
         }
     }
     .pcd {
-        padding: 5px;
         border-radius: 5px;
         &:hover {
             background: #a4d;

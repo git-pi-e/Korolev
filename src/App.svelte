@@ -9,7 +9,7 @@
 
 	import data from "./core/data.json";
 
-	$: currentPage = "Observations";
+	$: currentPage = "Home";
 
 	const changePage = () => {
 		currentPage = document.querySelector("input[name=navigator]:checked")

@@ -8,9 +8,9 @@
     ];
 </script>
 
-<section>
+<section class="p-0 m-0">
     <div><img src="./assets/logo.svg" alt="" /></div>
-    <!-- <div>
+    <div>
         <svg viewbox="0 -56 512 600" height="512" width="512">
             <defs>
                 <clipPath id="2009">
@@ -47,29 +47,25 @@
                 </tspan>
             </text>
         </svg>
-    </div> -->
-    <div class="image-container">
+    </div>
+    <div class="image-container p-0 m-0 w-100">
         {#each images as img}
-            <img src="https://images.unsplash.com/photo-{img}" alt="" />
+            <img
+                class="m-0 w-100"
+                src="https://images.unsplash.com/photo-{img}"
+                alt=""
+            />
         {/each}
     </div>
 </section>
 
 <style type="text/scss">
     section {
-        padding: 0;
-        margin: 0;
         .image-container {
             position: relative;
-            margin: 0;
-            padding: 0;
-            width: 100%;
-
             img {
-                margin: 0;
                 height: 50vh;
                 opacity: 1;
-                width: 100%;
                 transition: opacity 0.1s ease;
                 object-fit: cover;
 

@@ -5,7 +5,7 @@
 
 <section>
     <article>
-        <h1 class="l1"><span>SEDS Celestia</span></h1>
+        <h1 class="l1 flex f-wt5"><span>SEDS Celestia</span></h1>
         <p style="line-height:1.5em;font-size:1.1em;text-align:justify;">
             SEDS Celestia is a chapter that is a part of SEDS India,
             headquartered in VIT Vellore. The international headquarters of SEDS
@@ -23,7 +23,7 @@
         </p>
     </article>
     <article>
-        <h1 class="l1">
+        <h1 class="l1 flex f-wt5">
             <span>Management</span>
             <svg viewBox="0 0 512 512"
                 ><path
@@ -31,9 +31,9 @@
                 /></svg
             >
         </h1>
-        <div class="teamrow">
+        <div class="teamrow flex">
             {#each data.mgmt as p}
-                <div class="imgCont">
+                <div class="imgCont f-wt4">
                     <img src={p.img} alt="" />
                     <br />
                     <span style="font-weight:600;color:#18f"> {p.name} </span>
@@ -43,7 +43,7 @@
         </div>
     </article>
     <article>
-        <h1 class="l1">
+        <h1 class="l1 flex f-wt5">
             <span>Leads</span>
             <svg viewBox="0 0 448 512"
                 ><path
@@ -51,9 +51,9 @@
                 /></svg
             >
         </h1>
-        <div class="teamrow">
+        <div class="teamrow flex">
             {#each data.leads as p}
-                <div class="imgCont">
+                <div class="imgCont f-wt4">
                     <img src={p.img} alt="" />
                     <br />
                     <span style="font-weight:600;color:#f66b57">
@@ -71,25 +71,11 @@
     section {
         padding: 4% 20%;
         .l1 {
-            display: flex;
-            justify-content: space-between;
             font-size: 32px;
-            font-weight: 500;
-            text-transform: uppercase;
-            color: #fff;
-            svg {
-                width: 50px;
-                height: 50px;
-                fill: #fff;
-            }
         }
     }
     article {
-        border-radius: 24px;
-        padding: 1px 10px 10px 10px;
-        margin: 10px 0;
         .teamrow {
-            display: flex;
             flex-wrap: wrap;
             .imgCont {
                 width: 200px;
@@ -102,7 +88,6 @@
                 }
                 margin: 40px;
                 font-size: 1.25em;
-                font-weight: 400;
             }
         }
     }

@@ -7,7 +7,7 @@
 
 <details id="nav">
 	<summary style="z-index:9999">&nbsp;</summary>
-	<ul class="blur" on:click={changePage}>
+	<ul class="blur w-100" on:click={changePage}>
 		{#each pages as pj, i}
 			<li style="animation-delay:{i / 20}s">
 				<input
@@ -62,7 +62,6 @@
 	}
 	ul {
 		position: fixed;
-		width: 100%;
 		top: -15px;
 		left: 0;
 		overflow: hidden;
@@ -70,7 +69,6 @@
 		z-index: -1;
 		color: #fff;
 		animation: enter forwards 0.5s ease;
-		list-style: none;
 		text-align: center;
 		padding: 10% 0;
 		li {
