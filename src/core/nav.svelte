@@ -37,15 +37,7 @@
 </details>
 
 <style type="text/scss">
-	#nav {
-		position: absolute;
-		top: 10px;
-		left: 10px;
-		color: #fff;
-		z-index: 5;
-	}
 	details > summary {
-		list-style-type: none;
 		z-index: 1;
 		outline: none;
 		font-size: 3em;
@@ -65,6 +57,7 @@
 		top: -15px;
 		left: 0;
 		overflow: hidden;
+		list-style: none;
 		height: 100%;
 		z-index: -1;
 		color: #fff;
@@ -79,6 +72,30 @@
 			margin: 0 auto;
 			padding: 10px;
 			font-size: 2rem;
+		}
+	}
+	#nav {
+		position: absolute;
+		top: 10px;
+		left: 10px;
+		color: #fff;
+		z-index: 5;
+		input[name="navigator"] {
+			width: 100%;
+			opacity: 0 !important;
+			height: 4em;
+		}
+		label {
+			padding: 10px;
+			width: 6em;
+			text-align: center;
+			pointer-events: none !important;
+			position: absolute;
+			top: calc(0.5em - 10px);
+			left: 1.25em;
+		}
+		input[name="navigator"]:checked + label {
+			background: linear-gradient(to right, #60f, #18f);
 		}
 	}
 	@keyframes enter {

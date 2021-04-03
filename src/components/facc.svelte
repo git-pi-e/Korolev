@@ -23,7 +23,7 @@
             >
                 Watch Here
             </a>
-            <img src="/assets/images/lectures.png" alt="" />
+            <img class="w-100" src="/assets/images/lectures.png" alt="" />
             <p class="p-10px">
                 Various people including professors from reputable universities
                 and even our own club members give lectures. Paper presentation

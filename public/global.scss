@@ -73,28 +73,6 @@ svg {
 	background: rgba($color: #000000, $alpha: 0.4);
 }
 
-#nav{
-	input {
-		width: 100%;
-		opacity: 0 !important;
-		visibility: hidden;
-		height: 4em;
-	}
-	label {
-		padding: 10px;
-		width: 6em;
-		text-align: center;
-		pointer-events: none;
-		position: absolute;
-		top: calc(0.5em - 10px);
-		left: 1.25em;
-	}
-	input[name=navigator]:checked + label{
-		background: linear-gradient(to right, #60f, #18f);
-	}
-}
-
-
 .l1 {
 	font-size: 1rem;
 	justify-content: space-between;
@@ -106,7 +84,6 @@ svg {
 		fill: #fff;
 	}
 }
-
 
 .flex{display: flex;}
 
