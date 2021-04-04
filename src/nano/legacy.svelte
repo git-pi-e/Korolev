@@ -1,4 +1,4 @@
-<svg viewbox="0 -56 512 600" height="512" width="512">
+<svg viewbox="75 0 300 500" height="512" width="512">
     <defs>
         <clipPath id="2009">
             <rect y="-16" width="512" height="140" />

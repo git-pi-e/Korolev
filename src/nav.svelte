@@ -2,39 +2,41 @@
 	export let pages, changePage, currentPage;
 </script>
 
-<link rel="preconnect" href="http://edu.sedscelestia.org" />
-<link rel="preconnect" href="http://blog.sedscelestia.org" />
+<celestia-nav>
+	<link rel="preconnect" href="http://edu.sedscelestia.org" />
+	<link rel="preconnect" href="http://blog.sedscelestia.org" />
 
-<details id="nav">
-	<summary style="z-index:9999">&nbsp;</summary>
-	<ul class="blur w-100" on:click={changePage}>
-		{#each pages as pj, i}
-			<li style="animation-delay:{i / 20}s">
-				<input
-					type="radio"
-					name="navigator"
-					value={pj.page}
-					checked={currentPage === pj.page ? 1 : 0}
-				/>
-				<label for={pj.page}>{pj.page}</label>
+	<details id="nav">
+		<summary style="z-index:9999">&nbsp;</summary>
+		<ul class="blur w-100" on:click={changePage}>
+			{#each pages as pj, i}
+				<li style="animation-delay:{i / 20}s">
+					<input
+						type="radio"
+						name="navigator"
+						value={pj.page}
+						checked={currentPage === pj.page ? 1 : 0}
+					/>
+					<label for={pj.page}>{pj.page}</label>
+				</li>
+			{/each}
+			<li
+				style="animation-delay:0.2s"
+				onclick="window.location.href='http://edu.sedscelestia.org'"
+			>
+				<input type="radio" name="navigator" value="Education" />
+				<label for="Education">Education</label>
 			</li>
-		{/each}
-		<li
-			style="animation-delay:0.2s"
-			onclick="window.location.href='http://edu.sedscelestia.org'"
-		>
-			<input type="radio" name="navigator" value="Education" />
-			<label for="Education">Education</label>
-		</li>
-		<li
-			style="animation-delay:0.25s"
-			onclick="window.location.href='http://blog.sedscelestia.org'"
-		>
-			<input type="radio" name="navigator" value="Blog" />
-			<label for="Blog">Blog</label>
-		</li>
-	</ul>
-</details>
+			<li
+				style="animation-delay:0.25s"
+				onclick="window.location.href='http://blog.sedscelestia.org'"
+			>
+				<input type="radio" name="navigator" value="Blog" />
+				<label for="Blog">Blog</label>
+			</li>
+		</ul>
+	</details>
+</celestia-nav>
 
 <style type="text/scss">
 	details > summary {
@@ -89,7 +91,7 @@
 		input[name="navigator"] {
 			width: 100%;
 			opacity: 0 !important;
-			height: 4em;
+			height: 3em;
 		}
 		label {
 			padding: 10px;

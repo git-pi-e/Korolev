@@ -16,7 +16,7 @@
     setInterval(() => (img = images[~~(Math.random() * 5)]), 3e3);
 </script>
 
-<section class="p-0 m-0">
+<celestia-page class="section p-0 m-0">
     <div
         class="image-container p-0 m-0 w-100"
         style="position:relative;height:500px;"
@@ -31,43 +31,33 @@
             style="position:absolute;z-index:-1;"
         />
     </div>
-    <article class="flex blur" style="justify-content:space-around;">
-        <button class="p-5px m-10px" on:click={() => changePage("Projects")}
-            >Projects</button
+    <article class="flex" style="justify-content:space-around;">
+        <button
+            class="p-5px m-10px blur"
+            on:click={() => changePage("Projects")}>Projects</button
         >
-        <button class="p-5px m-10px">
+        <button class="p-5px m-10px blur">
             <a href="http://blog.sedscelestia.org">Blog</a>
         </button>
     </article>
     <div class="m-h-auto" style="width:512px;">
         <Legacy />
     </div>
-    <article
-        class="p-10px m-h-auto flex"
-        style="background:linear-gradient(135deg, #e6e, #945)"
-    >
-        <div>
-            <svg />
-            Insta
-        </div>
-        <div>
-            <svg />
-            FB
-        </div>
-        <div>
-            <svg />
-            IG
-        </div>
+    <article class="p-10px m-h-auto flex" style="justify-content:space-around;">
+        <style>
+            a img {
+                width: 100px;
+                height: 100px;
+            }
+        </style>
+        <a href=""><img src="./assets/icons/youtube.png" alt="" /></a>
+        <a href=""><img src="./assets/icons/facebook.png" alt="" /></a>
+        <a href=""><img src="./assets/icons/instagram.png" alt="" /></a>
     </article>
-    <footer class="flex p-10px">
-        <div>Our Links</div>
-        <hr />
-        <div>Links2</div>
-    </footer>
-</section>
+</celestia-page>
 
 <style type="text/scss">
-    section {
+    .section {
         article {
             margin: 20px auto;
             width: 60%;
