@@ -22,11 +22,22 @@ body {
 	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 }
 
+button{
+	font-size:1rem;
+	border: 0;
+	outline: none;
+	cursor: pointer;
+}
+
 svg {
 	fill:none;
 	stroke:currentcolor;
 	stroke-linecap:round;
 	stroke-linejoin:round;
+}
+
+img{
+	object-fit: cover;
 }
 
 #star-space{ background: linear-gradient(#111, #206, #60a); }

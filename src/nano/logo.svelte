@@ -1,7 +1,6 @@
 <svg
-    viewbox="0 0 512 1088"
-    height="256"
-    width="544"
+    viewbox="0 0 1088 512"
+    width="128px"
     font-size="100"
     font-family="Helvetica"
 >

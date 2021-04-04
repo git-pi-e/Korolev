@@ -45,14 +45,14 @@
                 /></svg
             >
         </div>
-        <div style="display:flex;flex-wrap:wrap;">
+        <div class="flex" style="flex-wrap:wrap;justify-content:space-evenly;">
             {#each data.opensource as osc}
                 {#if !(osc.show === -1)}
-                    <a class="pj w-50 flex" href={osc.repo}>
-                        <div style="flex:1">
-                            <img src={osc.img} alt="" />
+                    <a class="pj m-5px" href={osc.repo}>
+                        <img src={osc.img} alt="" />
+                        <div class="w-100" style="text-align: center;">
+                            {osc.title}
                         </div>
-                        <div style="flex:3;padding:10px;">{osc.title}</div>
                     </a>
                 {/if}
             {/each}
@@ -73,12 +73,9 @@
         <div class="lecture w-100">
             <img class="w-100" src="/assets/images/podcast.png" alt="" />
         </div>
-        <div
-            class="flex"
-            style="justify-content:space-around;padding-top:20px;"
-        >
+        <div class="flex p-20px" style="justify-content:space-evenly;">
             {#each data.podcast as lnk}
-                <a href="https://{lnk.link}" class="pcd p-50x">
+                <a href="https://{lnk.link}" class="pcd">
                     <img
                         src={lnk.icon}
                         alt=""
@@ -101,8 +98,7 @@
         color: #fff;
         img {
             max-height: 400px;
-            object-fit: cover;
-            border-radius: 10px;
+            border-radius: 5px;
         }
         p {
             padding-top: 0;
@@ -130,28 +126,21 @@
         }
     }
     .pj {
-        margin: 5px 0;
         cursor: pointer;
         height: 225px;
         flex-direction: column;
         align-items: center;
-        padding-top: 1%;
-        transition: background 0.3s ease;
         img {
-            width: 200px;
-            object-fit: cover;
-            height: 200px;
-            border-radius: 20px;
-        }
-        &:hover {
-            background: #b588;
-            border-radius: 10px;
+            width: 175px;
+            height: 175px;
+            border-radius: 5px;
         }
     }
     .pcd {
         border-radius: 5px;
+        padding: 5px 10px;
         &:hover {
-            background: #a4d;
+            background: #c8e;
         }
     }
     @media (max-width: 1200px) {

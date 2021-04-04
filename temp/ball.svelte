@@ -1,6 +1,20 @@
 <script>
 </script>
 
+<section>
+    <div class="bigEarth">
+        <div style="position:relative;top:-1.25em;">
+            MARCH
+            <br />
+            <span style="font-size:1.5em;"> 2020 </span>
+        </div>
+        <img
+            alt="earth"
+            src="https://cdn.pixabay.com/photo/2016/06/14/20/38/planet-earth-1457453_1280.png"
+        />
+    </div>
+</section>
+
 <style type="text/scss">
     svg {
         fill: #fff;
@@ -53,16 +67,3 @@
         }
     }
 </style>
-
-<section>
-    <div class="bigEarth">
-        <div style="position:relative;top:-1.25em;">
-            MARCH
-            <br />
-            <span style="font-size:1.5em;"> 2020 </span>
-        </div>
-        <img
-            alt="earth"
-            src="https://cdn.pixabay.com/photo/2016/06/14/20/38/planet-earth-1457453_1280.png" />
-    </div>
-</section>

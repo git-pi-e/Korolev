@@ -1,7 +1,7 @@
 <script>
     import BH from "../micro/bh.svelte";
 
-    import data from "../data/projects.json";;
+    import data from "../data/projects.json";
 
     const backgrounder = (i) => {
         const opts = [
@@ -96,7 +96,6 @@
             left: 30px;
             overflow: hidden;
             img {
-                object-fit: cover;
                 height: 100%;
             }
         }

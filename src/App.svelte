@@ -2,6 +2,8 @@
 	import Nav from "./nav.svelte";
 	import Home from "./components/home.svelte";
 
+	import Footer from "./micro/footer.svelte";
+
 	import Team from "./components/team.svelte";
 	import Proj from "./components/proj.svelte";
 	import Facc from "./components/facc.svelte";
@@ -24,7 +26,7 @@
 	];
 </script>
 
-<Nav {pages} {changePage} />
+<Nav {pages} {changePage} {currentPage} />
 
 {#if currentPage == "Team"}
 	<svelte:component this={Team} />
@@ -37,3 +39,5 @@
 {:else}
 	<svelte:component this={Home} />
 {/if}
+
+<Footer />

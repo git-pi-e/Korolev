@@ -1,5 +1,5 @@
 <script>
-	export let pages, changePage;
+	export let pages, changePage, currentPage;
 </script>
 
 <link rel="preconnect" href="http://edu.sedscelestia.org" />
@@ -14,7 +14,7 @@
 					type="radio"
 					name="navigator"
 					value={pj.page}
-					checked={pj.page === "Home" ? 1 : 0}
+					checked={currentPage === pj.page ? 1 : 0}
 				/>
 				<label for={pj.page}>{pj.page}</label>
 			</li>

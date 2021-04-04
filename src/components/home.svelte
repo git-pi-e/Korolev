@@ -15,38 +15,46 @@
 </script>
 
 <section class="p-0 m-0">
-    <code>
-        A translucent dark grey/black type ke colour ka bar would look good on
-        the top <br />
-        The pre footer with our social media links and shit
-    </code>
-    <article class="m-h-auto">
-        <Logo />
-    </article>
-    <div class="image-container p-0 m-0 w-100">
+    <div
+        class="image-container p-0 m-0 w-100"
+        style="position:relative;height:500px;"
+    >
+        <div class="logo">
+            <Logo />
+        </div>
         <img
             class="m-0 w-100"
             src="https://images.unsplash.com/photo-{img}"
             alt=""
+            style="position:absolute;z-index:-1;"
         />
     </div>
-    <article
-        class="flex blur"
-        style="background:#2226;justify-content:space-around;"
-    >
-        <button class="p-20px m-10px">Projects</button>
-        <button class="p-20px m-10px">Blog</button>
+    <article class="flex blur" style="justify-content:space-around;">
+        <button class="p-5px m-10px">Projects</button>
+        <button class="p-5px m-10px">Blog</button>
     </article>
-    <div>
+    <div class="m-h-auto" style="width:512px;">
         <Legacy />
     </div>
+    <article
+        class="p-10px m-h-auto flex"
+        style="background:linear-gradient(135deg, #e6e, #945)"
+    >
+        <div>
+            <svg />
+            Insta
+        </div>
+        <div>
+            <svg />
+            FB
+        </div>
+        <div>
+            <svg />
+            IG
+        </div>
+    </article>
     <footer class="flex p-10px">
         <div>Our Links</div>
-        <hr />
-        <div>Links2</div>
-    </footer>
-    <footer class="flex p-10px">
-        <div>Sitemap</div>
         <hr />
         <div>Links2</div>
     </footer>
@@ -57,17 +65,46 @@
         article {
             margin: 20px auto;
             width: 60%;
+            button {
+                border: 3px solid #a8f;
+                background: transparent;
+                width: 200px;
+                height: 2em;
+                font-size: 24px;
+                text-transform: uppercase;
+                color: #fff;
+                &:hover {
+                    background: #fff4;
+                }
+            }
+        }
+        .logo {
+            width: calc(100% - 2 * (50% - 64px));
+            padding: 10px calc(50% - 64px);
+            position: absolute;
+            z-index: 0;
         }
         .image-container {
             img {
-                height: 50vh;
+                height: 500px;
                 opacity: 1;
                 transition: opacity 0.1s ease;
-                object-fit: cover;
             }
         }
     }
-    footer {
-        background: #888;
+    @media (max-width: 991px) {
+        .image-container {
+            img {
+                height: 400px;
+            }
+        }
+    }
+
+    @media (max-width: 450px) {
+        .image-container {
+            img {
+                height: 300px;
+            }
+        }
     }
 </style>

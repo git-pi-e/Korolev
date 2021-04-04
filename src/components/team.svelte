@@ -84,7 +84,6 @@
                     filter: grayscale(100%);
                     width: 200px;
                     height: 200px;
-                    object-fit: cover;
                 }
                 margin: 40px;
                 font-size: 1.25em;

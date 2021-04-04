@@ -100,7 +100,6 @@
         color: #fff;
         img {
             max-height: 400px;
-            object-fit: cover;
             border-radius: 5px;
         }
         .telesc,
@@ -128,5 +127,25 @@
         text-align: center;
         justify-content: center;
         flex-direction: column;
+    }
+    @media (max-width: 1200px) {
+        section {
+            padding: 4% 25%;
+        }
+    }
+    @media (max-width: 991px) {
+        section {
+            padding: 4% 20%;
+        }
+    }
+    @media (max-width: 768px) {
+        section {
+            padding: 4% 10%;
+        }
+    }
+    @media (max-width: 450px) {
+        section {
+            padding: 4%;
+        }
     }
 </style>
