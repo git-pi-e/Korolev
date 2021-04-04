@@ -1,3 +1,7 @@
+<script>
+    export let changePage;
+</script>
+
 <footer class="flex p-20px" style="justify-content:space-evenly;">
     <div>
         <h5>Sitemap</h5>

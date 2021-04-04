@@ -3,126 +3,118 @@
 
     import data from "../data/projects.json";
 
-    const backgrounder = (i) => {
-        const opts = [
-            "#b71,#fd6",
-            "#1a9,#4f8",
-            "#028,#07e",
-            "#444,#000",
-            "#46f,#f47",
-        ];
-        return (
-            "background:linear-gradient(-20deg," +
-            opts[Math.round(Math.random() * (opts.length - 1))] +
-            ")"
-        );
-    };
+    let filter = "";
 </script>
 
 <div class="space__comet-container" style="position:fixed;">
     <div class="space__comet" />
 </div>
-<section>
-    {#each data.going as pj, i}
-        <div class="hero">
-            <div class="hero-description-bk" style={backgrounder(i)} />
-            <div class="hero-logo"><img src={pj.icon} alt="icon" /></div>
-            <div class="hero-description">{pj.desc}</div>
-            <div class="hero-date">{pj.name}</div>
-            <div class="hero-btn"><a href={pj.moreLink}>{pj.more}</a></div>
+<section class="flex" style="flex-wrap: wrap;">
+    {#each data.going as pj}
+        <div class="boxy m-20px blur">
+            <img src={pj.icon} class="w-100" alt={pj.name} />
+            <div class="title p-20px">
+                <span class="f-wt7">{pj.name}</span>
+                <hr />
+                <details>
+                    <summary>Venugopalan Iyengar </summary>
+                    <p>
+                        {pj.desc}
+                        <button>
+                            <a href={pj.moreLink}>{pj.more}</a>
+                        </button>
+                    </p>
+                </details>
+            </div>
         </div>
     {/each}
 </section>
-
 <section style="overflow-x:scroll;text-align:left;">
     <details>
         <summary style="font-size:20px"
             >Past Projects <i>(Click to Open)</i></summary
         >
-        <p>
-            {#each data.past as pj, i}
-                <div class="comet">
-                    <img src={pj.img} alt="" />
-                    <div class="name">
-                        <h3 style="line-height:0;">
-                            {pj.name} ({pj.year || "Unknown"})
-                        </h3>
-                        <div>{pj.desc}</div>
-                    </div>
-                </div>
+        <table>
+            <style>
+                tr {
+                    width: 100%;
+                    background: linear-gradient(135deg, #a8f, #8af);
+                }
+                td {
+                    justify-content: center;
+                    align-items: center;
+                    height: 100px;
+                }
+                td img {
+                    height: 100px;
+                    width: 100px;
+                }
+                td input {
+                    background: transparent;
+                    font-size: 2em;
+                    color: #fff;
+                }
+                td input::placeholder {
+                    color: #fff8;
+                }
+            </style>
+            <tr>
+                <td colspan="2" style="padding:0 10px;height:50px;">
+                    <input
+                        type="text"
+                        placeholder="Search"
+                        bind:value={filter}
+                    />
+                </td>
+            </tr>
+            {#each data.past.filter((e) => e.name.includes(filter) || e.desc.includes(filter)) as pj, i}
+                <tr>
+                    <td class="p-0"><img src={pj.img} alt="" /></td>
+                    <td class="p-0">
+                        <div class="comet m-5px">
+                            <div class="p-5px">
+                                <div class="f-wt5" style="font-size:1.2em;">
+                                    {pj.name} ({pj.year || "Unknown"})
+                                </div>
+                                <div>{pj.desc}</div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
             {/each}
-        </p>
+        </table>
     </details>
 </section>
 <BH />
 
 <style type="text/scss">
     section {
-        padding: 4% 10%;
+        padding: 20px 10%;
         text-align: center;
     }
-    .hero {
-        display: inline-block;
+    .boxy {
         position: relative;
-        width: 400px;
-        min-width: 400px;
-        height: 150px;
-        border-radius: 10px;
-        overflow: hidden;
-        margin: 20px;
-        .hero-description {
-            position: absolute;
-            color: #fff;
-            font-weight: 900;
-            left: 140px;
-            top: 10px;
-            margin-right: 5px;
-
-            &-bk {
-                position: absolute;
-                top: 0;
-                left: 0;
-                height: 100%;
-                width: 100%;
-            }
+        height: 300px;
+        width: calc(33% - 40px);
+        text-align: left;
+        summary {
+            outline: none;
         }
-        .hero-logo {
-            height: 100px;
-            width: 100px;
-            border-radius: 10px;
-            background-color: #fff;
-            position: absolute;
-            bottom: 30%;
-            left: 30px;
-            overflow: hidden;
-            img {
-                height: 100%;
-            }
+        img {
+            height: 300px;
+            z-index: 0;
         }
-        .hero-btn {
+        .title {
+            background: linear-gradient(to bottom, transparent, #000);
             position: absolute;
-            right: 30px;
-            bottom: 10%;
-            padding: 10px 20px;
-            border: 1px solid #fff;
-            transition: all 0.2s ease;
-            a {
-                color: #fff;
-            }
-            &:hover {
-                background: #fff;
-                a {
-                    color: #000;
-                }
-            }
+            bottom: 0;
+            width: calc(100% - 40px);
+            left: 0;
+            word-wrap: break-word;
+            font-size: 1.2em;
         }
-        .hero-date {
-            position: absolute;
-            color: #fff;
-            left: 35px;
-            bottom: 10px;
-            font-style: italic;
-            font-weight: 400;
+        &:hover {
+            background: #3338;
         }
     }
     .space__comet {
@@ -199,19 +191,7 @@
         }
     }
     .comet {
-        margin: 10px;
-        display: flex;
-        background: #a8f;
-        border-radius: 50px;
         overflow: hidden;
-        .name {
-            padding: 5px;
-        }
-        img {
-            border-radius: 50px;
-            width: 100px;
-            height: 100px;
-        }
     }
     @media (max-width: 991px) {
         section {

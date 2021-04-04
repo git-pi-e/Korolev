@@ -1,4 +1,6 @@
 <script>
+    export let changePage;
+
     import Logo from "../nano/logo.svelte";
     import Legacy from "../nano/legacy.svelte";
 
@@ -11,7 +13,7 @@
     ];
     let img = images[0];
 
-    setInterval(() => (img = images[~~(Math.random() * 5)]), 1e3);
+    setInterval(() => (img = images[~~(Math.random() * 5)]), 3e3);
 </script>
 
 <section class="p-0 m-0">
@@ -30,8 +32,12 @@
         />
     </div>
     <article class="flex blur" style="justify-content:space-around;">
-        <button class="p-5px m-10px">Projects</button>
-        <button class="p-5px m-10px">Blog</button>
+        <button class="p-5px m-10px" on:click={() => changePage("Projects")}
+            >Projects</button
+        >
+        <button class="p-5px m-10px">
+            <a href="http://blog.sedscelestia.org">Blog</a>
+        </button>
     </article>
     <div class="m-h-auto" style="width:512px;">
         <Legacy />
@@ -67,14 +73,15 @@
             width: 60%;
             button {
                 border: 3px solid #a8f;
+                color: #a8f;
                 background: transparent;
                 width: 200px;
                 height: 2em;
                 font-size: 24px;
                 text-transform: uppercase;
-                color: #fff;
                 &:hover {
-                    background: #fff4;
+                    background: #a8f;
+                    color: #fff;
                 }
             }
         }

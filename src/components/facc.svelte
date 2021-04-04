@@ -23,7 +23,7 @@
             >
                 Watch Here
             </a>
-            <img class="w-100" src="/assets/images/lectures.png" alt="" />
+            <img class="w-100" src="./assets/images/lectures.png" alt="" />
             <p class="p-10px">
                 Various people including professors from reputable universities
                 and even our own club members give lectures. Paper presentation
@@ -71,7 +71,7 @@
             >
         </div>
         <div class="lecture w-100">
-            <img class="w-100" src="/assets/images/podcast.png" alt="" />
+            <img class="w-100" src="./assets/images/podcast.png" alt="" />
         </div>
         <div class="flex p-20px" style="justify-content:space-evenly;">
             {#each data.podcast as lnk}

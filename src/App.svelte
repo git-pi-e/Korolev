@@ -11,10 +11,17 @@
 
 	$: currentPage = "Home";
 
-	const changePage = () => {
-		currentPage = document.querySelector("input[name=navigator]:checked")
-			.value;
-		document.querySelector("#nav").removeAttribute("open");
+	const changePage = (page) => {
+		if (typeof page === "string") currentPage = page;
+		else {
+			console.log(
+				document.querySelector("input[name=navigator]:checked").value
+			);
+			currentPage = document.querySelector(
+				"input[name=navigator]:checked"
+			).value;
+			document.querySelector("#nav").removeAttribute("open");
+		}
 	};
 
 	const pages = [
@@ -37,7 +44,7 @@
 {:else if currentPage == "Projects"}
 	<svelte:component this={Proj} />
 {:else}
-	<svelte:component this={Home} />
+	<svelte:component this={Home} {changePage} />
 {/if}
 
-<Footer />
+<Footer {changePage} />

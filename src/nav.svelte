@@ -59,7 +59,7 @@
 	}
 	ul {
 		position: fixed;
-		top: -15px;
+		top: -1em;
 		left: 0;
 		overflow: hidden;
 		list-style: none;
@@ -71,6 +71,7 @@
 		padding: 10% 0;
 		li {
 			position: relative;
+			left: -1em;
 			opacity: 0;
 			animation: enter forwards 0.5s ease;
 			width: 7em;
