@@ -11,18 +11,10 @@
 
 <celestia-page>
     <section>
-        <article>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti
-            laudantium omnis quas architecto rem ducimus nihil debitis sequi
-            laboriosam tempore veritatis amet aspernatur labore iusto possimus
-            qui recusandae, fugit itaque? Numquam nisi, in rem voluptatum ipsam
-            odit dolorem beatae repudiandae culpa? Voluptates deleniti, sapiente
-            sit temporibus esse mollitia sint! Inventore!
-        </article>
-        <article
-            class="p-10px m-h-auto"
-            style="background:linear-gradient(135deg, #66e, #3469ff)"
-        >
+        <h1 class="w-100 tx-c">Observations</h1>
+        <hr />
+        <div style="height:400px;">&nbsp;</div>
+        <article class="p-10px m-h-auto bg-66e-37f">
             <div class="l1 p-10px flex f-wt5">
                 <span> Telescopes </span>
                 <svg viewBox="0 0 512 512"
@@ -41,10 +33,7 @@
                 </div>
             {/each}
         </article>
-        <article
-            class="p-10px m-h-auto"
-            style="background:linear-gradient(135deg, #e6e, #945)"
-        >
+        <article class="p-10px m-h-auto bg-e6e-954">
             <div class="l1 p-10px flex f-wt5">
                 <span> Upcoming in Space </span>
                 <svg viewBox="0 0 512 512"
@@ -74,10 +63,10 @@
             {/each}
         </article>
         <article
-            class="p-0 m-h-auto bg-cov"
+            class="p-0 m-h-auto bg-cov tx-c"
             style="background:url(./assets/images/stpty.jpg) center center;height:300px;"
         >
-            <div class="w-100 p-20px m-0 flex f-wt1 stpty">
+            <div class="w-100 p-20px m-0 flex-col f-wt1 stpty">
                 <div style="font-size:3em">Looking Up, All Night</div>
                 <p class="f-wt3">
                     Every Year we organise an all night observation session for
@@ -96,7 +85,6 @@
     }
     .lecture {
         position: relative;
-        color: #fff;
         img {
             max-height: 400px;
             border-radius: 5px;
@@ -104,7 +92,6 @@
         .telesc,
         .telescD {
             border-radius: 5px;
-            color: #fff;
             position: absolute;
         }
         .telescD {
@@ -123,9 +110,7 @@
         height: calc(100% - 50px);
         border: 5px solid #fff;
         align-items: center;
-        text-align: center;
         justify-content: center;
-        flex-direction: column;
     }
     @media (max-width: 1200px) {
         section {

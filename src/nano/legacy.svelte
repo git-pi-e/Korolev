@@ -30,7 +30,7 @@
         <tspan x="0" font-size="105" y="220">12 YEARS</tspan>
         <tspan x="0" font-size="100" dy="100">CELESTIA</tspan>
         <tspan x="0" font-size="185" dy="120" clip-path="url(#2020)">
-            2020
+            2021
         </tspan>
     </text>
 </svg>

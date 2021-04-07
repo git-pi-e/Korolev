@@ -10,9 +10,12 @@
     <div class="space__comet-container" style="position:fixed;">
         <div class="space__comet" />
     </div>
-    <section class="flex" style="flex-wrap: wrap;">
+    <h1 class="w-100 tx-c">Projects</h1>
+    <hr />
+    <div style="height:400px;">&nbsp;</div>
+    <section class="flex tx-c" style="flex-wrap: wrap;">
         {#each data.going as pj}
-            <div class="boxy m-20px blur">
+            <div class="boxy tx-l m-20px blur">
                 <img src={pj.icon} class="w-100" alt={pj.name} />
                 <div class="title p-20px">
                     <span class="f-wt7">{pj.name}</span>
@@ -30,7 +33,7 @@
             </div>
         {/each}
     </section>
-    <section style="overflow-x:scroll;text-align:left;">
+    <section class="tx-l" style="overflow-x:scroll;">
         <details>
             <summary style="font-size:20px"
                 >Past Projects <i>(Click to Open)</i></summary
@@ -92,16 +95,11 @@
 <style type="text/scss">
     section {
         padding: 20px 10%;
-        text-align: center;
     }
     .boxy {
         position: relative;
         height: 300px;
         width: calc(33% - 40px);
-        text-align: left;
-        summary {
-            outline: none;
-        }
         img {
             height: 300px;
             z-index: 0;

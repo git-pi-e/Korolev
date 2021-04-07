@@ -7,21 +7,19 @@
     <section>
         <article>
             <h1 class="l1 flex f-wt5"><span>SEDS Celestia</span></h1>
-            <p style="line-height:1.5em;font-size:1.1em;text-align:justify;">
+            <p class="tx-j">
                 SEDS Celestia is a chapter that is a part of SEDS India,
                 headquartered in VIT Vellore. The international headquarters of
                 SEDS lies in MIT, Boston, USA.
             </p>
-            <p style="line-height:1.5em;font-size:1.1em;text-align:justify;">
+            <p class="tx-j">
                 People think that we Celestials just observe the “stars and the
                 planets” in the night sky. That’s partially correct. We do much
                 more than star gazing. We organise lectures by various eminent
                 professors, undertake many projects, exhibitions during quark,
                 bonhomie with seniors and Starparty!
             </p>
-            <p style="line-height:1.5em;font-size:1.1em;text-align:justify;">
-                We are the Celestials!
-            </p>
+            <p class="tx-j">We are the Celestials!</p>
         </article>
         <article>
             <h1 class="l1 flex f-wt5">
@@ -32,12 +30,12 @@
                     /></svg
                 >
             </h1>
-            <div class="teamrow flex">
+            <div class="teamrow f-wrap  flex">
                 {#each data.mgmt as p}
                     <div class="imgCont f-wt4">
                         <img src={p.img} alt="" />
                         <br />
-                        <span style="font-weight:600;color:#18f">
+                        <span class="f-wt6" style="color:#18f">
                             {p.name}
                         </span>
                         <br />{p.pos}
@@ -54,12 +52,12 @@
                     /></svg
                 >
             </h1>
-            <div class="teamrow flex">
+            <div class="teamrow f-wrap  flex">
                 {#each data.leads as p}
                     <div class="imgCont f-wt4">
                         <img src={p.img} alt="" />
                         <br />
-                        <span style="font-weight:600;color:#f66b57">
+                        <span class="f-wt6" style="color:#f75">
                             {p.pos}
                         </span>
                         <br />{p.name}
@@ -79,8 +77,10 @@
         }
     }
     article {
+        p {
+            line-height: 1.5em;
+        }
         .teamrow {
-            flex-wrap: wrap;
             .imgCont {
                 width: 200px;
                 img {

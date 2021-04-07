@@ -9,7 +9,7 @@
 	import Facc from "./components/facc.svelte";
 	import Obs from "./components/obs.svelte";
 
-	$: currentPage = "Home";
+	$: currentPage = "Projectsw";
 
 	const changePage = (page) => {
 		if (typeof page === "string") currentPage = page;
@@ -28,7 +28,7 @@
 		{ page: "Home", component: Home },
 		{ page: "Team", component: Team },
 		{ page: "Observations", component: Obs },
-		{ page: "Facilities", component: Facc },
+		{ page: "Events", component: Facc },
 		{ page: "Projects", component: Proj },
 	];
 </script>
@@ -37,7 +37,7 @@
 
 {#if currentPage == "Team"}
 	<svelte:component this={Team} />
-{:else if currentPage == "Facilities"}
+{:else if currentPage == "Events"}
 	<svelte:component this={Facc} />
 {:else if currentPage == "Observations"}
 	<svelte:component this={Obs} />

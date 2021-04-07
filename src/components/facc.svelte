@@ -5,10 +5,7 @@
 
 <celestia-page>
     <section class="part">
-        <article
-            class="m-h-auto p-10px"
-            style="background:linear-gradient(135deg, #e66, #ba1e68)"
-        >
+        <article class="m-h-auto p-10px bg-e66-c26">
             <div class="l1 flex f-wt5">
                 <span> Open Lectures </span>
                 <svg viewBox="0 0 640 512"
@@ -34,10 +31,7 @@
                 </p>
             </div>
         </article>
-        <article
-            class="m-h-auto p-10px"
-            style="background:linear-gradient(135deg, #e6e, #945)"
-        >
+        <article class="m-h-auto p-10px bg-e6e-954">
             <div class="l1 flex f-wt5">
                 <span> Open Source </span>
                 <svg viewBox="0 0 384 512"
@@ -46,15 +40,12 @@
                     /></svg
                 >
             </div>
-            <div
-                class="flex"
-                style="flex-wrap:wrap;justify-content:space-evenly;"
-            >
+            <div class="flex f-wrap" style="justify-content:space-evenly;">
                 {#each data.opensource as osc}
                     {#if !(osc.show === -1)}
                         <a class="pj m-5px" href={osc.repo}>
                             <img src={osc.img} alt="" />
-                            <div class="w-100" style="text-align: center;">
+                            <div class="w-100 tx-c">
                                 {osc.title}
                             </div>
                         </a>
@@ -62,10 +53,7 @@
                 {/each}
             </div>
         </article>
-        <article
-            class="m-h-auto p-10px"
-            style="background:linear-gradient(135deg, #B5E, #83C)"
-        >
+        <article class="m-h-auto p-10px bg-b5e-83c">
             <div class="l1 flex f-wt5">
                 <span> Podcast </span>
                 <svg viewBox="0 0 448 512">
@@ -81,9 +69,10 @@
                 {#each data.podcast as lnk}
                     <a href="https://{lnk.link}" class="pcd">
                         <img
+                            class="h-a"
                             src={lnk.icon}
                             alt=""
-                            style="width:40px;height:auto;"
+                            style="width:40px;"
                         />
                     </a>
                 {/each}
@@ -100,7 +89,6 @@
     }
     .lecture {
         position: relative;
-        color: #fff;
         img {
             max-height: 400px;
             border-radius: 5px;

@@ -31,7 +31,7 @@
             style="position:absolute;z-index:-1;"
         />
     </div>
-    <article class="flex" style="justify-content:space-around;">
+    <article class="flex w-66" style="justify-content:space-around;">
         <button
             class="p-5px m-10px blur"
             on:click={() => changePage("Projects")}>Projects</button
@@ -43,7 +43,10 @@
     <div class="m-h-auto" style="width:512px;">
         <Legacy />
     </div>
-    <article class="p-10px m-h-auto flex" style="justify-content:space-around;">
+    <article
+        class="p-10px m-h-auto flex w-66"
+        style="justify-content:space-around;"
+    >
         <style>
             a img {
                 width: 100px;
@@ -60,7 +63,6 @@
     .section {
         article {
             margin: 20px auto;
-            width: 60%;
             button {
                 border: 3px solid #a8f;
                 color: #a8f;
