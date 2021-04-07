@@ -53,9 +53,15 @@
                 height: 100px;
             }
         </style>
-        <a href=""><img src="./assets/icons/youtube.png" alt="" /></a>
-        <a href=""><img src="./assets/icons/facebook.png" alt="" /></a>
-        <a href=""><img src="./assets/icons/instagram.png" alt="" /></a>
+        <a href={links.content.yt}
+            ><img src="./assets/icons/youtube.png" alt="" /></a
+        >
+        <a href={links.social.fb}
+            ><img src="./assets/icons/facebook.png" alt="" /></a
+        >
+        <a href={links.social.ig}
+            ><img src="./assets/icons/instagram.png" alt="" /></a
+        >
     </article>
 </celestia-page>
 

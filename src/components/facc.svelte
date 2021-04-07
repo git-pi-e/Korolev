@@ -4,7 +4,7 @@
 </script>
 
 <celestia-page>
-    <section class="part">
+    <section class="adaptive">
         <article class="m-h-auto p-10px bg-e66-c26">
             <div class="l1 flex f-wt5">
                 <span> Open Lectures </span>
@@ -15,12 +15,7 @@
                 >
             </div>
             <div class="lecture w-100">
-                <a
-                    class="watch"
-                    href="https://youtube.com/channel/UCuZ1RL7Qv5tKaQeWy28qhUw"
-                >
-                    Watch Here
-                </a>
+                <a class="watch" href={links.content.yt}> Watch Here </a>
                 <img class="w-100" src="./assets/images/lectures.png" alt="" />
                 <p class="p-10px">
                     Various people including professors from reputable
@@ -84,9 +79,6 @@
 </celestia-page>
 
 <style type="text/scss">
-    .part {
-        padding: 4% 30%;
-    }
     .lecture {
         position: relative;
         img {
@@ -134,26 +126,6 @@
         padding: 5px 10px;
         &:hover {
             background: #c8e;
-        }
-    }
-    @media (max-width: 1200px) {
-        .part {
-            padding: 4% 25%;
-        }
-    }
-    @media (max-width: 991px) {
-        .part {
-            padding: 4% 20%;
-        }
-    }
-    @media (max-width: 768px) {
-        .part {
-            padding: 4% 10%;
-        }
-    }
-    @media (max-width: 450px) {
-        .part {
-            padding: 4%;
         }
     }
 </style>

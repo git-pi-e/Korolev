@@ -8,13 +8,14 @@
     - cansat
     - RT
 
-- Slider for latest lectures with the respective posters and links
-to videos
 - Open source images
 - Star party box slider
-- Change telescope name
 - Astrophotography slider
+- Slider for latest lectures with the respective posters and links to videos
+- Change telescope name
 - Posters for projects
 - Add logo in place of autobot
-- Externalise all footer links
 - Style projects page external link button
+
+*Done*
+- Externalise all footer links

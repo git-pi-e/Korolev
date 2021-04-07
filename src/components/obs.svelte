@@ -10,7 +10,7 @@
 </script>
 
 <celestia-page>
-    <section>
+    <section class="adaptive">
         <h1 class="w-100 tx-c">Observations</h1>
         <hr />
         <div style="height:400px;">&nbsp;</div>
@@ -80,9 +80,6 @@
 </celestia-page>
 
 <style type="text/scss">
-    section {
-        padding: 4% 30%;
-    }
     .lecture {
         position: relative;
         img {
@@ -111,25 +108,5 @@
         border: 5px solid #fff;
         align-items: center;
         justify-content: center;
-    }
-    @media (max-width: 1200px) {
-        section {
-            padding: 4% 25%;
-        }
-    }
-    @media (max-width: 991px) {
-        section {
-            padding: 4% 20%;
-        }
-    }
-    @media (max-width: 768px) {
-        section {
-            padding: 4% 10%;
-        }
-    }
-    @media (max-width: 450px) {
-        section {
-            padding: 4%;
-        }
     }
 </style>

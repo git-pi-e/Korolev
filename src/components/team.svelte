@@ -4,7 +4,7 @@
 </script>
 
 <celestia-page>
-    <section>
+    <section class="adaptive">
         <article>
             <h1 class="l1 flex f-wt5"><span>SEDS Celestia</span></h1>
             <p class="tx-j">
@@ -70,11 +70,8 @@
 </celestia-page>
 
 <style type="text/scss">
-    section {
-        padding: 4% 20%;
-        .l1 {
-            font-size: 32px;
-        }
+    .l1 {
+        font-size: 32px;
     }
     article {
         p {
@@ -92,17 +89,6 @@
                 margin: 40px;
                 font-size: 1.25em;
             }
-        }
-    }
-
-    @media (max-width: 991px) {
-        section {
-            padding: 4% 10%;
-        }
-    }
-    @media (max-width: 768px) {
-        section {
-            padding: 4%;
         }
     }
 </style>
