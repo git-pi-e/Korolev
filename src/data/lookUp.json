@@ -1,7 +1,7 @@
 {
     "telescopes": [
         {
-            "title": "Celestron Powerseeker 127EQ",
+            "title": "Celestron Astromaster 130EQ",
             "img": "./assets/images/celestron.jpg",
             "star": "f/7.87",
             "range": "18x - 300x"

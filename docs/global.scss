@@ -3,7 +3,6 @@ html, body {
 	width: 100%;
 	height: 100%;
 }
-
 *::-webkit-scrollbar{ display: none; }
 
 a,a:visited,a:hover{
@@ -20,6 +19,8 @@ body {
 	font-size: 16px;
 	box-sizing: border-box;
 	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+	background: linear-gradient(#111, #206, #60a);
+	background-attachment: fixed;
 }
 
 button, input{
@@ -42,46 +43,25 @@ svg {
 
 img{ object-fit: cover; }
 
-#star-space{ background: linear-gradient(#111, #206, #60a); }
-#star-field, #star-space,#star-lens{
+#star-field, #star-space{
+	position: fixed;
 	top: 0;
 	left: 0;
 	z-index: -2;
 	width: 100%;
 	height: 100%;
-	position: fixed;
-	$starDimension: 2px;
-	.star {
-		width: $starDimension;
-		height: $starDimension;
-		position: absolute;
-		background: #fffa;
-		box-shadow: 0 0 15px #eee;
-		border-radius: 50%;
-		&.far {
-			animation: nearLoop 20s linear infinite;
-			width: $starDimension - 1;
-			height: $starDimension - 1;
-		}
-		&.near {
-			animation: nearLoop 30s linear infinite;
-			width: $starDimension + 1;
-			height: $starDimension + 1;
-		}
-	}
+}
+
+#star-space{
+	animation: nearLoop 20s linear infinite;
+}
+#star-field{
+	animation: nearLoop 32.360679775s linear infinite;
 }
 
 @keyframes nearLoop {
-	0% { transform: translate(0, 0); }
-	100% { transform: translate(-100vw, -100vh); }
-}
-
-
-.blur{
-	backdrop-filter: blur(16px);
-	-webkit-backdrop-filter: blur(16px);
-	-moz-backdrop-filter: blur(16px);
-	background: rgba($color: #000000, $alpha: 0.4);
+	0% { transform: translate(50vw, 50vh); }
+	100% { transform: translate(-50vw, -50vh); }
 }
 
 .l1 {
@@ -94,6 +74,28 @@ img{ object-fit: cover; }
 		height: 1.5em;
 		fill: #fff;
 	}
+}
+
+.btn-std {
+	border: 3px solid #a8f;
+	color: #a8f;
+	background: transparent;
+	width: 200px;
+	height: 2em;
+	font-size: 24px;
+	text-transform: uppercase;
+	&:hover {
+		background: #a8f;
+		color: #fff;
+	}
+}
+
+
+.blur{
+	backdrop-filter: blur(16px);
+	-webkit-backdrop-filter: blur(16px);
+	-moz-backdrop-filter: blur(16px);
+	background: rgba($color: #000000, $alpha: 0.4);
 }
 
 .flex{display: flex;}
