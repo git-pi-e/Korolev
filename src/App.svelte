@@ -1,16 +1,15 @@
 <script>
   import Nav from "./nav.svelte";
-  import Home from "./components/home.svelte";
+  import Home from "./pages/home.svelte";
 
   import Footer from "./micro/footer.svelte";
 
-  import Team from "./components/team.svelte";
-  import Proj from "./components/proj.svelte";
-  import Facc from "./components/facc.svelte";
-  import Obs from "./components/obs.svelte";
+  import Team from "./pages/team.svelte";
+  import Proj from "./pages/proj.svelte";
+  import Facc from "./pages/facc.svelte";
+  import Obs from "./pages/obs.svelte";
 
-  $: currentPage = "Home";
-
+  $: currentPage = "Events";
   const changePage = (page) => {
     if (typeof page === "string") currentPage = page;
     else {
@@ -46,4 +45,4 @@
   <svelte:component this={Home} {changePage} />
 {/if}
 
-<Footer {changePage} />
+<Footer {changePage} {pages} />

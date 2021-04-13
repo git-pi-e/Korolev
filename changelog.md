@@ -8,13 +8,13 @@
     - RT
 
 - Open source images // *DATA PENDING*
-- Star party box slider // *DATA PENDING*
-- Astrophotography slider // *DATA PENDING*
 - Slider for latest lectures with the respective posters and links to videos // *DATA PENDING*
 - Posters for projects // *DATA PENDING*
 - Add logo in place of autobot // *DATA PENDING*
 
+*PARTIAL*
+- Astrophotography slider // *Images PENDING, placeholder done*,
+
 *Done*
-- Style projects page external link button
-- Change telescope name
-- Externalise all footer links
+- Star party box slider
+- Footer links facilities-> events (direct fetch from JSON now)

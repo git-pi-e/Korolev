@@ -40,8 +40,14 @@ svg {
 	stroke-linecap:round;
 	stroke-linejoin:round;
 }
-
 img{ object-fit: cover; }
+
+.boxicon{
+	width: 25px;
+	height: 25px;
+	object-fit: contain;
+}
+
 
 #star-field, #star-space{
 	position: fixed;
