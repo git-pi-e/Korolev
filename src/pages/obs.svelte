@@ -8,7 +8,7 @@
   import Events from "../data/events.json";
   import data from "../data/lookUp.json";
   import Slidr from "../shared/slider.svelte";
-  import Container from "../shared/gradCont.svelte";
+  import Containr from "../shared/gradCont.svelte";
 </script>
 
 <style type="text/scss">
@@ -49,7 +49,7 @@
     <hr />
     <div style="height:400px;">&nbsp;</div>
 
-    <Container title="Telescopes" icon="sat" bg="66e-37f">
+    <Containr title="Telescopes" icon="sat" bg="66e-37f">
       <div slot="body">
         {#each data.telescopes as tsc}
           <div class="lecture w-100">
@@ -59,11 +59,11 @@
           </div>
         {/each}
       </div>
-    </Container>
+    </Containr>
 
     <article class="p-0 m-h-auto bg-cov tx-c">
       <Slidr
-        speed={2}
+        speed={4}
         images={[...Array(7)].map((e, i) => `./assets/images/stpty/${i}.jpg`)}
         height="350px">
         <div slot="internal" class="w-100 p-20px m-0 flex-col f-wt1 stpty">
@@ -73,7 +73,7 @@
       </Slidr>
     </article>
 
-    <Container title="Upcoming in Space" icon="meteor" bg="e6e-954">
+    <Containr title="Upcoming in Space" icon="meteor" bg="e6e-954">
       <div slot="body">
         {#each Events.filter((e) => new Date(e.date) - new Date() > 0) as event, i}
           {#if i < 2}
@@ -88,11 +88,11 @@
           {/if}
         {/each}
       </div>
-    </Container>
+    </Containr>
 
     <article class="p-0 m-h-auto bg-cov tx-c">
       <Slidr
-        speed={2}
+        speed={4}
         images={[...Array(7)].map((e, i) => `./assets/images/stpty/${i}.jpg`)}
         height="350px">
         <div slot="internal" class="w-100 p-20px m-0 flex-col f-wt1 stpty">

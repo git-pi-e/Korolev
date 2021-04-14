@@ -1,7 +1,7 @@
 <script>
   import Mars from "../micro/mars.svelte";
   import data from "../data/facc.json";
-  import Container from "../shared/gradCont.svelte";
+  import Containr from "../shared/gradCont.svelte";
 </script>
 
 <style type="text/scss">
@@ -58,7 +58,7 @@
 
 <celestia-page>
   <section class="adaptive">
-    <Container title="Open Lectures" icon="lec" bg="e66-c26">
+    <Containr title="Open Lectures" icon="lec" bg="e66-c26">
       <div class="lecture w-100" slot="body">
         <a class="watch" href={links.content.yt}> Watch Here </a>
         <img class="w-100" src="./assets/images/lectures.png" alt="" />
@@ -69,9 +69,9 @@
           the club members, and a discussion on the paper is followed.
         </p>
       </div>
-    </Container>
+    </Containr>
 
-    <Container title="Open Source" icon="git" bg="e6e-954">
+    <Containr title="Open Source" icon="git" bg="e6e-954">
       <div
         class="flex f-wrap"
         style="justify-content:space-evenly;"
@@ -85,9 +85,9 @@
           {/if}
         {/each}
       </div>
-    </Container>
+    </Containr>
 
-    <Container title="Podcast" icon="cast" bg="b5e-83c">
+    <Containr title="Podcast" icon="cast" bg="b5e-83c">
       <div slot="body">
         <div class="lecture w-100">
           <img class="w-100" src="./assets/images/podcast.png" alt="" />
@@ -100,7 +100,25 @@
           {/each}
         </div>
       </div>
-    </Container>
+    </Containr>
+
+    <Containr
+      title="Celestia’s Guide to the Universe"
+      icon="astronaut"
+      bg="66e-37f">
+      <div slot="body">
+        <p>
+          SEDS Celestia conducts regular on campus observation sessions, which
+          we are all unfortunately missing out on. Although we cannot share the
+          magical feeling of viewing the wonders of the cosmos through
+          telescopes ourselves, this new year, we bring you Celestia's Guide to
+          the Universe! It is our own virtual guided tour through some of the
+          most spectacular sights in the universe, with the help of Space
+          Engine, a simulation software allowing us to view the universe in
+          close to it's true glory.
+        </p>
+      </div>
+    </Containr>
 
     <div style="height:5em">&nbsp;</div>
     <Mars />

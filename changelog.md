@@ -1,20 +1,21 @@
 ## Pending
-
 - Meta Tags !!!
-- Landing page timeline, major events
 - Make Spinoffs
     - Karatos
     - cansat
     - RT
-
 - Open source images // *DATA PENDING*
-- Slider for latest lectures with the respective posters and links to videos // *DATA PENDING*
+- Slider for latest lectures with the respective posters and links to videos // *Under ReConsideration*
 - Posters for projects // *DATA PENDING*
 - Add logo in place of autobot // *DATA PENDING*
+- Opening supercut video
 
 *PARTIAL*
-- Astrophotography slider // *Images PENDING, placeholder done*,
+- Astrophotography slider // *Images PENDING, placeholder done*
+- Landing page timeline // *I have no design ideas for this :|*
+- Celestia’s Guide to the Universe // *Reduce text + add an image/icon maybe?*
 
-*Done*
-- Star party box slider
-- Footer links facilities-> events (direct fetch from JSON now)
+*DONE*
+- Team page design now on theme
+- Slider Images Crossfade
+- Cleaner 12 years logo. maybe...?

@@ -9,7 +9,7 @@
   import Facc from "./pages/facc.svelte";
   import Obs from "./pages/obs.svelte";
 
-  $: currentPage = "Events";
+  $: currentPage = "Home";
   const changePage = (page) => {
     if (typeof page === "string") currentPage = page;
     else {
@@ -20,6 +20,7 @@
         .value;
       document.querySelector("#nav").removeAttribute("open");
     }
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
   };
 
   const pages = [

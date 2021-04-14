@@ -1,25 +1,22 @@
 <script>
   export let changePage;
 
+  import data from "../data/home";
   import Logo from "../nano/logo.svelte";
-  import Legacy from "../nano/legacy.svelte";
-
-  const images = [
-    "1464802686167-b939a6910659",
-    "1419242902214-272b3f66ee7a",
-    "1543722530-d2c3201371e7",
-    "1444703686981-a3abbc4d4fe3",
-    "1419242902214-272b3f66ee7a",
-  ];
-  let img = images[0];
-
-  setInterval(() => (img = images[~~(Math.random() * 5)]), 3e3);
 </script>
 
 <style type="text/scss">
   .section {
     article {
       margin: 20px auto;
+    }
+    a img {
+      width: 100px;
+      height: 100px;
+      transition: opacity 0.2s ease;
+    }
+    a:hover img {
+      opacity: 0.66;
     }
     .logo {
       width: calc(100% - 2 * (50% - 64px));
@@ -61,9 +58,8 @@
     </div>
     <img
       class="m-0 w-100"
-      src="https://images.unsplash.com/photo-{img}"
-      alt=""
-      style="position:absolute;z-index:-1;" />
+      src="https://images.unsplash.com/photo-1543722530-d2c3201371e7"
+      alt="" />
   </div>
   <article class="flex w-66" style="justify-content:space-around;">
     <button
@@ -73,20 +69,46 @@
       <a href="http://blog.sedscelestia.org">Blog</a>
     </button>
   </article>
-  <div class="m-h-auto" style="width:512px;">
-    <Legacy />
+  <div class="m-h-auto" style="width:400px; ">
+    <img src="./assets/legacy.svg" width="400px" height="400px" alt="" />
   </div>
+  <style>
+    .milestones {
+      width: 600px;
+      font-size: 24px;
+      overflow-x: scroll;
+      background: linear-gradient(
+        to right,
+        #0004 0%,
+        #0002 10%,
+        #0000 50%,
+        #0002 90%,
+        #0004 100%
+      );
+      border-radius: 5px;
+    }
+    .milestone {
+      text-align: center;
+    }
+  </style>
+  <article class="flex p-10px milestones">
+    {#each data.miles as event}
+      <div class="milestone m-10px p-10px" style="white-space: nowrap;">
+        <div class="p-10px">{event.event}</div>
+        <div style="position:relative;">
+          <li
+            class="p-0 m-0"
+            style="position:absolute;top:-0.66em;left:calc(50% - 5px);font-size:48px;" />
+          <hr />
+        </div>
+        <div class="p-10px">{event.year}</div>
+      </div>
+    {/each}
+  </article>
   <article
     class="p-10px m-h-auto flex w-66"
     style="justify-content:space-around;">
-    <style>
-      a img {
-        width: 100px;
-        height: 100px;
-      }
-    </style><a href={links.content.yt}><img
-        src="./assets/icons/youtube.png"
-        alt="" /></a>
+    <a href={links.content.yt}><img src="./assets/icons/youtube.png" alt="" /></a>
     <a href={links.social.fb}><img src="./assets/icons/facebook.png" alt="" /></a>
     <a href={links.social.ig}><img src="./assets/icons/instagram.png" alt="" /></a>
   </article>
