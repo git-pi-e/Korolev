@@ -108,7 +108,7 @@
       bg="66e-37f">
       <div slot="body">
         <iframe
-          src="http://edu.sedscelestia.org/examples/tor/lens.html"
+          src="https://educelestia.herokuapp.com/examples/tor/lens.html"
           class="w-100"
           frameborder="0"
           style="border-radius:5px;min-height:300px;" />

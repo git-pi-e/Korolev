@@ -11,8 +11,3 @@
 - Landing page timeline // *I have no design ideas for this :|*
 
 *DONE*
-- Posters for projects
-- Add logo in place of autobot
-- Past Coordinator's Added
-- Search for past projects & coordinators matches theme style
-- Celestia’s Guide to the Universe with G-Lens Sim
