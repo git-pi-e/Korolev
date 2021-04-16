@@ -9,7 +9,7 @@
   import Facc from "./pages/facc.svelte";
   import Obs from "./pages/obs.svelte";
 
-  $: currentPage = "Events";
+  $: currentPage = "Home";
   const changePage = (page) => {
     if (typeof page === "string") currentPage = page;
     else {

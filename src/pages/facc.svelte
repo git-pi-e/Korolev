@@ -107,15 +107,16 @@
       icon="astronaut"
       bg="66e-37f">
       <div slot="body">
+        <iframe
+          src="http://edu.sedscelestia.org/examples/tor/lens.html"
+          class="w-100"
+          frameborder="0"
+          style="border-radius:5px;min-height:300px;" />
         <p>
-          SEDS Celestia conducts regular on campus observation sessions, which
-          we are all unfortunately missing out on. Although we cannot share the
-          magical feeling of viewing the wonders of the cosmos through
-          telescopes ourselves, this new year, we bring you Celestia's Guide to
-          the Universe! It is our own virtual guided tour through some of the
-          most spectacular sights in the universe, with the help of Space
-          Engine, a simulation software allowing us to view the universe in
-          close to it's true glory.
+          We conducts regular on campus observation sessions, which we are all
+          unfortunately missing out on. This new year, we bring you Celestia's
+          Guide to the Universe! A Virtual Guided Tour through universe, with
+          the help of simulators like Space Engine .
         </p>
       </div>
     </Containr>

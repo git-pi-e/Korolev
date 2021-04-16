@@ -4,7 +4,7 @@
 
 <style>
   .footer {
-    background: #a8f;
+    background: linear-gradient(to bottom, #84f, #42f);
     justify-content: space-evenly;
   }
   @media (max-width: 600px) {

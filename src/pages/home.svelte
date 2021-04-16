@@ -18,6 +18,23 @@
     a:hover img {
       opacity: 0.66;
     }
+    .milestones {
+      width: 600px;
+      font-size: 24px;
+      overflow-x: scroll;
+      background: linear-gradient(
+        to right,
+        #0004 0%,
+        #0002 10%,
+        #0000 50%,
+        #0002 90%,
+        #0004 100%
+      );
+      border-radius: 5px;
+    }
+    .milestone {
+      text-align: center;
+    }
     .logo {
       width: calc(100% - 2 * (50% - 64px));
       padding: 10px calc(50% - 64px);
@@ -39,7 +56,6 @@
       }
     }
   }
-
   @media (max-width: 450px) {
     .image-container {
       img {
@@ -72,25 +88,6 @@
   <div class="m-h-auto" style="width:400px; ">
     <img src="./assets/legacy.svg" width="400px" height="400px" alt="" />
   </div>
-  <style>
-    .milestones {
-      width: 600px;
-      font-size: 24px;
-      overflow-x: scroll;
-      background: linear-gradient(
-        to right,
-        #0004 0%,
-        #0002 10%,
-        #0000 50%,
-        #0002 90%,
-        #0004 100%
-      );
-      border-radius: 5px;
-    }
-    .milestone {
-      text-align: center;
-    }
-  </style>
   <article class="flex p-10px milestones">
     {#each data.miles as event}
       <div class="milestone m-10px p-10px" style="white-space: nowrap;">
