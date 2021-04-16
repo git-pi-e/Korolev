@@ -1,180 +1,195 @@
 {
     "going": [
         {
+            "under": "Kaustubh Murudkar",
             "name": "EINSat",
-            "icon": "https://pbs.twimg.com/media/ETVfqtTX0AAdrtd.jpg",
+            "icon": "./assets/images/projects-2020/einsat.png",
             "desc": "The CubeSat project of SEDS-Celestia planned to detect exoplanets.",
-            "main": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/4a8b89eb-212e-48ac-b1d8-0554cbe12ff1/d6gmgh6-541b78b7-6f78-4676-a960-187c12f7575d.jpg/v1/fill/w_622,h_350,q_70,strp/ssv_normandy_sr2__chariot_of_the_gods_by_eddy_shinjuku_d6gmgh6-350t.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3siaGVpZ2h0IjoiPD0xNDQwIiwicGF0aCI6IlwvZlwvNGE4Yjg5ZWItMjEyZS00OGFjLWIxZDgtMDU1NGNiZTEyZmYxXC9kNmdtZ2g2LTU0MWI3OGI3LTZmNzgtNDY3Ni1hOTYwLTE4N2MxMmY3NTc1ZC5qcGciLCJ3aWR0aCI6Ijw9MjU2MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.UibCiAXSMF-wv7Hp4GA_N-cjCq0UqQqtz9M6QbDyr4A",
-            "more": "Github",
-            "moreLink": "https://me.nukes.in"
+            "more": "GitHub",
+            "moreLink": null
         },
         {
+            "under": "Venugopalan Iyengar",
             "name": "Rocketry",
-            "icon": "https://i.imgur.com/eum16Uw.jpg",
+            "icon": "./assets/images/projects-2020/rocketry.png",
             "desc": "Rocketry aims to build a self landing thrust-vector controlled rockets.",
-            "main": "https://i.pinimg.com/originals/9b/01/d0/9b01d0fcc29dd6b04e3a9619e6def219.png",
-            "more": "500px",
-            "moreLink": "https://me.nukes.in"
+            "more": null,
+            "moreLink": null
         },
         {
+            "under": "Yashee Sinha",
             "name": "Quantum Chess",
-            "icon": "https://c4.wallpaperflare.com/wallpaper/627/677/142/shiro-no-game-no-life-sora-no-game-no-life-stephanie-dora-blue-hair-wallpaper-thumb.jpg",
+            "icon": "./assets/images/projects-2020/qchess.jpeg",
             "desc": "Quantum chess is reiteration of classical chess but with quantum rules.",
-            "main": "https://images7.alphacoders.com/740/thumb-1920-740377.png",
-            "more": "GitHub",
-            "moreLink": "https://me.nukes.in"
+            "more": null,
+            "moreLink": null
         },
         {
+            "under": "Jo bhi hai genius hi hai",
             "name": "Brain Computer Interface",
-            "icon": "https://c4.wallpaperflare.com/wallpaper/627/677/142/shiro-no-game-no-life-sora-no-game-no-life-stephanie-dora-blue-hair-wallpaper-thumb.jpg",
+            "icon": "./assets/images/projects-2020/bci.png",
             "desc": "Designing an Ominidirection brain controlled rover",
-            "main": "https://images7.alphacoders.com/740/thumb-1920-740377.png",
-            "more": "GitHub",
-            "moreLink": "https://me.nukes.in"
+            "more": null,
+            "moreLink": null
         },
         {
+            "under": "Dennis Ritchie",
             "name": "Binary Calculator",
-            "icon": "https://c4.wallpaperflare.com/wallpaper/627/677/142/shiro-no-game-no-life-sora-no-game-no-life-stephanie-dora-blue-hair-wallpaper-thumb.jpg",
+            "icon": "./assets/images/projects-2020/bincalc.png",
             "desc": "A calculator made by transistor circuits.",
-            "main": "https://images7.alphacoders.com/740/thumb-1920-740377.png",
-            "more": "GitHub",
-            "moreLink": "https://me.nukes.in"
+            "more": null,
+            "moreLink": null
         },
         {
+            "under": "Badal pe pau hai",
             "name": "Cloud Chamber",
-            "icon": "https://c4.wallpaperflare.com/wallpaper/627/677/142/shiro-no-game-no-life-sora-no-game-no-life-stephanie-dora-blue-hair-wallpaper-thumb.jpg",
+            "icon": "./assets/images/projects-2020/cloud.jpg",
             "desc": "An old school particle detector",
-            "main": "https://images7.alphacoders.com/740/thumb-1920-740377.png",
-            "more": "GitHub",
-            "moreLink": "https://me.nukes.in"
+            "more": null,
+            "moreLink": null
         },
         {
+            "under": "Edmund Hayley",
             "name": "Comet Dust Trail Simulation",
-            "icon": "https://c4.wallpaperflare.com/wallpaper/627/677/142/shiro-no-game-no-life-sora-no-game-no-life-stephanie-dora-blue-hair-wallpaper-thumb.jpg",
+            "icon": "./assets/images/projects-2020/",
             "desc": "Simulating icy comet dust trails.",
-            "main": "https://images7.alphacoders.com/740/thumb-1920-740377.png",
-            "more": "GitHub",
-            "moreLink": "https://me.nukes.in"
+            "more": null,
+            "moreLink": null
         }
     ],
     "past": [
         {
             "year": "2019",
+            "under": "Venugopalan Iyengar",
             "name": "CanSat",
             "desc": "Designing an atmosphere probining satellite which fits in a can.",
-            "img": "https://www.esa.int/var/esa/storage/images/esa_multimedia/images/2016/06/electronics_inside_a_cansat/16054362-1-eng-GB/Electronics_inside_a_CanSat_article.jpg",
+            "img": "./assets/logo-sq.png",
             "more": "",
             "moreLink": ""
         },
         {
             "year": "2019",
+            "under": "Venugopalan Iyengar",
             "name": "StarTracker",
             "desc": "An computerized and automated telescope",
-            "img": "https://www.esa.int/var/esa/storage/images/esa_multimedia/images/2016/06/electronics_inside_a_cansat/16054362-1-eng-GB/Electronics_inside_a_CanSat_article.jpg",
+            "img": "./assets/logo-sq.png",
             "more": "",
             "moreLink": ""
         },
         {
             "year": "2019",
+            "under": "Venugopalan Iyengar",
             "name": "Lidar",
             "desc": "An attempt to create our inhouce lidar",
-            "img": "https://www.esa.int/var/esa/storage/images/esa_multimedia/images/2016/06/electronics_inside_a_cansat/16054362-1-eng-GB/Electronics_inside_a_CanSat_article.jpg",
+            "img": "./assets/logo-sq.png",
             "more": "",
             "moreLink": ""
         },
         {
             "year": "2019",
+            "under": "Venugopalan Iyengar",
             "name": "Tesla Coil",
             "desc": "The name speaks for itself",
-            "img": "https://www.esa.int/var/esa/storage/images/esa_multimedia/images/2016/06/electronics_inside_a_cansat/16054362-1-eng-GB/Electronics_inside_a_CanSat_article.jpg",
+            "img": "./assets/logo-sq.png",
             "more": "",
             "moreLink": ""
         },
         {
             "year": "2019",
+            "under": "Venugopalan Iyengar",
             "name": "Microbial Fuel Cell",
             "desc": "Utilizing bacteria in order to catalize reactions and generate current.",
-            "img": "https://www.esa.int/var/esa/storage/images/esa_multimedia/images/2016/06/electronics_inside_a_cansat/16054362-1-eng-GB/Electronics_inside_a_CanSat_article.jpg",
+            "img": "./assets/logo-sq.png",
             "more": "",
             "moreLink": ""
         },
         {
             "year": "2019",
+            "under": "Venugopalan Iyengar",
             "name": "Pyroboard",
             "desc": "Vibrating a burning gases to tunes from a speaker",
-            "img": "https://www.esa.int/var/esa/storage/images/esa_multimedia/images/2016/06/electronics_inside_a_cansat/16054362-1-eng-GB/Electronics_inside_a_CanSat_article.jpg",
+            "img": "./assets/logo-sq.png",
             "more": "",
             "moreLink": ""
         },
         {
             "year": "2019",
+            "under": "Venugopalan Iyengar",
             "name": "Spectrometer",
             "desc": "Design a spectrometer to determine the chemical composition of light sources or illuminated objects.",
-            "img": "https://www.esa.int/var/esa/storage/images/esa_multimedia/images/2016/06/electronics_inside_a_cansat/16054362-1-eng-GB/Electronics_inside_a_CanSat_article.jpg",
+            "img": "./assets/logo-sq.png",
             "more": "",
             "moreLink": ""
         },
         {
             "year": "2019",
+            "under": "Venugopalan Iyengar",
             "name": "Physarum",
             "desc": "Solve basic computation problems using Physarum slime mold",
-            "img": "https://www.esa.int/var/esa/storage/images/esa_multimedia/images/2016/06/electronics_inside_a_cansat/16054362-1-eng-GB/Electronics_inside_a_CanSat_article.jpg",
+            "img": "./assets/logo-sq.png",
             "more": "",
             "moreLink": ""
         },
         {
             "year": "2019",
+            "under": "Venugopalan Iyengar",
             "name": "Sonoluminescence",
             "desc": "Create a sonoluminescent bubble and take temperature and spectral measurements of the light emitted.",
-            "img": "https://www.esa.int/var/esa/storage/images/esa_multimedia/images/2016/06/electronics_inside_a_cansat/16054362-1-eng-GB/Electronics_inside_a_CanSat_article.jpg",
+            "img": "./assets/logo-sq.png",
             "more": "",
             "moreLink": ""
         },
         {
             "year": "",
+            "under": "Venugopalan Iyengar",
             "name": "Barn Door Tracker",
             "desc": "Take exposure images of night’s sky using automated DSLR mount",
-            "img": "https://www.esa.int/var/esa/storage/images/esa_multimedia/images/2016/06/electronics_inside_a_cansat/16054362-1-eng-GB/Electronics_inside_a_CanSat_article.jpg",
+            "img": "./assets/logo-sq.png",
             "more": "",
             "moreLink": ""
         },
         {
             "year": "",
+            "under": "Venugopalan Iyengar",
             "name": "N-body simulation",
             "desc": "It aimed to simulate the gravitational interaction of a swarm of bodies and study the clustering and dynamics of the structures formed.",
-            "img": "https://www.esa.int/var/esa/storage/images/esa_multimedia/images/2016/06/electronics_inside_a_cansat/16054362-1-eng-GB/Electronics_inside_a_CanSat_article.jpg",
+            "img": "./assets/logo-sq.png",
             "more": "",
             "moreLink": ""
         },
         {
             "year": "",
+            "under": "Venugopalan Iyengar",
             "name": "Schlieren Photography",
             "desc": "To Visualize pressure, temperature and composition gradients in fluid flow and observe the complex fractal like structures of turbulence.",
-            "img": "https://www.esa.int/var/esa/storage/images/esa_multimedia/images/2016/06/electronics_inside_a_cansat/16054362-1-eng-GB/Electronics_inside_a_CanSat_article.jpg",
+            "img": "./assets/logo-sq.png",
             "more": "",
             "moreLink": ""
         },
         {
             "year": "",
+            "under": "Venugopalan Iyengar",
             "name": "Reproduction of particle interference with walking droplets",
             "desc": "It aimed to recreate a quantum phenomena like interference with walking droplets on a vibrating fluid bed.",
-            "img": "https://www.esa.int/var/esa/storage/images/esa_multimedia/images/2016/06/electronics_inside_a_cansat/16054362-1-eng-GB/Electronics_inside_a_CanSat_article.jpg",
+            "img": "./assets/logo-sq.png",
             "more": "",
             "moreLink": ""
         },
         {
             "year": "",
+            "under": "Venugopalan Iyengar",
             "name": "Galaxy Classifier Neural Net",
             "desc": "It aimed to build and train a convolutional neural network that will classify galaxies using their images.",
-            "img": "https://www.esa.int/var/esa/storage/images/esa_multimedia/images/2016/06/electronics_inside_a_cansat/16054362-1-eng-GB/Electronics_inside_a_CanSat_article.jpg",
+            "img": "./assets/logo-sq.png",
             "more": "",
             "moreLink": ""
         },
         {
             "year": "",
+            "under": "Venugopalan Iyengar",
             "name": "Michelson Interferometers",
             "desc": "Build a Michelson interferometer without any expensive equipment and to explore the applications of interferometry in seismology and acoustics.",
-            "img": "https://www.esa.int/var/esa/storage/images/esa_multimedia/images/2016/06/electronics_inside_a_cansat/16054362-1-eng-GB/Electronics_inside_a_CanSat_article.jpg",
+            "img": "./assets/logo-sq.png",
             "more": "",
             "moreLink": ""
         }

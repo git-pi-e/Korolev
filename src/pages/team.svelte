@@ -2,10 +2,11 @@
   import Earth from "../micro/earth.svelte";
   import data from "../data/team.json";
   import Containr from "../shared/gradCont.svelte";
+
+  let filter = "";
 </script>
 
 <style type="text/scss">
-
   p {
     line-height: 1.5em;
   }
@@ -87,6 +88,34 @@
         {/each}
       </div>
     </Containr>
+
+    <details class="bg-66e-37f p-10px">
+      <summary style="font-size:20px">
+        Past Leadership <i>(Click to Open)</i>
+      </summary>
+      <main>
+        <input
+          type="text"
+          class="p-10px m-10px"
+          placeholder="Search"
+          bind:value={filter}
+          style="height:33px;width:calc(100% - 20px);font-size:1.25em;background: #0000;" />
+        {#each data.past.filter((e) => {
+          console.log(JSON.stringify(e).includes(filter) ? JSON.stringify(e).includes(filter) : 0);
+          return JSON.stringify(e).includes(filter);
+        }) as pj, i}
+          <element class="pastCard m-5px p-5px">
+            <h4>{2021 - i}</h4>
+            {#each pj as person}
+              <div class="f-wt3 w-100 flex">
+                <span class="f-wt7" style="flex:1">{person.post}</span>
+                <span style="flex:1"> {person.name} </span>
+              </div>
+            {/each}
+          </element>
+        {/each}
+      </main>
+    </details>
     <Earth />
   </section>
 </celestia-page>

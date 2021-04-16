@@ -1,21 +1,19 @@
-## Pending
+## (V 2.1.1X)
 - Meta Tags !!!
 - Make Spinoffs
-    - Karatos
-    - cansat
-    - RT
+    - [Karatos, cansat, RT]
 - Open source images // *DATA PENDING*
 - Slider for latest lectures with the respective posters and links to videos // *Under ReConsideration*
-- Posters for projects // *DATA PENDING*
-- Add logo in place of autobot // *DATA PENDING*
 - Opening supercut video
 
 *PARTIAL*
+- Temporarily disabled stars for dev speed
 - Astrophotography slider // *Images PENDING, placeholder done*
 - Landing page timeline // *I have no design ideas for this :|*
 - Celestia’s Guide to the Universe // *Reduce text + add an image/icon maybe?*
 
 *DONE*
-- Team page design now on theme
-- Slider Images Crossfade
-- Cleaner 12 years logo. maybe...?
+- Posters for projects
+- Add logo in place of autobot
+- Past Coordinator's Added
+- Search for past projects & coordinators matches theme style

@@ -77,5 +77,201 @@
             "name": "Rocketry",
             "pos": "Venugopalan Iyenger"
         }
+    ],
+    "past": [
+        [
+            {
+                "post": "President",
+                "name": "Paurush Punyasheel"
+            },
+            {
+                "post": "Vice-President",
+                "name": "Ankit Verma"
+            },
+            {
+                "post": "Secretary & Publicity Head",
+                "name": "Yash Saini"
+            },
+            {
+                "post": "Observations Head",
+                "name": "Kaustubh Murudkar"
+            },
+            {
+                "post": "Projects Head",
+                "name": "Vivek Subramaniam"
+            },
+            {
+                "post": "Lectures & Podcast Head",
+                "name": "Abdul Jawad Khan"
+            }
+        ],
+        [
+            {
+                "post": "President",
+                "name": "Hrutwick Sawant"
+            },
+            {
+                "post": "Vice-President",
+                "name": "Harshvardhan Chandirasekar"
+            },
+            {
+                "post": "Secretary & Publicity Head",
+                "name": "Paurush Punyasheel"
+            },
+            {
+                "post": "Observations Head",
+                "name": "Kaustubh Murudkar"
+            },
+            {
+                "post": "Projects Head",
+                "name": "Ankit Verma"
+            },
+            {
+                "post": "Lectures Head",
+                "name": "Bhuvan S V"
+            }
+        ],
+        [
+            {
+                "post": "President",
+                "name": "Venugopalan Iyengar"
+            },
+            {
+                "post": "Vice-President",
+                "name": "Vidit Parab"
+            },
+            {
+                "post": "Sub-coordinator",
+                "name": "Soham Deshpande"
+            },
+            {
+                "post": "Secretary",
+                "name": "Saransh Gokhale"
+            },
+            {
+                "post": "Observations Head",
+                "name": "Avdhoot Bhandare"
+            },
+            {
+                "post": "Projects Head",
+                "name": "Harshvardhan Chandirasekar"
+            },
+            {
+                "post": "Lectures Head",
+                "name": "Aaditee Juyal"
+            },
+            {
+                "post": "Publicity Head",
+                "name": "Devesh Dimble"
+            }
+        ],
+        [
+            {
+                "post": "President",
+                "name": "Akash Chowdhary"
+            },
+            {
+                "post": "Vice-President",
+                "name": "Shirin Kaushik"
+            },
+            {
+                "post": "Sub-coordinator",
+                "name": "Ayush Agrawal"
+            },
+            {
+                "post": "Secretary",
+                "name": "Nikhil Bisht"
+            },
+            {
+                "post": "Projects Head",
+                "name": "Devashish Gupta"
+            },
+            {
+                "post": "Lectures Head",
+                "name": "Aditya Majali"
+            },
+            {
+                "post": "Publicity Head",
+                "name": "Samridh"
+            }
+        ],
+        [
+            {
+                "post": "President",
+                "name": "Surendra"
+            },
+            {
+                "post": "Vice-President",
+                "name": "Komal Gupta"
+            },
+            {
+                "post": "Sub-coordinator",
+                "name": "Prakhar"
+            },
+            {
+                "post": "Sub-coordinator",
+                "name": "Khyati"
+            },
+            {
+                "post": "Secretary",
+                "name": "Mayur Joshi"
+            },
+            {
+                "post": "Lectures Head",
+                "name": "Pavan"
+            }
+        ],
+        [
+            {
+                "post": "President",
+                "name": "Shivan Khullar"
+            },
+            {
+                "post": "Vice-President",
+                "name": "Raghav Arora"
+            },
+            {
+                "post": "Secretary",
+                "name": "Aman Agarwal"
+            }
+        ],
+        [
+            {
+                "post": "Coordinator",
+                "name": "Siddharth Paliwal"
+            },
+            {
+                "post": "Sub-coordinator (Technical)",
+                "name": "Sanket Deshpande"
+            },
+            {
+                "post": "Sub-coordinator (Managerial)",
+                "name": "Lucky Kapoor"
+            }
+        ],
+        [
+            {
+                "post": "Coordinator",
+                "name": "Pankaj Tiple"
+            },
+            {
+                "post": "Sub-coordinator",
+                "name": "Shubham Sarawat"
+            }
+        ],
+        [
+            {
+                "post": "Coordinator",
+                "name": "Nikita Mirchandani"
+            },
+            {
+                "post": "Sub-coordinator",
+                "name": "Vishakha Gupta"
+            },
+            {
+                "post": "Secretary",
+                "name": "Raj Sinai"
+            }
+        ]
     ]
 }
