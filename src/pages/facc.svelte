@@ -2,6 +2,30 @@
   import Mars from "../micro/mars.svelte";
   import data from "../data/facc.json";
   import Containr from "../shared/gradCont.svelte";
+
+  import { sheet, csvtojson, base } from "../code/functions";
+
+  let //
+    i = 0,
+    x,
+    lec = base;
+
+  fetch(sheet)
+    .then((r) => r.text())
+    .then((r2) => {
+      const jsons = JSON.parse(csvtojson(r2)).filter((e) => e.featured);
+      lec = jsons[i];
+      jsons.forEach((e) => {
+        let img = new Image();
+        img.src = e.url;
+      });
+      x = setInterval(() => {
+        i = (i + 1) % jsons.length;
+        lec = base;
+        console.log(lec);
+        lec = jsons[i];
+      }, 5e3);
+    });
 </script>
 
 <style type="text/scss">
@@ -10,13 +34,6 @@
     img {
       max-height: 400px;
       border-radius: 5px;
-    }
-    p {
-      padding-top: 0;
-      line-height: 1.5em;
-      &::first-line {
-        text-transform: uppercase;
-      }
     }
     .watch {
       position: absolute;
@@ -60,14 +77,26 @@
   <section class="adaptive">
     <Containr title="Open Lectures" icon="lec" bg="e66-c26">
       <div class="lecture w-100" slot="body">
-        <a class="watch" href={links.content.yt}> Watch Here </a>
-        <img class="w-100" src="./assets/images/lectures.png" alt="" />
-        <p class="p-10px">
-          Various people including professors from reputable universities and
-          even our own club members give lectures. Paper presentation is a new
-          venture we have undertaken. People select a paper and present it to
-          the club members, and a discussion on the paper is followed.
-        </p>
+        <div style="position:relative;">
+          <div style="position:absolute;top:50%;left:-10px;">&lt;</div>
+          <div style="position:absolute;top:50%;right:-10px;">&gt;</div>
+        </div>
+        <a class="watch" href={lec.url}> Watch Here </a>
+        <!-- <img
+          class="w-100"
+          src="https://drive.google.com/uc?export=view&id={lec.image
+            ?.split('/d/')[1]
+            ?.split('/')[0]}"
+          alt="" /> -->
+        <div class="p-10px">
+          <div
+            class="flex"
+            style="justify-content:space-between;text-align: justify;padding:10px 0;">
+            <span class="f-wt7">{lec.prof}: {lec.title.slice(0, 20)}</span>
+            <span>{lec.date}, {lec.time}</span>
+          </div>
+          <div>{lec.text}</div>
+        </div>
       </div>
     </Containr>
 
@@ -110,6 +139,7 @@
         <iframe
           src="https://educelestia.herokuapp.com/examples/tor/lens.html"
           class="w-100"
+          title="GravLensing Sim"
           frameborder="0"
           style="border-radius:5px;min-height:300px;" />
         <p>
