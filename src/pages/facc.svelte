@@ -3,27 +3,38 @@
   import data from "../data/facc.json";
   import Containr from "../shared/gradCont.svelte";
 
-  import { sheet, csvtojson, base } from "../code/functions";
+  import { sheet, csvtojson, base, template } from "../code/functions";
 
   let //
     i = 0,
+    jsons,
+    fader,
+    len = 0,
     x,
     lec = base;
+
+  const go = (dir, fst = 0) => {
+    if (x && fst) clearInterval(x);
+    i = (i + +dir) % len;
+    lec = jsons[i];
+  };
 
   fetch(sheet)
     .then((r) => r.text())
     .then((r2) => {
-      const jsons = JSON.parse(csvtojson(r2)).filter((e) => e.featured);
+      jsons = JSON.parse(csvtojson(r2)).filter((e) => e.featured);
       lec = jsons[i];
+      len = jsons.length;
       jsons.forEach((e) => {
         let img = new Image();
         img.src = e.url;
       });
       x = setInterval(() => {
-        i = (i + 1) % jsons.length;
-        lec = base;
-        console.log(lec);
-        lec = jsons[i];
+        fader.style.opacity = 0;
+        setTimeout(() => {
+          go(1);
+          fader.style.opacity = 1;
+        }, 1e3);
       }, 5e3);
     });
 </script>
@@ -35,22 +46,11 @@
       max-height: 400px;
       border-radius: 5px;
     }
-    .watch {
-      position: absolute;
-      top: 0;
-      padding: 1%;
-      right: 0;
-      margin: 1%;
-      background: transparent;
-      cursor: pointer;
-      color: #f00;
-      border-radius: 20px;
-      border: 1px solid #f00;
-      transition: all 0.2s ease;
-      &:hover {
-        background: #f00;
-        color: #fff;
-      }
+    svg {
+      width: 32px;
+      height: 32px;
+      stroke-width: 3;
+      fill: none;
     }
   }
   .pj {
@@ -71,32 +71,39 @@
       background: #c8e;
     }
   }
+  .arrs{
+    position: absolute;
+    top: 50%;
+  }
+  .fader {
+    opacity: 1;
+    transition: opacity 0.5s ease;
+  }
 </style>
 
 <celestia-page>
   <section class="adaptive">
     <Containr title="Open Lectures" icon="lec" bg="e66-c26">
       <div class="lecture w-100" slot="body">
-        <div style="position:relative;">
-          <div style="position:absolute;top:50%;left:-10px;">&lt;</div>
-          <div style="position:absolute;top:50%;right:-10px;">&gt;</div>
-        </div>
-        <a class="watch" href={lec.url}> Watch Here </a>
-        <!-- <img
-          class="w-100"
-          src="https://drive.google.com/uc?export=view&id={lec.image
-            ?.split('/d/')[1]
-            ?.split('/')[0]}"
-          alt="" /> -->
-        <div class="p-10px">
-          <div
-            class="flex"
-            style="justify-content:space-between;text-align: justify;padding:10px 0;">
-            <span class="f-wt7">{lec.prof}: {lec.title.slice(0, 20)}</span>
-            <span>{lec.date}, {lec.time}</span>
+        <div style="position:relative;height:100%''">
+          <div class="arrs"
+            style="left:-20px;"
+            on:click={() => go(-1, 1)}>
+            <svg viewBox="0 0 32 32">
+              <path d="M20 30 L8 16 20 2" />
+            </svg>
           </div>
-          <div>{lec.text}</div>
+          <div class="arrs"
+            style="right:-20px;"
+            on:click={() => go(1, 1)}>
+            <svg viewBox="0 0 32 32">
+              <path d="M12 30 L24 16 12 2" />
+            </svg>
+          </div>
         </div>
+        <main class="fader" bind:this={fader}>
+          {@html template(lec)}
+        </main>
       </div>
     </Containr>
 

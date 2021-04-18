@@ -83,15 +83,18 @@ img{ object-fit: cover; }
 }
 
 .btn-std {
-	border: 3px solid #a8f;
-	color: #a8f;
+	--theme: #a8f;
+	border: 3px solid var(--theme);
+	color: var(--theme);
 	background: transparent;
 	width: 200px;
+	padding: 5px 12px;
 	height: 2em;
-	font-size: 24px;
+	font-size: inherit;
+	font-weight:700;
 	text-transform: uppercase;
 	&:hover {
-		background: #a8f;
+		background: var(--theme);
 		color: #fff;
 	}
 }

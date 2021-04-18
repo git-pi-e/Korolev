@@ -17,7 +17,7 @@
             "moreLink": null
         },
         {
-            "under": "Yashee Sinha",
+            "under": "Ayushi Dubal",
             "name": "Quantum Chess",
             "icon": "./assets/images/projects-2020/qchess.jpeg",
             "desc": "Quantum chess is reiteration of classical chess but with quantum rules.",
@@ -25,7 +25,7 @@
             "moreLink": null
         },
         {
-            "under": "Jo bhi hai genius hi hai",
+            "under": "Yash Saini , Kartik Chaubisa",
             "name": "Brain Computer Interface",
             "icon": "./assets/images/projects-2020/bci.png",
             "desc": "Designing an Ominidirection brain controlled rover",
@@ -33,7 +33,7 @@
             "moreLink": null
         },
         {
-            "under": "Dennis Ritchie",
+            "under": "Samarth",
             "name": "Binary Calculator",
             "icon": "./assets/images/projects-2020/bincalc.png",
             "desc": "A calculator made by transistor circuits.",
@@ -41,7 +41,7 @@
             "moreLink": null
         },
         {
-            "under": "Badal pe pau hai",
+            "under": "Vivek Subramanium",
             "name": "Cloud Chamber",
             "icon": "./assets/images/projects-2020/cloud.jpg",
             "desc": "An old school particle detector",
@@ -49,7 +49,7 @@
             "moreLink": null
         },
         {
-            "under": "Edmund Hayley",
+            "under": "Harshvardhan Chandirashekhar",
             "name": "Comet Dust Trail Simulation",
             "icon": "./assets/images/projects-2020/",
             "desc": "Simulating icy comet dust trails.",

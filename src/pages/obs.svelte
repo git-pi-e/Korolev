@@ -64,7 +64,7 @@
     <article class="p-0 m-h-auto bg-cov tx-c">
       <Slidr
         speed={4}
-        images={[...Array(7)].map((e, i) => `./assets/images/stpty/${i}.jpg`)}
+        images={[...Array(5)].map((e, i) => `./assets/images/astro-ph/${i}.jpeg`)}
         height="350px">
         <div slot="internal" class="w-100 p-20px m-0 flex-col f-wt1 stpty">
           <div style="font-size:3em">Astrophotography</div>
