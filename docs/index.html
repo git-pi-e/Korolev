@@ -25,7 +25,7 @@
 	links = JSON.parse( '{"web": {"educelestia": "http://edu.sedscelestia.org/","sedsc": "http://www.sedscelestia.org","sedsi": "https://www.sedsindia.org","sedse": "http://www.sedsearth.org"},"social": {"ig": "https://www.instagram.com/sedscelestia/","fb": "https://www.facebook.com/celestiaclub","git": "https://github.com/SEDSCelestiaBPGC","lin": "https://www.linkedin.com/company/seds-celestia/"},"content": {"blog": "https://bitsgcelestia.wordpress.com","yt": "https://www.youtube.com/channel/UCuZ1RL7Qv5tKaQeWy28qhUw","spotify": "https://open.spotify.com/show/0NKbVLI7LpY6069IUCF6xi?si=nybrolgSQ5u2LoWEkm3U1A&nd=1","radiopub": "https://radiopublic.com/celestia-onair-WeRp1J","gpods": "https://podcasts.google.com/feed/aHR0cHM6Ly9hbmNob3IuZm0vcy80NWYzZjAwOC9wb2RjYXN0L3Jzcw==","pocketcast": "https://pca.st/b3mqu7bk","breaker": "https://breaker.audio/celestia-on-air"}}' )
 </script>
 
-<body xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<body class="m-0 p-0" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 	<canvas id="star-space" style="z-index: -3;"></canvas>
 	<canvas id="star-field" style="z-index: -1;"></canvas>
 	<main class="w-100" style="z-index: 1;height: 100%;"></main>
@@ -37,8 +37,8 @@
 			starSpace = document.getElementById( "star-space" ),
 			density = 2 * ( starFieldHeight * starFieldWidth ) ** 0.25;
 
-		// if ( window.innerWidth > 400 ) createRandomNodes( density, 1.5, starFieldWidth, starFieldHeight, starSpace );
-		// if ( window.innerWidth > 768 ) createRandomNodes( density, 2, starFieldWidth, starFieldHeight, starField );
+		if ( window.innerWidth > 400 ) createRandomNodes( density, 1.5, starFieldWidth, starFieldHeight, starSpace );
+		if ( window.innerWidth > 768 ) createRandomNodes( density, 2, starFieldWidth, starFieldHeight, starField );
 
 		function createRandomNodes( num, radius, xMax, yMax, canvas ) {
 			canvas.width = xMax;

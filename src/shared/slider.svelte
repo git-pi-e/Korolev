@@ -29,17 +29,16 @@
 
 <style>
   .container {
-    position: relative;
     background-blend-mode: darken;
     transition: 3s ease;
   }
 </style>
 
 <div
-  class="container"
+  class="container po-rel"
   style={`height:${height};width:${width};background:url(${images[0]}) no-repeat`}
   bind:this={container}>
-  <div class="content w-100" style="z-index: 1;height: 100%;">
+  <div class="content w-100 h-100 z-1">
     <slot name="internal" />
   </div>
 </div>

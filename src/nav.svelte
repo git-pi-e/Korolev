@@ -4,8 +4,6 @@
 
 <style type="text/scss">
   details > summary {
-    z-index: 1;
-    outline: none;
     font-size: 3em;
     list-style: none;
 
@@ -29,16 +27,12 @@
     background-image: url("../assets/svgs/times.svg");
   }
   ul {
-    position: fixed;
     top: -1em;
     left: 0;
-    overflow: hidden;
     list-style: none;
-    height: 100%;
     z-index: -1;
     color: #fff;
     animation: enter forwards 0.5s ease;
-    text-align: center;
     padding: 10% 0;
     li {
       position: relative;
@@ -52,13 +46,9 @@
     }
   }
   #nav {
-    position: absolute;
     top: 10px;
     left: 10px;
-    color: #fff;
-    z-index: 5;
     input[name="navigator"] {
-      width: 100%;
       opacity: 0 !important;
       height: 3em;
     }
@@ -86,14 +76,15 @@
   <link rel="preconnect" href="http://edu.sedscelestia.org" />
   <link rel="preconnect" href="http://blog.sedscelestia.org" />
 
-  <details id="nav">
+  <details id="nav" class="modal">
     <summary style="z-index:9999">&nbsp;</summary>
-    <ul class="blur w-100" on:click={changePage}>
+    <ul class="blur w-100 h-100 tx-c po-fix" on:click={changePage}>
       {#each pages as pj, i}
         <li style="animation-delay:{i / 20}s">
           <input
             type="radio"
             name="navigator"
+            class="w-100"
             value={pj.page}
             checked={currentPage === pj.page ? 1 : 0} />
           <label for={pj.page}>{pj.page}</label>

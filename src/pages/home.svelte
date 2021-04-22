@@ -11,8 +11,6 @@
       margin: 20px auto;
     }
     a img {
-      width: 100px;
-      height: 100px;
       transition: opacity 0.2s ease;
     }
     a:hover img {
@@ -34,8 +32,6 @@
     .logo {
       width: calc(100% - 2 * (50% - 64px));
       padding: 10px calc(50% - 64px);
-      position: absolute;
-      z-index: 0;
     }
     .image-container {
       img {
@@ -62,10 +58,8 @@
 </style>
 
 <celestia-page class="section p-0 m-0">
-  <div
-    class="image-container p-0 m-0 w-100"
-    style="position:relative;height:500px;">
-    <div class="logo">
+  <div class="image-container p-0 m-0 w-100 po-rel" style="height:500px;">
+    <div class="logo z-0 po-abs">
       <Logo />
     </div>
     <img
@@ -82,16 +76,16 @@
     </button>
   </article>
   <div class="m-h-auto" style="width:400px; ">
-    <img src="./assets/legacy.svg" width="400px" height="400px" alt="" />
+    <img src="./assets/legacy.svg" size="max" alt="" />
   </div>
   <article class="flex p-10 milestones rx-5">
     {#each data.miles as event}
       <div class="tx-c m-10 p-10" style="white-space: nowrap;">
         <div class="p-10">{event.event}</div>
-        <div style="position:relative;">
+        <div class="po-rel">
           <li
-            class="p-0 m-0"
-            style="position:absolute;top:-0.66em;left:calc(50% - 5px);font-size:48px;" />
+            class="p-0 m-0 po-abs"
+            style="top:-0.66em;left:calc(50% - 5px);font-size:48px;" />
           <hr />
         </div>
         <div class="p-10">{event.year}</div>
@@ -99,8 +93,17 @@
     {/each}
   </article>
   <article class="p-10 m-h-auto flex w-66 jtx-ar">
-    <a href={links.content.yt}><img src="./assets/icons/youtube.png" alt="" /></a>
-    <a href={links.social.fb}><img src="./assets/icons/facebook.png" alt="" /></a>
-    <a href={links.social.ig}><img src="./assets/icons/instagram.png" alt="" /></a>
+    <a href={links.content.yt}><img
+        size="ic-lg"
+        src="./assets/icons/youtube.png"
+        alt="" /></a>
+    <a href={links.social.fb}><img
+        size="ic-lg"
+        src="./assets/icons/facebook.png"
+        alt="" /></a>
+    <a href={links.social.ig}><img
+        size="ic-lg"
+        src="./assets/icons/instagram.png"
+        alt="" /></a>
   </article>
 </celestia-page>

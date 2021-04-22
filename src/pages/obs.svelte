@@ -5,6 +5,7 @@
     month: "short",
     day: "numeric",
   };
+
   import Events from "../data/events.json";
   import data from "../data/lookUp.json";
   import Slidr from "../shared/slider.svelte";
@@ -13,13 +14,8 @@
 
 <style type="text/scss">
   .lecture {
-    position: relative;
     img {
       max-height: 400px;
-    }
-    .telesc,
-    .telescD {
-      position: absolute;
     }
     .telescD {
       top: 5px;
@@ -53,9 +49,11 @@
     <Containr title="Telescopes" icon="sat" bg="66e-37f">
       <div slot="body">
         {#each data.telescopes as tsc}
-          <div class="lecture w-100">
-            <div class="telescD rx-5 p-5 blur">{tsc.star} ({tsc.range})</div>
-            <div class="telesc rx-5 p-5 blur">{tsc.title}</div>
+          <div class="lecture po-rel w-100">
+            <div class="telescD po-abs rx-5 p-5 blur">
+              {tsc.star} ({tsc.range})
+            </div>
+            <div class="telesc po-abs rx-5 p-5 blur">{tsc.title}</div>
             <img class="w-100 rx-5" src={tsc.img} alt="" />
           </div>
         {/each}
@@ -69,7 +67,8 @@
         height="350px">
         <div slot="internal" class="w-100 p-20 m-0 flex-col f-wt1 stpty">
           <div style="font-size:3em">Astrophotography</div>
-          <p class="f-wt3">Its just what it sounds like.</p>
+          <p class="f-wt3">Its just what it sounds like. <br /></p>
+          <a href="" class="btn-std" style="height:auto;">Rules &rarr;</a>
         </div>
       </Slidr>
     </article>

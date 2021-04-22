@@ -11,11 +11,9 @@
     line-height: 1.5em;
   }
   .mgmt {
-    text-align: center;
     width: calc(50% - 10px);
   }
   .ldes {
-    text-align: center;
     width: calc(33% - 10px);
   }
   @media (max-width: 768px) {
@@ -35,8 +33,6 @@
   .ldes img,
   .mgmt img {
     filter: grayscale(100%);
-    width: 150px;
-    height: 150px;
   }
 </style>
 
@@ -68,8 +64,8 @@
     <Containr title="Management" icon="empire" bg="66e-37f">
       <div class="teamrow m-10 f-wrap flex" slot="body">
         {#each data.mgmt as p}
-          <div class="imgCont mgmt m-5 f-wt3">
-            <img class="rx-2" src={p.img} alt="" />
+          <div class="imgCont mgmt tx-c m-5 f-wt3">
+            <img size="md" class="rx-2" src={p.img} alt="" />
             <br /><span class="f-wt7"> {p.name} </span>
             <br /><span style="color:#fffc">{p.pos}</span>
           </div>
@@ -80,8 +76,8 @@
     <Containr title="Leads" icon="jedi" bg="e66-c26">
       <div class="teamrow f-wrap flex" slot="body">
         {#each data.leads as p}
-          <div class="imgCont ldes m-5 f-wt3">
-            <img class="rx-2" src={p.img} alt="" />
+          <div class="imgCont ldes tx-c m-5 f-wt3">
+            <img size="md" class="rx-2" src={p.img} alt="" />
             <br /><span class="f-wt7"> {p.pos} </span>
             <br /><span style="color:#fffc">{p.name}</span>
           </div>

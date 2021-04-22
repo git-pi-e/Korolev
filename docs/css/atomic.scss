@@ -7,11 +7,9 @@ html, body {
 
 body {
 	color: #fff;
-	margin: 0;
-	padding: 0;
 	font-size: 16px;
 	box-sizing: border-box;
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+	font-family: -apple-system, BlinkMacSystemFont, Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 	background: linear-gradient(#111, #206, #60a);
 	background-attachment: fixed;
 }
@@ -28,12 +26,10 @@ a,a:visited,a:hover{
 	backdrop-filter: blur(16px);
 	-webkit-backdrop-filter: blur(16px);
 	-moz-backdrop-filter: blur(16px);
-	background: rgba($color: #000000, $alpha: 0.4);
+	background: #0006;
 }
 
 // ELEMENTS
-img{ object-fit: cover; }
-
 .w-50{ width:50%; }
 .w-66{ width:66.66%; }
 .w-100{ width: 100%; }
@@ -42,7 +38,7 @@ img{ object-fit: cover; }
 .h-100{ height: 100%; }
 
 button, input{
-	font-size:1rem;
+	font-size:16px;
 	border: 0;
 	outline: none;
 	color: #fff;
@@ -52,12 +48,7 @@ summary{outline:none;}
 
 button{ cursor: pointer; }
 
-svg {
-	fill:none;
-	stroke:currentcolor;
-	stroke-linecap:round;
-	stroke-linejoin:round;
-}
+svg {fill:none;stroke:currentcolor;stroke-linecap:round;stroke-linejoin:round;}
 
 // TEXT
 .tx-c{ text-align: center; }
@@ -77,6 +68,10 @@ svg {
 .f-wt7{ font-weight: 700; }
 
 // BOUNDING BOX
+.po-abs{position: absolute;}
+.po-fix{position: fixed;}
+.po-rel{position: relative;}
+
 .p-0{ padding: 0; }
 .p-5{ padding: 5px; }
 .p-10{ padding: 10px; }
@@ -96,6 +91,10 @@ svg {
 .rx-5{border-radius:5px;}
 .rx-50{border-radius:50px;}
 
+.z-0{z-index: 0;}
+.z-1{z-index: 1;}
+.z-5{z-index: 5;}
+
 // COLORS
 .bg-cov{ background-size:cover !important; }
 .bg-nil{background:#0000;}
@@ -103,3 +102,12 @@ svg {
 .bg-66e-37f{ background: linear-gradient(135deg, #66e, #37f); }
 .bg-e66-c26{ background: linear-gradient(135deg, #e66, #c26); }
 .bg-b5e-83c{ background: linear-gradient(135deg, #b5e, #83c); }
+
+// IMAGES
+img{ object-fit: cover; }
+img[size="ic"]{width: 25px;height: 25px;}
+img[size="ic-md"]{width: 66px;height: 66px;}
+img[size="ic-lg"]{width: 100px;height: 100px;}
+img[size="md"]{width: 150px;height: 150px;}
+img[size="md-lg"]{width: 175px;height: 175px;}
+img[size="max"]{width: 400px;height: 400px;}

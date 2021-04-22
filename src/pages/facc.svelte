@@ -41,7 +41,6 @@
 
 <style type="text/scss">
   .lecture {
-    position: relative;
     img {
       max-height: 400px;
     }
@@ -49,7 +48,6 @@
       width: 32px;
       height: 32px;
       stroke-width: 3;
-      fill: none;
     }
   }
   .pj {
@@ -57,20 +55,12 @@
     height: 225px;
     flex-direction: column;
     align-items: center;
-    img {
-      width: 175px;
-      height: 175px;
-    }
   }
   .pcd {
     padding: 5px 10px;
     &:hover {
       background: #c8e;
     }
-  }
-  .arrs {
-    position: absolute;
-    top: 50%;
   }
   .fader {
     opacity: 1;
@@ -82,14 +72,20 @@
   <section class="adaptive">
     <h1 class="w-100 tx-c">Events</h1>
     <Containr title="Open Lectures" icon="lec" bg="e66-c26">
-      <div class="lecture w-100" slot="body">
-        <div style="position:relative;height:100%''">
-          <div class="arrs" style="left:-20px;" on:click={() => go(-1, 1)}>
+      <div class="lecture po-rel w-100" slot="body">
+        <div class="po-rel h-100">
+          <div
+            class="po-abs"
+            style="left:-20px;top: 50%;"
+            on:click={() => go(-1, 1)}>
             <svg viewBox="0 0 32 32">
               <path d="M20 30 L8 16 20 2" />
             </svg>
           </div>
-          <div class="arrs" style="right:-20px;" on:click={() => go(1, 1)}>
+          <div
+            class="po-abs"
+            style="right:-20px;top: 50%;"
+            on:click={() => go(1, 1)}>
             <svg viewBox="0 0 32 32">
               <path d="M12 30 L24 16 12 2" />
             </svg>
@@ -106,7 +102,7 @@
         {#each data.opensource as osc}
           {#if !(osc.show === -1)}
             <a class="pj m-5" href={osc.repo}>
-              <img class="rx-5" src={osc.img} alt="" />
+              <img size="md-lg" class="rx-5" src={osc.img} alt="" />
               <div class="w-100 tx-c">{osc.title}</div>
             </a>
           {/if}
@@ -116,7 +112,7 @@
 
     <Containr title="Podcast" icon="cast" bg="b5e-83c">
       <div slot="body">
-        <div class="lecture w-100">
+        <div class="lecture po-rel w-100">
           <img class="w-100 rx-5" src="./assets/images/podcast.png" alt="" />
         </div>
         <div class="flex p-20 jtx-ev">
