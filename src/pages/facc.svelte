@@ -44,7 +44,6 @@
     position: relative;
     img {
       max-height: 400px;
-      border-radius: 5px;
     }
     svg {
       width: 32px;
@@ -61,17 +60,15 @@
     img {
       width: 175px;
       height: 175px;
-      border-radius: 5px;
     }
   }
   .pcd {
-    border-radius: 5px;
     padding: 5px 10px;
     &:hover {
       background: #c8e;
     }
   }
-  .arrs{
+  .arrs {
     position: absolute;
     top: 50%;
   }
@@ -83,19 +80,16 @@
 
 <celestia-page>
   <section class="adaptive">
+    <h1 class="w-100 tx-c">Events</h1>
     <Containr title="Open Lectures" icon="lec" bg="e66-c26">
       <div class="lecture w-100" slot="body">
         <div style="position:relative;height:100%''">
-          <div class="arrs"
-            style="left:-20px;"
-            on:click={() => go(-1, 1)}>
+          <div class="arrs" style="left:-20px;" on:click={() => go(-1, 1)}>
             <svg viewBox="0 0 32 32">
               <path d="M20 30 L8 16 20 2" />
             </svg>
           </div>
-          <div class="arrs"
-            style="right:-20px;"
-            on:click={() => go(1, 1)}>
+          <div class="arrs" style="right:-20px;" on:click={() => go(1, 1)}>
             <svg viewBox="0 0 32 32">
               <path d="M12 30 L24 16 12 2" />
             </svg>
@@ -108,14 +102,11 @@
     </Containr>
 
     <Containr title="Open Source" icon="git" bg="e6e-954">
-      <div
-        class="flex f-wrap"
-        style="justify-content:space-evenly;"
-        slot="body">
+      <div class="flex f-wrap jtx-ev" slot="body">
         {#each data.opensource as osc}
           {#if !(osc.show === -1)}
-            <a class="pj m-5px" href={osc.repo}>
-              <img src={osc.img} alt="" />
+            <a class="pj m-5" href={osc.repo}>
+              <img class="rx-5" src={osc.img} alt="" />
               <div class="w-100 tx-c">{osc.title}</div>
             </a>
           {/if}
@@ -126,11 +117,11 @@
     <Containr title="Podcast" icon="cast" bg="b5e-83c">
       <div slot="body">
         <div class="lecture w-100">
-          <img class="w-100" src="./assets/images/podcast.png" alt="" />
+          <img class="w-100 rx-5" src="./assets/images/podcast.png" alt="" />
         </div>
-        <div class="flex p-20px" style="justify-content:space-evenly;">
+        <div class="flex p-20 jtx-ev">
           {#each data.podcast as lnk}
-            <a href="https://{lnk.link}" class="pcd">
+            <a href="https://{lnk.link}" class="pcd rx-5">
               <img class="h-a" src={lnk.icon} alt="" style="width:40px;" />
             </a>
           {/each}
@@ -145,10 +136,10 @@
       <div slot="body">
         <iframe
           src="https://educelestia.herokuapp.com/examples/tor/lens.html"
-          class="w-100"
+          class="w-100 rx-5"
           title="GravLensing Sim"
           frameborder="0"
-          style="border-radius:5px;min-height:300px;" />
+          style="min-height:300px;" />
         <p>
           We conducts regular on campus observation sessions, which we are all
           unfortunately missing out on. This new year, we bring you Celestia's

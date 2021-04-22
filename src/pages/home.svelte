@@ -30,10 +30,6 @@
         #0002 90%,
         #0004 100%
       );
-      border-radius: 5px;
-    }
-    .milestone {
-      text-align: center;
     }
     .logo {
       width: calc(100% - 2 * (50% - 64px));
@@ -77,34 +73,32 @@
       src="https://images.unsplash.com/photo-1543722530-d2c3201371e7"
       alt="" />
   </div>
-  <article class="flex w-66" style="justify-content:space-around;">
+  <article class="flex w-66 jtx-ar">
     <button
-      class="p-5px m-10px blur btn-std"
+      class="p-5 m-10 blur btn-std"
       on:click={() => changePage('Projects')}>Projects</button>
-    <button class="p-5px m-10px blur btn-std">
+    <button class="p-5 m-10 blur btn-std">
       <a href="http://blog.sedscelestia.org">Blog</a>
     </button>
   </article>
   <div class="m-h-auto" style="width:400px; ">
     <img src="./assets/legacy.svg" width="400px" height="400px" alt="" />
   </div>
-  <article class="flex p-10px milestones">
+  <article class="flex p-10 milestones rx-5">
     {#each data.miles as event}
-      <div class="milestone m-10px p-10px" style="white-space: nowrap;">
-        <div class="p-10px">{event.event}</div>
+      <div class="tx-c m-10 p-10" style="white-space: nowrap;">
+        <div class="p-10">{event.event}</div>
         <div style="position:relative;">
           <li
             class="p-0 m-0"
             style="position:absolute;top:-0.66em;left:calc(50% - 5px);font-size:48px;" />
           <hr />
         </div>
-        <div class="p-10px">{event.year}</div>
+        <div class="p-10">{event.year}</div>
       </div>
     {/each}
   </article>
-  <article
-    class="p-10px m-h-auto flex w-66"
-    style="justify-content:space-around;">
+  <article class="p-10 m-h-auto flex w-66 jtx-ar">
     <a href={links.content.yt}><img src="./assets/icons/youtube.png" alt="" /></a>
     <a href={links.social.fb}><img src="./assets/icons/facebook.png" alt="" /></a>
     <a href={links.social.ig}><img src="./assets/icons/instagram.png" alt="" /></a>

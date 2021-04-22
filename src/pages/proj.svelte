@@ -65,16 +65,13 @@
 </style>
 
 <celestia-page>
+  <h1 class="w-100 tx-c">Projects</h1>
   <Comet />
-  <h1 class="w-100 tx-c">
-    Projects
-    <hr />
-  </h1>
   <section class="flex tx-c" style="flex-wrap: wrap;">
     {#each data.going as pj}
-      <div class="boxy tx-l m-20px blur">
+      <div class="boxy tx-l m-20 blur">
         <img src={pj.icon} class="w-100" alt={pj.name} />
-        <div class="title p-20px">
+        <div class="title p-20">
           <span class="f-wt7">{pj.name}</span>
           <hr />
           <details>
@@ -93,22 +90,22 @@
     {/each}
   </section>
   <section class="tx-l" style="overflow-x:scroll;">
-    <details class="bg-66e-37f p-10px">
+    <details class="bg-66e-37f p-10">
       <summary style="font-size:20px">
         Past Projects <i>(Click to Open)</i>
       </summary>
       <main>
         <input
           type="text"
-          class="p-10px m-10px"
+          class="p-10 m-10 bg-nil"
           placeholder="Search"
           bind:value={filter}
-          style="height:33px;width:calc(100% - 20px);font-size:1.25em;background: transparent;" />
+          style="height:33px;width:calc(100% - 20px);font-size:1.25em;" />
         {#each data.past.filter((e) => e.name.includes(filter) || e.desc.includes(filter)) as pj, i}
-          <element class="flex pastCard m-10px p-10px">
+          <element class="flex pastCard m-10 p-10">
             <img src={pj.img} width="66px" height="66px" alt="" />
-            <div class="m-5px f-wt3">
-              <div class="f-wt7 p-10px">{pj.name} ({pj.year || 'Unknown'})</div>
+            <div class="m-5 f-wt3">
+              <div class="f-wt7 p-10">{pj.name} ({pj.year || 'Unknown'})</div>
               <div style="padding:0 10px;">{pj.desc}</div>
             </div>
           </element>

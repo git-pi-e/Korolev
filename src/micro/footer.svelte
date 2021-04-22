@@ -15,7 +15,7 @@
   }
 </style>
 
-<celestia-footer class="footer flex p-20px">
+<celestia-footer class="footer flex p-20">
   <div>
     <h5>Sitemap</h5>
     {#each pages as page}

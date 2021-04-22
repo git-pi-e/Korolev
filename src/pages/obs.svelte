@@ -16,11 +16,9 @@
     position: relative;
     img {
       max-height: 400px;
-      border-radius: 5px;
     }
     .telesc,
     .telescD {
-      border-radius: 5px;
       position: absolute;
     }
     .telescD {
@@ -40,22 +38,25 @@
     border: 5px solid #fff;
     align-items: center;
     justify-content: center;
+    font-size: 16px;
+  }
+  @media (max-width: 768px) {
+    .stpty {
+      font-size: 12px;
+    }
   }
 </style>
 
 <celestia-page>
   <section class="adaptive">
     <h1 class="w-100 tx-c">Observations</h1>
-    <hr />
-    <div style="height:400px;">&nbsp;</div>
-
     <Containr title="Telescopes" icon="sat" bg="66e-37f">
       <div slot="body">
         {#each data.telescopes as tsc}
           <div class="lecture w-100">
-            <div class="telescD p-5px blur">{tsc.star} ({tsc.range})</div>
-            <div class="telesc p-5px blur">{tsc.title}</div>
-            <img class="w-100" src={tsc.img} alt="" />
+            <div class="telescD rx-5 p-5 blur">{tsc.star} ({tsc.range})</div>
+            <div class="telesc rx-5 p-5 blur">{tsc.title}</div>
+            <img class="w-100 rx-5" src={tsc.img} alt="" />
           </div>
         {/each}
       </div>
@@ -66,7 +67,7 @@
         speed={4}
         images={[...Array(5)].map((e, i) => `./assets/images/astro-ph/${i}.jpeg`)}
         height="350px">
-        <div slot="internal" class="w-100 p-20px m-0 flex-col f-wt1 stpty">
+        <div slot="internal" class="w-100 p-20 m-0 flex-col f-wt1 stpty">
           <div style="font-size:3em">Astrophotography</div>
           <p class="f-wt3">Its just what it sounds like.</p>
         </div>
@@ -95,7 +96,7 @@
         speed={4}
         images={[...Array(7)].map((e, i) => `./assets/images/stpty/${i}.jpg`)}
         height="350px">
-        <div slot="internal" class="w-100 p-20px m-0 flex-col f-wt1 stpty">
+        <div slot="internal" class="w-100 p-20 m-0 flex-col f-wt1 stpty">
           <div style="font-size:3em">Looking Up, All Night</div>
           <p class="f-wt3">
             Every Year. All Night. A Fire, Maggi, Telescopes &amp; Stars. <br />

@@ -9,6 +9,3 @@
 - Landing page timeline // *I have no design ideas for this :|*
 
 *DONE*
-- Project Leads names fixed
-- Slider for latest lectures with the respective posters and links to videos
-- Astrophotography slider

@@ -3,8 +3,9 @@
   "version": "2.0.0",
   "scripts": {
     "build": "rollup -c",
-    "devSass": "rollup -c -w & node-sass -w docs/global.scss docs/global.css --output-style compressed",
     "dev": "rollup -c -w",
+    "sass:global": "node-sass -w ./docs/css/global.scss ./docs/css/global.css --output-style compressed",
+    "sass:atomic": "node-sass -w ./docs/css/atomic.scss ./docs/css/atomic.css --output-style compressed",
     "start": "sirv docs"
   },
   "devDependencies": {

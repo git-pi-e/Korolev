@@ -34,7 +34,6 @@
   }
   .ldes img,
   .mgmt img {
-    border-radius: 2px;
     filter: grayscale(100%);
     width: 150px;
     height: 150px;
@@ -43,6 +42,7 @@
 
 <celestia-page>
   <section class="adaptive">
+    <h1 class="w-100 tx-c">Team</h1>
     <Containr title="SEDS CELESTIA" icon="null" bg="b5e-83c">
       <div slot="body">
         <p class="tx-j">
@@ -66,10 +66,10 @@
       </div>
     </Containr>
     <Containr title="Management" icon="empire" bg="66e-37f">
-      <div class="teamrow m-10px f-wrap flex" slot="body">
+      <div class="teamrow m-10 f-wrap flex" slot="body">
         {#each data.mgmt as p}
-          <div class="imgCont mgmt m-5px f-wt3">
-            <img src={p.img} alt="" />
+          <div class="imgCont mgmt m-5 f-wt3">
+            <img class="rx-2" src={p.img} alt="" />
             <br /><span class="f-wt7"> {p.name} </span>
             <br /><span style="color:#fffc">{p.pos}</span>
           </div>
@@ -80,8 +80,8 @@
     <Containr title="Leads" icon="jedi" bg="e66-c26">
       <div class="teamrow f-wrap flex" slot="body">
         {#each data.leads as p}
-          <div class="imgCont ldes m-5px f-wt3">
-            <img src={p.img} alt="" />
+          <div class="imgCont ldes m-5 f-wt3">
+            <img class="rx-2" src={p.img} alt="" />
             <br /><span class="f-wt7"> {p.pos} </span>
             <br /><span style="color:#fffc">{p.name}</span>
           </div>
@@ -89,22 +89,22 @@
       </div>
     </Containr>
 
-    <details class="bg-66e-37f p-10px">
+    <details class="bg-66e-37f p-10">
       <summary style="font-size:20px">
         Past Leadership <i>(Click to Open)</i>
       </summary>
       <main>
         <input
           type="text"
-          class="p-10px m-10px"
+          class="p-10 m-10 bg-nil"
           placeholder="Search"
           bind:value={filter}
-          style="height:33px;width:calc(100% - 20px);font-size:1.25em;background: #0000;" />
+          style="height:33px;width:calc(100% - 20px);font-size:1.25em;" />
         {#each data.past.filter((e) => {
           console.log(JSON.stringify(e).includes(filter) ? JSON.stringify(e).includes(filter) : 0);
           return JSON.stringify(e).includes(filter);
         }) as pj, i}
-          <element class="pastCard m-5px p-5px">
+          <element class="pastCard m-5 p-5">
             <h4>{2021 - i}</h4>
             {#each pj as person}
               <div class="f-wt3 w-100 flex">
