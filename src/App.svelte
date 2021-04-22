@@ -1,4 +1,5 @@
 <script>
+  export let basePage;
   import Nav from "./nav.svelte";
   import Home from "./pages/home.svelte";
 
@@ -9,7 +10,7 @@
   import Facc from "./pages/facc.svelte";
   import Obs from "./pages/obs.svelte";
 
-  $: currentPage = "Home";
+  $: currentPage = basePage;
   const changePage = (page) => {
     if (typeof page === "string") currentPage = page;
     else {

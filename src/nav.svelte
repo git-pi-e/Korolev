@@ -76,7 +76,7 @@
   <link rel="preconnect" href="http://edu.sedscelestia.org" />
   <link rel="preconnect" href="http://blog.sedscelestia.org" />
 
-  <details id="nav" class="modal">
+  <details id="nav" class="po-abs z-5">
     <summary style="z-index:9999">&nbsp;</summary>
     <ul class="blur w-100 h-100 tx-c po-fix" on:click={changePage}>
       {#each pages as pj, i}

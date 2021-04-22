@@ -1,6 +1,14 @@
 {
     "going": [
         {
+            "under": "For now HV",
+            "name": "CanSat",
+            "icon": "https://live.staticflickr.com/1082/672853757_9c08f408d9_b.jpg",
+            "desc": "The CubeSat project of SEDS-Celestia planned to detect exoplanets.",
+            "more": "GitHub",
+            "moreLink": null
+        },
+        {
             "under": "Kaustubh Murudkar",
             "name": "EINSat",
             "icon": "./assets/images/projects-2020/einsat.png",
@@ -51,7 +59,7 @@
         {
             "under": "Harshvardhan Chandirashekhar",
             "name": "Comet Dust Trail Simulation",
-            "icon": "./assets/images/projects-2020/",
+            "icon": "https://live.staticflickr.com/7210/6967153925_9716066eca.jpg",
             "desc": "Simulating icy comet dust trails.",
             "more": null,
             "moreLink": null

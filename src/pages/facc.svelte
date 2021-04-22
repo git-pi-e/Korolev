@@ -23,12 +23,7 @@
     .then((r) => r.text())
     .then((r2) => {
       jsons = JSON.parse(csvtojson(r2)).filter((e) => e.featured);
-      lec = jsons[i];
-      len = jsons.length;
-      jsons.forEach((e) => {
-        let img = new Image();
-        img.src = e.url;
-      });
+      [lec, len] = [jsons[i], jsons.length];
       x = setInterval(() => {
         fader.style.opacity = 0;
         setTimeout(() => {
@@ -76,17 +71,17 @@
         <div class="po-rel h-100">
           <div
             class="po-abs"
-            style="left:-20px;top: 50%;"
+            style="left:-20px;top: 150px;"
             on:click={() => go(-1, 1)}>
-            <svg viewBox="0 0 32 32">
+            <svg viewBox="0 0 32 32" class="p-5 rx-5" bg="e66-c26">
               <path d="M20 30 L8 16 20 2" />
             </svg>
           </div>
           <div
             class="po-abs"
-            style="right:-20px;top: 50%;"
+            style="right:-20px;top: 150px;"
             on:click={() => go(1, 1)}>
-            <svg viewBox="0 0 32 32">
+            <svg viewBox="0 0 32 32" class="p-5 rx-5" bg="e66-c26">
               <path d="M12 30 L24 16 12 2" />
             </svg>
           </div>
@@ -98,7 +93,7 @@
     </Containr>
 
     <Containr title="Open Source" icon="git" bg="e6e-954">
-      <div class="flex f-wrap jtx-ev" slot="body">
+      <div class="f-wrap jtx-ev" slot="body">
         {#each data.opensource as osc}
           {#if !(osc.show === -1)}
             <a class="pj m-5" href={osc.repo}>

@@ -13,19 +13,12 @@
   input::placeholder {
     color: #fff8;
   }
-  .pastCard {
-    img {
-      padding: 5px 5px 5px 7px;
-      background: #000;
-    }
-  }
   .boxy {
     height: 300px;
-    width: calc(33% - 40px);
+    --base: 33%;
+    --offset: 40px;
     .title {
-      background: linear-gradient(to bottom, transparent, #000);
       bottom: 0;
-      width: calc(100% - 40px);
       left: 0;
       word-wrap: break-word;
       font-size: 1.2em;
@@ -39,7 +32,7 @@
     section {
       padding: 4% 10%;
       .boxy {
-        width: calc(50% - 40px);
+        --base: 50%;
       }
     }
   }
@@ -47,7 +40,7 @@
     section {
       padding: 4%;
       .boxy {
-        width: calc(100% - 40px);
+        --base: 100%;
       }
     }
   }
@@ -56,11 +49,11 @@
 <celestia-page>
   <h1 class="w-100 tx-c">Projects</h1>
   <Comet />
-  <section class="flex tx-c" style="flex-wrap: wrap;">
+  <section class="tx-c f-wrap">
     {#each data.going as pj}
-      <div class="boxy po-rel tx-l m-20 blur">
+      <div class="boxy po-rel tx-l m-20 blur w-gen">
         <img src={pj.icon} class="w-100 z-0" height="300px" alt={pj.name} />
-        <div class="title po-abs p-20">
+        <div class="title po-abs p-20 w-gen" style="--offset:40px" bg="nil-000">
           <span class="f-wt7">{pj.name}</span>
           <hr />
           <details>
@@ -68,7 +61,7 @@
             <p>
               {pj.desc}
               {#if pj.more}
-                <button class="btn-std" style="margin-top: 10px;">
+                <button class="btn-std">
                   <a href={pj.moreLink}>{pj.more}</a>
                 </button>
               {/if}
@@ -79,20 +72,21 @@
     {/each}
   </section>
   <section class="tx-l" style="overflow-x:scroll;">
-    <details class="bg-66e-37f p-10">
+    <details class="p-10" bg="66e-37f">
       <summary style="font-size:20px">
         Past Projects <i>(Click to Open)</i>
       </summary>
       <main>
         <input
           type="text"
-          class="p-10 m-10 bg-nil"
+          bg="nil"
+          class="p-10 m-10 w-gen"
           placeholder="Search"
           bind:value={filter}
-          style="height:33px;width:calc(100% - 20px);font-size:1.25em;" />
+          style="height:33px;--offset:20px;font-size:1.25em;" />
         {#each data.past.filter((e) => e.name.includes(filter) || e.desc.includes(filter)) as pj, i}
-          <element class="flex pastCard m-10 p-10">
-            <img class="rx-50" size="ic-md" src={pj.img} alt="" />
+          <element class="flex m-10 p-10">
+            <img class="rx-50 p-5" bg="000" size="ic-md" src={pj.img} alt="" />
             <div class="m-5 f-wt3">
               <div class="f-wt7 p-10">{pj.name} ({pj.year || 'Unknown'})</div>
               <div style="padding:0 10px;">{pj.desc}</div>

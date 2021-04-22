@@ -62,7 +62,7 @@
       </div>
     </Containr>
     <Containr title="Management" icon="empire" bg="66e-37f">
-      <div class="teamrow m-10 f-wrap flex" slot="body">
+      <div class="teamrow m-10 f-wrap" slot="body">
         {#each data.mgmt as p}
           <div class="imgCont mgmt tx-c m-5 f-wt3">
             <img size="md" class="rx-2" src={p.img} alt="" />
@@ -74,7 +74,7 @@
     </Containr>
 
     <Containr title="Leads" icon="jedi" bg="e66-c26">
-      <div class="teamrow f-wrap flex" slot="body">
+      <div class="teamrow f-wrap" slot="body">
         {#each data.leads as p}
           <div class="imgCont ldes tx-c m-5 f-wt3">
             <img size="md" class="rx-2" src={p.img} alt="" />
@@ -85,14 +85,15 @@
       </div>
     </Containr>
 
-    <details class="bg-66e-37f p-10">
+    <details class="p-10" bg="66e-37f">
       <summary style="font-size:20px">
         Past Leadership <i>(Click to Open)</i>
       </summary>
       <main>
         <input
           type="text"
-          class="p-10 m-10 bg-nil"
+          bg="nil"
+          class="p-10 m-10"
           placeholder="Search"
           bind:value={filter}
           style="height:33px;width:calc(100% - 20px);font-size:1.25em;" />

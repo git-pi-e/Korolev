@@ -61,11 +61,11 @@ section,.part{ z-index: 0; }
 	.adaptive {padding: 4% 25%;}
 }
 @media (max-width: 991px) {
-	.adaptive {padding: 4% 20%;}
+	.adaptive {padding: 4% 15%;}
 }
 @media (max-width: 768px) {
-	.adaptive {padding: 4% 10%;}
+	.adaptive {padding: 4% 5%;}
 }
 @media (max-width: 450px) {
-	.adaptive {padding: 4%;}
+	.adaptive {padding: 4% 0%;}
 }

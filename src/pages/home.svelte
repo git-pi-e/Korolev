@@ -30,7 +30,6 @@
       );
     }
     .logo {
-      width: calc(100% - 2 * (50% - 64px));
       padding: 10px calc(50% - 64px);
     }
     .image-container {
@@ -59,7 +58,7 @@
 
 <celestia-page class="section p-0 m-0">
   <div class="image-container p-0 m-0 w-100 po-rel" style="height:500px;">
-    <div class="logo z-0 po-abs">
+    <div class="logo z-0 po-abs w-gen" style="--offset: calc(2 * (50% - 64px))">
       <Logo />
     </div>
     <img

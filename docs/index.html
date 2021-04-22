@@ -22,7 +22,10 @@
 </head>
 
 <script>
-	links = JSON.parse( '{"web": {"educelestia": "http://edu.sedscelestia.org/","sedsc": "http://www.sedscelestia.org","sedsi": "https://www.sedsindia.org","sedse": "http://www.sedsearth.org"},"social": {"ig": "https://www.instagram.com/sedscelestia/","fb": "https://www.facebook.com/celestiaclub","git": "https://github.com/SEDSCelestiaBPGC","lin": "https://www.linkedin.com/company/seds-celestia/"},"content": {"blog": "https://bitsgcelestia.wordpress.com","yt": "https://www.youtube.com/channel/UCuZ1RL7Qv5tKaQeWy28qhUw","spotify": "https://open.spotify.com/show/0NKbVLI7LpY6069IUCF6xi?si=nybrolgSQ5u2LoWEkm3U1A&nd=1","radiopub": "https://radiopublic.com/celestia-onair-WeRp1J","gpods": "https://podcasts.google.com/feed/aHR0cHM6Ly9hbmNob3IuZm0vcy80NWYzZjAwOC9wb2RjYXN0L3Jzcw==","pocketcast": "https://pca.st/b3mqu7bk","breaker": "https://breaker.audio/celestia-on-air"}}' )
+	links = JSON.parse( '{"web": {"educelestia": "http://edu.sedscelestia.org/","sedsc": "http://www.sedscelestia.org","sedsi": "https://www.sedsindia.org","sedse": "http://www.sedsearth.org"},"social": {"ig": "https://www.instagram.com/sedscelestia/","fb": "https://www.facebook.com/celestiaclub","git": "https://github.com/SEDSCelestiaBPGC","lin": "https://www.linkedin.com/company/seds-celestia/"},"content": {"blog": "https://bitsgcelestia.wordpress.com","yt": "https://www.youtube.com/channel/UCuZ1RL7Qv5tKaQeWy28qhUw","spotify": "https://open.spotify.com/show/0NKbVLI7LpY6069IUCF6xi?si=nybrolgSQ5u2LoWEkm3U1A&nd=1","radiopub": "https://radiopublic.com/celestia-onair-WeRp1J","gpods": "https://podcasts.google.com/feed/aHR0cHM6Ly9hbmNob3IuZm0vcy80NWYzZjAwOC9wb2RjYXN0L3Jzcw==","pocketcast": "https://pca.st/b3mqu7bk","breaker": "https://breaker.audio/celestia-on-air"}}' );
+
+	const redir = window.location.href.split( '#' )[ 1 ] || null;
+	if ( links.social[ redir ] ) window.location.href = links.social[ redir ];
 </script>
 
 <body class="m-0 p-0" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
