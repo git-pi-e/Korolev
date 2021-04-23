@@ -1,8 +1,11 @@
 <script>
-  export let title, icon, bg;
+  export let title,
+    icon,
+    bg,
+    classes = "";
 </script>
 
-<article class="p-10 m-h-auto" {bg}>
+<article class="p-10 m-h-auto {classes}" {bg}>
   <div class="l1 p-10 flex f-wt5">
     <span> {title} </span>
     {#if icon !== 'null'}

@@ -1,6 +1,10 @@
+<script>
+  export let wd = 128;
+</script>
+
 <svg
   viewbox="-6 -8 1096 528"
-  width="128px"
+  width="{wd}px"
   font-size="100"
   font-family="Helvetica"><style>
     circle {
