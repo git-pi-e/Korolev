@@ -9,16 +9,11 @@
 
   onMount(() => {
     const target = document.querySelector("#rocket");
-    let handleIntersection = (entries) => {
-      console.log(entries);
+    let handleIntersection = (entries) =>
       entries.map((entry) => {
-        if (entry.isIntersecting) {
+        if (entry.isIntersecting)
           entry.target.childNodes[0].classList.add("display");
-        } else {
-          entry.target.childNodes[0].classList.remove("display");
-        }
       });
-    };
     const observer = new IntersectionObserver(handleIntersection);
     observer.observe(target);
   });
