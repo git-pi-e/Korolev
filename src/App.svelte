@@ -1,6 +1,6 @@
 <script>
   export let basePage;
-  import Nav from "./nav.svelte";
+  import Nav from "./micro/nav.svelte";
   import Home from "./pages/home.svelte";
 
   import Footer from "./micro/footer.svelte";

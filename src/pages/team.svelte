@@ -1,9 +1,9 @@
 <script>
   import Earth from "../micro/earth.svelte";
   import data from "../data/team.json";
-  import Containr from "../shared/gradCont.svelte";
+  import Containr from "../shared/Containr.svelte";
 
-  let filter = "";
+  // let filter = "";
 </script>
 
 <style type="text/scss">
@@ -24,12 +24,6 @@
       width: calc(50% - 10px);
     }
   }
-  @media (max-width: 400px) {
-    .mgmt,
-    .ldes {
-      width: calc(100% - 10px);
-    }
-  }
   .ldes img,
   .mgmt img {
     filter: grayscale(100%);
@@ -38,7 +32,6 @@
 
 <celestia-page>
   <section class="adaptive">
-    <h1 class="w-100 tx-c">Team</h1>
     <Containr title="SEDS CELESTIA" icon="null" bg="b5e-83c">
       <div slot="body">
         <p class="tx-j">
@@ -53,7 +46,7 @@
           undertake many projects, exhibitions during quark, bonhomie with
           seniors and Starparty!
         </p>
-        <p class="tx-j">We are the Celestials!</p>
+        <p class="tx-j">We are the Celestials! ❤️</p>
         <img
           class="w-100"
           src="./assets/images/team.jpg"
@@ -65,9 +58,9 @@
       <div class="teamrow m-10 f-wrap" slot="body">
         {#each data.mgmt as p}
           <div class="imgCont mgmt tx-c m-5 f-wt3">
-            <img size="md" class="rx-2" src={p.img} alt="" />
+            <img size="md-lg" class="rx-2" src={p.img} alt="" />
             <br /><span class="f-wt7"> {p.name} </span>
-            <br /><span style="color:#fffc">{p.pos}</span>
+            <br /><span style="color:#fffc">{p.post}</span>
           </div>
         {/each}
       </div>
@@ -90,17 +83,15 @@
         Past Leadership <i>(Click to Open)</i>
       </summary>
       <main>
-        <input
+        <!-- <input
           type="text"
           bg="nil"
-          class="p-10 m-10"
+          class="p-10 m-10 w-gen"
           placeholder="Search"
           bind:value={filter}
-          style="height:33px;width:calc(100% - 20px);font-size:1.25em;" />
-        {#each data.past.filter((e) => {
-          console.log(JSON.stringify(e).includes(filter) ? JSON.stringify(e).includes(filter) : 0);
-          return JSON.stringify(e).includes(filter);
-        }) as pj, i}
+          style="height:33px;--offset:20px;font-size:1.25em;" /> -->
+        {#each data.past as pj, i}
+          <!-- .filter((e) => JSON.stringify(e).includes(filter))  -->
           <element class="pastCard m-5 p-5">
             <h4>{2021 - i}</h4>
             {#each pj as person}

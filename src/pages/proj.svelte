@@ -3,11 +3,13 @@
   import Comet from "../nano/comet.svelte";
   import data from "../data/projects.json";
 
+  import Containr from "../shared/Containr.svelte";
+  import Image from "../shared/image.svelte";
   let filter = "";
 </script>
 
 <style type="text/scss">
-  section {
+  .section {
     padding: 20px 10%;
   }
   input::placeholder {
@@ -47,9 +49,8 @@
 </style>
 
 <celestia-page>
-  <h1 class="w-100 tx-c">Projects</h1>
   <Comet />
-  <section class="tx-c f-wrap">
+  <section class="section tx-c f-wrap">
     {#each data.going as pj}
       <div class="boxy po-rel tx-l m-20 blur w-gen">
         <img src={pj.icon} class="w-100 z-0" height="300px" alt={pj.name} />
@@ -71,30 +72,48 @@
       </div>
     {/each}
   </section>
-  <section class="tx-l" style="overflow-x:scroll;">
-    <details class="p-10" bg="66e-37f">
-      <summary style="font-size:20px">
-        Past Projects <i>(Click to Open)</i>
-      </summary>
-      <main>
-        <input
-          type="text"
-          bg="nil"
-          class="p-10 m-10 w-gen"
-          placeholder="Search"
-          bind:value={filter}
-          style="height:33px;--offset:20px;font-size:1.25em;" />
-        {#each data.past.filter((e) => e.name.includes(filter) || e.desc.includes(filter)) as pj, i}
-          <element class="flex m-10 p-10">
-            <img class="rx-50 p-5" bg="000" size="ic-md" src={pj.img} alt="" />
-            <div class="m-5 f-wt3">
-              <div class="f-wt7 p-10">{pj.name} ({pj.year || 'Unknown'})</div>
-              <div style="padding:0 10px;">{pj.desc}</div>
-            </div>
-          </element>
-        {/each}
-      </main>
-    </details>
+  <section class="adaptive">
+    <Containr title="Past Projects" icon="tasks" bg="66e-37f">
+      <details class="p-10 tx-l" bg="66e-37f" slot="body">
+        <summary style="font-size:20px"><i>(Click to Open)</i></summary>
+        <main>
+          <input
+            type="text"
+            bg="nil"
+            class="p-10 m-10 w-gen"
+            placeholder="Search"
+            bind:value={filter}
+            style="height:33px;--offset:20px;font-size:1.25em;" />
+          {#each data.past.filter((e) => e.name.includes(filter) || e.desc.includes(filter)) as pj, i}
+            <element class="flex m-10 p-10">
+              <img
+                class="rx-50 p-5"
+                bg="000"
+                size="ic-md"
+                src={pj.img}
+                alt="" />
+              <div class="m-5 f-wt3">
+                <div class="f-wt7 p-10">{pj.name} ({pj.year || 'Unknown'})</div>
+                <div style="padding:0 10px;">{pj.desc}</div>
+              </div>
+            </element>
+          {/each}
+        </main>
+      </details>
+    </Containr>
+    <Containr title="Notable Spinoffs" icon="dish" bg="e66-c26">
+      <div slot="body">
+        <Image
+          src="./assets/projects/kratos.png"
+          placements={{ topRight: 'Now Independent', bottomLeft: 'Project Kratos' }} />
+        <Image
+          src="./assets/projects/rt.jpg"
+          placements={{ topRight: 'Now Independent', bottomLeft: 'Project RT' }} />
+        <Image
+          src="./assets/projects/apeiro.jpg"
+          placements={{ topRight: 'Now in Space', bottomLeft: 'Project Apeiro' }} />
+      </div>
+    </Containr>
   </section>
   <BH />
 </celestia-page>

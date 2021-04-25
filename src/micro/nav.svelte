@@ -14,7 +14,7 @@
       display: none;
     }
     &::before {
-      display: block;
+      display: inline-block;
       content: " ";
       background-image: url("../assets/svgs/bars.svg");
       background-size: 28px 28px;
@@ -74,7 +74,11 @@
 
 <celestia-nav>
   <details id="nav" class="po-abs z-5">
-    <summary style="z-index:9999">&nbsp;</summary>
+    <summary class="po-rel" style="z-index:9999">
+      <i class="po-abs" style="font-size:1rem;top:1.5em;left:2.25em;">
+        {currentPage}
+      </i>
+    </summary>
     <ul class="blur w-100 h-100 tx-c po-fix" on:click={changePage}>
       {#each pages as pj, i}
         <li style="animation-delay:{i / 20}s">

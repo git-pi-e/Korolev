@@ -103,14 +103,16 @@ svg {fill:none;stroke:currentcolor;stroke-linecap:round;stroke-linejoin:round;}
 
 // COLORS
 .bg-cov{ background-size:cover !important; }
+*[bg="222"]{background:#222;}
 *[bg="000"]{background:#000;}
 *[bg="0008"]{background:#0008;}
 *[bg="nil"]{background:#0000;}
 *[bg="nil-000"]{background: linear-gradient(to bottom, #0000, #000);}
-*[bg="e6e-954"]{ background: linear-gradient(135deg, #e6e, #945); }
-*[bg="66e-37f"]{ background: linear-gradient(135deg, #66e, #37f); }
 *[bg="e66-c26"]{ background: linear-gradient(135deg, #e66, #c26); }
+*[bg="e6e-954"]{ background: linear-gradient(135deg, #e6e, #945); }
 *[bg="b5e-83c"]{ background: linear-gradient(135deg, #b5e, #83c); }
+*[bg="66e-37f"]{ background: linear-gradient(135deg, #66e, #37f); }
+*[bg="69e-8ae"]{  background: linear-gradient(to right, #69e, #8ae); }
 
 .o-0{opacity:0;}
 .display{display:block !important;}

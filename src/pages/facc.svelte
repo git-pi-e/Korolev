@@ -1,7 +1,7 @@
 <script>
   import Mars from "../micro/mars.svelte";
   import data from "../data/facc.json";
-  import Containr from "../shared/gradCont.svelte";
+  import Containr from "../shared/Containr.svelte";
 
   import { sheet, csvtojson, base, template } from "../code/functions";
 
@@ -65,13 +65,12 @@
 
 <celestia-page>
   <section class="adaptive">
-    <h1 class="w-100 tx-c">Events</h1>
     <Containr title="Open Lectures" icon="lec" bg="e66-c26">
       <div class="lecture po-rel w-100" slot="body">
         <div class="po-rel h-100">
           <div
             class="po-abs"
-            style="left:-20px;top: 150px;"
+            style="left:5px;top: 150px;"
             on:click={() => go(-1, 1)}>
             <svg viewBox="0 0 32 32" class="p-5 rx-5" bg="e66-c26">
               <path d="M20 30 L8 16 20 2" />
@@ -79,7 +78,7 @@
           </div>
           <div
             class="po-abs"
-            style="right:-20px;top: 150px;"
+            style="right:5px;top: 150px;"
             on:click={() => go(1, 1)}>
             <svg viewBox="0 0 32 32" class="p-5 rx-5" bg="e66-c26">
               <path d="M12 30 L24 16 12 2" />
@@ -138,6 +137,16 @@
           the help of simulators like Space Engine .
         </p>
       </div>
+    </Containr>
+
+    <Containr title="Paper Presentation" icon="scroll" bg="69e-8ae">
+      <p class="tx-j" slot="body">
+        Paper Presentation is about how you put your theme or present your topic
+        before the audience. They see the manner in which you present your
+        point, the manner in which you put your focus, your introduction style,
+        your language and how promptly and effectively you answer their
+        questions.
+      </p>
     </Containr>
 
     <div style="height:5em">&nbsp;</div>

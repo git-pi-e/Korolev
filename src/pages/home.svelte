@@ -3,7 +3,7 @@
 
   import data from "../data/home";
   import Logo from "../nano/logo.svelte";
-  import Containr from "../shared/gradCont.svelte";
+  import Containr from "../shared/Containr.svelte";
   import Rocket from "../micro/rocket.svelte";
   import { onMount } from "svelte";
 

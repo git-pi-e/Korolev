@@ -1,110 +1,89 @@
 {
     "mgmt": [
         {
-            "img": "https://qph.fs.quoracdn.net/main-thumb-1474256113-200-qqzalnbnbjkphucworqwkaudsgdbhvbl.jpeg",
-            "name": "Hrutwick Sawant",
-            "pos": "President"
+            "img": "./assets/team/prorush.jpg",
+            "post": "President",
+            "name": "Paurush Punyasheel"
         },
         {
-            "img": "https://qph.fs.quoracdn.net/main-thumb-1474256113-200-qqzalnbnbjkphucworqwkaudsgdbhvbl.jpeg",
-            "name": "Harshvardhan C.",
-            "pos": "Vice President"
+            "img": "./assets/team/ankit.jpg",
+            "post": "Vice-President",
+            "name": "Ankit Verma"
         },
         {
-            "img": "https://qph.fs.quoracdn.net/main-thumb-1474256113-200-qqzalnbnbjkphucworqwkaudsgdbhvbl.jpeg",
-            "name": "Paurush Punyasheel",
-            "pos": "Secretary & Publicity Head"
+            "img": "./assets/team/yash.jpg",
+            "post": "Secretary & Publicity Head",
+            "name": "Yash Saini"
         },
         {
-            "img": "https://qph.fs.quoracdn.net/main-thumb-1474256113-200-qqzalnbnbjkphucworqwkaudsgdbhvbl.jpeg",
-            "name": "Ankit Verma",
-            "pos": "Projects Head"
+            "img": "./assets/team/cube.jpg",
+            "post": "Observations Head",
+            "name": "Kaustubh Murudkar"
         },
         {
-            "img": "https://qph.fs.quoracdn.net/main-thumb-1474256113-200-qqzalnbnbjkphucworqwkaudsgdbhvbl.jpeg",
-            "name": "Bhuvan S V",
-            "pos": "Lectures & Podcast Head"
+            "img": "./assets/team/vivek.jpg",
+            "post": "Projects Head",
+            "name": "Vivek Subramaniam"
         },
         {
-            "img": "https://qph.fs.quoracdn.net/main-thumb-1474256113-200-qqzalnbnbjkphucworqwkaudsgdbhvbl.jpeg",
-            "name": "Murudkar Kaustubh",
-            "pos": "Observations Head"
+            "img": "./assets/team/frogu.jpg",
+            "post": "Lectures & Podcast Head",
+            "name": "Abdul Jawad Khan"
         }
     ],
     "leads": [
         {
-            "img": "https://qph.fs.quoracdn.net/main-thumb-1474256113-200-qqzalnbnbjkphucworqwkaudsgdbhvbl.jpeg",
+            "img": "https://cdn.pixabay.com/photo/2017/07/18/23/23/user-2517433__340.png",
             "name": "3 Sided Coin",
             "pos": "Neil Shah"
         },
         {
-            "img": "https://qph.fs.quoracdn.net/main-thumb-1474256113-200-qqzalnbnbjkphucworqwkaudsgdbhvbl.jpeg",
+            "img": "./assets/team/yash.jpg",
+            "name": "Brain Computer Interface",
+            "pos": "Yash Saini"
+        },
+        {
+            "img": "https://cdn.pixabay.com/photo/2017/07/18/23/23/user-2517433__340.png",
             "name": "Quantum Chess",
             "pos": "Ayushi Dubal"
         },
         {
-            "img": "https://qph.fs.quoracdn.net/main-thumb-1474256113-200-qqzalnbnbjkphucworqwkaudsgdbhvbl.jpeg",
-            "name": "Einsat",
-            "pos": "Ankit Verma"
+            "img": "./assets/team/cube.jpg",
+            "name": "EINSat",
+            "pos": "Kaustubh Murudkar"
         },
         {
-            "img": "https://qph.fs.quoracdn.net/main-thumb-1474256113-200-qqzalnbnbjkphucworqwkaudsgdbhvbl.jpeg",
+            "img": "./assets/team/vivek.jpg",
             "name": "Cloud Chamber",
             "pos": "Vivek S."
         },
         {
-            "img": "https://qph.fs.quoracdn.net/main-thumb-1474256113-200-qqzalnbnbjkphucworqwkaudsgdbhvbl.jpeg",
+            "img": "./assets/team/samarth.jpg",
             "name": "Binary Calculator",
             "pos": "Samarth Agrawal"
         },
         {
-            "img": "https://qph.fs.quoracdn.net/main-thumb-1474256113-200-qqzalnbnbjkphucworqwkaudsgdbhvbl.jpeg",
+            "img": "./assets/team/patidar.jpg",
             "name": "CanSat",
             "pos": "Dhruv Patidar"
         },
         {
-            "img": "https://qph.fs.quoracdn.net/main-thumb-1474256113-200-qqzalnbnbjkphucworqwkaudsgdbhvbl.jpeg",
+            "img": "https://cdn.pixabay.com/photo/2017/07/18/23/23/user-2517433__340.png",
             "name": "Star Tracker",
-            "pos": "Vivek Gupta"
+            "pos": "Vivek Gupte"
         },
         {
-            "img": "https://qph.fs.quoracdn.net/main-thumb-1474256113-200-qqzalnbnbjkphucworqwkaudsgdbhvbl.jpeg",
+            "img": "./assets/team/hvcs.png",
             "name": "Comet Trail Sim",
-            "pos": "Yashee Sinha"
+            "pos": "Harshvardhan C."
         },
         {
-            "img": "https://qph.fs.quoracdn.net/main-thumb-1474256113-200-qqzalnbnbjkphucworqwkaudsgdbhvbl.jpeg",
+            "img": "./assets/team/venu.jpg",
             "name": "Rocketry",
             "pos": "Venugopalan Iyenger"
         }
     ],
     "past": [
-        [
-            {
-                "post": "President",
-                "name": "Paurush Punyasheel"
-            },
-            {
-                "post": "Vice-President",
-                "name": "Ankit Verma"
-            },
-            {
-                "post": "Secretary & Publicity Head",
-                "name": "Yash Saini"
-            },
-            {
-                "post": "Observations Head",
-                "name": "Kaustubh Murudkar"
-            },
-            {
-                "post": "Projects Head",
-                "name": "Vivek Subramaniam"
-            },
-            {
-                "post": "Lectures & Podcast Head",
-                "name": "Abdul Jawad Khan"
-            }
-        ],
         [
             {
                 "post": "President",
@@ -168,7 +147,7 @@
         [
             {
                 "post": "President",
-                "name": "Akash Chowdhary"
+                "name": "Akash Chaudhary"
             },
             {
                 "post": "Vice-President",

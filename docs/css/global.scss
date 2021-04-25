@@ -55,19 +55,19 @@ section,.part{ z-index: 0; }
 	}
 }
 
-.adaptive {padding: 4% 30%;}
+.adaptive {padding: 6.6% 30%;}
 
 @media (max-width: 1200px) {
-	.adaptive {padding: 4% 25%;}
+	.adaptive {padding: 6.6% 25%;}
 }
 @media (max-width: 991px) {
-	.adaptive {padding: 4% 15%;}
+	.adaptive {padding: 6.6% 15%;}
 }
 @media (max-width: 768px) {
-	.adaptive {padding: 4% 5%;}
+	.adaptive {padding: 6.6% 5%;}
 }
 @media (max-width: 450px) {
-	.adaptive {padding: 4% 0%;}
+	.adaptive {padding: 6.6% 0%;}
 }
 
 @keyframes welcs {
