@@ -14,27 +14,12 @@
 </script>
 
 <style type="text/scss">
-  .lecture {
-    img {
-      max-height: 400px;
-    }
-    .telescD {
-      top: 5px;
-      right: 5px;
-    }
-    .telesc {
-      bottom: 5px;
-      left: 5px;
-      font-size: 1.5em;
-    }
-  }
   .stpty {
     background: radial-gradient(#000b, #0002);
     width: calc(100% - 50px);
     height: calc(100% - 50px);
     border: 5px solid #fff;
     align-items: center;
-    justify-content: center;
     font-size: 16px;
   }
   @media (max-width: 768px) {
@@ -46,6 +31,17 @@
 
 <celestia-page>
   <section class="adaptive">
+    <h1 class="tx-c po-stx p-10 z-4" style="top: 0px;" bg="000-nil">
+      Observations
+    </h1>
+    <div class="tx-c">
+      <img
+        src="./assets/onthehouse/obsArt.png"
+        size="max"
+        class="rx-max m-10"
+        style="box-shadow: -5px 0 10px 10px #0006"
+        alt="" />
+    </div>
     <Containr title="Telescopes" icon="sat" bg="66e-37f">
       <div slot="body">
         {#each data.telescopes as tsc}
@@ -59,13 +55,13 @@
     <article class="p-0 m-h-auto bg-cov tx-c">
       <Slidr
         speed={4}
-        images={[...Array(5)].map((e, i) => `./assets/images/astro-ph/${i}.jpeg`)}
+        images={[...Array(5)].map((e, i) => `./assets/obs/astro-ph/${i}.jpeg`)}
         height="350px">
-        <div slot="internal" class="w-100 p-20 m-0 flex-col f-wt1 stpty">
+        <div slot="internal" class="w-100 p-20 m-0 flex-col jtx-ct f-wt1 stpty">
           <div style="font-size:3em">Astrophotography</div>
           <p class="f-wt3">Its just what it sounds like. <br /></p>
-          <a href="/astro-rules.html" class="btn-std" style="height:auto;">Rules
-            &rarr;</a>
+          <!-- <a href="/astro-rules.html" class="btn-std" style="height:auto;">Rules
+            &rarr;</a> -->
         </div>
       </Slidr>
     </article>
@@ -90,7 +86,7 @@
     <article class="p-0 m-h-auto bg-cov tx-c">
       <Slidr
         speed={4}
-        images={[...Array(7)].map((e, i) => `./assets/images/stpty/${i}.jpg`)}
+        images={[...Array(7)].map((e, i) => `./assets/obs/stpty/${i}.jpg`)}
         height="350px">
         <div slot="internal" class="w-100 p-20 m-0 flex-col f-wt1 stpty">
           <div style="font-size:3em">Looking Up, All Night</div>

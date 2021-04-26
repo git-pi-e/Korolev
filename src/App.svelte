@@ -7,7 +7,7 @@
 
   import Team from "./pages/team.svelte";
   import Proj from "./pages/proj.svelte";
-  import Facc from "./pages/facc.svelte";
+  import Facc from "./pages/events.svelte";
   import Obs from "./pages/obs.svelte";
 
   $: currentPage = basePage;

@@ -22,6 +22,7 @@
           : k++;
       }, speed * 1e3 * i);
     }
+    return 0;
   }
 
   onMount(backgroundSequence);

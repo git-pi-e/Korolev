@@ -17,6 +17,7 @@
     if (x && fst) clearInterval(x);
     i = (i + +dir) % len;
     lec = jsons[i];
+    return 0;
   };
 
   fetch(sheet)
@@ -31,6 +32,7 @@
           fader.style.opacity = 1;
         }, 1e3);
       }, 5e3);
+      return 0;
     });
 </script>
 
@@ -65,6 +67,7 @@
 
 <celestia-page>
   <section class="adaptive">
+    <h1 class="tx-c po-stx p-10 z-4" style="top: 0px;" bg="000-nil">Events</h1>
     <Containr title="Open Lectures" icon="lec" bg="e66-c26">
       <div class="lecture po-rel w-100" slot="body">
         <div class="po-rel h-100">

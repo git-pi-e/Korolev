@@ -21,68 +21,66 @@
             "name": "Rocketry",
             "icon": "./assets/images/projects-2020/rocketry.png",
             "desc": "Rocketry aims to build a self landing thrust-vector controlled rockets.",
-            "more": null,
-            "moreLink": null
+            "more": null
+        },
+        {
+            "under": "Vivek Gupte",
+            "name": "Star Tracker",
+            "icon": "./assets/images/projects-2020/track.jpg",
+            "desc": "Shows object aimed by telescope on a screen in real time",
+            "more": null
+        },
+        {
+            "under": "Neil Shah",
+            "name": "3 Sided Coin",
+            "icon": "./assets/images/projects-2020/3coin.jpg",
+            "desc": "Rocketry aims to build a self landing thrust-vector controlled rockets.",
+            "more": null
         },
         {
             "under": "Ayushi Dubal",
             "name": "Quantum Chess",
             "icon": "./assets/images/projects-2020/qchess.jpeg",
             "desc": "Quantum chess is reiteration of classical chess but with quantum rules.",
-            "more": null,
-            "moreLink": null
+            "more": null
         },
         {
-            "under": "Yash Saini , Kartik Chaubisa",
+            "under": "Yash Saini",
             "name": "Brain Computer Interface",
             "icon": "./assets/images/projects-2020/bci.png",
             "desc": "Designing an Ominidirection brain controlled rover",
-            "more": null,
-            "moreLink": null
+            "more": null
         },
         {
             "under": "Samarth Agrawal",
             "name": "Binary Calculator",
             "icon": "./assets/images/projects-2020/bincalc.png",
             "desc": "A calculator made by transistor circuits.",
-            "more": null,
-            "moreLink": null
+            "more": null
         },
         {
             "under": "Vivek Subramanium",
             "name": "Cloud Chamber",
             "icon": "./assets/images/projects-2020/cloud.jpg",
             "desc": "An old school particle detector",
-            "more": null,
-            "moreLink": null
+            "more": null
         },
         {
             "under": "Harshvardhan Chandirashekhar",
             "name": "Comet Dust Trail Simulation",
             "icon": "https://live.staticflickr.com/7210/6967153925_9716066eca.jpg",
             "desc": "Simulating icy comet dust trails.",
-            "more": null,
-            "moreLink": null
+            "more": null
         }
     ],
     "past": [
         {
             "year": "2019",
-            "under": "Venugopalan Iyengar",
+            "under": "Dhruv Patidar",
             "name": "CanSat",
-            "desc": "Designing an atmosphere probining satellite which fits in a can.",
+            "desc": "Remote sensing and gathering atmospheric data",
             "img": "./assets/logo-sq.png",
-            "more": "",
-            "moreLink": ""
-        },
-        {
-            "year": "2019",
-            "under": "Venugopalan Iyengar",
-            "name": "StarTracker",
-            "desc": "An computerized and automated telescope",
-            "img": "./assets/logo-sq.png",
-            "more": "",
-            "moreLink": ""
+            "more": null
         },
         {
             "year": "2019",
@@ -90,17 +88,15 @@
             "name": "Lidar",
             "desc": "An attempt to create our inhouce lidar",
             "img": "./assets/logo-sq.png",
-            "more": "",
-            "moreLink": ""
+            "more": null
         },
         {
-            "year": "2019",
+            "year": 2017,
             "under": "Venugopalan Iyengar",
             "name": "Tesla Coil",
             "desc": "The name speaks for itself",
             "img": "./assets/logo-sq.png",
-            "more": "",
-            "moreLink": ""
+            "more": ""
         },
         {
             "year": "2019",
@@ -108,8 +104,7 @@
             "name": "Microbial Fuel Cell",
             "desc": "Utilizing bacteria in order to catalize reactions and generate current.",
             "img": "./assets/logo-sq.png",
-            "more": "",
-            "moreLink": ""
+            "more": null
         },
         {
             "year": "2019",
@@ -117,8 +112,7 @@
             "name": "Pyroboard",
             "desc": "Vibrating a burning gases to tunes from a speaker",
             "img": "./assets/logo-sq.png",
-            "more": "",
-            "moreLink": ""
+            "more": null
         },
         {
             "year": "2019",
@@ -126,8 +120,7 @@
             "name": "Spectrometer",
             "desc": "Design a spectrometer to determine the chemical composition of light sources or illuminated objects.",
             "img": "./assets/logo-sq.png",
-            "more": "",
-            "moreLink": ""
+            "more": null
         },
         {
             "year": "2019",
@@ -135,71 +128,63 @@
             "name": "Physarum",
             "desc": "Solve basic computation problems using Physarum slime mold",
             "img": "./assets/logo-sq.png",
-            "more": "",
-            "moreLink": ""
+            "more": null
         },
         {
-            "year": "2019",
+            "year": 2018,
             "under": "Venugopalan Iyengar",
             "name": "Sonoluminescence",
             "desc": "Create a sonoluminescent bubble and take temperature and spectral measurements of the light emitted.",
             "img": "./assets/logo-sq.png",
-            "more": "",
-            "moreLink": ""
+            "more": ""
         },
         {
-            "year": "",
+            "year": 2017,
             "under": "Venugopalan Iyengar",
             "name": "Barn Door Tracker",
             "desc": "Take exposure images of night’s sky using automated DSLR mount",
             "img": "./assets/logo-sq.png",
-            "more": "",
-            "moreLink": ""
+            "more": ""
         },
         {
-            "year": "",
+            "year": 2017,
             "under": "Venugopalan Iyengar",
             "name": "N-body simulation",
             "desc": "It aimed to simulate the gravitational interaction of a swarm of bodies and study the clustering and dynamics of the structures formed.",
             "img": "./assets/logo-sq.png",
-            "more": "",
-            "moreLink": ""
+            "more": ""
         },
         {
-            "year": "",
+            "year": 2018,
             "under": "Venugopalan Iyengar",
             "name": "Schlieren Photography",
             "desc": "To Visualize pressure, temperature and composition gradients in fluid flow and observe the complex fractal like structures of turbulence.",
             "img": "./assets/logo-sq.png",
-            "more": "",
-            "moreLink": ""
+            "more": ""
         },
         {
-            "year": "",
+            "year": 2018,
             "under": "Venugopalan Iyengar",
             "name": "Reproduction of particle interference with walking droplets",
             "desc": "It aimed to recreate a quantum phenomena like interference with walking droplets on a vibrating fluid bed.",
             "img": "./assets/logo-sq.png",
-            "more": "",
-            "moreLink": ""
+            "more": ""
         },
         {
-            "year": "",
+            "year": 2018,
             "under": "Venugopalan Iyengar",
             "name": "Galaxy Classifier Neural Net",
             "desc": "It aimed to build and train a convolutional neural network that will classify galaxies using their images.",
             "img": "./assets/logo-sq.png",
-            "more": "",
-            "moreLink": ""
+            "more": ""
         },
         {
-            "year": "",
+            "year": 2018,
             "under": "Venugopalan Iyengar",
             "name": "Michelson Interferometers",
             "desc": "Build a Michelson interferometer without any expensive equipment and to explore the applications of interferometry in seismology and acoustics.",
             "img": "./assets/logo-sq.png",
-            "more": "",
-            "moreLink": ""
+            "more": ""
         }
     ]
 }

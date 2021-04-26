@@ -1,6 +1,3 @@
-<script>
-</script>
-
 <style type="text/scss">
   $stand_size: 80px;
   $flame-height: 80px;
@@ -276,9 +273,18 @@
 </style>
 
 <div id="container" size="max" class="po-rel" bg="0000" style="display:none;">
-  <img src="./assets/legacy.svg" class="po-abs legacy" size="max" alt="" />
+  <img
+    src="./assets/legacy.svg"
+    class="po-abs legacy"
+    size="max"
+    alt="Legacy" />
   <div class="rocket_c">
-    <img class="us rx-50 m-7" src="./assets/logo-sq.png" size="min" bg="000" />
+    <img
+      class="us rx-50 m-7"
+      src="./assets/logo-sq.png"
+      size="min"
+      bg="000"
+      alt="Mini Logo" />
     <div class="ganch ganch_1" />
     <div class="ganch ganch_2" />
     <div class="ganch ganch_3" />

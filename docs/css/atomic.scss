@@ -76,6 +76,7 @@ svg {fill:none;stroke:currentcolor;stroke-linecap:round;stroke-linejoin:round;}
 .po-abs{position: absolute;}
 .po-fix{position: fixed;}
 .po-rel{position: relative;}
+.po-stx{position: sticky;position: -webkit-sticky;}
 
 .p-0{ padding: 0; }
 .p-5{ padding: 5px; }
@@ -96,9 +97,12 @@ svg {fill:none;stroke:currentcolor;stroke-linecap:round;stroke-linejoin:round;}
 .rx-2{border-radius:2px;}
 .rx-5{border-radius:5px;}
 .rx-50{border-radius:50px;}
+.rx-ha{border-radius:50%;}
+.rx-max{border-radius:200px;}
 
 .z-0{z-index: 0;}
 .z-1{z-index: 1;}
+.z-4{z-index: 4;}
 .z-5{z-index: 5;}
 
 // COLORS
@@ -108,6 +112,7 @@ svg {fill:none;stroke:currentcolor;stroke-linecap:round;stroke-linejoin:round;}
 *[bg="0008"]{background:#0008;}
 *[bg="nil"]{background:#0000;}
 *[bg="nil-000"]{background: linear-gradient(to bottom, #0000, #000);}
+*[bg="000-nil"]{background: linear-gradient(to top, #0000, #000);}
 *[bg="e66-c26"]{ background: linear-gradient(135deg, #e66, #c26); }
 *[bg="e6e-954"]{ background: linear-gradient(135deg, #e6e, #945); }
 *[bg="b5e-83c"]{ background: linear-gradient(135deg, #b5e, #83c); }

@@ -32,6 +32,7 @@
 
 <celestia-page>
   <section class="adaptive">
+    <h1 class="tx-c po-stx p-10 z-4" style="top: 0px;" bg="000-nil">Team</h1>
     <Containr title="SEDS CELESTIA" icon="null" bg="b5e-83c">
       <div slot="body">
         <p class="tx-j">

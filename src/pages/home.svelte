@@ -16,6 +16,7 @@
       });
     const observer = new IntersectionObserver(handleIntersection);
     observer.observe(target);
+    return 0;
   });
 </script>
 

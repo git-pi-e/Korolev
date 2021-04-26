@@ -50,6 +50,9 @@
 
 <celestia-page>
   <Comet />
+  <h1 class="tx-c po-stx p-10 z-4 w-50 m-h-auto" style="top: 0px;" bg="000-nil">
+    Projects
+  </h1>
   <section class="section tx-c f-wrap">
     {#each data.going as pj}
       <div class="boxy po-rel tx-l m-20 blur w-gen">
@@ -111,7 +114,7 @@
           placements={{ topRight: 'Now Independent', bottomLeft: 'Project RT' }} />
         <Image
           src="./assets/projects/apeiro.jpg"
-          placements={{ topRight: 'Now in Space', bottomLeft: 'Project Apeiro' }} />
+          placements={{ topRight: 'Ended', bottomLeft: 'Project Apeiro' }} />
       </div>
     </Containr>
   </section>

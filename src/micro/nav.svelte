@@ -22,7 +22,6 @@
       width: 28px;
     }
   }
-
   details[open] > summary::before {
     background-image: url("../assets/svgs/times.svg");
   }
@@ -48,6 +47,7 @@
   #nav {
     top: 10px;
     left: 10px;
+    height: 0;
     input[name="navigator"] {
       opacity: 0 !important;
       height: 3em;
@@ -72,37 +72,31 @@
   }
 </style>
 
-<celestia-nav>
-  <details id="nav" class="po-abs z-5">
-    <summary class="po-rel" style="z-index:9999">
-      <i class="po-abs" style="font-size:1rem;top:1.5em;left:2.25em;">
-        {currentPage}
-      </i>
-    </summary>
-    <ul class="blur w-100 h-100 tx-c po-fix" on:click={changePage}>
-      {#each pages as pj, i}
-        <li style="animation-delay:{i / 20}s">
-          <input
-            type="radio"
-            name="navigator"
-            class="w-100"
-            value={pj.page}
-            checked={currentPage === pj.page ? 1 : 0} />
-          <label for={pj.page}>{pj.page}</label>
-        </li>
-      {/each}
-      <li
-        style="animation-delay:0.2s"
-        onclick="window.location.href='http://edu.sedscelestia.org'">
-        <input type="radio" name="navigator" value="Education" />
-        <label for="Education">Education</label>
+<details id="nav" class="po-stx z-5">
+  <summary class="po-rel" style="z-index:9999" />
+  <ul class="blur w-100 h-100 tx-c po-fix" on:click={changePage}>
+    {#each pages as pj, i}
+      <li style="animation-delay:{i / 20}s">
+        <input
+          type="radio"
+          name="navigator"
+          class="w-100"
+          value={pj.page}
+          checked={currentPage === pj.page ? 1 : 0} />
+        <label for={pj.page}>{pj.page}</label>
       </li>
-      <li
-        style="animation-delay:0.25s"
-        onclick="window.location.href='http://blog.sedscelestia.org'">
-        <input type="radio" name="navigator" value="Blog" />
-        <label for="Blog">Blog</label>
-      </li>
-    </ul>
-  </details>
-</celestia-nav>
+    {/each}
+    <li
+      style="animation-delay:0.2s"
+      onclick="window.location.href='http://edu.sedscelestia.org'">
+      <input type="radio" name="navigator" value="Education" />
+      <label for="Education">Education</label>
+    </li>
+    <li
+      style="animation-delay:0.25s"
+      onclick="window.location.href='http://blog.sedscelestia.org'">
+      <input type="radio" name="navigator" value="Blog" />
+      <label for="Blog">Blog</label>
+    </li>
+  </ul>
+</details>

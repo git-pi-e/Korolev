@@ -37,7 +37,7 @@
 <body class="m-0 p-0" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 	<canvas id="star-space" style="z-index: -3;"></canvas>
 	<canvas id="star-field" style="z-index: -1;"></canvas>
-	<main class="w-100" style="z-index: 1;height: 100%;"></main>
+	<main class="w-100 z-1"></main>
 	<script>
 		const //
 			starFieldWidth = window.innerWidth * 2,
@@ -61,6 +61,7 @@
 				ctx.fillStyle = "#fff"; ctx.fill();
 				ctx.closePath();
 			}
+			return 0;
 		}
 	</script>
 </body>
