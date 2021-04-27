@@ -1,26 +1,26 @@
 {
     "going": [
         {
-            "under": "For now HV",
+            "under": "Dhruv Patidar",
             "name": "CanSat",
             "icon": "https://live.staticflickr.com/1082/672853757_9c08f408d9_b.jpg",
-            "desc": "The CubeSat project of SEDS-Celestia planned to detect exoplanets.",
-            "more": "GitHub",
+            "desc": "Remote sensing Atmosphere",
+            "more": null,
             "moreLink": null
         },
         {
             "under": "Kaustubh Murudkar",
             "name": "EINSat",
             "icon": "./assets/images/projects-2020/einsat.png",
-            "desc": "The CubeSat project of SEDS-Celestia planned to detect exoplanets.",
-            "more": "GitHub",
+            "desc": "The CubeSat project of SEDS-Celestia planned to detect exoplanets",
+            "more": null,
             "moreLink": null
         },
         {
             "under": "Venugopalan Iyengar",
             "name": "Rocketry",
             "icon": "./assets/images/projects-2020/rocketry.png",
-            "desc": "Rocketry aims to build a self landing thrust-vector controlled rockets.",
+            "desc": "Rocketry aims to build a self landing thrust-vector controlled rockets",
             "more": null
         },
         {
@@ -34,14 +34,14 @@
             "under": "Neil Shah",
             "name": "3 Sided Coin",
             "icon": "./assets/images/projects-2020/3coin.jpg",
-            "desc": "Rocketry aims to build a self landing thrust-vector controlled rockets.",
+            "desc": "A perfect coin that has equal probability to land on its heads, tails and it's edge",
             "more": null
         },
         {
             "under": "Ayushi Dubal",
             "name": "Quantum Chess",
             "icon": "./assets/images/projects-2020/qchess.jpeg",
-            "desc": "Quantum chess is reiteration of classical chess but with quantum rules.",
+            "desc": "Quantum chess is reiteration of classical chess but with quantum rules",
             "more": null
         },
         {
@@ -55,7 +55,7 @@
             "under": "Samarth Agrawal",
             "name": "Binary Calculator",
             "icon": "./assets/images/projects-2020/bincalc.png",
-            "desc": "A calculator made by transistor circuits.",
+            "desc": "A calculator made by transistor circuits",
             "more": null
         },
         {
@@ -69,19 +69,11 @@
             "under": "Harshvardhan Chandirashekhar",
             "name": "Comet Dust Trail Simulation",
             "icon": "https://live.staticflickr.com/7210/6967153925_9716066eca.jpg",
-            "desc": "Simulating icy comet dust trails.",
+            "desc": "Simulating icy comet dust trails",
             "more": null
         }
     ],
     "past": [
-        {
-            "year": "2019",
-            "under": "Dhruv Patidar",
-            "name": "CanSat",
-            "desc": "Remote sensing and gathering atmospheric data",
-            "img": "./assets/logo-sq.png",
-            "more": null
-        },
         {
             "year": "2019",
             "under": "Venugopalan Iyengar",
@@ -102,7 +94,7 @@
             "year": "2019",
             "under": "Venugopalan Iyengar",
             "name": "Microbial Fuel Cell",
-            "desc": "Utilizing bacteria in order to catalize reactions and generate current.",
+            "desc": "Utilizing bacteria in order to catalize reactions and generate current",
             "img": "./assets/logo-sq.png",
             "more": null
         },
@@ -118,7 +110,7 @@
             "year": "2019",
             "under": "Venugopalan Iyengar",
             "name": "Spectrometer",
-            "desc": "Design a spectrometer to determine the chemical composition of light sources or illuminated objects.",
+            "desc": "Design a spectrometer to determine the chemical composition of light sources or illuminated objects",
             "img": "./assets/logo-sq.png",
             "more": null
         },
@@ -134,7 +126,7 @@
             "year": 2018,
             "under": "Venugopalan Iyengar",
             "name": "Sonoluminescence",
-            "desc": "Create a sonoluminescent bubble and take temperature and spectral measurements of the light emitted.",
+            "desc": "Create a sonoluminescent bubble and take temperature and spectral measurements of the light emitted",
             "img": "./assets/logo-sq.png",
             "more": ""
         },
@@ -150,7 +142,7 @@
             "year": 2017,
             "under": "Venugopalan Iyengar",
             "name": "N-body simulation",
-            "desc": "It aimed to simulate the gravitational interaction of a swarm of bodies and study the clustering and dynamics of the structures formed.",
+            "desc": "It aimed to simulate the gravitational interaction of a swarm of bodies and study the clustering and dynamics of the structures formed",
             "img": "./assets/logo-sq.png",
             "more": ""
         },
@@ -158,7 +150,7 @@
             "year": 2018,
             "under": "Venugopalan Iyengar",
             "name": "Schlieren Photography",
-            "desc": "To Visualize pressure, temperature and composition gradients in fluid flow and observe the complex fractal like structures of turbulence.",
+            "desc": "To Visualize pressure, temperature and composition gradients in fluid flow and observe the complex fractal like structures of turbulence",
             "img": "./assets/logo-sq.png",
             "more": ""
         },
@@ -166,7 +158,7 @@
             "year": 2018,
             "under": "Venugopalan Iyengar",
             "name": "Reproduction of particle interference with walking droplets",
-            "desc": "It aimed to recreate a quantum phenomena like interference with walking droplets on a vibrating fluid bed.",
+            "desc": "It aimed to recreate a quantum phenomena like interference with walking droplets on a vibrating fluid bed",
             "img": "./assets/logo-sq.png",
             "more": ""
         },
@@ -174,7 +166,7 @@
             "year": 2018,
             "under": "Venugopalan Iyengar",
             "name": "Galaxy Classifier Neural Net",
-            "desc": "It aimed to build and train a convolutional neural network that will classify galaxies using their images.",
+            "desc": "It aimed to build and train a convolutional neural network that will classify galaxies using their images",
             "img": "./assets/logo-sq.png",
             "more": ""
         },
@@ -182,7 +174,7 @@
             "year": 2018,
             "under": "Venugopalan Iyengar",
             "name": "Michelson Interferometers",
-            "desc": "Build a Michelson interferometer without any expensive equipment and to explore the applications of interferometry in seismology and acoustics.",
+            "desc": "Build a Michelson interferometer without any expensive equipment and to explore the applications of interferometry in seismology and acoustics",
             "img": "./assets/logo-sq.png",
             "more": ""
         }

@@ -38,8 +38,9 @@
       <img
         src="./assets/onthehouse/obsArt.png"
         size="max"
+        bg="0008"
         class="rx-max m-10"
-        style="box-shadow: -5px 0 10px 10px #0006"
+        style="box-shadow: -5px 0 10px 10px #0006;"
         alt="" />
     </div>
     <Containr title="Telescopes" icon="sat" bg="66e-37f">

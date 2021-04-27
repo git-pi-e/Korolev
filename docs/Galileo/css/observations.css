@@ -1,0 +1,523 @@
+#container {
+	text-align: justify;
+	-ms-text-justify: distribute-all-lines;
+	text-justify: distribute-all-lines;
+	position:relative;
+overflow: inherit;
+}
+
+#particles-js{
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100vh;
+	width: 100vw;
+	background-size: cover;
+	background-repeat:no-repeat;
+}
+
+.card{
+	position: relative;
+	background-color: #FFF;
+	-webkit-box-shadow: 10px 10px 93px 0px rgba(0, 0, 0, 0.75);
+	-moz-box-shadow: 10px 10px 93px 0px rgba(0, 0, 0, 0.75);
+	box-shadow: 10px 10px 93px 0px rgba(0, 0, 0, 0.75);
+
+}
+
+.thumbnail {
+	float: left;
+	position: relative;
+	-webkit-box-shadow: 10px 10px 60px 0px rgba(0, 0, 0, 0.75);
+	-moz-box-shadow: 10px 10px 60px 0px rgba(0, 0, 0, 0.75);
+	box-shadow: 10px 10px 60px 0px rgba(0, 0, 0, 0.75);
+	overflow: hidden;
+}
+
+.card {
+	height: 450px;
+	width: 900px;
+	margin: 200px auto;
+    }
+
+    /* Image on the left side */
+    .thumbnail {
+	left: 30px;
+	top: -70px;
+	height: 500px;
+	width: 500px;
+    }
+
+    /*object-fit: cover; */
+    /*object-position: center; */
+    img.left {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	height: auto;
+	width: 100%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+    }
+
+    /* Right side of the card */
+    .right {
+	margin-left: 590px;
+	margin-right: 20px;
+    }
+
+h1 {
+	padding-top: 15px;
+	font-size: 1.3rem;
+	color: #4B4B4B;
+	    text-align: center;
+    }
+
+.author {
+	background-color: #9ECAFF;
+	height: 30px;
+	width: 180px;
+	border-radius: 20px;
+    }
+
+    h2 {
+	padding-top: 8px;
+	margin-left: 15px;
+	text-align: left;
+	font-size: 0.9rem;
+    }
+
+    .separator {
+	margin-top: 10px;
+	border: 1px solid #C3C3C3;
+    }
+
+    p {
+	padding-top: 10px;
+	font-size: 0.95rem;
+	line-height: 150%;
+	color: #4B4B4B;
+    }
+
+    h5 {
+	position: absolute;
+	left: 32px;
+	bottom: -95px;
+	font-size: 5rem;
+	color: #C3C3C3;
+    }
+
+    h6 {
+	position: absolute;
+	left: 35px;
+	bottom: -55px;
+	font-size: 2rem;
+	color: #C3C3C3;
+    }
+/*Cards start*/
+
+.stretch {
+	width: 100%;
+	display: inline-block;
+}
+.box {
+	display: inline-block;
+	padding-left: 75px;
+}
+
+body .options {
+	display: flex;
+	flex-direction: row;
+	align-items: stretch;
+	overflow-x: auto;
+	min-width: 900px;
+	height:400px
+}
+
+body .options .option {
+	position: relative;
+	overflow: hidden;
+	min-width: 60px;
+	margin: 10px;
+	background: var(--optionBackground, var(--defaultBackground, #e6e9ed));
+	background-size: auto 120%;
+	background-position: center;
+	cursor: pointer;
+	transition: .5s cubic-bezier(.05, .61, .41, .95)
+}
+
+body .options .option:nth-child(1) {
+	--defaultBackground: #ed5565
+}
+
+body .options .option:nth-child(2) {
+	--defaultBackground: #fc6e51
+}
+
+body .options .option:nth-child(3) {
+	--defaultBackground: #ffce54
+}
+
+body .options .option:nth-child(4) {
+	--defaultBackground: #2ecc71
+}
+
+body .options .option:nth-child(5) {
+	--defaultBackground: #5d9cec
+}
+
+body .options .option:nth-child(6) {
+	--defaultBackground: #ac92ec
+}
+
+body .options .option.active {
+	flex-grow: 10000;
+	transform: scale(0.95);
+	max-width: 600px;
+	margin: 0;
+	margin-left: 10px;
+	border-radius: 40px;
+	background-size: auto 100%
+}
+
+body .options .option.active .shadow {
+	box-shadow: inset 0 -120px 120px -120px #000, inset 0 -120px 120px -100px #000
+}
+
+body .options .option.active .label {
+	bottom: 20px;
+	left: 20px
+}
+
+body .options .option.active .label .info>div {
+	left: 0;
+	opacity: 1
+}
+
+body .options .option:not(.active) {
+	flex-grow: 1;
+	border-radius: 30px
+}
+
+body .options .option:not(.active) .shadow {
+	bottom: -40px;
+	box-shadow: inset 0 -120px 0 -120px #000, inset 0 -120px 0 -100px #000
+}
+
+body .options .option:not(.active) .label {
+	bottom: 10px;
+	left: 10px
+}
+
+body .options .option:not(.active) .label .info>div {
+	left: 20px;
+	opacity: 0
+}
+
+body .options .option .shadow {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 120px;
+	transition: .5s cubic-bezier(.05, .61, .41, .95)
+}
+
+body .options .option .label {
+	display: flex;
+	position: absolute;
+	right: 0;
+	height: 40px;
+	transition: .5s cubic-bezier(.05, .61, .41, .95)
+}
+
+body .options .option .label .icon {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	min-width: 40px;
+	max-width: 40px;
+	height: 40px;
+	border-radius: 100%;
+	background-color: #fff;
+	color: var(--defaultBackground)
+}
+
+body .options .option .label .info {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-left: 10px;
+	color: #fff;
+	white-space: pre
+}
+
+body .options .option .label .info>div {
+	position: relative;
+	transition: .5s cubic-bezier(.05, .61, .41, .95), opacity .5s ease-out
+}
+
+body .options .option .label .info .main {
+	font-weight: 700;
+	font-size: 1.2rem
+}
+
+body {
+	background-color: #08090A;
+	background-attachment: fixed;
+}
+#particles-js {
+	width: 100%;
+	height: 100vh;
+	background-color: rgba(0, 0, 0, .1)
+}
+
+body {
+	  background-image: url(/Galileo/img/Bodyback.jpg); }
+
+
+
+
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+body {
+  background-color: #353B3F;
+  font-family: "Roboto", sans-serif;
+}
+
+
+/*
+MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE        MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE        MOBILE               MOBILE MOBILE MOBILE MOBILE MOBILE               MOBILE        MOBILE        MOBILE MOBILE MOBILE        MOBILE        MOBILE        MOBILE MOBILE        MOBILE        MOBILE MOBILE        MOBILE        MOBILE MOBILE MOBILE        MOBILE MOBILE MOBILE        MOBILE        MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE        MOBILE        MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE        MOBILE        MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE        MOBILE        MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE        MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE
+*/
+
+@media only screen and (max-width: 768px) {
+
+
+	/* The card */
+	.card {
+	  height: 350px;
+	  width: 700px;
+	  margin: 200px;
+	}
+
+	/* Image on the left side */
+	.thumbnail {
+	  left: 230px;
+	  top: -150px;
+	  height: 250px;
+	  width: 250px;
+	}
+
+	/* Right side of the card */
+	.right {
+	  margin-left: 0px;
+		margin-top: auto;
+	}
+
+	.box {
+		display: inline-block;
+		padding-left: 75px;
+	}
+
+	.separator {
+	margin-top: 145px;
+	border: 1px solid #C3C3C3;
+	width: 102.65%;
+	}
+
+	body .options {
+		display: flex;
+		flex-direction: row;
+		align-items: stretch;
+		overflow-x: auto;
+		min-width: 900px;
+		height:400px
+	}
+
+
+	body .options .option {
+		position: relative;
+		overflow: hidden;
+		min-width: 60px;
+		margin: 10px;
+		background-size: auto 120%;
+		background-position: center;
+		cursor: pointer;
+		transition: .5s cubic-bezier(.05, .61, .41, .95)
+	}
+	h1 {
+		position: relative;
+		bottom: -95px;
+		padding-top: 15px;
+		font-size: 1.3rem;
+		color: #4B4B4B;
+		text-align: center;
+		right: 110px;
+	    }
+
+	h2 {
+position: absolute;
+bottom: -5px;
+margin-left: 15px;
+font-size: 0.9rem;
+	}
+	h5 {
+position: absolute;
+left: 33px;
+bottom: -100px;
+font-size: 5rem;
+color: #C3C3C3;
+margin-left: -30px;
+	}
+
+	h6 {
+position: absolute;
+left: 35px;
+bottom: -70px;
+font-size: 2rem;
+color: #C3C3C3;
+margin-left: -35px;
+	}
+
+	.author {
+		background-color: #9ECAFF;
+		height: 30px;
+		width: 180px;
+		margin-left: 250px;
+		border-radius: 20px;
+		position: absolute;
+		bottom:180px;
+	    }
+
+	body .options .option:nth-child(1) {
+		--defaultBackground: #ed5565
+	}
+
+	body .options .option:nth-child(2) {
+		--defaultBackground: #fc6e51
+	}
+
+	body .options .option:nth-child(3) {
+		--defaultBackground: #ffce54
+	}
+
+	body .options .option:nth-child(4) {
+		--defaultBackground: #2ecc71
+	}
+
+	body .options .option:nth-child(5) {
+		--defaultBackground: #5d9cec
+	}
+
+	body .options .option:nth-child(6) {
+		--defaultBackground: #ac92ec
+	}
+
+	body .options .option.active {
+		flex-grow: 10000;
+		transform: scale(0.95);
+		max-width: 600px;
+		margin: 0;
+		margin-left: 10px;
+		border-radius: 40px;
+		background-size: auto 100%
+	}
+
+	body .options .option.active .shadow {
+		box-shadow: inset 0 -120px 120px -120px #000, inset 0 -120px 120px -100px #000
+	}
+
+	body .options .option.active .label {
+		bottom: 20px;
+		left: 20px
+	}
+
+	body .options .option.active .label .info>div {
+		left: 0;
+		opacity: 1
+	}
+
+	body .options .option:not(.active) {
+		flex-grow: 1;
+		border-radius: 30px
+	}
+
+	body .options .option:not(.active) .shadow {
+		bottom: -40px;
+		box-shadow: inset 0 -120px 0 -120px #000, inset 0 -120px 0 -100px #000
+	}
+
+	body .options .option:not(.active) .label {
+		bottom: 10px;
+		left: 10px
+	}
+
+	body .options .option:not(.active) .label .info>div {
+		left: 20px;
+		opacity: 0
+	}
+
+	body .options .option .shadow {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		height: 120px;
+		transition: .5s cubic-bezier(.05, .61, .41, .95)
+	}
+
+	body .options .option .label {
+		display: flex;
+		position: absolute;
+		right: 0;
+		height: 40px;
+		transition: .5s cubic-bezier(.05, .61, .41, .95)
+	}
+
+	body .options .option .label .icon {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		min-width: 40px;
+		max-width: 40px;
+		height: 40px;
+		border-radius: 100%;
+		background-color: #fff;
+		color: var(--defaultBackground)
+	}
+
+	body .options .option .label .info {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		margin-left: 10px;
+		color: #fff;
+		white-space: pre
+	}
+
+	body .options .option .label .info>div {
+		position: relative;
+		transition: .5s cubic-bezier(.05, .61, .41, .95), opacity .5s ease-out
+	}
+
+	body .options .option .label .info .main {
+		font-weight: 700;
+		font-size: 1.2rem
+	}
+
+	body {
+		background-color: #08090A;
+		background-attachment: fixed;
+	}
+	#particles-js {
+		width: 100%;
+		height: 100vh;
+		background-color: rgba(0, 0, 0, .1)
+	}
+
+	body {
+		  background-image: url(/Galileo/img/Bodyback.jpg); }
+}

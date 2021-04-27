@@ -1,0 +1,223 @@
+#particles-js{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
+  z-index: -1;
+}
+
+.text{
+  background-color:  rgba(255, 255, 255, 0);
+  color: white;
+  padding: 4px;
+  margin: 10px;
+}
+
+.group_photo {
+  align-items: center;
+  border-radius: 5%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: auto;
+  border-radius: 50px;
+  box-shadow: 0 5px #8D8382;
+}
+/*Group photo clicking effect*/
+.group_photo:hover {background-color: #3e8e41}
+
+.group_photo:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.bloglink{
+  color: wheat;
+}
+
+.bloglink:hover{
+  color: rgb(255, 200, 97);
+}
+
+.col2{
+  padding-left: 30px;
+  font-family: arial, helvetica, sans-serif;
+  -webkit-backdrop-filter: blur(1px);
+  backdrop-filter: blur(1px);
+  background-color: rgba(255, 255, 255, .1);
+  width:310px;
+  position: relative;
+  margin-left: 150px;
+}
+
+.container{
+  -webkit-backdrop-filter: blur(1em);
+  backdrop-filter: blur(1em);
+  -moz-backdrop-filter:blur(1em);
+}
+
+.about-flaunt{
+  -webkit-backdrop-filter: blur(1em);
+  backdrop-filter: blur(1em);
+  -moz-backdrop-filter:blur(1em);
+  background-color: rgba(255, 255, 255, .05);
+  position: relative;
+  width: 100%;
+}
+
+p{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 110%;
+}
+
+.fa{
+  font-size: 200%;
+  color: white;
+}
+
+.fa:hover{
+  color: rgb(139, 139, 139);
+}
+
+/*People cards start*/
+.container1 {
+  position: relative;
+  z-index: 200;
+  height: 200px;
+  max-width: 1000px;
+  top: -10px;
+  align-self: center;
+  align-content: center;
+  align-items: center;
+  display: flex;
+  margin: auto;
+}
+
+.card {
+  margin-left: 10px;
+  display: flex;
+  height: 200px;
+  width: 200px;
+  background-color: #17141d;
+  border-radius: 10px;
+  box-shadow: -1rem 0 3rem #000;
+  transition: 0.4s ease-out;
+  position: relative;
+  left: 0px;
+}
+
+.card:not(:first-child) {
+    margin-left: -70px;
+}
+
+.card:hover, .card:checked {
+  transform: translateX(-25px);
+  transition: 0.4s ease-out;
+}
+
+.card:hover ~ .card {
+  position: relative;
+  left: 60px;
+  transition: 0.4s ease-out;
+}
+
+.title {
+  color: white;
+  font-weight: 300;
+  position: absolute;
+  left: 10px;
+  top: 0px;
+}
+
+.title:hover{
+  z-index: 9999999;
+}
+
+.seds {
+  color: white;
+  font-weight: 300;
+  position: absolute;
+  left: 10px;
+  top: 65px;
+}
+
+.position {
+  color: white;
+  font-weight: 300;
+  position: absolute;
+  left: 10px;
+  top: 100px;
+}
+
+.bar {
+  position: absolute;
+  top: 100px;
+  left: 10px;
+  height: 5px;
+  width: 140px;
+}
+
+.emptybar {
+  background-color: #2e3033;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.filledbar {
+  position: absolute;
+  top: 0px;
+  width: 90px;
+  height: 100%;
+  background: rgb(0,154,217);
+  background: linear-gradient(90deg, rgba(0,154,217,1) 0%, rgba(217,147,0,1) 65%, rgba(255,186,0,1) 100%);
+  transition: 0.6s ease-out;
+}
+
+.card:hover .filledbar {
+  width: 140px;
+  transition: 0.4s ease-out;
+}
+
+.circle {
+  position: absolute;
+  top: 140px;
+  left: calc(50% - 60px);
+}
+
+.stroke {
+  stroke: white;
+  stroke-dasharray: 360;
+  stroke-dashoffset: 360;
+  transition: 0.6s ease-out;
+}
+
+svg {
+  fill: #17141d;
+  stroke-width: 2px;
+}
+
+.card:hover .stroke {
+  stroke-dashoffset: 100;
+  transition: 0.6s ease-out;
+}
+/*People cards end */
+
+body {
+  overflow: auto;
+  background-color: #08090A;
+  background-attachment: fixed;
+  background-image: url(/Galileo/img/Bodyback.jpg);
+}
+
+@media only screen and (max-width: 768px) {
+  .about-flaunt{width: 100%;padding: 20px;}
+  .title{font-size: 17px;}
+  .group_photo{border-radius: 20px;}
+  .card{height: 160px;}
+  .filledbar{top: -35px;}
+  .emptybar{top: -35px;}
+  .position{top: 60px;}
+}

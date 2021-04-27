@@ -33,7 +33,7 @@
     ],
     "leads": [
         {
-            "img": "https://cdn.pixabay.com/photo/2017/07/18/23/23/user-2517433__340.png",
+            "img": "./assets/team/neil.jpeg",
             "name": "3 Sided Coin",
             "pos": "Neil Shah"
         },
@@ -43,7 +43,7 @@
             "pos": "Yash Saini"
         },
         {
-            "img": "https://cdn.pixabay.com/photo/2017/07/18/23/23/user-2517433__340.png",
+            "img": "./assets/team/dubal.jpg",
             "name": "Quantum Chess",
             "pos": "Ayushi Dubal"
         },
@@ -68,7 +68,7 @@
             "pos": "Dhruv Patidar"
         },
         {
-            "img": "https://cdn.pixabay.com/photo/2017/07/18/23/23/user-2517433__340.png",
+            "img": "./assets/team/gupte.jpg",
             "name": "Star Tracker",
             "pos": "Vivek Gupte"
         },

@@ -94,7 +94,7 @@
         {#each data.past as pj, i}
           <!-- .filter((e) => JSON.stringify(e).includes(filter))  -->
           <element class="pastCard m-5 p-5">
-            <h4>{2021 - i}</h4>
+            <h4>{2020 - i}</h4>
             {#each pj as person}
               <div class="f-wt3 w-100 flex">
                 <span class="f-wt7" style="flex:1">{person.post}</span>

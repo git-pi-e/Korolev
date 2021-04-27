@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>SEDS Celestia | Homepage</title>
+  <link rel="stylesheet" href="/Galileo/css/index.css">
+  <link rel="stylesheet" href="/Galileo/css/navbar.css">
+  <meta charset="UTF-8">
+</head>
+
+<body class="opening set-speed view-3D zoom-large">
+
+  <div id="particles-js">
+    <div id="sedscelestia">
+      <h1>SEDS Celestia</h1>
+    </div>
+    <div id="data">
+      <ul>
+        <li><a id="button" class="sun" title="sun" href="#sunspeed">Sun</a></li>
+        <div id="planetlist"></div>
+      </ul>
+    </div>
+
+    <div id="universe" class="scale-stretched">
+      <div id="galaxy">
+        <div id="nav-barr"></div>
+        <div id="solar-system" class="earth orbit2" style="float: inherit; position: relative;">
+          <div id="insystem">
+
+          </div>
+          <div id="sun">
+            <dl class="infos">
+              <dt>Sun</dt>
+              <dd><span></span></dd>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="/Galileo/scripts/jquery.min.js"></script>
+    <script src="/Galileo/scripts/particles.min.js"></script>
+  </div>
+  <!-- partial -->
+  <script src="/Galileo/scripts/script.js"></script>
+  <script src="/Galileo/scripts/app.js"></script>
+  <script src="/Galileo/scripts/planetdata.js" async></script>
+  <script src="/Galileo/scripts/nav-bar.js"></script>
+  <!-- <script src="./navbar.js?id=index" id="nav-bar"></script> -->
+</body>
+
+</html>

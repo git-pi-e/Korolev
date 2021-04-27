@@ -1,0 +1,178 @@
+<html>
+
+<head>
+  <link rel="stylesheet" href="/Galileo/css/observations.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+  <link rel="stylesheet" href="/Galileo/css/navbar.css">
+</head>
+
+<body>
+  <div id="particles-js"></div>
+  <div id="nav-barr"></div>
+  <div id="container">
+    <div class="box"></div>
+    <div class="box">
+      <div class="options" id="sessions">
+      </div>
+    </div>
+    <div class="box"></div>
+    <span class="stretch"></span>
+  </div>
+
+  <!--Cards-->
+  <div class="card">
+    <div class="thumbnail"><img class="left animated fadeInRight" src="/Galileo/img/Dobsonian.jpg" width="300px" />
+    </div>
+    <div class="right">
+      <h1>White Dobsonian Star Tracker</h1>
+      <div class="author">
+        <h2>Dobsonian Mount</h2>
+      </div>
+      <div class="separator"></div>
+      <div class="table">
+
+        <table>
+          <tbody>
+            <tr>
+              <td>Optical Design</td>
+              <td>Newtonian Reflector</td>
+            </tr>
+            <tr></tr>
+            <tr>
+              <td>Diameter </td>
+              <td>150mm</td>
+            </tr>
+            <tr>
+              <td>Focal Length </td>
+              <td>1200mm</td>
+            </tr>
+            <tr>
+              <td>Highest Practical Power </td>
+              <td>360</td>
+            </tr>
+            <tr>
+              <td>Faintest Steller Magnitude </td>
+              <td>13.7</td>
+            </tr>
+            <tr>
+              <td>Resolving Power </td>
+              <td>0.74 Arc - Seconds</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <h5>f/6</h5>
+      <h6>6" APERTURE</h6>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="thumbnail"><img class="left animated fadeInRight" src="/Galileo/img/Dobsonian.jpg" width="300px" />
+    </div>
+    <div class="right">
+      <h1>Sky Watcher DOB 8" Traditional</h1>
+      <div class="author">
+        <h2>Dobsonian Mount</h2>
+      </div>
+      <div class="separator"></div>
+      <div class="table">
+
+        <table>
+          <tbody>
+            <tr>
+              <td>Optical Design</td>
+              <td>Newtonian Reflector</td>
+            </tr>
+            <tr></tr>
+            <tr>
+              <td>Diameter </td>
+              <td>203mm</td>
+            </tr>
+            <tr>
+              <td>Focal Length </td>
+              <td>1200mm</td>
+            </tr>
+            <tr>
+              <td>Highest Practical Power </td>
+              <td>406x</td>
+            </tr>
+            <tr>
+              <td>Faintest Steller Magnitude </td>
+              <td>14.2</td>
+            </tr>
+            <tr>
+              <td>Resolving Power </td>
+              <td>0.57 Arc - Seconds</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <h5>f/5.9</h5>
+      <h6>8" APERTURE</h6>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="thumbnail"><img class="left animated fadeInRight" src="/Galileo/img/Celestron-Astromaster.jpg"
+        width="300px" />
+    </div>
+    <div class="right">
+      <h1>Celestron Astromaster 130EQ Telescope</h1>
+      <div class="author">
+        <h2>CG-3 Equatorial Mount</h2>
+      </div>
+      <div class="separator"></div>
+      <table>
+        <tbody>
+          <tr>
+            <td>Optical Design</td>
+            <td>Newtonian Reflector</td>
+          </tr>
+          <tr>
+            <td>Focal Length</td>
+            <td>25.6"</td>
+          </tr>
+          <tr>
+            <td>Highest Useful Magnification</td>
+            <td>307x</td>
+          </tr>
+          <tr>
+            <td>Lowest Useful Magnification</td>
+            <td>19x</td>
+          </tr>
+          <tr>
+            <td>Limiting Stellar Magnitude</td>
+            <td>13.1</td>
+          </tr>
+          <tr>
+            <td>Resolution (Rayleigh)</td>
+            <td>1.07 arc seconds</td>
+          </tr>
+        </tbody>
+      </table>
+
+    </div>
+    <h5>f/5</h5>
+    <h6>5.11" APERTURE</h6>
+  </div>
+  <!--Cards end-->
+
+
+  </div>
+
+  <script src='/Galileo/scripts/jquery.min.js'></script>
+  <script src="/Galileo/scripts/particles.min.js"></script>
+  <script src="/Galileo/scripts/app.js"></script>
+  <script src="/Galileo/scripts/observations.js"></script>
+  <script src="/Galileo/scripts/nav-bar.js"></script>
+  <script>
+    $( ".option" ).click( function () {
+      $( ".option" ).removeClass( "active" );
+      $( this ).addClass( "active" );
+
+    } );
+
+  </script>
+</body>
+
+</html>
