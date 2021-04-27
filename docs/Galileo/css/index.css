@@ -1030,7 +1030,7 @@ body {
     padding: 15px 15px; }
 
   .data-open #data, .data-close #data {
-    left: 0px; }
+    left:0; }
 @media screen and (min-width: 1300px) {
   #universe {
     font-size: 100%; } }

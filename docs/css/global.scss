@@ -56,7 +56,6 @@ section,.part{ z-index: 0; }
 }
 
 .adaptive {padding: 6.6% 30%;}
-
 @media (max-width: 1200px) {
 	.adaptive {padding: 6.6% 25%;}
 }
@@ -68,6 +67,14 @@ section,.part{ z-index: 0; }
 }
 @media (max-width: 450px) {
 	.adaptive {padding: 6.6% 0%;}
+}
+
+.macrodaptive {padding: 20px 10%;}
+@media (max-width: 991px) {
+  .macrodaptive {padding: 4% 10%;}
+}
+@media (max-width: 768px) {
+  .macrodaptive {padding: 4%;}
 }
 
 @keyframes welcs {

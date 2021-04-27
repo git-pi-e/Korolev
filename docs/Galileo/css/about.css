@@ -105,7 +105,7 @@ p{
   box-shadow: -1rem 0 3rem #000;
   transition: 0.4s ease-out;
   position: relative;
-  left: 0px;
+  left:0;
 }
 
 .card:not(:first-child) {
@@ -128,7 +128,7 @@ p{
   font-weight: 300;
   position: absolute;
   left: 10px;
-  top: 0px;
+  top:0;
 }
 
 .title:hover{
@@ -168,7 +168,7 @@ p{
 
 .filledbar {
   position: absolute;
-  top: 0px;
+  top:0;
   width: 90px;
   height: 100%;
   background: rgb(0,154,217);

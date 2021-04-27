@@ -8,56 +8,16 @@
   let filter = "";
 </script>
 
-<style type="text/scss">
-  .section {
-    padding: 20px 10%;
-  }
-  input::placeholder {
-    color: #fff8;
-  }
-  .boxy {
-    height: 300px;
-    --base: 33%;
-    --offset: 40px;
-    .title {
-      bottom: 0;
-      left: 0;
-      word-wrap: break-word;
-      font-size: 1.2em;
-    }
-    &:hover {
-      background: #3338;
-    }
-  }
-
-  @media (max-width: 991px) {
-    section {
-      padding: 4% 10%;
-      .boxy {
-        --base: 50%;
-      }
-    }
-  }
-  @media (max-width: 768px) {
-    section {
-      padding: 4%;
-      .boxy {
-        --base: 100%;
-      }
-    }
-  }
-</style>
-
 <celestia-page>
   <Comet />
-  <h1 class="tx-c po-stx p-10 z-4 w-50 m-h-auto" style="top: 0px;" bg="000-nil">
+  <h1 class="tx-c po-stx p-10 z-4 w-50 m-h-auto" style="top:0;" bg="000-nil">
     Projects
   </h1>
-  <section class="section tx-c f-wrap">
+  <section class="macrodaptive tx-c f-wrap jtx-ev">
     {#each data.going as pj}
-      <div class="boxy po-rel tx-l m-20 blur w-gen">
-        <img src={pj.icon} class="w-100 z-0" height="300px" alt={pj.name} />
-        <div class="title po-abs p-20 w-gen" style="--offset:40px" bg="nil-000">
+      <div class="po-rel tx-l m-20 blur" size="lg">
+        <img src={pj.icon} class="w-100 z-0" size="lg" alt={pj.name} />
+        <div loc="bla" class="p-20 w-gen" style="--offset:40px;" bg="nil-000">
           <span class="f-wt7">{pj.name}</span>
           <hr />
           <details>
@@ -83,10 +43,10 @@
           <input
             type="text"
             bg="nil"
-            class="p-10 m-10 w-gen"
+            class="p-10 m-10"
             placeholder="Search"
             bind:value={filter}
-            style="height:33px;--offset:20px;font-size:1.25em;" />
+            ht="30px" />
           {#each data.past.filter((e) => e.name.includes(filter) || e.desc.includes(filter)) as pj, i}
             <element class="flex m-10 p-10">
               <img
@@ -96,8 +56,8 @@
                 src={pj.img}
                 alt="" />
               <div class="m-5 f-wt3">
-                <div class="f-wt7 p-10">{pj.name} ({pj.year || 'Unknown'})</div>
-                <div style="padding:0 10px;">{pj.desc}</div>
+                <div class="f-wt7 p-5">{pj.name} ({pj.year || 'Unknown'})</div>
+                <div class="p-5">{pj.desc}</div>
               </div>
             </element>
           {/each}

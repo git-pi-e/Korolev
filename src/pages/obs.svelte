@@ -11,6 +11,7 @@
   import Slidr from "../shared/slider.svelte";
   import Containr from "../shared/Containr.svelte";
   import Image from "../shared/image.svelte";
+  import Canvas from "../shared/canvas.svelte";
 </script>
 
 <style type="text/scss">
@@ -20,9 +21,8 @@
     height: calc(100% - 50px);
     border: 5px solid #fff;
     align-items: center;
-    font-size: 16px;
   }
-  @media (max-width: 768px) {
+  @media (max-width: 600px) {
     .stpty {
       font-size: 12px;
     }
@@ -30,18 +30,10 @@
 </style>
 
 <celestia-page>
+  <h1 class="tx-c po-stx z-4 m-0" style="top: 0;" bg="000-nil">Observations</h1>
   <section class="adaptive">
-    <h1 class="tx-c po-stx p-10 z-4" style="top: 0px;" bg="000-nil">
-      Observations
-    </h1>
-    <div class="tx-c">
-      <img
-        src="./assets/onthehouse/obsArt.png"
-        size="max"
-        bg="0008"
-        class="rx-max m-10"
-        style="box-shadow: -5px 0 10px 10px #0006;"
-        alt="" />
+    <div size="max" class="m-h-auto" style="margin-bottom:10px;">
+      <Canvas image="./assets/onthehouse/obsArt.png" height="400" width="400" />
     </div>
     <Containr title="Telescopes" icon="sat" bg="66e-37f">
       <div slot="body">
@@ -89,7 +81,7 @@
         speed={4}
         images={[...Array(7)].map((e, i) => `./assets/obs/stpty/${i}.jpg`)}
         height="350px">
-        <div slot="internal" class="w-100 p-20 m-0 flex-col f-wt1 stpty">
+        <div slot="internal" class="w-100 p-20 m-0 flex-col jtx-ct f-wt1 stpty">
           <div style="font-size:3em">Looking Up, All Night</div>
           <p class="f-wt3">
             Every Year. All Night. A Fire, Maggi, Telescopes &amp; Stars. <br />

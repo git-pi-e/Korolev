@@ -29,16 +29,15 @@ export const csvtojson = ( csv ) => {
 }
 
 export const template = lec => {
-  const driver = img => 'https://drive.google.com/uc?export=view&id=' + img?.split( '/d/' )[ 1 ]?.split( '/' )[ 0 ];
-  return `
-  <img class="w-100" height="300px" src="${ driver( lec.image ) }" alt="" />
+  const driver = img => img.includes( 'google' ) ? `https://drive.google.com/uc?export=view&id=${ img?.split( '/d/' )[ 1 ]?.split( '/' )[ 0 ] }` : img;
+  return `<img class="w-100" style="object-fit:fill;" src="${ driver( lec.image ) }" alt="" />
   <div class="p-10">
-    <div class="flex tx-j" style="justify-content:space-between;">
+    <div class="flex tx-j jtx-bw">
       <span class="f-wt7">${ lec.prof }: ${ lec.title.length > 20 ? lec.title.slice( 0, 20 ) + '...' : lec.title }</span>
       <span>${ lec.date }, ${ lec.time }</span>
     </div><div>&nbsp;</div>
     <div>${ lec.text }</div>
-    <div class="flex" style="justify-content:space-between;">
+    <div class="flex jtx-bw">
       <span>&nbsp;</span>
       <span><a class="btn-std" href="${ lec.url }" style="--theme:#faa">Watch</a></span>
     </div>

@@ -36,59 +36,33 @@
     });
 </script>
 
-<style type="text/scss">
-  .lecture {
-    img {
-      max-height: 400px;
-    }
-    svg {
-      width: 32px;
-      height: 32px;
-      stroke-width: 3;
-    }
-  }
-  .pj {
-    cursor: pointer;
-    height: 225px;
-    flex-direction: column;
-    align-items: center;
-  }
-  .pcd {
-    padding: 5px 10px;
-    &:hover {
-      background: #c8e;
-    }
-  }
-  .fader {
-    opacity: 1;
-    transition: opacity 0.5s ease;
-  }
-</style>
-
 <celestia-page>
+  <h1 class="tx-c po-stx z-4 m-0" style="top: 0;" bg="000-nil">Events</h1>
   <section class="adaptive">
-    <h1 class="tx-c po-stx p-10 z-4" style="top: 0px;" bg="000-nil">Events</h1>
     <Containr title="Open Lectures" icon="lec" bg="e66-c26">
       <div class="lecture po-rel w-100" slot="body">
-        <div class="po-rel h-100">
-          <div
-            class="po-abs"
-            style="left:5px;top: 150px;"
-            on:click={() => go(-1, 1)}>
-            <svg viewBox="0 0 32 32" class="p-5 rx-5" bg="e66-c26">
-              <path d="M20 30 L8 16 20 2" />
-            </svg>
+        <main
+          class="fader o-1"
+          bind:this={fader}
+          style="transition: opacity 0.5s ease;">
+          <div class="po-rel h-100">
+            <div
+              class="po-abs"
+              style="left:5px;top: -25%;"
+              on:click={() => go(-1, 1)}>
+              <svg viewBox="0 0 32 32" size="svg" class="p-5 rx-5" bg="e66-c26">
+                <path d="M20 30 L8 16 20 2" />
+              </svg>
+            </div>
+            <div
+              class="po-abs"
+              style="right:5px;top: -25%;"
+              on:click={() => go(1, 1)}>
+              <svg viewBox="0 0 32 32" size="svg" class="p-5 rx-5" bg="e66-c26">
+                <path d="M12 30 L24 16 12 2" />
+              </svg>
+            </div>
           </div>
-          <div
-            class="po-abs"
-            style="right:5px;top: 150px;"
-            on:click={() => go(1, 1)}>
-            <svg viewBox="0 0 32 32" class="p-5 rx-5" bg="e66-c26">
-              <path d="M12 30 L24 16 12 2" />
-            </svg>
-          </div>
-        </div>
-        <main class="fader" bind:this={fader}>
           {@html template(lec)}
         </main>
       </div>
@@ -98,7 +72,10 @@
       <div class="f-wrap jtx-ev" slot="body">
         {#each data.opensource as osc}
           {#if !(osc.show === -1)}
-            <a class="pj m-5" href={osc.repo}>
+            <a
+              class="flex-col m-5"
+              href={osc.repo}
+              style="height: 225px;align-items: center;">
               <img size="md-lg" class="rx-5" src={osc.img} alt="" />
               <div class="w-100 tx-c">{osc.title}</div>
             </a>
@@ -110,11 +87,15 @@
     <Containr title="Podcast" icon="cast" bg="b5e-83c">
       <div slot="body">
         <div class="lecture po-rel w-100">
-          <img class="w-100 rx-5" src="./assets/images/podcast.png" alt="" />
+          <img
+            class="w-100 rx-5"
+            src="./assets/images/podcast.png"
+            alt=""
+            style="max-height: 400px;" />
         </div>
         <div class="flex p-20 jtx-ev">
           {#each data.podcast as lnk}
-            <a href="https://{lnk.link}" class="pcd rx-5">
+            <a href="https://{lnk.link}" class="p-5 rx-5">
               <img class="h-a" src={lnk.icon} alt="" style="width:40px;" />
             </a>
           {/each}
@@ -131,10 +112,11 @@
           src="https://educelestia.herokuapp.com/examples/tor/lens.html"
           class="w-100 rx-5"
           title="GravLensing Sim"
-          frameborder="0"
-          style="min-height:300px;" />
+          ht="300px"
+          frameborder="0" />
+        <i>Tap/Move Mouse to Try</i>
         <p>
-          We conducts regular on campus observation sessions, which we are all
+          We conduct regular on campus observation sessions, which we are all
           unfortunately missing out on. This new year, we bring you Celestia's
           Guide to the Universe! A Virtual Guided Tour through universe, with
           the help of simulators like Space Engine .

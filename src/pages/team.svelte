@@ -26,13 +26,14 @@
   }
   .ldes img,
   .mgmt img {
+    -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
   }
 </style>
 
 <celestia-page>
+  <h1 class="tx-c po-stx p-10 m-0 z-4" style="top: 0;" bg="000-nil">Team</h1>
   <section class="adaptive">
-    <h1 class="tx-c po-stx p-10 z-4" style="top: 0px;" bg="000-nil">Team</h1>
     <Containr title="SEDS CELESTIA" icon="null" bg="b5e-83c">
       <div slot="body">
         <p class="tx-j">

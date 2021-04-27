@@ -22,9 +22,11 @@ function openNav () {
   var x = window.matchMedia( "(max-width: 768px)" )
   document.getElementById( "mySidebar" ).style.width = x.matches ? "100%" : "250px";
   document.getElementById( "main" ).style.marginLeft = "250px";
+  document.getElementById( "data" ).style.marginLeft = "150px";
 }
 
 function closeNav () {
   document.getElementById( "mySidebar" ).style.width = "1px";
   document.getElementById( "main" ).style.marginLeft = "0";
+  document.getElementById( "data" ).style.marginLeft = "0";
 }

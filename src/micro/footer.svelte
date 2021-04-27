@@ -3,6 +3,9 @@
 </script>
 
 <style>
+  *[ptr] {
+    cursor: pointer;
+  }
   .footer {
     background: linear-gradient(to bottom, #84f, #42f);
     justify-content: space-evenly;
@@ -15,11 +18,11 @@
   }
 </style>
 
-<celestia-footer class="footer flex p-20">
+<celestia-footer class="footer jtx-ct flex p-20">
   <div>
     <h5>Sitemap</h5>
     {#each pages as page}
-      <div on:click={() => changePage(page.page)}>{page.page}</div>
+      <div ptr on:click={() => changePage(page.page)}>{page.page}</div>
     {/each}
   </div>
   <div class="flex">

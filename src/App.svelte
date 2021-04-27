@@ -14,13 +14,15 @@
   const changePage = (page) => {
     if (typeof page === "string") currentPage = page;
     else {
-      console.log(
-        document.querySelector("input[name=navigator]:checked").value
-      );
       currentPage = document.querySelector("input[name=navigator]:checked")
         .value;
       document.querySelector("#nav").removeAttribute("open");
     }
+    window.history.pushState(
+      {},
+      "",
+      window.location.href.split("#")[0] + "#" + currentPage
+    );
     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
   };
 
