@@ -2,6 +2,7 @@
   import Mars from "../micro/mars.svelte";
   import data from "../data/facc.json";
   import Containr from "../shared/Containr.svelte";
+  import Canvas from "../shared/canvas.svelte";
 
   import { sheet, csvtojson, base, template } from "../code/functions";
 
@@ -39,6 +40,12 @@
 <celestia-page>
   <h1 class="tx-c po-stx z-4 m-0" style="top: 0;" bg="000-nil">Events</h1>
   <section class="adaptive">
+    <div size="max" class="m-h-auto">
+      <Canvas
+        image="./assets/onthehouse/lecsArt.png"
+        height="400"
+        width="400" />
+    </div>
     <Containr title="Open Lectures" icon="lec" bg="e66-c26">
       <div class="lecture po-rel w-100" slot="body">
         <main

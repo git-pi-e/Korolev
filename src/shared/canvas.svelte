@@ -1,11 +1,13 @@
 <script>
   import { onMount } from "svelte";
-  export let image, height, width;
+  export let image, height, width, bg;
 
   let canvas;
 
+  let img = new Image();
+  img.setAttribute("src", image);
+
   onMount(() => {
-    let img = new Image();
     img.addEventListener("load", () => {
       let ctx = canvas.getContext("2d");
       let [w, h] = [width, height];
@@ -17,8 +19,7 @@
       ctx.closePath();
       ctx.fill();
     });
-    img.setAttribute("src", image);
   });
 </script>
 
-<canvas class="rx-max" bind:this={canvas} bg="0008" />
+<canvas class="rx-max" bind:this={canvas} {bg} />

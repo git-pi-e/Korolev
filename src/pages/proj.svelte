@@ -5,6 +5,7 @@
 
   import Containr from "../shared/Containr.svelte";
   import Image from "../shared/image.svelte";
+  import Canvas from "../shared/canvas.svelte";
   let filter = "";
 </script>
 
@@ -13,6 +14,15 @@
   <h1 class="tx-c po-stx p-10 z-4 w-50 m-h-auto" style="top:0;" bg="000-nil">
     Projects
   </h1>
+  <section class="adaptive">
+    <div size="max" class="m-h-auto">
+      <Canvas
+        image="./assets/onthehouse/projArt.png"
+        bg="0008"
+        height="400"
+        width="400" />
+    </div>
+  </section>
   <section class="macrodaptive tx-c f-wrap jtx-ev">
     {#each data.going as pj}
       <div class="po-rel tx-l m-20 blur" size="lg">

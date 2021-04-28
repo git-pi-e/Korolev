@@ -33,7 +33,11 @@
   <h1 class="tx-c po-stx z-4 m-0" style="top: 0;" bg="000-nil">Observations</h1>
   <section class="adaptive">
     <div size="max" class="m-h-auto" style="margin-bottom:10px;">
-      <Canvas image="./assets/onthehouse/obsArt.png" height="400" width="400" />
+      <Canvas
+        image="./assets/onthehouse/obsArt.png"
+        bg="0008"
+        height="400"
+        width="400" />
     </div>
     <Containr title="Telescopes" icon="sat" bg="66e-37f">
       <div slot="body">
