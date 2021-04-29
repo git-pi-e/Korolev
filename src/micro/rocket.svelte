@@ -270,6 +270,11 @@
       animation: flame-up 1s infinite;
     }
   }
+  @media (max-width: 400px) {
+    #container {
+      transform: scale(0.8) translateX(-5%);
+    }
+  }
 </style>
 
 <div id="container" size="max" class="po-rel" bg="0000" style="display:none;">

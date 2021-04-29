@@ -9,13 +9,21 @@
   let filter = "";
 </script>
 
+<style>
+  @media (max-width: 400px) {
+    #art {
+      transform: scale(0.8) translateX(-5%);
+    }
+  }
+</style>
+
 <celestia-page>
   <Comet />
   <h1 class="tx-c po-stx p-10 z-4 w-50 m-h-auto" style="top:0;" bg="000-nil">
     Projects
   </h1>
   <section class="adaptive">
-    <div size="max" class="m-h-auto">
+    <div id="art" size="max" class="m-h-auto">
       <Canvas
         image="./assets/onthehouse/projArt.png"
         bg="0008"

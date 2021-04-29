@@ -27,12 +27,17 @@
       font-size: 12px;
     }
   }
+  @media (max-width: 400px) {
+    #art {
+      transform: scale(0.8) translateX(-5%);
+    }
+  }
 </style>
 
 <celestia-page>
   <h1 class="tx-c po-stx z-4 m-0" style="top: 0;" bg="000-nil">Observations</h1>
   <section class="adaptive">
-    <div size="max" class="m-h-auto" style="margin-bottom:10px;">
+    <div id="art" size="max" class="m-h-auto" style="margin-bottom:10px;">
       <Canvas
         image="./assets/onthehouse/obsArt.png"
         bg="0008"

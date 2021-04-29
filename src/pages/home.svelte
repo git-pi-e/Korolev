@@ -63,7 +63,10 @@
         src="https://www.nasa.gov/sites/default/files/styles/full_width_feature/public/thumbnails/image/pillars_of_creation.jpg"
         alt="" />
     </div>
-    <div class="w-100 h-100 po-abs flex jtx-ct welc" bg="0008">
+    <div
+      class="p-20 po-abs flex jtx-ct welc"
+      bg="0008"
+      style="height:calc(100% - 40px);width:calc(100% - 40px)">
       Welcome to SEDS Celestia
     </div>
     <div class="po-abs w-100 flex jtx-ct darr">&darr;</div>

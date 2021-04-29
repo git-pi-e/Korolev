@@ -21,3 +21,5 @@ V2 is therefore called *Korolev* since he designed the first rocket and took us 
 - Convert to SvelteKit
 - Add postcss for vendor prefixes (autoprefixer)
 - Fetch any very large data files during build, don't ship. Ex Astronimical Events.
+- Create build script to update /meta and then npm run build
+- Host images in publicly accessible links, google redirects cannot be preloaded and look SHIT.
