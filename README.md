@@ -15,3 +15,9 @@ $ npm run build
 
 V1 was called *Galileo* since he made the first Telescope and let us see Beyond the atmosphere
 V2 is therefore called *Korolev* since he designed the first rocket and took us there
+
+## Plans
+
+- Convert to SvelteKit
+- Add postcss for vendor prefixes (autoprefixer)
+- Fetch any very large data files during build, don't ship. Ex Astronimical Events.

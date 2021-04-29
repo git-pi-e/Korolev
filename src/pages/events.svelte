@@ -58,7 +58,7 @@
           <div class="po-rel h-100">
             <div
               class="po-abs"
-              style="left:5px;top: -25%;"
+              style="left:5px;top: 100px;"
               on:click={() => go(-1, 1)}>
               <svg viewBox="0 0 32 32" size="svg" class="p-5 rx-5" bg="e66-c26">
                 <path d="M20 30 L8 16 20 2" />
@@ -66,7 +66,7 @@
             </div>
             <div
               class="po-abs"
-              style="right:5px;top: -25%;"
+              style="right:5px;top: 100px;"
               on:click={() => go(1, 1)}>
               <svg viewBox="0 0 32 32" size="svg" class="p-5 rx-5" bg="e66-c26">
                 <path d="M12 30 L24 16 12 2" />

@@ -26,7 +26,7 @@ export const template = lec => {
     `https://drive.google.com/uc?export=view&id=${ img?.split( '/d/' )[ 1 ]?.split( '/' )[ 0 ] }`
     : img;
 
-  return `<!-- <img class="w-100" style="object-fit:fill;" src="${ driver( lec.image ) }" alt="" /> -->
+  return `<img class="w-100" style="object-fit:fill;" src="${ driver( lec.image ) }" alt="" />
   <div class="p-10">
     <div class="flex jtx-bw">
       <span class="f-wt7">${ lec.prof }: ${ lec.title.length > 20 ? lec.title.slice( 0, 20 ) + '...' : lec.title }</span>
