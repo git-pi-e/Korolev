@@ -4,7 +4,7 @@
   import Containr from "../shared/Containr.svelte";
   import Canvas from "../shared/canvas.svelte";
 
-  import { sheet, csvtojson, base, template } from "../code/functions";
+  import { sheet, csvtojson, base, template } from "../shared/functions";
 
   let //
     i = 0,
@@ -24,7 +24,7 @@
   fetch(sheet)
     .then((r) => r.text())
     .then((r2) => {
-      jsons = JSON.parse(csvtojson(r2)).filter((e) => e.featured);
+      jsons = JSON.parse(csvtojson(r2)).filter((e) => e.featured === "1");
       [lec, len] = [jsons[i], jsons.length];
       x = setInterval(() => {
         fader.style.opacity = 0;
@@ -40,7 +40,10 @@
 <celestia-page>
   <h1 class="tx-c po-stx z-4 m-0" style="top: 0;" bg="000-nil">Events</h1>
   <section class="adaptive">
-    <div size="max" class="m-h-auto">
+    <div
+      size="max"
+      class="m-h-auto"
+      style="animation: float 6s ease-in-out infinite;">
       <Canvas
         image="./assets/onthehouse/lecsArt.png"
         height="400"
