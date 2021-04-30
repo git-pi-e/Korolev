@@ -15,7 +15,7 @@ Refer to Thales Code Guidance System (CoGS)
 
 ## The Name
 
-V1 was called *Galileo* since he made the first Telescope and let us see Beyond the atmosphere 
+V1 was called *Galileo* since he made the first Telescope and let us see Beyond the atmosphere <br/>
 V2 is therefore called *Korolev* since he designed the first rocket and took us there
 
 ## Plans
