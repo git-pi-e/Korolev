@@ -25,3 +25,7 @@ V2 is therefore called *Korolev* since he designed the first rocket and took us 
 - Fetch any very large data files during build, don't ship. Ex Astronomical Events.
 - Create build script to update /meta and then npm run build
 - Host images in publicly accessible links, google redirects cannot be preloaded and look SHIT.
+
+## Tests
+- Create Browser test to check for all files update
+- Create Compiler test to check all components
