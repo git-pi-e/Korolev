@@ -1,4 +1,4 @@
-# Celestia 2 (Korolev)
+# Celestia Korolev
 
 ## Contribute
 ```bash
