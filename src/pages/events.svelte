@@ -119,7 +119,7 @@
       bg="66e-37f">
       <div slot="body">
         <iframe
-          src="/examples/tor/lens.html"
+          src="https://edu.sedscelestia.org/examples/tor/lens.html"
           class="w-100 rx-5"
           title="GravLensing Sim"
           ht="300px"
