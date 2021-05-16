@@ -1,20 +1,27 @@
 <script>
-  export let pages, changePage, currentPage;
+  import { onMount } from "svelte";
+  import links from "$lib/data/routes.json";
+
+  let currentPage;
+
+  onMount(() => {
+    currentPage = window.location.href;
+  });
 </script>
 
 <details id="nav" class="po-stx z-5">
   <summary class="po-rel" style="z-index:9999" />
-  <ul class="blur w-100 h-100 tx-c po-fix" on:click={changePage}>
-    {#each pages as pj, i}
+  <ul class="blur w-100 h-100 tx-c po-fix">
+    {#each links.internal as pj, i}
       <li style="animation-delay:{i / 20}s">
         <input
           type="radio"
           name="navigator"
           class="w-100"
-          value={pj.page}
-          checked={currentPage === pj.page ? 1 : 0}
+          value={pj}
+          checked={i === 0}
         />
-        <label for={pj.page}>{pj.page}</label>
+        <label for={pj}>{pj}</label>
       </li>
     {/each}
     <li

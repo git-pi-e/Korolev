@@ -1,0 +1,24 @@
+{
+    "miles": [
+        {
+            "year": 2009,
+            "event": "Founded"
+        },
+        {
+            "year": 2015,
+            "event": "Affiliated to SEDS"
+        },
+        {
+            "year": 2016,
+            "event": "Founded Apeiro"
+        },
+        {
+            "year": 2017,
+            "event": "Project RT Starts"
+        },
+        {
+            "year": 2018,
+            "event": "Project Kratos Starts"
+        }
+    ]
+}

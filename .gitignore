@@ -1,4 +1,5 @@
 /node_modules/
+**/node_modules/
 
 *lock*.yaml
 *lock*.yml
@@ -6,3 +7,7 @@
 **/*.*.map
 
 .DS_Store
+
+**/.svelte-kit
+**/build
+/functions
