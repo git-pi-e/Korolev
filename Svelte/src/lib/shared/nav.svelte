@@ -4,40 +4,29 @@
 
   let currentPage;
 
-  onMount(() => {
-    currentPage = window.location.href;
-  });
+  const navs = [
+    ...Object.entries(links.internal),
+    ["Education", links.web.educelestia],
+    ["Blog", links.content.blog],
+  ];
+  onMount(() => (currentPage = window.location.pathname));
 </script>
 
 <details id="nav" class="po-stx z-5">
   <summary class="po-rel" style="z-index:9999" />
-  <ul class="blur w-100 h-100 tx-c po-fix">
-    {#each links.internal as pj, i}
-      <li style="animation-delay:{i / 20}s">
-        <input
-          type="radio"
-          name="navigator"
-          class="w-100"
-          value={pj}
-          checked={i === 0}
-        />
-        <label for={pj}>{pj}</label>
-      </li>
+  <ul
+    class="blur w-100 h-100 tx-c po-fix"
+    onclick="this.parentElement.removeAttribute('open')"
+  >
+    {#each navs as pj, i}
+      <a
+        class="li {pj[1] === currentPage ? 'active' : ''}"
+        href={pj[1]}
+        style="animation-delay:{i / 20}s"
+      >
+        {pj[0]}
+      </a>
     {/each}
-    <li
-      style="animation-delay:0.2s"
-      onclick="window.location.href='http://edu.sedscelestia.org'"
-    >
-      <input type="radio" name="navigator" value="Education" />
-      <label for="Education">Education</label>
-    </li>
-    <li
-      style="animation-delay:0.25s"
-      onclick="window.location.href='http://blog.sedscelestia.org'"
-    >
-      <input type="radio" name="navigator" value="Blog" />
-      <label for="Blog">Blog</label>
-    </li>
   </ul>
 </details>
 
@@ -45,6 +34,7 @@
   details > summary {
     font-size: 3em;
     list-style: none;
+    padding-left: 1rem;
 
     &::-webkit-details-marker {
       display: none;
@@ -72,20 +62,20 @@
     color: #fff;
     animation: enter forwards 0.5s ease;
     padding: 10% 0;
-    li {
-      position: relative;
-      left: -1em;
+    .li {
+      text-transform: capitalize;
+      display: block;
       opacity: 0;
       animation: enter forwards 0.5s ease;
       width: 7em;
-      margin: 0 auto;
-      padding: 10px;
+      margin: 1rem auto;
+      padding: 0.75rem 0;
       font-size: 2rem;
     }
   }
   #nav {
     top: 10px;
-    left: 10px;
+    left: 20px;
     height: 0;
     input[name="navigator"] {
       opacity: 0 !important;
@@ -100,7 +90,7 @@
       top: calc(0.5em - 10px);
       left: 1.25em;
     }
-    input[name="navigator"]:checked + label {
+    .active {
       background: linear-gradient(to right, #60f, #18f);
     }
   }

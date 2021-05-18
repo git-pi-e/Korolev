@@ -1,0 +1,156 @@
+[
+    {
+        "title": "March Equinox",
+        "date": "20 March 2021",
+        "time": "1457 Kolkata/Asia",
+        "desc": "The Sun will shine directly on the equator and there will be nearly equal amounts of day and night throughout the world",
+        "misc": "This is also the first day of spring (vernal equinox) in the Northern Hemisphere and the first day of fall (autumnal equinox) in the Southern Hemisphere."
+    },
+    {
+        "title": "Lyrids Meteor Shower",
+        "date": "22 April 2021",
+        "time": "All night",
+        "desc": "The Lyrids is an average shower, usually producing about 20 meteors per hour at its peak. ",
+        "misc": "It is produced by dust particles left behind by comet C/1861 G1 Thatcher, which was discovered in 1861"
+    },
+    {
+        "title": "Eta Aquarids Meteor Shower",
+        "date": "6 May 2021",
+        "time": "All night",
+        "desc": "The Eta Aquarids is an above average shower, capable of producing up to 60 meteors per hour at its peak.",
+        "misc": "It is produced by dust particles left behind by comet Halley, which has been observed since ancient times."
+    },
+    {
+        "title": "Total Lunar Eclipse",
+        "date": "26 May 2021",
+        "time": "Night",
+        "desc": "A total lunar eclipse occurs when the Moon passes completely through the Earth's dark shadow, or umbra. During this type of eclipse, the Moon will gradually get darker and then take on a rusty or blood red color",
+        "misc": "The eclipse will be visible throughout the Pacific Ocean and parts of eastern Asia, Japan, Australia, and western North America."
+    },
+    {
+        "title": "Annular Solar Eclipse",
+        "date": "10 June 2021",
+        "time": "Day",
+        "desc": "An annular solar eclipse occurs when the Moon is too far away from the Earth to completely cover the Sun. This results in a ring of light around the darkened Moon",
+        "misc": "Viewing Regions will be Russia, the Arctic Ocean, western Greenland, and Canada"
+    },
+    {
+        "title": "June Solistice",
+        "date": "21 June 2021",
+        "time": "0851 Kolkata/Asia",
+        "desc": " The North Pole of the earth will be tilted toward the Sun, which will have reached its northernmost position in the sky and will be directly over the Tropic of Cancer at 23.44 degrees north latitude",
+        "misc": "This is the first day of summer (summer solstice) in the Northern Hemisphere and the first day of winter (winter solstice) in the Southern Hemisphere"
+    },
+    {
+        "title": " Delta Aquarids Meteor Showe",
+        "date": "29 July 2021",
+        "time": "All Day",
+        "desc": "The Delta Aquarids is an average shower that can produce up to 20 meteors per hour at its peak",
+        "misc": " It is produced by debris left behind by comets Marsden and Kracht"
+    },
+    {
+        "title": "Saturn at Opposition",
+        "date": "2 Aug 2021",
+        "time": "Day",
+        "desc": "The ringed planet will be at its closest approach to Earth and its face will be fully illuminated by the Sun",
+        "misc": "his is the best time to view and photograph Saturn and its moons"
+    },
+    {
+        "title": " Perseids Meteor Shower",
+        "date": "13 Aug 2021",
+        "time": "1470 Kolkata/Asia",
+        "desc": "The Perseids is one of the best meteor showers to observe, producing up to 60 meteors per hour at its peak",
+        "misc": " It is produced by comet Swift-Tuttle, which was discovered in 1862"
+    },
+    {
+        "title": "Jupiter at Opposition",
+        "date": "19 Aug 2021",
+        "time": "All Day",
+        "desc": " The giant planet will be at its closest approach to Earth and its face will be fully illuminated by the Sun. It will be brighter than any other time of the year and will be visible all night long",
+        "misc": "A good pair of binoculars should allow you to see Jupiter's four largest moons, appearing as bright dots on either side of the planet"
+    },
+    {
+        "title": "Neptune at Opposition",
+        "date": "14 Sep 2021",
+        "time": "All Day",
+        "desc": " The blue giant planet will be at its closest approach to Earth and its face will be fully illuminated by the Sun. It will be brighter than any other time of the year and will be visible all night long",
+        "misc": "Due to its extreme distance from Earth, it will only appear as a tiny blue dot in all but the most powerful telescopes"
+    },
+    {
+        "title": "September Equinox",
+        "date": "22 Sep 2021",
+        "time": "0041 Kolkata/Asia",
+        "desc": "The Sun will shine directly on the equator and there will be nearly equal amounts of day and night throughout the world",
+        "misc": "This is also the first day of fall (autumnal equinox) in the Northern Hemisphere and the first day of spring (vernal equinox) in the Southern Hemisphere."
+    },
+    {
+        "title": "Draconids Meteor Shower",
+        "date": "7 Oct 2021",
+        "time": "Early evening",
+        "desc": " The Draconids is a minor meteor shower producing only about 10 meteors per hour.",
+        "misc": " It is produced by dust grains left behind by comet 21P Giacobini-Zinner, which was first discovered in 1900."
+    },
+    {
+        "title": "Orionids Meteor Shower",
+        "date": "21 Oct 2021",
+        "time": "1470 Kolkata/Asia",
+        "desc": "The Orionids is an average shower producing up to 20 meteors per hour at its peak",
+        "misc": " It is produced by dust grains left behind by comet Halley, which has been known and observed since ancient times"
+    },
+    {
+        "title": "Taurids Meteor Shower",
+        "date": "4 Nov 2021",
+        "time": "All Night",
+        "desc": "The Taurids is a long-running minor meteor shower producing only about 5-10 meteors per hour. It is unusual in that it consists of two separate streams",
+        "misc": "The first is produced by dust grains left behind by Asteroid 2004 TG10. The second stream is produced by debris left behind by Comet 2P Encke"
+    },
+    {
+        "title": "Uranus at Opposition",
+        "date": "5 Nov 2021",
+        "time": "All Day",
+        "desc": "he blue-green planet will be at its closest approach to Earth and its face will be fully illuminated by the Sun. It will be brighter than any other time of the year and will be visible all night long",
+        "misc": "This is the best time to view Uranus. Due to its distance, it will only appear as a tiny blue-green dot"
+    },
+    {
+        "title": "Leonids Meteor Shower",
+        "date": "17 Feb 2021",
+        "time": "All Night",
+        "desc": "The Leonids is an average shower, producing up to 15 meteors per hour at its peak. This shower is unique in that it has a cyclonic peak about every 33 years where hundreds of meteors per hour can be seen. That last of these occurred in 2001",
+        "misc": "The Leonids is produced by dust grains left behind by comet Tempel-Tuttle, which was discovered in 1865"
+    },
+    {
+        "title": "Partial Lunar Eclipse",
+        "date": "19 Nov 2021",
+        "time": "Night",
+        "desc": "A partial lunar eclipse occurs when the Moon passes through the Earth's partial shadow, or penumbra, and only a portion of it passes through the darkest shadow, or umbra. During this type of eclipse a part of the Moon will darken as it moves through the Earth's shadow",
+        "misc": " The eclipse will be visible throughout most of eastern Russia, Japan, the Pacific Ocean, North America, Mexico, Central America, and parts of western South America"
+    },
+    {
+        "title": "Total Solar Eclipse",
+        "date": "4 Dec 2021",
+        "time": "Day",
+        "desc": "A total solar eclipse occurs when the moon completely blocks the Sun, revealing the Sun's beautiful outer atmosphere known as the corona",
+        "misc": "The path of totality will for this eclipse will be limited to Antarctica and the southern Atlantic Ocean"
+    },
+    {
+        "title": "Geminids Meteor Shower",
+        "date": "13 Dec 2021",
+        "time": "Evening",
+        "desc": "The Geminids is the king of the meteor showers. It is considered by many to be the best shower in the heavens, producing up to 120 multicolored meteors per hour at its peak",
+        "misc": "It is produced by debris left behind by an asteroid known as 3200 Phaethon, which was discovered in 1982"
+    },
+    {
+        "title": "December Solstice",
+        "date": "21 Dec 2021",
+        "time": "2120 Kolkata/Asia",
+        "desc": "The South Pole of the earth will be tilted toward the Sun, which will have reached its southernmost position in the sky and will be directly over the Tropic of Capricorn at 23.44 degrees south latitude",
+        "misc": "This is the first day of winter (winter solstice) in the Northern Hemisphere and the first day of summer (summer solstice) in the Southern Hemisphere"
+    },
+    {
+        "title": "Ursids Meteor Shower",
+        "date": "22 Dec 2021",
+        "time": "Night",
+        "desc": "The Ursids is a minor meteor shower producing about 5-10 meteors per hour",
+        "misc": " It is produced by dust grains left behind by comet Tuttle, which was first discovered in 1790"
+    }
+]

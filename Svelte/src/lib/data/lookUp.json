@@ -1,0 +1,22 @@
+{
+    "telescopes": [
+        {
+            "title": "Celestron Astromaster 130EQ",
+            "img": "./assets/obs/celestron.jpg",
+            "star": "f/7.87",
+            "range": "18x - 300x"
+        },
+        {
+            "title": "Sky-Watcher Dobsonian 8\" Traditional",
+            "img": "./assets/obs/dobbynew.jpeg",
+            "star": "f/5.9",
+            "range": "1x - 409x"
+        },
+        {
+            "title": "Sky-Watcher Dobsonian 6\" Traditional",
+            "img": "./assets/obs/dobbyold.jpeg",
+            "star": "f/7.8",
+            "range": "1x - 306x"
+        }
+    ]
+}

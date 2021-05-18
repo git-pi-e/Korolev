@@ -1,3 +1,45 @@
+<div id="container" size="max" class="po-rel" bg="0000" style="display:none;">
+  <img
+    src="./assets/legacy.svg"
+    class="po-abs legacy"
+    size="max"
+    alt="Legacy"
+  />
+  <div class="rocket_c">
+    <img
+      class="us rx-50 m-7"
+      src="./assets/logo-sq.png"
+      size="min"
+      bg="000"
+      alt="Mini Logo"
+    />
+    <div class="ganch ganch_1" />
+    <div class="ganch ganch_2" />
+    <div class="ganch ganch_3" />
+    <div class="sec_pop" />
+    <div class="text po-abs tx-c w-100">
+      <p class="spacex">CELESTIA</p>
+    </div>
+    <div class="prop" />
+
+    <div class="boost">
+      <div class="flame">
+        <div class="top" />
+      </div>
+    </div>
+
+    <div class="leg leg_1" />
+    <div class="leg leg_2" />
+    <div class="leg leg_3" />
+
+    <div class="stand stand_1" />
+    <div class="stand stand_2" />
+    <div class="stand stand_3" />
+  </div>
+  <div class="smoke" />
+  <div class="platform" />
+</div>
+
 <style type="text/scss">
   $stand_size: 80px;
   $flame-height: 80px;
@@ -88,7 +130,7 @@
         }
         .spacex {
           color: #058;
-          width: 45%;
+          width: 50%;
           font-size: 0.8em;
           margin: auto;
           writing-mode: vertical-rl;
@@ -276,43 +318,3 @@
     }
   }
 </style>
-
-<div id="container" size="max" class="po-rel" bg="0000" style="display:none;">
-  <img
-    src="./assets/legacy.svg"
-    class="po-abs legacy"
-    size="max"
-    alt="Legacy" />
-  <div class="rocket_c">
-    <img
-      class="us rx-50 m-7"
-      src="./assets/logo-sq.png"
-      size="min"
-      bg="000"
-      alt="Mini Logo" />
-    <div class="ganch ganch_1" />
-    <div class="ganch ganch_2" />
-    <div class="ganch ganch_3" />
-    <div class="sec_pop" />
-    <div class="text po-abs tx-c w-100">
-      <p class="spacex">CELESTIA</p>
-    </div>
-    <div class="prop" />
-
-    <div class="boost">
-      <div class="flame">
-        <div class="top" />
-      </div>
-    </div>
-
-    <div class="leg leg_1" />
-    <div class="leg leg_2" />
-    <div class="leg leg_3" />
-
-    <div class="stand stand_1" />
-    <div class="stand stand_2" />
-    <div class="stand stand_3" />
-  </div>
-  <div class="smoke" />
-  <div class="platform" />
-</div>

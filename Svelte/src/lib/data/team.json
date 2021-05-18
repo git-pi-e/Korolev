@@ -1,0 +1,260 @@
+{
+    "mgmt": [
+        {
+            "img": "./assets/team/prorush.jpg",
+            "post": "President",
+            "name": "Paurush Punyasheel"
+        },
+        {
+            "img": "./assets/team/ankit.jpg",
+            "post": "Vice-President",
+            "name": "Ankit Verma"
+        },
+        {
+            "img": "./assets/team/yash.jpg",
+            "post": "Secretary & Publicity Head",
+            "name": "Yash Saini"
+        },
+        {
+            "img": "./assets/team/cube.jpg",
+            "post": "Observations Head",
+            "name": "Kaustubh Murudkar"
+        },
+        {
+            "img": "./assets/team/vivek.jpg",
+            "post": "Projects Head",
+            "name": "Vivek Subramaniam"
+        },
+        {
+            "img": "./assets/team/frogu.jpg",
+            "post": "Lectures & Podcast Head",
+            "name": "Abdul Jawad Khan"
+        }
+    ],
+    "leads": [
+        {
+            "img": "./assets/team/neil.jpeg",
+            "name": "3 Sided Coin",
+            "pos": "Neil Shah"
+        },
+        {
+            "img": "./assets/team/yash.jpg",
+            "name": "Brain Computer Interface",
+            "pos": "Yash Saini"
+        },
+        {
+            "img": "./assets/team/dubal.jpg",
+            "name": "Quantum Chess",
+            "pos": "Ayushi Dubal"
+        },
+        {
+            "img": "./assets/team/cube.jpg",
+            "name": "EINSat",
+            "pos": "Kaustubh Murudkar"
+        },
+        {
+            "img": "./assets/team/vivek.jpg",
+            "name": "Cloud Chamber",
+            "pos": "Vivek S."
+        },
+        {
+            "img": "./assets/team/samarth.jpg",
+            "name": "Binary Calculator",
+            "pos": "Samarth Agrawal"
+        },
+        {
+            "img": "./assets/team/patidar.jpg",
+            "name": "CanSat",
+            "pos": "Dhruv Patidar"
+        },
+        {
+            "img": "./assets/team/gupte.jpg",
+            "name": "Star Tracker",
+            "pos": "Vivek Gupte"
+        },
+        {
+            "img": "./assets/team/hvcs.png",
+            "name": "Comet Trail Sim",
+            "pos": "Harshvardhan C."
+        },
+        {
+            "img": "./assets/team/venu.jpg",
+            "name": "Rocketry",
+            "pos": "Venugopalan Iyenger"
+        }
+    ],
+    "past": [
+        [
+            {
+                "post": "President",
+                "name": "Hrutwick Sawant"
+            },
+            {
+                "post": "Vice-President",
+                "name": "Harshvardhan Chandirasekar"
+            },
+            {
+                "post": "Secretary & Publicity Head",
+                "name": "Paurush Punyasheel"
+            },
+            {
+                "post": "Observations Head",
+                "name": "Kaustubh Murudkar"
+            },
+            {
+                "post": "Projects Head",
+                "name": "Ankit Verma"
+            },
+            {
+                "post": "Lectures Head",
+                "name": "Bhuvan S V"
+            }
+        ],
+        [
+            {
+                "post": "President",
+                "name": "Venugopalan Iyengar"
+            },
+            {
+                "post": "Vice-President",
+                "name": "Vidit Parab"
+            },
+            {
+                "post": "Sub-coordinator",
+                "name": "Soham Deshpande"
+            },
+            {
+                "post": "Secretary",
+                "name": "Saransh Gokhale"
+            },
+            {
+                "post": "Observations Head",
+                "name": "Avdhoot Bhandare"
+            },
+            {
+                "post": "Projects Head",
+                "name": "Harshvardhan Chandirasekar"
+            },
+            {
+                "post": "Lectures Head",
+                "name": "Aaditee Juyal"
+            },
+            {
+                "post": "Publicity Head",
+                "name": "Devesh Dimble"
+            }
+        ],
+        [
+            {
+                "post": "President",
+                "name": "Akash Chaudhary"
+            },
+            {
+                "post": "Vice-President",
+                "name": "Shirin Kaushik"
+            },
+            {
+                "post": "Sub-coordinator",
+                "name": "Ayush Agrawal"
+            },
+            {
+                "post": "Secretary",
+                "name": "Nikhil Bisht"
+            },
+            {
+                "post": "Projects Head",
+                "name": "Devashish Gupta"
+            },
+            {
+                "post": "Events Head",
+                "name": "Parth Dave"
+            },
+            {
+                "post": "Lectures Head",
+                "name": "Aditya Majali"
+            },
+            {
+                "post": "Publicity Head",
+                "name": "Samridh"
+            }
+        ],
+        [
+            {
+                "post": "President",
+                "name": "Surendra"
+            },
+            {
+                "post": "Vice-President",
+                "name": "Komal Gupta"
+            },
+            {
+                "post": "Sub-coordinator",
+                "name": "Prakhar"
+            },
+            {
+                "post": "Sub-coordinator",
+                "name": "Khyati"
+            },
+            {
+                "post": "Secretary",
+                "name": "Mayur Joshi"
+            },
+            {
+                "post": "Lectures Head",
+                "name": "Pavan"
+            }
+        ],
+        [
+            {
+                "post": "President",
+                "name": "Shivan Khullar"
+            },
+            {
+                "post": "Vice-President",
+                "name": "Raghav Arora"
+            },
+            {
+                "post": "Secretary",
+                "name": "Aman Agarwal"
+            }
+        ],
+        [
+            {
+                "post": "Coordinator",
+                "name": "Siddharth Paliwal"
+            },
+            {
+                "post": "Sub-coordinator (Technical)",
+                "name": "Sanket Deshpande"
+            },
+            {
+                "post": "Sub-coordinator (Managerial)",
+                "name": "Lucky Kapoor"
+            }
+        ],
+        [
+            {
+                "post": "Coordinator",
+                "name": "Pankaj Tiple"
+            },
+            {
+                "post": "Sub-coordinator",
+                "name": "Shubham Sarawat"
+            }
+        ],
+        [
+            {
+                "post": "Coordinator",
+                "name": "Nikita Mirchandani"
+            },
+            {
+                "post": "Sub-coordinator",
+                "name": "Vishakha Gupta"
+            },
+            {
+                "post": "Secretary",
+                "name": "Raj Sinai"
+            }
+        ]
+    ]
+}
