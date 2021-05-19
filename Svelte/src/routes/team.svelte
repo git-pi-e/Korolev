@@ -3,6 +3,8 @@
     import data from "$lib/data/team";
     import Containr from "$lib/shared/Containr.svelte";
 
+    import { base } from "$app/paths";
+
     // let filter = "";
 </script>
 
@@ -27,7 +29,7 @@
                 <p class="tx-j">We are the Celestials! ❤️</p>
                 <img
                     class="w-100"
-                    src="./assets/images/team.jpg"
+                    src="{base}/assets/images/team.jpg"
                     alt=""
                     style="height:200px;"
                 />

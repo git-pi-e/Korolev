@@ -5,7 +5,9 @@
 <celestia-footer class="footer jtx-ct flex p-20">
     <div>
         <h5>Sitemap</h5>
-        <div>page.page</div>
+        {#each Object.entries(links.internal) as pg}
+            <a class="caps" href={pg[1]}>{pg[0]}</a> <br />
+        {/each}
     </div>
     <div class="flex">
         <hr />
@@ -55,8 +57,8 @@
 </celestia-footer>
 
 <style>
-    *[ptr] {
-        cursor: pointer;
+    .caps {
+        text-transform: capitalize;
     }
     .footer {
         background: linear-gradient(to bottom, #84f, #42f);

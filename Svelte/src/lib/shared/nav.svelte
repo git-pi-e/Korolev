@@ -9,7 +9,10 @@
     ["Education", links.web.educelestia],
     ["Blog", links.content.blog],
   ];
-  onMount(() => (currentPage = window.location.pathname));
+  onMount(() => {
+    currentPage = window.location.pathname;
+    console.log(currentPage);
+  });
 </script>
 
 <details id="nav" class="po-stx z-5">

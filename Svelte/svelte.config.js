@@ -1,11 +1,13 @@
-import sveltePreprocess from "svelte-preprocess";
+import statix from '@sveltejs/adapter-static';
+import node from '@sveltejs/adapter-node';
+import sveltePreprocess from 'svelte-preprocess';
 
 const config = {
+	preprocess: sveltePreprocess(),
 	kit: {
-		// hydrate the <div id="svelte"> element in src/app.html
+		adapter: node(),
 		target: 'main'
-	},
-	preprocess: sveltePreprocess()
+	}
 };
 
 export default config;

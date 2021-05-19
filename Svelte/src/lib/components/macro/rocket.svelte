@@ -1,6 +1,6 @@
 <div id="container" size="max" class="po-rel" bg="0000" style="display:none;">
   <img
-    src="./assets/legacy.svg"
+    src="{base}/assets/legacy.svg"
     class="po-abs legacy"
     size="max"
     alt="Legacy"
@@ -8,7 +8,7 @@
   <div class="rocket_c">
     <img
       class="us rx-50 m-7"
-      src="./assets/logo-sq.png"
+      src="{base}/assets/logo-sq.png"
       size="min"
       bg="000"
       alt="Mini Logo"

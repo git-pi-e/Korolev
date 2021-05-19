@@ -12,6 +12,7 @@
   import Containr from "$lib/shared/Containr.svelte";
   import Image from "$lib/shared/image.svelte";
   import Canvas from "$lib/shared/canvas.svelte";
+  import { base } from "$app/paths";
 </script>
 
 <celestia-page>
@@ -19,7 +20,7 @@
   <section class="adaptive">
     <div id="art" size="max" class="m-h-auto" style="margin-bottom:10px;">
       <Canvas
-        image="./assets/onthehouse/obsArt.png"
+        image="{base}/assets/onthehouse/obsArt.png"
         bg="0008"
         height="400"
         width="400"

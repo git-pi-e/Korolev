@@ -6,6 +6,7 @@
 
   import LecTemp from "$lib/components/micro/lectures.svelte";
   import { onMount } from "svelte";
+  import { base } from "$app/paths";
 
   let sheet;
   let //
@@ -58,7 +59,7 @@
       style="animation: float 6s ease-in-out infinite;"
     >
       <Canvas
-        image="./assets/onthehouse/lecsArt.png"
+        image="{base}/assets/onthehouse/lecsArt.png"
         height="400"
         width="400"
       />
@@ -117,7 +118,7 @@
         <div class="lecture po-rel w-100">
           <img
             class="w-100 rx-5"
-            src="./assets/images/podcast.png"
+            src="{base}/assets/images/podcast.png"
             alt=""
             style="max-height: 400px;"
           />

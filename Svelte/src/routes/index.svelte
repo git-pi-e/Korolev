@@ -4,6 +4,7 @@
 	import Containr from "$lib/shared/Containr.svelte";
 	import Rocket from "$lib/components/macro/rocket.svelte";
 	import { onMount } from "svelte";
+	import { base } from "$app/paths";
 	import links from "$lib/data/routes.json";
 
 	onMount(() => {
@@ -70,17 +71,25 @@
 		<Containr title="Connect With Us" icon="heart" bg="66e-37f">
 			<article class="p-10 flex jtx-ev" slot="body">
 				<a target="_blank" href={links.content.yt}>
-					<img size="ic-lg" src="./assets/icons/youtube.svg" alt="" />
+					<img
+						size="ic-lg"
+						src="{base}/assets/icons/youtube.svg"
+						alt=""
+					/>
 				</a>
 				<a target="_blank" href={links.social.fb}>
 					<img
 						size="ic-lg"
-						src="./assets/icons/facebook.svg"
+						src="{base}/assets/icons/facebook.svg"
 						alt=""
 					/>
 				</a>
 				<a target="_blank" href={links.social.ig}>
-					<img size="ic-lg" src="./assets/icons/insta.svg" alt="" />
+					<img
+						size="ic-lg"
+						src="{base}/assets/icons/insta.svg"
+						alt=""
+					/>
 				</a>
 			</article>
 		</Containr>
