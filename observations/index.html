@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<link rel="icon" href="/favicon.ico" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+	<link rel="stylesheet" href="./css/atomic.css">
+	<link rel="stylesheet" href="./css/global.css">
+
+	<script src="./js/molecular.js"></script>
+
+	
+
+		
+
+		<link rel="modulepreload" href="/./_app/start-9b1824d2.js">
+		<link rel="modulepreload" href="/./_app/chunks/vendor-35efa144.js">
+		<link rel="modulepreload" href="/./_app/chunks/paths-45dac81d.js">
+		<link rel="modulepreload" href="/./_app/pages/__layout.svelte-8d91ba59.js">
+		<link rel="modulepreload" href="/./_app/chunks/routes-81378ac5.js">
+		<link rel="modulepreload" href="/./_app/pages/observations.svelte-0d6b08a1.js">
+		<link rel="modulepreload" href="/./_app/chunks/Containr-f10e31d1.js">
+		<link rel="modulepreload" href="/./_app/chunks/image-92533645.js">
+		<link rel="modulepreload" href="/./_app/chunks/canvas-f96a14fd.js">
+		<link rel="stylesheet" href="/./_app/assets/start-a8cd1609.css">
+		<link rel="stylesheet" href="/./_app/assets/pages/__layout.svelte-8b94168d.css">
+		<link rel="stylesheet" href="/./_app/assets/pages/observations.svelte-f2345925.css">
+		<link rel="stylesheet" href="/./_app/assets/image-d2865bd0.css">
+
+		<script type="module">
+			import { start } from "/./_app/start-9b1824d2.js";
+			start({
+				target: document.querySelector("main"),
+				paths: {"base":"","assets":"/."},
+				session: {},
+				host: location.host,
+				route: true,
+				spa: false,
+				trailing_slash: "never",
+				hydrate: {
+					status: 200,
+					error: null,
+					nodes: [
+						import("/./_app/pages/__layout.svelte-8d91ba59.js"),
+						import("/./_app/pages/observations.svelte-0d6b08a1.js")
+					],
+					page: {
+						host: location.host, // TODO this is redundant
+						path: "/observations",
+						query: new URLSearchParams(""),
+						params: {}
+					}
+				}
+			});
+		</script>
+</head>
+
+<body class="m-0 p-0" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<canvas id="star-space" style="z-index: -3;"></canvas>
+	<canvas id="star-field" style="z-index: -1;"></canvas>
+	<main class="w-100 z-1">
+
+
+<details id="nav" class="po-stx z-5 svelte-18qn41v"><summary class="po-rel svelte-18qn41v" style="z-index:9999"></summary>
+  <div class="ul blur w-100 h-100 tx-c po-fix svelte-18qn41v" onclick="this.parentElement.removeAttribute('open')"><a sveltekit:prefetch class="li  svelte-18qn41v" href="/" style="animation-delay:0s">home
+      </a><a sveltekit:prefetch class="li  svelte-18qn41v" href="/team" style="animation-delay:0.05s">team
+      </a><a sveltekit:prefetch class="li  svelte-18qn41v" href="/observations" style="animation-delay:0.1s">observations
+      </a><a sveltekit:prefetch class="li  svelte-18qn41v" href="/events" style="animation-delay:0.15s">events
+      </a><a sveltekit:prefetch class="li  svelte-18qn41v" href="/projects" style="animation-delay:0.2s">projects
+      </a><a sveltekit:prefetch class="li  svelte-18qn41v" href="https://edu.sedscelestia.org/" style="animation-delay:0.25s">Education
+      </a><a sveltekit:prefetch class="li  svelte-18qn41v" href="https://bitsgcelestia.wordpress.com" style="animation-delay:0.3s">Blog
+      </a></div>
+</details>
+
+<main><celestia-page><h1 class="tx-c po-stx z-4 m-0" style="top: 0;" bg="000-nil">Observations</h1>
+  <section class="adaptive"><div id="art" size="max" class="m-h-auto svelte-1h6sixp" style="margin-bottom:10px;"><canvas class="rx-max" bg="0008"></canvas></div>
+    <article class="p-10 m-h-auto " bg="66e-37f"><div class="l1 p-10 flex f-wt5"><span>Telescopes</span>
+    <img size="ic" style="object-fit: contain;" src="/assets/icons/sat.svg" alt=""></div>
+  <div slot="body"><div class="lecture po-rel w-100"><div class="topRight po-abs rx-5 p-5 blur svelte-1c7twdb">f/7.87 18x - 300x</div>
+  
+  <div class="bottomLeft po-abs rx-5 p-5 blur svelte-1c7twdb">Celestron Astromaster 130EQ</div>
+  
+  <img class="w-100 rx-5" src="./assets/obs/celestron.jpg" alt=""></div><div class="lecture po-rel w-100"><div class="topRight po-abs rx-5 p-5 blur svelte-1c7twdb">f/5.9 1x - 409x</div>
+  
+  <div class="bottomLeft po-abs rx-5 p-5 blur svelte-1c7twdb">Sky-Watcher Dobsonian 8&quot; Traditional</div>
+  
+  <img class="w-100 rx-5" src="./assets/obs/dobbynew.jpeg" alt=""></div><div class="lecture po-rel w-100"><div class="topRight po-abs rx-5 p-5 blur svelte-1c7twdb">f/7.8 1x - 306x</div>
+  
+  <div class="bottomLeft po-abs rx-5 p-5 blur svelte-1c7twdb">Sky-Watcher Dobsonian 6&quot; Traditional</div>
+  
+  <img class="w-100 rx-5" src="./assets/obs/dobbyold.jpeg" alt=""></div></div></article>
+
+    <article class="p-0 m-h-auto bg-cov tx-c"><div class="container po-rel svelte-1hohhhy" style="height:350px;width:100%;background:url(./assets/obs/astro-ph/0.jpeg) no-repeat"><div class="content w-100 h-100 z-1"><div slot="internal" class="w-100 p-20 m-0 flex-col jtx-ct f-wt1 stpty svelte-1h6sixp"><div style="font-size:3em">Astrophotography</div>
+          <p class="f-wt3">Its just what it sounds like. <br></p>
+          </div></div>
+</div></article>
+
+    <article class="p-10 m-h-auto " bg="e6e-954"><div class="l1 p-10 flex f-wt5"><span>Upcoming in Space</span>
+    <img size="ic" style="object-fit: contain;" src="/assets/icons/meteor.svg" alt=""></div>
+  <div slot="body"><div><span style="font-size:1.2em;"><strong>Thu, 29 Jul 2021 - All Day</strong>
+                <i style="color:#eeec"> Delta Aquarids Meteor Showe</i></span>
+              <p>The Delta Aquarids is an average shower that can produce up to 20 meteors per hour at its peak <br>  It is produced by debris left behind by comets Marsden and Kracht</p>
+            </div><div><span style="font-size:1.2em;"><strong>Mon, 2 Aug 2021 - Day</strong>
+                <i style="color:#eeec">Saturn at Opposition</i></span>
+              <p>The ringed planet will be at its closest approach to Earth and its face will be fully illuminated by the Sun <br> his is the best time to view and photograph Saturn and its moons</p>
+            </div></div></article>
+
+    <article class="p-0 m-h-auto bg-cov tx-c"><div class="container po-rel svelte-1hohhhy" style="height:350px;width:100%;background:url(./assets/obs/stpty/0.jpg) no-repeat"><div class="content w-100 h-100 z-1"><div slot="internal" class="w-100 p-20 m-0 flex-col jtx-ct f-wt1 stpty svelte-1h6sixp"><div style="font-size:3em">Looking Up, All Night</div>
+          <p class="f-wt3">Every Year. All Night. A Fire, Maggi, Telescopes &amp; Stars. <br>
+            Lovingly called as &quot;star party&quot;.
+          </p></div></div>
+</div></article></section>
+</celestia-page></main>
+
+<celestia-footer class="footer jtx-ct flex p-20 svelte-ffuxxi"><div><h5>Sitemap</h5>
+        <a class="caps svelte-ffuxxi" href="/">home</a> <br><a class="caps svelte-ffuxxi" href="/team">team</a> <br><a class="caps svelte-ffuxxi" href="/observations">observations</a> <br><a class="caps svelte-ffuxxi" href="/events">events</a> <br><a class="caps svelte-ffuxxi" href="/projects">projects</a> <br></div>
+    <div class="flex"><hr></div>
+    <div><h5>Our Accounts</h5>
+        <a target="_blank" href="https://instagr.am/sedscelestia/">Instagram</a>
+        <br>
+        <a target="_blank" href="https://facebook.com/celestiaclub">Facebook</a>
+        <br>
+        <a target="_blank" href="https://github.com/SEDSCelestiaBPGC">Github</a>
+        <br>
+        <a target="_blank" href="https://linkedin.com/company/seds-celestia/">LinkedIn</a></div>
+    <div class="flex"><hr></div>
+    <div><h5>Our Content</h5>
+        <a target="_blank" href="https://youtube.com/channel/UCuZ1RL7Qv5tKaQeWy28qhUw">Youtube</a>
+        <br>
+        <a target="_blank" href="https://bitsgcelestia.wordpress.com">Blog</a>
+        <br>
+        <a target="_blank" href="https://open.spotify.com/show/0NKbVLI7LpY6069IUCF6xi?si=nybrolgSQ5u2LoWEkm3U1A&amp;nd=1">Spotify</a>
+        <br>
+        <a target="_blank" href="https://radiopublic.com/celestia-onair-WeRp1J">Radio Public</a>
+        <br>
+        <a target="_blank" href="https://podcasts.google.com/feed/aHR0cHM6Ly9hbmNob3IuZm0vcy80NWYzZjAwOC9wb2RjYXN0L3Jzcw==">Google Podcasts</a>
+        <br>
+        <a target="_blank" href="https://pca.st/b3mqu7bk">Pocketcast</a>
+        <br>
+        <a target="_blank" href="https://breaker.audio/celestia-on-air">Breaker</a></div>
+    <div class="flex"><hr></div>
+    <div><h5>External Links</h5>
+        <a target="_blank" href="/Galileo">Old Website</a>
+        <br>
+        <a target="_blank" href="https://edu.sedscelestia.org/">SEDS Celestia Edu</a>
+        <br>
+        <a target="_blank" href="https://sedsindia.org">SEDS India</a>
+        <br>
+        <a target="_blank" href="http://sedsearth.org">SEDS Earth</a></div>
+</celestia-footer>
+
+
+
+	
+</main>
+</body>
+
+<script>const starFieldWidth = 2 * window.innerWidth, starFieldHeight = 2 * window.innerHeight, starField = document.getElementById( "star-field" ), starSpace = document.getElementById( "star-space" ), density = 2 * Math.pow( starFieldHeight * starFieldWidth, 0.25 ); function createRandomNodes( t, e, s, i, a ) { a.width = s, a.height = i; let o = a.getContext( "2d" ); o.clearRect( 0, 0, s, i ); for ( let a = 0;a <= t;a++ ) { o.beginPath(); let t = Math.random( a ) * s, d = Math.random( a ) * i; o.arc( t, d, e, 0, 2 * Math.PI ), o.fillStyle = "#fff", o.fill(), o.closePath() } return 0 } createRandomNodes( density, 1.5, starFieldWidth, starFieldHeight, starSpace ), window.innerWidth > 600 && createRandomNodes( density, 2, starFieldWidth, starFieldHeight, starField );</script>
+
+
+</html>
