@@ -14,7 +14,7 @@
   import Canvas from "$lib/shared/canvas.svelte";
   import { base } from "$app/paths";
 </script>
-
+<title>Observations | SEDS Celestia</title>
 <celestia-page>
   <h1 class="tx-c po-stx z-4 m-0" style="top: 0;" bg="000-nil">Observations</h1>
   <section class="adaptive">

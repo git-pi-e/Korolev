@@ -11,7 +11,7 @@
 
   let filter = "";
 </script>
-
+<title>Projects | SEDS Celestia</title>
 <celestia-page>
   <Comet />
   <h1 class="tx-c po-stx p-10 z-4 w-50 m-h-auto" style="top:0;" bg="000-nil">

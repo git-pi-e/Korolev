@@ -7,7 +7,7 @@
 
     // let filter = "";
 </script>
-
+<title>Team | SEDS Celestia</title>
 <celestia-page>
     <h1 class="tx-c po-stx p-10 m-0 z-4" style="top: 0;" bg="000-nil">Team</h1>
     <section class="adaptive">
