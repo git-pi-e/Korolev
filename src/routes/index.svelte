@@ -45,11 +45,14 @@
 	</div>
 	<section class="adaptive">
 		<article class="flex jtx-ar">
-			<button class="btn-std">Projects</button>
-			<button class="btn-std">
-				<a href="http://blog.sedscelestia.org">Blog</a>
-			</button>
-		</article>
+      		<a href="/projects">
+				<button class="btn-std">Projects</button>
+	  		</a>
+      		<a href="http://blog.sedscelestia.org">
+				<button class="btn-std">Blog</button>
+	  		</a>
+    	</article>
+		
 		<div id="rocket" style="min-height:100px;">
 			<Rocket />
 		</div>
