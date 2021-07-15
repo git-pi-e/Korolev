@@ -10,6 +10,14 @@
   import { base } from "$app/paths";
 
   let filter = "";
+  
+  const search=(e,filter)=>{
+   let [,under,name,desc,,]=Object.values(e) //converting the object to array of values and destructuring
+   return [under,name,desc].some( (element)=>{ return element?.toLowerCase().includes(filter.toLowerCase() ) } ) //creating an array of only needed values and running .some() method on it to return  or 1 fir condtion inside.
+  }
+
+
+
 </script>
 <title>Projects | SEDS Celestia</title>
 <celestia-page>
@@ -62,7 +70,7 @@
             bind:value={filter}
             ht="30px"
           />
-          {#each data.past.filter( (e) => JSON.stringify(e).includes(filter.toLowerCase()) ) as pj}
+           {#each data.past.filter((e)=>search(e,filter)) as pj} <!-- data.past is an array of objects, thus .filter() method sends in each element which is inturn an object as (e) into the search function -->
             <element class="flex m-10 p-10">
               <img
                 class="rx-50 p-5"
