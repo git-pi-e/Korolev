@@ -21,7 +21,7 @@
 		return 0;
 	});
 </script>
-
+<title>Home | SEDS Celestia</title>
 <celestia-page class="p-0 m-0">
 	<div class="section">
 		<div class="image-container p-0 m-0 w-100 po-rel" style="height:100vh;">
