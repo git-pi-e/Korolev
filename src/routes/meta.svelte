@@ -19,7 +19,7 @@
         was last built
         <code>
             &nbsp;
-            {new Date(metadata.time).toLocaleString("en-UK", date_config)}
+            {new Date(metadata.time).toLocaleString("en-GB", date_config)}
         </code>
         <br />
         this is build number <code>{metadata.build.current}</code> of version
