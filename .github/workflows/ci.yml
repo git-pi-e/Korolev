@@ -15,12 +15,16 @@ jobs:
     strategy:
       matrix:
         node-version: [10.x, 12.x, 14.x]
-
     steps:
-    - uses: actions/checkout@v2
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v1
-      with:
-        node-version: ${{ matrix.node-version }}
-    - run: npm install
-    - run: npm run deploy
+      - name: Checkout Repo
+        uses: actions/checkout@master
+
+      - name: Setup Node.js 14.x
+        uses: actions/setup-node@master
+        with:
+          node-version: 14.x
+
+      - run: npm install -g pnpm gh-pages
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm build
+      - run: npx gh-pages -d build -t true
