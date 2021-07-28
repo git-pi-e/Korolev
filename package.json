@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "dev": "svelte-kit dev",
-    "build": "node prep && rm -rf build && svelte-kit build",
+    "build": "node prep && rm -rf build && svelte-kit build --verbose",
     "deploy": "npm run build && touch .nojekyll && npx gh-pages -d build -t true"
   },
   "devDependencies": {
