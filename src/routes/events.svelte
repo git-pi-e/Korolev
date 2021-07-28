@@ -1,8 +1,7 @@
 <script>
   import Mars from "$lib/components/macro/mars.svelte";
   import data from "$lib/data/facc";
-  import Containr from "$lib/shared/Containr.svelte";
-  import Canvas from "$lib/shared/canvas.svelte";
+  import { Canvas, Containr } from "$lib/shared";
 
   import LecTemp from "$lib/components/micro/lectures.svelte";
   import { onMount } from "svelte";

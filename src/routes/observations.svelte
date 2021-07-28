@@ -8,12 +8,10 @@
 
   import Events from "$lib/data/events";
   import data from "$lib/data/lookUp";
-  import Slidr from "$lib/shared/slider.svelte";
-  import Containr from "$lib/shared/Containr.svelte";
-  import Imgr from "$lib/shared/image.svelte";
-  import Canvas from "$lib/shared/canvas.svelte";
+  import { Canvas, Containr, Imgr, Slidr } from "$lib/shared";
   import { base } from "$app/paths";
 </script>
+
 <title>Observations | SEDS Celestia</title>
 <celestia-page>
   <h1 class="tx-c po-stx z-4 m-0" style="top: 0;" bg="000-nil">Observations</h1>

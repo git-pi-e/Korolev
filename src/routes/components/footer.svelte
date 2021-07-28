@@ -6,7 +6,8 @@
     <div>
         <h5>Sitemap</h5>
         {#each Object.entries(links.internal) as pg}
-            <a class="caps" href={pg[1]}>{pg[0]}</a> <br />
+            <a class="caps" href={pg[1]}>{pg[0]}</a>
+            <br />
         {/each}
     </div>
     <div class="flex">

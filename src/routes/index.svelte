@@ -1,7 +1,7 @@
 <script>
 	import data from "$lib/data/home";
 	import Logo from "$lib/components/micro/logo.svelte";
-	import Containr from "$lib/shared/Containr.svelte";
+	import { Containr } from "$lib/shared";
 	import Rocket from "$lib/components/macro/rocket.svelte";
 	import { onMount } from "svelte";
 
@@ -21,6 +21,7 @@
 		return 0;
 	});
 </script>
+
 <title>Home | SEDS Celestia</title>
 <celestia-page class="p-0 m-0">
 	<div class="section">
@@ -45,14 +46,14 @@
 	</div>
 	<section class="adaptive">
 		<article class="flex jtx-ar">
-      		<a href="/projects">
+			<a href="/projects">
 				<button class="btn-std">Projects</button>
-	  		</a>
-      		<a href="http://blog.sedscelestia.org">
+			</a>
+			<a href="http://blog.sedscelestia.org">
 				<button class="btn-std">Blog</button>
-	  		</a>
-    	</article>
-		
+			</a>
+		</article>
+
 		<div id="rocket" style="min-height:100px;">
 			<Rocket />
 		</div>

@@ -3,22 +3,20 @@
   import Comet from "$lib/components/micro/comet.svelte";
   import data from "$lib/data/projects";
 
-  import Containr from "$lib/shared/Containr.svelte";
-  import Image from "$lib/shared/image.svelte";
-  import Canvas from "$lib/shared/canvas.svelte";
+  import { Canvas, Containr, Imgr } from "$lib/shared";
 
   import { base } from "$app/paths";
 
   let filter = "";
-  
-  const search=(e,filter)=>{
-   let [,under,name,desc,,]=Object.values(e) //converting the object to array of values and destructuring
-   return [under,name,desc].some( (element)=>{ return element?.toLowerCase().includes(filter.toLowerCase() ) } ) //creating an array of only needed values and running .some() method on it to return  or 1 fir condtion inside.
-  }
 
-
-
+  const search = (e, filter) => {
+    let [, under, name, desc, ,] = Object.values(e); //converting the object to array of values and destructuring
+    return [under, name, desc].some((element) => {
+      return element?.toLowerCase().includes(filter.toLowerCase());
+    }); //creating an array of only needed values and running .some() method on it to return  or 1 fir condtion inside.
+  };
 </script>
+
 <title>Projects | SEDS Celestia</title>
 <celestia-page>
   <Comet />
@@ -70,7 +68,8 @@
             bind:value={filter}
             ht="30px"
           />
-           {#each data.past.filter((e)=>search(e,filter)) as pj} <!-- data.past is an array of objects, thus .filter() method sends in each element which is inturn an object as (e) into the search function -->
+          {#each data.past.filter((e) => search(e, filter)) as pj}
+            <!-- data.past is an array of objects, thus .filter() method sends in each element which is inturn an object as (e) into the search function -->
             <element class="flex m-10 p-10">
               <img
                 class="rx-50 p-5"
@@ -90,18 +89,18 @@
     </Containr>
     <Containr title="Notable Spinoffs" icon="dish" bg="e66-c26">
       <div slot="body">
-        <Image
+        <Imgr
           src="{base}/assets/projects/kratos.png"
           placements={{
             topRight: "Now Independent",
             bottomLeft: "Project Kratos",
           }}
         />
-        <Image
+        <Imgr
           src="{base}/assets/projects/rt.jpg"
           placements={{ topRight: "Now Independent", bottomLeft: "Project RT" }}
         />
-        <Image
+        <Imgr
           src="{base}/assets/projects/apeiro.jpg"
           placements={{ topRight: "Ended", bottomLeft: "Project Apeiro" }}
         />

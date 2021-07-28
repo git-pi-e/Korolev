@@ -1,12 +1,13 @@
 <script>
     import Earth from "$lib/components/macro/earth.svelte";
     import data from "$lib/data/team";
-    import Containr from "$lib/shared/Containr.svelte";
+    import { Containr } from "$lib/shared";
 
     import { base } from "$app/paths";
 
     // let filter = "";
 </script>
+
 <title>Team | SEDS Celestia</title>
 <celestia-page>
     <h1 class="tx-c po-stx p-10 m-0 z-4" style="top: 0;" bg="000-nil">Team</h1>
