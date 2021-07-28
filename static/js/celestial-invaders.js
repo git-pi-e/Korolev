@@ -1,34 +1,25 @@
 ( function () {
     var initializing = false, fnTest = /xyz/.test( function () { xyz; } ) ? /\b_super\b/ : /.*/;
 
-    // The base Class implementation (does nothing)
+
     this.Class = function () { };
 
-    // Create a new Class that inherits from this class
+
     Class.extend = function ( prop ) {
         var _super = this.prototype;
-
-        // Instantiate a base class (but only create the instance,
-        // don't run the init constructor)
         initializing = true;
         var prototype = new this();
         initializing = false;
 
-        // Copy the properties over onto the new prototype
+
         for ( var name in prop ) {
-            // Check if we're overwriting an existing function
+
             prototype[ name ] = typeof prop[ name ] == "function" &&
                 typeof _super[ name ] == "function" && fnTest.test( prop[ name ] ) ?
                 ( function ( name, fn ) {
                     return function () {
                         var tmp = this._super;
-
-                        // Add a new ._super() method that is the same method
-                        // but on the super-class
                         this._super = _super[ name ];
-
-                        // The method only need to be bound temporarily, so we
-                        // remove it when we're done executing
                         var ret = fn.apply( this, arguments );
                         this._super = tmp;
 
@@ -38,20 +29,20 @@
                 prop[ name ];
         }
 
-        // The dummy class constructor
+
         function Class () {
-            // All construction is actually done in the init method
+
             if ( !initializing && this.init )
                 this.init.apply( this, arguments );
         }
 
-        // Populate our constructed prototype object
+
         Class.prototype = prototype;
 
-        // Enforce the constructor to be what we expect
+
         Class.prototype.constructor = Class;
 
-        // And make this class extendable
+
         Class.extend = arguments.callee;
 
         return Class;
@@ -59,10 +50,6 @@
 } )();
 
 
-// ###################################################################
-// shims
-//
-// ###################################################################
 ( function () {
     var requestAnimationFrame = window.requestAnimationFrame || window.mozRequestAnimationFrame || window.webkitRequestAnimationFrame || window.msRequestAnimationFrame;
     window.requestAnimationFrame = requestAnimationFrame;
@@ -75,10 +62,6 @@
     }
 } )();
 
-// ###################################################################
-// Constants
-//
-// ###################################################################
 var IS_CHROME = /Chrome/.test( navigator.userAgent ) && /Google Inc/.test( navigator.vendor );
 var CANVAS_WIDTH = 640;
 var CANVAS_HEIGHT = 640;
@@ -93,13 +76,6 @@ var ALIEN_MIDDLE_ROW = [ { x: 0, y: 137, w: 50, h: 33 }, { x: 0, y: 170, w: 50, 
 var ALIEN_TOP_ROW = [ { x: 0, y: 68, w: 50, h: 32 }, { x: 0, y: 34, w: 50, h: 32 } ];
 var ALIEN_X_MARGIN = 40;
 var ALIEN_SQUAD_WIDTH = 11 * ALIEN_X_MARGIN;
-
-
-
-// ###################################################################
-// Utility functions & classes
-//
-// ###################################################################
 function getRandomArbitrary ( min, max ) {
     return Math.random() * ( max - min ) + min;
 }
@@ -152,13 +128,6 @@ var Rect = Class.extend( {
         this.h = h;
     }
 } );
-
-
-
-// ###################################################################
-// Globals
-//
-// ###################################################################
 var canvas = null;
 var ctx = null;
 var spriteSheetImg = null;
@@ -175,13 +144,6 @@ var alienYDown = 0;
 var alienCount = 0;
 var wave = 1;
 var hasGameStarted = false;
-
-
-
-// ###################################################################
-// Entities
-//
-// ###################################################################
 var BaseSprite = Class.extend( {
     init: function ( img, x, y ) {
         this.img = img;
@@ -283,13 +245,13 @@ var Player = SheetSprite.extend( {
     },
 
     update: function ( dt ) {
-        // update time passed between shots
+
         this.bulletDelayAccumulator += dt;
 
-        // apply x vel
+
         this.position.x += this.xVel * dt;
 
-        // cap player position in screen bounds
+
         this.position.x = clamp( this.position.x, this.bounds.w / 2, CANVAS_WIDTH - this.bounds.w / 2 );
         this.updateBullets( dt );
     },
@@ -297,7 +259,7 @@ var Player = SheetSprite.extend( {
     draw: function ( resized ) {
         this._super( resized );
 
-        // draw bullets
+
         for ( var i = 0, len = this.bullets.length;i < len;i++ ) {
             var bullet = this.bullets[ i ];
             if ( bullet.alive ) bullet.draw( resized );
@@ -319,7 +281,9 @@ var Bullet = BaseSprite.extend( {
         if ( this.position.y < 0 ) this.alive = false;
     },
 
-    draw: ( resized ) => this._super( resized )
+    draw: function ( resized ) {
+        this._super( resized );
+    }
 } );
 
 var Enemy = SheetSprite.extend( {
@@ -329,7 +293,7 @@ var Enemy = SheetSprite.extend( {
         this.scale.set( 0.5, 0.5 );
         this.alive = true;
         this.onFirstState = true;
-        this.stepDelay = 1; // try 2 secs to start with...
+        this.stepDelay = 1;
         this.stepAccumulator = 0;
         this.doShoot - false;
         this.bullet = null;
@@ -435,34 +399,25 @@ var ParticleExplosion = Class.extend( {
                 tempParticle.alpha = 1;
                 tempParticle.maxLife = life;
                 this.particles.push( tempParticle );
-            } else {
+            } else
                 this.particles.push( { x, y, xunits, yunits, life, color, width, height, gravity: grav, moves: 0, alpha: 1, maxLife: life } );
-            }
-
         }
     }
 } );
-
-
-
-// ###################################################################
-// Initialization functions
-//
-// ###################################################################
 function initCanvas () {
-    // create our canvas and context
-    canvas = document.querySelector( '#game-canvas' );
+
+    canvas = document.getElementById( 'game-canvas' );
     ctx = canvas.getContext( '2d' );
 
-    // turn off image smoothing
+
     setImageSmoothing( false );
 
-    // create our main sprite sheet img
+
     spriteSheetImg = new Image();
     spriteSheetImg.src = SPRITE_SHEET_SRC;
     preDrawImages();
 
-    // add event listeners and initially resize
+
     window.addEventListener( 'resize', resize );
     document.addEventListener( 'keydown', onKeyDown );
     document.addEventListener( 'keyup', onKeyUp );
@@ -524,13 +479,6 @@ function init () {
     prevKeyStates = [];
     resize();
 }
-
-
-
-// ###################################################################
-// Helpful input functions
-//
-// ###################################################################
 function isKeyDown ( key ) {
     return keyStates[ key ];
 }
@@ -540,10 +488,6 @@ function wasKeyPressed ( key ) {
 }
 
 
-// ###################################################################
-// Drawing & Update functions
-//
-// ###################################################################
 function updateAliens ( dt ) {
     if ( updateAlienLogic ) {
         updateAlienLogic = false;
@@ -636,7 +580,7 @@ function drawIntoCanvas ( width, height, drawFunc ) {
 
 function fillText ( text, x, y, color, fontSize ) {
     if ( typeof color !== 'undefined' ) ctx.fillStyle = color;
-    if ( typeof fontSize !== 'undefined' ) ctx.font = fontSize + 'px Helvetica';
+    if ( typeof fontSize !== 'undefined' ) ctx.font = fontSize + 'px Play';
     ctx.fillText( text, x, y );
 }
 
@@ -712,18 +656,11 @@ function animate () {
     lastTime = now;
     requestAnimationFrame( animate );
 }
-
-
-
-// ###################################################################
-// Event Listener functions
-//
-// ###################################################################
 function resize () {
     var w = window.innerWidth;
     var h = window.innerHeight;
 
-    // calculate the scale factor to keep a correct aspect ratio
+
     var scaleFactor = Math.min( w / CANVAS_WIDTH, h / CANVAS_HEIGHT );
 
     if ( IS_CHROME ) {
@@ -732,7 +669,7 @@ function resize () {
         setImageSmoothing( false );
         ctx.transform( scaleFactor, 0, 0, scaleFactor, 0, 0 );
     } else {
-        // resize the canvas css properties
+
         canvas.style.width = CANVAS_WIDTH * scaleFactor + 'px';
         canvas.style.height = CANVAS_HEIGHT * scaleFactor + 'px';
     }
@@ -749,10 +686,6 @@ function onKeyUp ( e ) {
 }
 
 
-// ###################################################################
-// Start game!
-//
-// ###################################################################
 window.onload = function () {
     init();
     animate();
