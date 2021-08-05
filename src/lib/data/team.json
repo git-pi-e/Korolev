@@ -1,84 +1,84 @@
 {
     "mgmt": [
         {
-            "img": "./assets/team/prorush.jpg",
+            "img": "/assets/team/prorush.jpg",
             "post": "President",
             "name": "Paurush Punyasheel"
         },
         {
-            "img": "./assets/team/ankit.jpg",
+            "img": "/assets/team/ankit.jpg",
             "post": "Vice-President",
             "name": "Ankit Verma"
         },
         {
-            "img": "./assets/team/yash.jpg",
+            "img": "/assets/team/yash.jpg",
             "post": "Secretary & Publicity Head",
             "name": "Yash Saini"
         },
         {
-            "img": "./assets/team/cube.jpg",
+            "img": "/assets/team/cube.jpg",
             "post": "Observations Head",
             "name": "Kaustubh Murudkar"
         },
         {
-            "img": "./assets/team/vivek.jpg",
+            "img": "/assets/team/vivek.jpg",
             "post": "Projects Head",
             "name": "Vivek Subramaniam"
         },
         {
-            "img": "./assets/team/frogu.jpg",
+            "img": "/assets/team/frogu.jpg",
             "post": "Lectures & Podcast Head",
             "name": "Abdul Jawad Khan"
         }
     ],
     "leads": [
         {
-            "img": "./assets/team/neil.jpeg",
+            "img": "/assets/team/neil.jpeg",
             "name": "3 Sided Coin",
             "pos": "Neil Shah"
         },
         {
-            "img": "./assets/team/yash.jpg",
+            "img": "/assets/team/yash.jpg",
             "name": "Brain Computer Interface",
             "pos": "Yash Saini"
         },
         {
-            "img": "./assets/team/dubal.jpg",
+            "img": "/assets/team/dubal.jpg",
             "name": "Quantum Chess",
             "pos": "Ayushi Dubal"
         },
         {
-            "img": "./assets/team/cube.jpg",
+            "img": "/assets/team/cube.jpg",
             "name": "EINSat",
             "pos": "Kaustubh Murudkar"
         },
         {
-            "img": "./assets/team/vivek.jpg",
+            "img": "/assets/team/vivek.jpg",
             "name": "Cloud Chamber",
             "pos": "Vivek S."
         },
         {
-            "img": "./assets/team/samarth.jpg",
+            "img": "/assets/team/samarth.jpg",
             "name": "Binary Calculator",
             "pos": "Samarth Agrawal"
         },
         {
-            "img": "./assets/team/patidar.jpg",
+            "img": "/assets/team/patidar.jpg",
             "name": "CanSat",
             "pos": "Dhruv Patidar"
         },
         {
-            "img": "./assets/team/gupte.jpg",
+            "img": "/assets/team/gupte.jpg",
             "name": "Star Tracker",
             "pos": "Vivek Gupte"
         },
         {
-            "img": "./assets/team/hvcs.png",
+            "img": "/assets/team/hvcs.png",
             "name": "Comet Trail Sim",
             "pos": "Harshvardhan C."
         },
         {
-            "img": "./assets/team/venu.jpg",
+            "img": "/assets/team/venu.jpg",
             "name": "Rocketry",
             "pos": "Venugopalan Iyenger"
         }
