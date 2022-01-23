@@ -21,6 +21,6 @@
 </body>
 
 <script>const starFieldWidth = 2 * window.innerWidth, starFieldHeight = 2 * window.innerHeight, starField = document.getElementById( "star-field" ), starSpace = document.getElementById( "star-space" ), density = 2 * Math.pow( starFieldHeight * starFieldWidth, 0.25 ); function createRandomNodes( t, e, s, i, a ) { a.width = s, a.height = i; let o = a.getContext( "2d" ); o.clearRect( 0, 0, s, i ); for ( let a = 0;a <= t;a++ ) { o.beginPath(); let t = Math.random( a ) * s, d = Math.random( a ) * i; o.arc( t, d, e, 0, 2 * Math.PI ), o.fillStyle = "#fff", o.fill(), o.closePath() } return 0 } createRandomNodes( density, 1.5, starFieldWidth, starFieldHeight, starSpace ), window.innerWidth > 600 && createRandomNodes( density, 2, starFieldWidth, starFieldHeight, starField );</script>
-
-
+<div class="cursor"></div>
+<script src="/js/cursor.js"></script>
 </html>
