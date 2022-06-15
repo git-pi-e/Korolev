@@ -22,6 +22,8 @@
         <a target="_blank" href={links.social.git}>Github</a>
         <br />
         <a target="_blank" href={links.social.lin}>LinkedIn</a>
+        <br />
+        <a target="_blank" href={links.social.tw}>Twitter</a>
     </div>
     <div class="flex">
         <hr />

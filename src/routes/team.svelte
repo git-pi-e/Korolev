@@ -30,7 +30,7 @@
                 <p class="tx-j">We are the Celestials! ❤️</p>
                 <img
                     class="w-100"
-                    src="{base}/assets/images/team.jpg"
+                    src="{base}/assets/images/celestia-core.jpg"
                     alt=""
                     style="height:200px;"
                 />
@@ -75,7 +75,7 @@
                 {#each data.past as pj, i}
                     <!-- .filter((e) => JSON.stringify(e).includes(filter))  -->
                     <element class="pastCard m-5 p-5">
-                        <h4>{2020 - i}</h4>
+                        <h4>{2021 - i}</h4>
                         {#each pj as person}
                             <div class="f-wt3 w-100 flex">
                                 <span class="f-wt7" style="flex:1"
