@@ -80,21 +80,35 @@
 					<img
 						size="ic-lg"
 						src="{base}/assets/icons/youtube.svg"
-						alt=""
+						alt="Youtube"
 					/>
 				</a>
 				<a target="_blank" href={links.social.fb}>
 					<img
 						size="ic-lg"
 						src="{base}/assets/icons/facebook.svg"
-						alt=""
+						alt="Facebook"
 					/>
 				</a>
 				<a target="_blank" href={links.social.ig}>
 					<img
 						size="ic-lg"
 						src="{base}/assets/icons/insta.svg"
-						alt=""
+						alt="Instagram"
+					/>
+				</a>
+				<a target="_blank" href={links.social.tw}>
+					<img
+						size="ic-lg"
+						src="{base}/assets/icons/twitter.svg"
+						alt="Twitter"
+					/>
+				</a>
+				<a target="_blank" href={links.social.spo}>
+					<img
+						size="ic-lg"
+						src="{base}/assets/icons/spotify.svg"
+						alt="Spotify"
 					/>
 				</a>
 			</article>

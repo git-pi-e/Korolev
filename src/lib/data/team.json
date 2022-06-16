@@ -1,37 +1,57 @@
 {
     "mgmt": [
         {
-            "img": "/assets/team/prorush.jpg",
+            "img": "/assets/team/avani.jpeg",
             "post": "President",
-            "name": "Paurush Punyasheel"
+            "name": "Avani Sharan"
         },
         {
-            "img": "/assets/team/ankit.jpg",
+            "img": "/assets/team/tanmay.jpeg",
             "post": "Vice-President",
-            "name": "Ankit Verma"
+            "name": "Tanmay Yadav"
         },
         {
-            "img": "/assets/team/yash.jpg",
+            "img": "/assets/team/vices.jpeg",
             "post": "Secretary & Publicity Head",
-            "name": "Yash Saini"
+            "name": "Vishesh Agrawal"
         },
         {
-            "img": "/assets/team/cube.jpg",
+            "img": "/assets/team/shlok.jpeg",
             "post": "Observations Head",
-            "name": "Kaustubh Murudkar"
+            "name": "Shlok Kakkar"
         },
         {
-            "img": "/assets/team/vivek.jpg",
+            "img": "/assets/team/vaid.jpeg",
             "post": "Projects Head",
-            "name": "Vivek Subramaniam"
+            "name": "Vikaram Vaidyanathan Venkatraman"
         },
         {
-            "img": "/assets/team/frogu.jpg",
+            "img": "/assets/team/pj.jpeg",
             "post": "Lectures & Podcast Head",
-            "name": "Abdul Jawad Khan"
+            "name": "Pranav Jain"
         }
     ],
     "leads": [
+        {
+            "img": "/assets/team/saiees.jpeg",
+            "name": "Advanced Energy Conservation",
+            "pos": "Saieesh Sukhrani"
+        },
+        {
+            "img": "/assets/team/vaid.jpeg",
+            "name": "Smoke Detection System",
+            "pos": "Vikram Vaidyanathan Venkatraman"
+        },
+        {
+            "img": "/assets/team/tanmay.jpeg",
+            "name": "TITAN DAP",
+            "pos": "Tanmay Yadav"
+        },
+        {
+            "img": "/assets/team/pradeep.jpeg",
+            "name": "Interactive PoV",
+            "pos": "Prateek Upadhya"
+        },
         {
             "img": "/assets/team/neil.jpeg",
             "name": "3 Sided Coin",
@@ -84,6 +104,32 @@
         }
     ],
     "past": [
+        [
+            {
+                "post": "President",
+                "name": "Paurush Punyasheel"
+            },
+            {
+                "post": "Vice-President",
+                "name": "Ankit Verma"
+            },
+            {
+                "post": "Secretary & Publicity Head",
+                "name": "Yash Saini"
+            },
+            {
+                "post": "Observations Head",
+                "name": "Kaustubh Murudkar"
+            },
+            {
+                "post": "Projects Head",
+                "name": "Vivek Subramaniam"
+            },
+            {
+                "post": "Lectures Head",
+                "name": "Abdul Jawad Khan"
+            }
+        ],
         [
             {
                 "post": "President",
