@@ -30,7 +30,7 @@
                 <p class="tx-j">We are the Celestials! ❤️</p>
                 <img
                     class="w-100"
-                    src="{base}/assets/images/celestia-core.jpg"
+                    src="{base}/assets/images/core.jpg"
                     alt=""
                     style="height:200px;"
                 />
