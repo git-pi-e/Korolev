@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "dev": "svelte-kit dev",
-    "build": "node prep && rm -rf build && svelte-kit build --verbose",
+    "build": "pnpm i && node prep && rm -rf build && svelte-kit build --verbose",
     "deploy": "npm run build && touch .nojekyll && npx gh-pages -d build -t true",
     "node-sass": "node-sass static/css/global.scss static/css/global.css --output-style compressed"
   },
