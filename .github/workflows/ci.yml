@@ -15,17 +15,18 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        node-version: [12.x, 14.x]
+        node-version: [16.x]
     steps:
       - name: Checkout Repo
         uses: actions/checkout@master
 
-      - name: Setup Node.js 14.x
-        uses: actions/setup-node@master
-        with:
-          node-version: 14.x
+      - name: Install & Build
+        run: |
+          npm install -g pnpm
+          npm run build
 
-      - run: npm install -g pnpm gh-pages
-      - run: pnpm install --frozen-lockfile
-      - run: pnpm build
-      - run: npx gh-pages -d build -t true
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@v4.2.3
+        with:
+          branch: gh-pages
+          folder: build
