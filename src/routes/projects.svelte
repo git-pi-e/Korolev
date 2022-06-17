@@ -1,5 +1,5 @@
 <script>
-  import BH from "$lib/components/macro/BH.svelte";
+  import BH from "$lib/components/macro/bh.svelte";
   import Comet from "$lib/components/micro/comet.svelte";
   import data from "$lib/data/projects";
 
