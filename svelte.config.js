@@ -4,7 +4,11 @@ import sveltePreprocess from 'svelte-preprocess';
 export default {
 	preprocess: sveltePreprocess(),
 	kit: {
-		adapter: statix(),
-		target: 'main'
+		adapter: statix({
+			pages: 'build',
+			assets: 'build',
+			precompress: true
+		}),
+		prerender: { default: true }
 	}
 };
