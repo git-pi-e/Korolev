@@ -1,1 +1,11 @@
-{"name":"Korolev","author":"Plutoniumm","owner":"SEDSCelestiaBPGC","build":{"current":4,"previous":3,"version":"3.3.2"},"time":1655387047257}
+{
+  "name": "Korolev",
+  "author": "Plutoniumm",
+  "owner": "SEDSCelestiaBPGC",
+  "build": {
+    "current": 4,
+    "previous": 3,
+    "version": "3.3.2"
+  },
+  "time": 1655387047257
+}
