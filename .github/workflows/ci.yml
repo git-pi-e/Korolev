@@ -22,8 +22,8 @@ jobs:
 
       - name: Install & Build
         run: |
-          npm install -g pnpm
-          npm run build
+          npm install --location=global pnpm
+          npm run build:server
 
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4.2.3
