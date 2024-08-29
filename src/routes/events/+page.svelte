@@ -135,7 +135,7 @@
     </Containr>
 
     <Containr
-      title="Celestia’s Guide to the Universe"
+      title="Celestia's Guide to the Universe"
       icon="astronaut"
       bg="66e-37f"
     >
