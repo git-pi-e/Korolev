@@ -10,7 +10,7 @@ on:
       - develop
 permissions:
   contents: write
-  
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -32,5 +32,5 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4.6.3
         with:
           branch: gh-pages
-          folder: .svelte-kit/output
+          folder: build
           ssh-key: ${{ secrets.GH_PAGES_DEPLOY_KEY }}
