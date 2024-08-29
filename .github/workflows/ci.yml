@@ -33,3 +33,4 @@ jobs:
         with:
           branch: gh-pages
           folder: .svelte-kit/output
+          ssh-key: ${{ secrets.GH_PAGES_DEPLOY_KEY }}
