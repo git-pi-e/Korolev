@@ -1,20 +1,19 @@
 <script>
-	import data from "$lib/data/home";
-	import Logo from "$lib/components/micro/logo.svelte";
-	import { Containr } from "$lib/shared";
-	import Rocket from "$lib/components/macro/rocket.svelte";
-	import { onMount } from "svelte";
+	import data from '$lib/data/home';
+	import Logo from '$lib/components/micro/logo.svelte';
+	import { Containr } from '$lib/shared';
+	import Rocket from '$lib/components/macro/rocket.svelte';
+	import { onMount } from 'svelte';
 
-	import { base } from "$app/paths";
+	import { base } from '$app/paths';
 
-	import links from "$lib/data/routes.json";
+	import links from '$lib/data/routes.json';
 
 	onMount(() => {
-		const target = document.querySelector("#rocket");
+		const target = document.querySelector('#rocket');
 		let handleIntersection = (entries) =>
 			entries.map((entry) => {
-				if (entry.isIntersecting)
-					entry.target.childNodes[0].classList.add("display");
+				if (entry.isIntersecting) entry.target.childNodes[0].classList.add('display');
 			});
 		const observer = new IntersectionObserver(handleIntersection);
 		observer.observe(target);
@@ -63,10 +62,7 @@
 					<div class="tx-c m-10 p-10" style="white-space: nowrap;">
 						<div class="p-10">{event.event}</div>
 						<div class="po-rel">
-							<li
-								class="p-0 m-0 po-abs"
-								style="top:-0.66em;left:calc(50% - 5px);font-size:48px;"
-							/>
+							<li class="p-0 m-0 po-abs" style="top:-0.66em;left:calc(50% - 5px);font-size:48px;" />
 							<hr />
 						</div>
 						<div class="p-10">{event.year}</div>
@@ -77,46 +73,26 @@
 		<Containr title="Connect With Us" icon="heart" bg="66e-37f">
 			<article class="p-10 flex jtx-ev" slot="body">
 				<a target="_blank" href={links.content.yt}>
-					<img
-						size="ic-lg"
-						src="{base}/assets/icons/youtube.svg"
-						alt="Youtube"
-					/>
+					<img size="ic-lg" src="{base}/assets/icons/youtube.svg" alt="Youtube" />
 				</a>
 				<a target="_blank" href={links.social.fb}>
-					<img
-						size="ic-lg"
-						src="{base}/assets/icons/facebook.svg"
-						alt="Facebook"
-					/>
+					<img size="ic-lg" src="{base}/assets/icons/facebook.svg" alt="Facebook" />
 				</a>
 				<a target="_blank" href={links.social.ig}>
-					<img
-						size="ic-lg"
-						src="{base}/assets/icons/insta.svg"
-						alt="Instagram"
-					/>
+					<img size="ic-lg" src="{base}/assets/icons/insta.svg" alt="Instagram" />
 				</a>
 				<a target="_blank" href={links.social.tw}>
-					<img
-						size="ic-lg"
-						src="{base}/assets/icons/twitter.svg"
-						alt="Twitter"
-					/>
+					<img size="ic-lg" src="{base}/assets/icons/twitter.svg" alt="Twitter" />
 				</a>
 				<a target="_blank" href={links.social.spo}>
-					<img
-						size="ic-lg"
-						src="{base}/assets/icons/spotify.svg"
-						alt="Spotify"
-					/>
+					<img size="ic-lg" src="{base}/assets/icons/spotify.svg" alt="Spotify" />
 				</a>
 			</article>
 		</Containr>
 	</section>
 </celestia-page>
 
-<style type="text/scss">
+<style type="text/scss" lang="scss">
 	.logo {
 		opacity: 0;
 		transform: translateY(40vh) scale(1);

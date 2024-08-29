@@ -33,7 +33,7 @@
   </div>
 </details>
 
-<style type="text/scss">
+<style type="text/scss" lang="scss">
   details > summary {
     font-size: 3em;
     list-style: none;

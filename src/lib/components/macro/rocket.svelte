@@ -44,7 +44,7 @@
   <div class="platform" />
 </div>
 
-<style type="text/scss">
+<style type="text/scss" lang="scss">
   $stand_size: 80px;
   $flame-height: 80px;
   $orange-yellow: #ff9224;
@@ -55,11 +55,11 @@
   }
   .legacy {
     opacity: 0;
-    // z-index: 1;
+
     animation: legacy 1.5s ease-in forwards 3.5s;
   }
   #container {
-    // z-index: 0;
+
     --orange: #ffd480;
     top: 50%;
     margin: auto;
@@ -145,7 +145,7 @@
       .leg {
         position: absolute;
         background: #222;
-        bottom: $stand_size/1.7;
+        bottom: calc($stand_size / 1.7);
         height: 28px;
         border-radius: 20px;
         transform-origin: bottom;
