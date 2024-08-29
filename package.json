@@ -6,7 +6,8 @@
 	"type": "module",
 	"scripts": {
 		"dev": "vite dev",
-		"build": "node prep && rm -rf build .svelte-kit && vite build",
+		"build": "vite build",
+		"build:server": "pnpm i --no-frozen-lockfile && node prep && rm -rf build .svelte-kit && vite build",
 		"preview": "vite preview",
 		"lint": "prettier --check . && eslint .",
 		"format": "prettier --write .",
