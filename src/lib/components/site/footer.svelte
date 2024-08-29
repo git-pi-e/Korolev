@@ -49,8 +49,8 @@
     </div>
     <div>
         <h5>External Links</h5>
-        <a target="_blank" href="/Galileo">Old Website</a>
-        <br />
+        <!-- <a target="_blank" href="/Galileo">Old Website</a>
+        <br /> -->
         <a target="_blank" href={links.web.educelestia}>SEDS Celestia Edu</a>
         <br />
         <a target="_blank" href={links.web.sedsi}>SEDS India</a>
