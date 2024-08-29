@@ -5,13 +5,19 @@
 ## Contribute
 
 ```bash
-$ pnpm i
-# pnpm also works
+git clone https://github.com/SEDSCelestiaBPGC/Korolev
+cd Korolev
 
-$ pnpm run dev
+# Install dependecies
+pnpm i
+
+# Start dev server
+pnpm run dev
+
 # Use pnpm run sass:FILENAME for live sass compiler
 
-$ pnpm run build
+# Build
+pnpm run cd
 ```
 
 ## Coding Guide
@@ -27,13 +33,12 @@ V2 is therefore called *Korolev* since he designed the first rocket and took us 
 
 - Add postcss for vendor prefixes (autoprefixer)
 - Fetch any very large data files during build, don't ship. Ex Astronomical Events.
-- Create build script to update /meta and then npm run build
 - Host images in publicly accessible links, google redirects cannot be preloaded and look SHIT.
 
-## Tests
+### Tests
 
-- Create Browser test to check for all files update
-- Create Compiler test to check all components
+- Create Browser test to check for all files update.
+- Create Compiler test to check all components.
 
 ## Docs
 
