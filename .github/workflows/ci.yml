@@ -33,4 +33,3 @@ jobs:
         with:
           branch: gh-pages
           folder: .svelte-kit/output
-          token: ${{ secrets.GH_PAGES_TOKEN }}
