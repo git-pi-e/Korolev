@@ -20,9 +20,7 @@
 <title>Projects | SEDS Celestia</title>
 <celestia-page>
   <Comet />
-  <h1 class="tx-c po-stx p-10 z-4 m-h-auto" style="top:0px;" bg="000-nil">
-    Projects
-  </h1>
+  <h1 class="tx-c po-stx p-10 z-4 m-h-auto" style="top:0px;" bg="000-nil">Projects</h1>
   <section class="adaptive">
     <div id="art" size="max" class="m-h-auto">
       <Canvas

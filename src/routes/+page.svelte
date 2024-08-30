@@ -28,11 +28,6 @@
 			<div class="z-0 po-abs w-gen logo">
 				<Logo wd="200" />
 			</div>
-			<!-- <img
-				class="m-0 w-100 h-100"
-				src="https://stsci-opo.org/STScI-01GF42D0KV99R21EAD1RAZ3JB7.png"
-				alt=""
-			/> -->
 		</div>
 		<div
 			class="p-20 po-abs flex jtx-ct welc"
