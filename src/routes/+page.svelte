@@ -30,17 +30,13 @@
 			</div>
 		</div>
 		<div
-			class="p-20 po-abs flex jtx-ct welc"
-			bg="0008"
-			style="height:calc(100% - 40px);width:calc(100% - 40px)"
-		>
-			Welcome to SEDS Celestia
-
-		</div>
+			class="welc p-20 po-abs flex jtx-ct"
+			style="height:calc(100% - 40px); width:calc(100% - 40px);">
+			Welcome to SEDS Celestia</div>
 		<div class="po-abs w-100 flex jtx-ct darr">&darr;</div>
 	</div>
 	<section class="adaptive">
-		<article class="flex jtx-ar">
+		<article class="btn-container">
 			<a href="/projects">
 				<button class="btn-std">Projects</button>
 			</a>
@@ -68,24 +64,23 @@
 		</Containr>
 		<Containr title="Connect With Us" icon="heart" bg="66e-37f">
 			<article class="social-links" slot="body">
-			  <a target="_blank" href={links.content.yt}>
-				<img class="social-icon" src="{base}/assets/icons/youtube.svg" alt="Youtube" />
-			  </a>
-			  <a target="_blank" href={links.social.fb}>
-				<img class="social-icon" src="{base}/assets/icons/facebook.svg" alt="Facebook" />
-			  </a>
-			  <a target="_blank" href={links.social.ig}>
-				<img class="social-icon" src="{base}/assets/icons/insta.svg" alt="Instagram" />
-			  </a>
-			  <a target="_blank" href={links.social.tw}>
-				<img class="social-icon" src="{base}/assets/icons/twitter.svg" alt="Twitter" />
-			  </a>
-			  <a target="_blank" href={links.social.spo}>
-				<img class="social-icon" src="{base}/assets/icons/spotify.svg" alt="Spotify" />
-			  </a>
+				<a target="_blank" href={links.content.yt}>
+					<img class="social-icon" src="{base}/assets/icons/youtube.svg" alt="Youtube" />
+				</a>
+				<a target="_blank" href={links.social.fb}>
+					<img class="social-icon" src="{base}/assets/icons/facebook.svg" alt="Facebook" />
+				</a>
+				<a target="_blank" href={links.social.ig}>
+					<img class="social-icon" src="{base}/assets/icons/insta.svg" alt="Instagram" />
+				</a>
+				<a target="_blank" href={links.social.tw}>
+					<img class="social-icon" src="{base}/assets/icons/twitter.svg" alt="Twitter" />
+				</a>
+				<a target="_blank" href={links.social.spo}>
+					<img class="social-icon" src="{base}/assets/icons/spotify.svg" alt="Spotify" />
+				</a>
 			</article>
-		  </Containr>
-		  
+		</Containr>
 	</section>
 </celestia-page>
 
@@ -144,6 +139,31 @@
 		.social-icon {
 			width: 32px;
 			height: 32px;
+		}
+	}
+	.btn-container {
+		display: flex;
+		flex-direction: row; // Default to horizontal layout
+		justify-content: space-around;
+		flex-wrap: wrap;
+		margin: 20px auto;
+	}
+
+	.btn-std {
+		margin: 10px;
+		padding: 10px 20px;
+		font-size: 1em;
+	}
+
+	@media (max-width: 768px) {
+		.btn-container {
+			flex-direction: column; // Stack buttons vertically on small screens
+			justify-content: center;
+			align-items: center;
+		}
+
+		.btn-std {
+			margin: 5px 0; // Adjust vertical spacing without changing size
 		}
 	}
 </style>
