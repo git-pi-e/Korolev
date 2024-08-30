@@ -23,6 +23,14 @@
         {
             "year": 2020,
             "event": "Project EINSat & Rocketry Starts"
+        },
+        {
+            "year": 2022,
+            "event": "Project CANSAT Starts"
+        },
+        {
+            "year": 2023,
+            "event": "Project HERC Starts"
         }
     ]
 }

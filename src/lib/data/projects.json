@@ -1,75 +1,47 @@
 {
     "going": [
         {
-            "under": "Dhruv Patidar",
+            "under": "Krish Patel",
             "name": "CanSat",
-            "icon": "https://live.staticflickr.com/1082/672853757_9c08f408d9_b.jpg",
-            "desc": "Remote sensing Atmosphere",
+            "icon": "/assets/images/projects-2024/cansat.png",
+            "desc": "NASA-supported mini satellite competition for hands-on aerospace education.",
+            "more": "Competition",
+            "moreLink": "https://cansatcompetition.com/mission.html"
+        },
+        {
+            "under": "Siddharth Devidas",
+            "name": "HERC",
+            "icon": "/assets/images/projects-2024/airavata.png",
+            "desc": "Mechanical rover for NASA's Human Exploration Rover Challenge, promoting STEM education.",
             "more": null,
             "moreLink": null
         },
         {
-            "under": "Kaustubh Murudkar",
-            "name": "EINSat",
-            "icon": "/assets/images/projects-2020/einsat.png",
-            "desc": "The CubeSat project of SEDS-Celestia planned to detect exoplanets",
-            "more": null,
-            "moreLink": null
-        },
-        {
-            "under": "Venugopalan Iyengar",
+            "under": "Shloka Shetty",
             "name": "Rocketry",
-            "icon": "/assets/images/projects-2020/rocketry.png",
-            "desc": "Rocketry aims to build a self landing thrust-vector controlled rockets",
+            "icon": "/assets/images/projects-2024/rocketry.png",
+            "desc": "Self-landing rocket with thrust vector control, divided into avionics, structures, and propulsion.",
             "more": null
         },
         {
-            "under": "Vivek Gupte",
-            "name": "Star Tracker",
-            "icon": "/assets/images/projects-2020/track.jpg",
-            "desc": "Shows object aimed by telescope on a screen in real time",
+            "under": "Chaitanya Sharma",
+            "name": "Chessbot",
+            "icon": "/assets/images/projects-2024/ChessBot.jpg",
+            "desc": "Arduino chess bot with autonomous moves and standard rules.",
             "more": null
         },
         {
-            "under": "Neil Shah",
-            "name": "3 Sided Coin",
-            "icon": "/assets/images/projects-2020/3coin.jpg",
-            "desc": "A perfect coin that has equal probability to land on its heads, tails and it's edge",
+            "under": "Tarun Warrier",
+            "name": "ADR",
+            "icon": "/assets/images/projects-2024/ADR.jpg",
+            "desc": "Active debris removal using Hall thrusters for safer satellite orbits.",
             "more": null
         },
         {
-            "under": "Ayushi Dubal",
-            "name": "Quantum Chess",
-            "icon": "/assets/images/projects-2020/qchess.jpeg",
-            "desc": "Quantum chess is reiteration of classical chess but with quantum rules",
-            "more": null
-        },
-        {
-            "under": "Yash Saini",
-            "name": "Brain Computer Interface",
-            "icon": "/assets/images/projects-2020/bci.png",
-            "desc": "Designing an Ominidirection brain controlled rover",
-            "more": null
-        },
-        {
-            "under": "Samarth Agrawal",
-            "name": "Binary Calculator",
-            "icon": "/assets/images/projects-2020/bincalc.png",
-            "desc": "A calculator made by transistor circuits",
-            "more": null
-        },
-        {
-            "under": "Vivek Subramanium",
-            "name": "Cloud Chamber",
-            "icon": "/assets/images/projects-2020/cloud.jpg",
-            "desc": "An old school particle detector",
-            "more": null
-        },
-        {
-            "under": "Harshvardhan Chandirashekhar",
-            "name": "Comet Dust Trail Simulation",
-            "icon": "https://live.staticflickr.com/7210/6967153925_9716066eca.jpg",
-            "desc": "Simulating icy comet dust trails",
+            "under": "Gyan Thammaiah",
+            "name": "Simulations",
+            "icon": "/assets/images/projects-2024/Simulations.png",
+            "desc": "Create physics simulations for gravitation and fluid mechanics, displayed at events.",
             "more": null
         }
     ],

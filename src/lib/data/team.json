@@ -1,109 +1,89 @@
 {
     "mgmt": [
         {
-            "img": "/assets/team/avani.jpeg",
+            "img": "/assets/team/yadu.jpeg",
             "post": "President",
-            "name": "Avani Sharan"
+            "name": "Yadu Krishnan"
         },
         {
-            "img": "/assets/team/tanmay.jpeg",
-            "post": "Vice-President",
-            "name": "Tanmay Yadav"
+            "img": "/assets/team/chaitanya.jpeg",
+            "post": "Vice-President & Treasurer",
+            "name": "Chaitanya Sharma"
         },
         {
-            "img": "/assets/team/vices.jpeg",
+            "img": "/assets/team/siddhant.jpeg",
             "post": "Secretary & Publicity Head",
-            "name": "Vishesh Agrawal"
+            "name": "Siddhant Kedia"
         },
         {
-            "img": "/assets/team/shlok.jpeg",
+            "img": "/assets/team/tejas.jpeg",
+            "post": "Lectures, Outreach & Sponsorship Head",
+            "name": "Tejas Singh Sodhi"
+        },
+        {
+            "img": "/assets/team/avichal.jpeg",
             "post": "Observations Head",
-            "name": "Shlok Kakkar"
+            "name": "Avichal Verma"
         },
         {
-            "img": "/assets/team/vaid.jpeg",
+            "img": "/assets/team/gyan.jpeg",
             "post": "Projects Head",
-            "name": "Vikaram Vaidyanathan Venkatraman"
-        },
-        {
-            "img": "/assets/team/pj.jpeg",
-            "post": "Lectures & Podcast Head",
-            "name": "Pranav Jain"
-        }
-    ],
-    "leads": [
-        {
-            "img": "/assets/team/saiees.jpeg",
-            "name": "Advanced Energy Conservation",
-            "pos": "Saieesh Sukhrani"
-        },
-        {
-            "img": "/assets/team/vaid.jpeg",
-            "name": "Smoke Detection System",
-            "pos": "Vikram Vaidyanathan Venkatraman"
-        },
-        {
-            "img": "/assets/team/tanmay.jpeg",
-            "name": "TITAN DAP",
-            "pos": "Tanmay Yadav"
-        },
-        {
-            "img": "/assets/team/pradeep.jpeg",
-            "name": "Interactive PoV",
-            "pos": "Prateek Upadhya"
-        },
-        {
-            "img": "/assets/team/neil.jpeg",
-            "name": "3 Sided Coin",
-            "pos": "Neil Shah"
-        },
-        {
-            "img": "/assets/team/yash.jpg",
-            "name": "Brain Computer Interface",
-            "pos": "Yash Saini"
-        },
-        {
-            "img": "/assets/team/dubal.jpg",
-            "name": "Quantum Chess",
-            "pos": "Ayushi Dubal"
-        },
-        {
-            "img": "/assets/team/cube.jpg",
-            "name": "EINSat",
-            "pos": "Kaustubh Murudkar"
-        },
-        {
-            "img": "/assets/team/vivek.jpg",
-            "name": "Cloud Chamber",
-            "pos": "Vivek S."
-        },
-        {
-            "img": "/assets/team/samarth.jpg",
-            "name": "Binary Calculator",
-            "pos": "Samarth Agrawal"
-        },
-        {
-            "img": "/assets/team/patidar.jpg",
-            "name": "CanSat",
-            "pos": "Dhruv Patidar"
-        },
-        {
-            "img": "/assets/team/gupte.jpg",
-            "name": "Star Tracker",
-            "pos": "Vivek Gupte"
-        },
-        {
-            "img": "/assets/team/hvcs.png",
-            "name": "Comet Trail Sim",
-            "pos": "Harshvardhan C."
-        },
-        {
-            "img": "/assets/team/venu.jpg",
-            "name": "Rocketry",
-            "pos": "Venugopalan Iyenger"
+            "name": "Gyan Thammaiah"
         }
     ],
     "past": [
+        [
+            {
+                "post": "President",
+                "name": "Kartikeya Gupta"
+            },
+            {
+                "post": "Vice-President",
+                "name": "Chirag Mehandiratta"
+            },
+            {
+                "post": "Sub Coordinator",
+                "name": "Amod Gawde"
+            },
+            {
+                "post": "Lectures & Podcast Head",
+                "name": "Advay Burte"
+            },
+            {
+                "post": "Projects Head",
+                "name": "Aakash Bedre"
+            },
+            {
+                "post": "Observations Head",
+                "name": "Arnav Ranjekar"
+            }
+        ],
+        [
+            {
+                "post": "President",
+                "name": "Avani Sharan"
+            },
+            {
+                "post": "Vice-President",
+                "name": "Tanmay Yadav"
+            },
+            {
+                "post": "Secretary & Publicity Head",
+                "name": "Vishesh Agrawal"
+            },
+            {
+                "post": "Observations Head",
+                "name": "Shlok Kakkar"
+            },
+            {
+                "post": "Projects Head",
+                "name": "Vikaram Vaidyanathan Venkatraman"
+            },
+            {
+                "post": "Lectures Head",
+                "name": "Pranav Jain"
+            }
+        ],
         [
             {
                 "post": "President",
