@@ -56,6 +56,8 @@
         <a target="_blank" href={links.web.sedsi}>SEDS India</a>
         <br />
         <a target="_blank" href={links.web.sedse}>SEDS Earth</a>
+        <br />
+        <a target="_blank" href={links.web.obssite}>Observatory Website</a>
     </div>
 </celestia-footer>
 

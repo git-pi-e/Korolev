@@ -14,7 +14,9 @@
 
 <title>Observations | SEDS Celestia</title>
 <celestia-page>
-	<h1 class="tx-c po-stx z-4 m-0" style="top: 0;" bg="000-nil">Observations</h1>
+	<h1 class="tx-c po-stx p-10 z-4 m-h-auto" style="top:0px;" bg="000-nil">
+		Observations
+	  </h1>
 	<section class="adaptive">
 		<div id="art" size="max" class="m-h-auto" style="margin-bottom:10px;">
 			<Canvas image="{base}/assets/onthehouse/obsArt.png" bg="0008" height="400" width="400" />
