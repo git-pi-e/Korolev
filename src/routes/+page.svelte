@@ -28,11 +28,6 @@
 			<div class="z-0 po-abs w-gen logo">
 				<Logo wd="200" />
 			</div>
-			<img
-				class="m-0 w-100 h-100"
-				src="https://www.nasa.gov/sites/default/files/styles/full_width_feature/public/thumbnails/image/pillars_of_creation.jpg"
-				alt=""
-			/>
 		</div>
 		<div
 			class="p-20 po-abs flex jtx-ct welc"
@@ -40,6 +35,7 @@
 			style="height:calc(100% - 40px);width:calc(100% - 40px)"
 		>
 			Welcome to SEDS Celestia
+
 		</div>
 		<div class="po-abs w-100 flex jtx-ct darr">&darr;</div>
 	</div>
@@ -71,24 +67,25 @@
 			</article>
 		</Containr>
 		<Containr title="Connect With Us" icon="heart" bg="66e-37f">
-			<article class="p-10 flex jtx-ev" slot="body">
-				<a target="_blank" href={links.content.yt}>
-					<img size="ic-lg" src="{base}/assets/icons/youtube.svg" alt="Youtube" />
-				</a>
-				<a target="_blank" href={links.social.fb}>
-					<img size="ic-lg" src="{base}/assets/icons/facebook.svg" alt="Facebook" />
-				</a>
-				<a target="_blank" href={links.social.ig}>
-					<img size="ic-lg" src="{base}/assets/icons/insta.svg" alt="Instagram" />
-				</a>
-				<a target="_blank" href={links.social.tw}>
-					<img size="ic-lg" src="{base}/assets/icons/twitter.svg" alt="Twitter" />
-				</a>
-				<a target="_blank" href={links.social.spo}>
-					<img size="ic-lg" src="{base}/assets/icons/spotify.svg" alt="Spotify" />
-				</a>
+			<article class="social-links" slot="body">
+			  <a target="_blank" href={links.content.yt}>
+				<img class="social-icon" src="{base}/assets/icons/youtube.svg" alt="Youtube" />
+			  </a>
+			  <a target="_blank" href={links.social.fb}>
+				<img class="social-icon" src="{base}/assets/icons/facebook.svg" alt="Facebook" />
+			  </a>
+			  <a target="_blank" href={links.social.ig}>
+				<img class="social-icon" src="{base}/assets/icons/insta.svg" alt="Instagram" />
+			  </a>
+			  <a target="_blank" href={links.social.tw}>
+				<img class="social-icon" src="{base}/assets/icons/twitter.svg" alt="Twitter" />
+			  </a>
+			  <a target="_blank" href={links.social.spo}>
+				<img class="social-icon" src="{base}/assets/icons/spotify.svg" alt="Spotify" />
+			  </a>
 			</article>
-		</Containr>
+		  </Containr>
+		  
 	</section>
 </celestia-page>
 
@@ -121,5 +118,32 @@
 		font-size: 24px;
 		height: 400px;
 		overflow-y: scroll;
+	}
+	.social-links {
+		display: flex;
+		justify-content: space-evenly;
+		padding: 10px;
+	}
+
+	.social-icon {
+		width: 48px;
+		height: 48px;
+		transition:
+			width 0.3s,
+			height 0.3s;
+	}
+
+	@media (max-width: 768px) {
+		.social-icon {
+			width: 40px;
+			height: 40px;
+		}
+	}
+
+	@media (max-width: 480px) {
+		.social-icon {
+			width: 32px;
+			height: 32px;
+		}
 	}
 </style>

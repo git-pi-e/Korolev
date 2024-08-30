@@ -77,7 +77,7 @@
     }
   }
   #nav {
-    top: 10px;
+    top: 0px;
     left: 20px;
     height: 0;
     .active {

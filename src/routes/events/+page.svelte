@@ -52,7 +52,7 @@
 <title>Events | SEDS Celestia</title>
 
 <celestia-page>
-  <h1 class="tx-c po-stx z-4 m-0" style="top: 0;" bg="000-nil">Events</h1>
+  <h1 class="tx-c po-stx p-10 z-4 m-h-auto" style="top:0px;" bg="000-nil">Events</h1>
   <section class="adaptive">
     <div
       size="max"
